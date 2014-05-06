@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DependencyValidationManager">
+    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
+  </component>
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/KondMgmt/KondMgmt.msd" folder="" />
+    </projectModules>
+  </component>
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="rechnungskontrolle">
+          <value>
+            <Library>
+              <option name="name" value="rechnungskontrolle" />
+              <option name="path" value="$PROJECT_DIR$/../rechnungskontrolle" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="ProjectModuleManager">
+    <modules />
+  </component>
+  <component name="ProjectRootManager" version="2" />
+  <component name="ProjectVersion">
+    <option name="version" value="3.0" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+</project>
+
