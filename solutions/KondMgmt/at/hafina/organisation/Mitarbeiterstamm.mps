@@ -366,7 +366,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapMitarbeiter" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151242" resolveInfo="Mitarbeiter" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332582" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332583" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151248" />
@@ -463,12 +463,23 @@
           <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
         </node>
       </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109802501" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109802502" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109803352" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109803354" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter@p_wws" />
+        </node>
+      </node>
     </node>
     <node role="persistenceMapping" roleId="r5tz.871579071900209328" type="r5tz.EntityMapping" typeId="r5tz.871579071900209258" id="2078185796870051296" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MapAppManager" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2078185796870049952" resolveInfo="MitarbeiterAppRechte" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2078185796870051297" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="2078185796870051300" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="4943983682752418081" />
@@ -508,6 +519,17 @@
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.SizeOption" typeId="r5tz.774207833082557411" id="2078185796870051314" nodeInfo="ng">
           <property name="value" nameId="r5tz.774207833082557412" value="100" />
           <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109845032" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109845033" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109845058" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109845060" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager@p_wws" />
         </node>
       </node>
     </node>

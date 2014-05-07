@@ -229,39 +229,5 @@
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="9189473878729336635" nodeInfo="sn" />
     </node>
   </root>
-  <root type="un0u.TestCases" typeId="un0u.3262649880240512242" id="2892654682601605524" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="Piazetta" />
-    <link role="configuration" roleId="un0u.3262649880241442785" targetNodeId="9189473878729336629" resolveInfo="BasisConfigurationWE" />
-    <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2892654682601605525" nodeInfo="nn" />
-    <node role="testMethod" roleId="un0u.3262649880240512254" type="un0u.TestMethod" typeId="un0u.3262649880240512220" id="2892654682601605526" nodeInfo="ig">
-      <property name="name" nameId="tpck.1169194664001" value="TEST_0" />
-      <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2892654682601605527" nodeInfo="in" />
-      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2892654682601605528" nodeInfo="nn" />
-      <node role="description" roleId="un0u.3262649880240512230" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2892654682601605529" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Wo ist der Euro?" />
-      </node>
-      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2892654682601605530" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2892654682601608384" nodeInfo="nn" />
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="2892654682601605533" nodeInfo="nn">
-          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="2892654682601605534" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="beleg" />
-            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2892654682601605535" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3kk.2578114784133153190" resolveInfo="WareneingangsBeleg" />
-            </node>
-            <node role="initializer" roleId="tpee.1068431790190" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="2892654682601605537" nodeInfo="ng">
-              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3kk.9189473878729366714" resolveInfo="WareneingangsBelegRepo" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3kk.9189473878729911806" resolveInfo="findWareneingangsBelegToId" />
-              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2892654682601605542" nodeInfo="nn">
-                <property name="value" nameId="tpee.1068580320021" value="26097868" />
-              </node>
-              <node role="sessionExpression" roleId="un0u.3262649880243657037" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2892654682601605538" nodeInfo="nn" />
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2892654682601605539" nodeInfo="nn" />
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="2892654682601605541" nodeInfo="nn" />
-      </node>
-    </node>
-  </root>
 </model>
 

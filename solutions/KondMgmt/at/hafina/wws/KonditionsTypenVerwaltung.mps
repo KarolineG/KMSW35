@@ -225,24 +225,8 @@
     <property name="name" nameId="tpck.1169194664001" value="KonditionsTypenVerwaltung" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
     <link role="statusField" roleId="un0u.1881524139087681829" targetNodeId="2075539057415668106" />
-    <node role="role" roleId="un0u.943115150039557529" type="un0u.Role" typeId="un0u.943115150039310957" id="2075539057415667112" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Admin" />
-      <link role="isAlsoRole" roleId="un0u.3926548899607107118" targetNodeId="2075539057415667114" resolveInfo="Superuser" />
-      <node role="condition" roleId="un0u.1881524139086572988" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415667113" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="true" />
-      </node>
-    </node>
-    <node role="role" roleId="un0u.943115150039557529" type="un0u.Role" typeId="un0u.943115150039310957" id="2075539057415667114" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Superuser" />
-      <node role="condition" roleId="un0u.1881524139086572988" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415667115" nodeInfo="nn">
-        <property name="value" nameId="tpee.1068580123138" value="true" />
-      </node>
-    </node>
     <node role="creatorsAndViews" roleId="un0u.1881524139088097910" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="2075539057415667116" nodeInfo="ng">
       <link role="command" roleId="un0u.1881524139087020879" targetNodeId="2075539057415667465" resolveInfo="Konditionstypen anzeigen/bearbeiten" />
-      <node role="roleReference" roleId="un0u.943115150039737876" type="un0u.ConditionReference" typeId="un0u.1881524139087303837" id="2075539057415667117" nodeInfo="ng">
-        <link role="condition" roleId="un0u.1881524139087303838" targetNodeId="2075539057415667114" resolveInfo="Superuser" />
-      </node>
     </node>
     <node role="creatorsAndViews" roleId="un0u.1881524139088097910" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="2075539057417375668" nodeInfo="ng">
       <link role="command" roleId="un0u.1881524139087020879" targetNodeId="2075539057415667600" resolveInfo="Neuen Konditionstyp anlegen" />
@@ -4311,7 +4295,7 @@
         <property name="value" nameId="tpee.1070475926801" value="Kalk.basis" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377995" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Kalkulationsbasis (F8)" />
+        <property name="value" nameId="tpee.1070475926801" value="Kalkulationsbasis" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2075539057415667926" nodeInfo="ig">
@@ -4453,7 +4437,7 @@
         <property name="value" nameId="tpee.1070475926801" value="Zyklus" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379941" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Zyklus Akontozahlungen (F10)" />
+        <property name="value" nameId="tpee.1070475926801" value="Zyklus Akontozahlungen" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2075539057415667968" nodeInfo="ig">
@@ -4474,7 +4458,7 @@
         </node>
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376973" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Zeileneinheit (F9)" />
+        <property name="value" nameId="tpee.1070475926801" value="Zeileneinheit" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2075539057415667975" nodeInfo="ig">
@@ -4498,7 +4482,7 @@
         <property name="value" nameId="tpee.1070475926801" value="ZK Typ" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378645" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Zeitkennungstyp (F11)" />
+        <property name="value" nameId="tpee.1070475926801" value="Zeitkennungstyp" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2075539057415668071" nodeInfo="ig">
@@ -11763,6 +11747,17 @@
           </node>
         </node>
       </node>
+      <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="4415070461729079263" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Aktualisieren" />
+        <property name="hotkey" nameId="un0u.5725201540142890812" value="NEXT" />
+        <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="4415070461729084184" nodeInfo="ng">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4415070461729084185" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="un0u.PageCommand" typeId="un0u.1881524139085552758" id="4415070461729084188" nodeInfo="ng">
+              <link role="page" roleId="un0u.1881524139085552759" targetNodeId="2987152407127836541" resolveInfo="Bgl Einheitenliste" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2987152407127836550" nodeInfo="ng">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2987152407127836551" nodeInfo="ng">
@@ -12023,6 +12018,17 @@
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="2987152407127836620" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Zeileneinheiten" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
+      <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="4415070461729089116" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Aktualisieren" />
+        <property name="hotkey" nameId="un0u.5725201540142890812" value="NEXT" />
+        <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="4415070461729089118" nodeInfo="ng">
+          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="4415070461729089119" nodeInfo="sn">
+            <node role="statement" roleId="tpee.1068581517665" type="un0u.PageCommand" typeId="un0u.1881524139085552758" id="4415070461729089122" nodeInfo="ng">
+              <link role="page" roleId="un0u.1881524139085552759" targetNodeId="2987152407127836620" resolveInfo="Zeileneinheiten" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node role="pageInit" roleId="un0u.1881524139084590808" type="un0u.PageInitConceptFunc" typeId="un0u.6525155817176738379" id="2987152407127836625" nodeInfo="ng">
         <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2987152407127836626" nodeInfo="sn">
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2987152407127836627" nodeInfo="nn">

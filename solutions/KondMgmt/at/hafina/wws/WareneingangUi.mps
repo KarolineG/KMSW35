@@ -1347,6 +1347,28 @@
             <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151137" />
           </node>
         </node>
+        <node role="overwriteLabel" roleId="sgb.2332321876774232968" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4415070461699685364" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="Lieferant Standard" />
+        </node>
+      </node>
+      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4415070461714495275" nodeInfo="ng">
+        <property name="width" nameId="sgb.8089681376575535775" value="100" />
+        <property name="label" nameId="sgb.8089681376575535776" value="-" />
+        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
+        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4415070461714506219" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="4415070461714497433" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="4415070461714495322" nodeInfo="ng" />
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4415070461714505369" nodeInfo="nn">
+              <link role="property" roleId="tpee.1201385237847" targetNodeId="3kk.4415070461714499527" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4415070461714507069" nodeInfo="nn">
+            <link role="property" roleId="tpee.1201385237847" targetNodeId="46c4.3972025135360960106" />
+          </node>
+        </node>
+        <node role="overwriteLabel" roleId="sgb.2332321876774232968" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4415070461714507071" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="KS Lieferant Standard" />
+        </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2892654682600429890" nodeInfo="ng">
         <property name="width" nameId="sgb.8089681376575535775" value="200" />
@@ -1363,6 +1385,9 @@
             <link role="property" roleId="tpee.1201385237847" targetNodeId="nq1x.2578114784133151137" />
           </node>
         </node>
+        <node role="overwriteLabel" roleId="sgb.2332321876774232968" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4415070461699686335" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="Lieferant Kondition" />
+        </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2892654682600173484" nodeInfo="ng">
         <property name="width" nameId="sgb.8089681376575535775" value="200" />
@@ -1378,6 +1403,9 @@
           <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374822" nodeInfo="nn">
             <link role="property" roleId="tpee.1201385237847" targetNodeId="46c4.3972025135360960106" />
           </node>
+        </node>
+        <node role="overwriteLabel" roleId="sgb.2332321876774232968" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4415070461714494301" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="KS Lieferant Kondition" />
         </node>
       </node>
       <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="8104064611855127707" nodeInfo="in">

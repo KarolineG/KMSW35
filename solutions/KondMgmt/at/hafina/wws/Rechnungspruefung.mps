@@ -141,7 +141,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapBestellung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315302" resolveInfo="Bestellung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332915" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332916" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315303" />
@@ -176,12 +176,23 @@
           <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
         </node>
       </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109856976" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109856977" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109857887" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109857889" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen@p_wws" />
+        </node>
+      </node>
     </node>
     <node role="persistenceMapping" roleId="r5tz.871579071900209328" type="r5tz.EntityMapping" typeId="r5tz.871579071900209258" id="3687014260077332926" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MapRechnung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315383" resolveInfo="Rechnung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332927" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung" />
+        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332928" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315384" />
@@ -223,6 +234,17 @@
           <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8104064611855114012" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="REF_BESTELLUNG" />
           </node>
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858136" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858137" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858160" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858162" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung@p_wws" />
         </node>
       </node>
     </node>
@@ -348,9 +370,19 @@
         </node>
       </node>
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5431775171647312561" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT" />
+        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT@p_wws" />
       </node>
-      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="5431775171647312564" nodeInfo="ng" />
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858185" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858187" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858239" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858241" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT@p_wws" />
+        </node>
+      </node>
     </node>
     <node role="persistenceMapping" roleId="r5tz.871579071900209328" type="r5tz.EntityMapping" typeId="r5tz.871579071900209258" id="7362161567117800097" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MapRekoLieferanten" />
@@ -378,9 +410,19 @@
         </node>
       </node>
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7362161567117800098" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="REKO_RECHEIGENSCHAFT" />
+        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_RECHEIGENSCHAFT@p_wws" />
       </node>
-      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="7362161567117800101" nodeInfo="ng" />
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858314" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858316" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_RECHEIGENSCHAFT" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858336" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858338" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_RECHEIGENSCHAFT@p_wws" />
+        </node>
+      </node>
     </node>
   </root>
   <root type="un0u.ModelRepository" typeId="un0u.8009046666043401703" id="8104064611855105108" nodeInfo="ig">
@@ -1993,6 +2035,7 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3379156336149631819" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="5431775171647228455" resolveInfo="RekoAkt" />
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.OppositeOption" typeId="un0u.3262649880239917894" id="8131389663374037199" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="1533050384292561262" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="profMengeEEH" />

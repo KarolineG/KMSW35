@@ -968,13 +968,6 @@
     <node role="creatorsAndViews" roleId="un0u.1881524139088097910" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="1088173395039725672" nodeInfo="ng">
       <link role="command" roleId="un0u.1881524139087020879" targetNodeId="5388256980440577322" resolveInfo="Filiale öffnen und Forderungen anzeigen" />
     </node>
-    <node role="role" roleId="un0u.943115150039557529" type="un0u.Role" typeId="un0u.943115150039310957" id="3989037348208998749" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Filialenverwalter" />
-      <link role="isAlsoRole" roleId="un0u.3926548899607107118" targetNodeId="3989037348209007675" resolveInfo="Viewer" />
-    </node>
-    <node role="role" roleId="un0u.943115150039557529" type="un0u.Role" typeId="un0u.943115150039310957" id="3989037348209007675" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Viewer" />
-    </node>
     <node role="states" roleId="un0u.1881524139086941830" type="un0u.State" typeId="un0u.1881524139086941829" id="3989037348208998735" nodeInfo="ng">
       <link role="status" roleId="un0u.1881524139086941858" targetNodeId="3989037348208998739" resolveInfo="Angelegt" />
       <node role="transitions" roleId="un0u.1881524139087020907" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="6159375316625478764" nodeInfo="ng">
@@ -2919,7 +2912,7 @@
                 </node>
               </node>
               <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="6159375316625301893" nodeInfo="ng">
-                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="2k0i.1905251065026864423" resolveInfo="jaNeinStatus" />
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="2k0i.1905251065026864423" resolveInfo="JaNeinStatus" />
                 <link role="element" roleId="un0u.1707329006119989962" targetNodeId="2k0i.1905251065026864426" resolveInfo="nein" />
               </node>
             </node>
@@ -3493,9 +3486,6 @@
     <property name="documentation" nameId="un0u.5225022991485184158" value="View zur Anzeige aller eingewarteten Filialforderungen" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7967778343315170791" nodeInfo="nn" />
-    <node role="equalProperties" roleId="un0u.5225022991485184163" type="un0u.EqualPropertyReference" typeId="un0u.836579671456120410" id="7967778343315170836" nodeInfo="ng">
-      <link role="property" roleId="un0u.836579671456120411" targetNodeId="7967778343315170814" />
-    </node>
     <node role="documentation2" roleId="un0u.5847590543402886019" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953348" nodeInfo="ng">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823953349" nodeInfo="ng">
         <property name="text" nameId="un0u.6525155817177697682" value="Kriterium zur Anzeige von nicht filialspezifischen Forderungen" />
@@ -3762,7 +3752,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="1823082938957472418" nodeInfo="ig">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2k0i.1905251065026864423" resolveInfo="jaNeinStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2k0i.1905251065026864423" resolveInfo="JaNeinStatus" />
       </node>
       <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953346" nodeInfo="ng">
         <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823953347" nodeInfo="ng">
@@ -3783,7 +3773,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="1823082938957472419" nodeInfo="ig">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2k0i.1905251065026864423" resolveInfo="jaNeinStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2k0i.1905251065026864423" resolveInfo="JaNeinStatus" />
       </node>
       <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953350" nodeInfo="ng">
         <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823953351" nodeInfo="ng">
@@ -3804,7 +3794,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="1823082938957472420" nodeInfo="ig">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2k0i.1905251065026864423" resolveInfo="jaNeinStatus" />
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2k0i.1905251065026864423" resolveInfo="JaNeinStatus" />
       </node>
       <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953352" nodeInfo="ng">
         <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823953353" nodeInfo="ng">

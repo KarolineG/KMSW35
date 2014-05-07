@@ -618,6 +618,12 @@
               <property name="value" nameId="tpee.1068580123138" value="false" />
             </node>
           </node>
+          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463762" nodeInfo="ng">
+            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379933" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Konditionswirkung (F5)" />
+            </node>
+          </node>
         </node>
         <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669592" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="isKonditionsWirkungEditable" />
@@ -681,6 +687,12 @@
               <property name="value" nameId="tpee.1068580123138" value="false" />
             </node>
           </node>
+          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463748" nodeInfo="ng">
+            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380021" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Berechnungsgrundlage Eh (F6)" />
+            </node>
+          </node>
         </node>
         <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669615" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="isBerechGrundlageEhEditable" />
@@ -738,6 +750,12 @@
               <property name="value" nameId="tpee.1068580123138" value="false" />
             </node>
           </node>
+          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463736" nodeInfo="ng">
+            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379097" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Bezugsbasis (F7)" />
+            </node>
+          </node>
         </node>
         <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669638" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="isBezugsBasisEditable" />
@@ -793,6 +811,12 @@
             <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
             <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669658" nodeInfo="nn">
               <property name="value" nameId="tpee.1068580123138" value="false" />
+            </node>
+          </node>
+          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463724" nodeInfo="ng">
+            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377995" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Kalkulationsbasis (F8)" />
             </node>
           </node>
         </node>
@@ -858,6 +882,12 @@
               <property name="value" nameId="tpee.1068580123138" value="false" />
             </node>
           </node>
+          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463710" nodeInfo="ng">
+            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376973" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Zeileneinheit (F9)" />
+            </node>
+          </node>
         </node>
         <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669682" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="isZeilenEinheitEditable" />
@@ -915,6 +945,12 @@
               <property name="value" nameId="tpee.1068580123138" value="false" />
             </node>
           </node>
+          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758462911" nodeInfo="ng">
+            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379941" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Zyklus Akontozahlungen (F10)" />
+            </node>
+          </node>
         </node>
         <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669703" nodeInfo="ng">
           <property name="name" nameId="tpck.1169194664001" value="isZyklusEditable" />
@@ -970,6 +1006,12 @@
             <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
             <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669723" nodeInfo="nn">
               <property name="value" nameId="tpee.1068580123138" value="false" />
+            </node>
+          </node>
+          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463780" nodeInfo="ng">
+            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
+            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378645" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="Zeitkennungstyp (F11)" />
             </node>
           </node>
         </node>
@@ -1617,7 +1659,7 @@
       <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415668816" resolveInfo="SelektionsListeView" />
       <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="8z9b.2075539057415669017" />
       <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669992" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="S_83" />
+        <property name="hotkey" nameId="sgb.943115150038430512" value="MULTIPLY_106" />
         <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669993" nodeInfo="ng">
           <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
           <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415669076" resolveInfo="Selektion setzen (S)" />

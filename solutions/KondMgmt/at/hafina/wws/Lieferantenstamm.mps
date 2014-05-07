@@ -57,9 +57,6 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.StringType" typeId="tpee.1225271177708" id="2578114784133151143" nodeInfo="in" />
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376414" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0.00" />
-      </node>
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376491" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Lieferant" />
       </node>
@@ -202,10 +199,10 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.StringType" typeId="tpee.1225271177708" id="1823082938957759164" nodeInfo="in" />
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376181" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Forderungsgeber" />
+        <property name="value" nameId="tpee.1070475926801" value="Name und ID" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379305" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Lieferant" />
+        <property name="value" nameId="tpee.1070475926801" value="Name und ID" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3972025135361017699" nodeInfo="ig">
@@ -301,7 +298,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151121" resolveInfo="Lieferant" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332875" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332876" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151127" />
@@ -380,12 +377,23 @@
           <property name="value" nameId="tpee.1070475926801" value="FAELLIGKEIT_TAGE" />
         </node>
       </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109855490" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109855491" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109855778" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109855780" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15@p_wws" />
+        </node>
+      </node>
     </node>
     <node role="persistenceMapping" roleId="r5tz.871579071900209328" type="r5tz.EntityMapping" typeId="r5tz.871579071900209258" id="3687014260077332900" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MapVorgangsort" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151216" resolveInfo="Vorgangsort" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332901" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332902" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151222" />
@@ -407,6 +415,17 @@
           <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332910" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="NUM_BETRIEB" />
           </node>
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109856344" nodeInfo="ng">
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109856345" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort" />
+        </node>
+      </node>
+      <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109856364" nodeInfo="ng">
+        <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
+        <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109856366" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort@p_wws" />
         </node>
       </node>
     </node>
