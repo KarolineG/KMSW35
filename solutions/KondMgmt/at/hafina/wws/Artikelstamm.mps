@@ -42,9 +42,6 @@
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376419" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Artikel Id" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376420" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
-      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133105829" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="bezeichnung" />
@@ -2806,9 +2803,6 @@
       </node>
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376267" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Abzugswert" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376268" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379891" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Wert" />

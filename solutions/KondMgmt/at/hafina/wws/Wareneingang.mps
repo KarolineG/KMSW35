@@ -209,9 +209,6 @@
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375923" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Key" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375924" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
-      </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378745" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Ref. Beleg" />
       </node>
@@ -340,9 +337,6 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2578114784133153239" nodeInfo="in" />
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376229" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Belegnummer" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376230" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378903" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Belegnummer" />
@@ -557,9 +551,6 @@
       </node>
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376243" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="EkNetto" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376244" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.0000" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378603" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Summe EK-Netto" />
@@ -2173,9 +2164,6 @@
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375791" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Anz. EEH" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375792" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
-      </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379335" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="EEH Menge" />
       </node>
@@ -2475,9 +2463,6 @@
       </node>
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375833" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Ek Netto" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375834" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.0000" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377541" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Summe EK Netto" />
@@ -2884,9 +2869,6 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2578114784133153481" nodeInfo="in" />
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376009" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Pos" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376010" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3972025135360823165" nodeInfo="ig">

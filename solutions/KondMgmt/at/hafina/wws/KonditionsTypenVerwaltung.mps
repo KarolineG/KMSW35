@@ -4199,9 +4199,6 @@
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376559" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Pos" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376560" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
-      </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377035" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Reihung" />
       </node>
@@ -4339,9 +4336,6 @@
       </node>
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375829" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Bed.Rf" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375830" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377657" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Bedingungsreihenfolge" />

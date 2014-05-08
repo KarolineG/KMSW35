@@ -470,9 +470,6 @@
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376125" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Typ" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376126" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0.00" />
-      </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379431" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Typ" />
       </node>
@@ -494,9 +491,6 @@
       </node>
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376451" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Filialnummer" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376452" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379377" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Filialnummer" />
@@ -686,9 +680,6 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.StringType" typeId="tpee.1225271177708" id="3989037348208997887" nodeInfo="in" />
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375927" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Verbucht" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375928" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0.00" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3972025135361060072" nodeInfo="ig">
@@ -927,9 +918,6 @@
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375716" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Gesamtforderung" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375717" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
-      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3972025135360962345" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="forderungsSummeBezahltFilialeVP" />
@@ -955,9 +943,6 @@
       </node>
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376033" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Bezahlt" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376034" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
       </node>
     </node>
   </root>
@@ -3844,9 +3829,6 @@
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376957" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Ford. gesamt" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380083" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
-      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="7967778343316282244" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="forderungsSummeBezahlt" />
@@ -3867,9 +3849,6 @@
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378061" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Ford. bezahlt" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380139" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="7967778343315170827" nodeInfo="ig">
@@ -3981,9 +3960,6 @@
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377855" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Ford. gesamt für Auswahl" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380147" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3972025135360959804" nodeInfo="ig">
@@ -4139,9 +4115,6 @@
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377421" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Ford. bezahlt für Auswahl" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380125" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
       </node>
     </node>
   </root>
@@ -4715,9 +4688,6 @@
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378879" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Gesamtforderung" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380091" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
-      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3500752603055257802" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="forderungFilialenBezahlt" />
@@ -4738,9 +4708,6 @@
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378365" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Bezahlt" />
-      </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380099" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="##,###,##0.00" />
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3500752603055257809" nodeInfo="ig">

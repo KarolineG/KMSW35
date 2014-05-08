@@ -236,9 +236,6 @@
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375931" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Personalnummer" />
       </node>
-      <node role="numberFormat" roleId="un0u.6057399400731215414" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361375932" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="0" />
-      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133151276" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="abteilung" />
