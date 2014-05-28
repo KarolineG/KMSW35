@@ -3294,7 +3294,7 @@
             </node>
             <node role="rValue" roleId="tpee.1068498886297" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="489969188106525111" nodeInfo="ng">
               <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="46c4.346759792891147930" resolveInfo="ArtikelstammRepo" />
-              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="46c4.5176117387240966575" resolveInfo="findAllActiveArtikelZuStandardlieferant" />
+              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="46c4.7752103571868641350" resolveInfo="findAllArtikelZuStandardlieferant" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="489969188106525112" nodeInfo="nn">
                 <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="489969188106525113" nodeInfo="ng">
                   <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="489969188104799426" resolveInfo="zuordnung" />

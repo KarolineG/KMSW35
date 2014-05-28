@@ -4520,6 +4520,53 @@
         <property name="text" nameId="un0u.6525155817177697682" value="Sperrt die Forderungsstellung für die gewählte Filiale" />
       </node>
     </node>
+    <node role="enabledWhen" roleId="un0u.6525155817177860576" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3479891661951384863" nodeInfo="nn">
+      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="3479891661951384450" nodeInfo="nn">
+        <node role="expression" roleId="tpee.1079359253376" type="tpee.OrExpression" typeId="tpee.1080223426719" id="3479891661951384451" nodeInfo="nn">
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3479891661951384452" nodeInfo="nn">
+            <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="3479891661951384453" nodeInfo="ng">
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3989037348208998737" resolveInfo="UntStatus" />
+              <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3989037348208998741" resolveInfo="Verrechnet" />
+            </node>
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3479891661951384454" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="3479891661951384455" nodeInfo="ng">
+                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3479891661951384456" nodeInfo="nn">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208998742" />
+              </node>
+            </node>
+          </node>
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3479891661951384457" nodeInfo="nn">
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3479891661951384458" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="3479891661951384459" nodeInfo="ng">
+                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3479891661951384460" nodeInfo="nn">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208998742" />
+              </node>
+            </node>
+            <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="3479891661951384461" nodeInfo="ng">
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3989037348208998737" resolveInfo="UntStatus" />
+              <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3989037348208998740" resolveInfo="Freigegeben" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3479891661951380868" nodeInfo="nn">
+        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3479891661951380870" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="3479891661951380871" nodeInfo="ng">
+            <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3479891661951380872" nodeInfo="nn">
+            <link role="property" roleId="tpee.1201385237847" targetNodeId="6159375316625478491" resolveInfo="gesperrt" />
+          </node>
+        </node>
+        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="3479891661951384922" nodeInfo="nn">
+          <property name="value" nameId="tpee.1068580320021" value="0" />
+        </node>
+      </node>
+    </node>
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="2453866350711887370" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Forderungsstellung für Filiale freigeben" />

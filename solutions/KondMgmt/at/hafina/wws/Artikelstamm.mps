@@ -2947,7 +2947,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Abzug editieren" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="7676363187707302681" resolveInfo="ArtikelEkAbzug" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="7676363187707324467" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
+        <property name="name" nameId="tpck.1169194664001" value="Ok" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="SAVE" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="7676363187707324468" nodeInfo="ng">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7676363187707324469" nodeInfo="sn">
@@ -4028,7 +4028,7 @@
       <property name="name" nameId="tpck.1169194664001" value="Abzug editieren" />
       <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="7676363187707302681" resolveInfo="ArtikelEkAbzug" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="308340049803008051" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
+        <property name="name" nameId="tpck.1169194664001" value="Ok" />
         <property name="hotkey" nameId="un0u.5725201540142890812" value="SAVE" />
         <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="308340049803008052" nodeInfo="ng">
           <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="308340049803008053" nodeInfo="sn">

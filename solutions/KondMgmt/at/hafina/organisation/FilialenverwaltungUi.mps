@@ -867,6 +867,9 @@
             <link role="property" roleId="tpee.1201385237847" targetNodeId="o9h8.3972025135360912805" />
           </node>
         </node>
+        <node role="overwriteLabel" roleId="sgb.2332321876774232968" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5470777583744115358" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="Einkäufer" />
+        </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="5388256980440585125" nodeInfo="ng">
         <property name="width" nameId="sgb.8089681376575535775" value="80" />
@@ -1491,6 +1494,9 @@
           <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370578" nodeInfo="nn">
             <link role="property" roleId="tpee.1201385237847" targetNodeId="o9h8.3972025135360912805" />
           </node>
+        </node>
+        <node role="overwriteLabel" roleId="sgb.2332321876774232968" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5470777583744116025" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="Einkäufer" />
         </node>
       </node>
       <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2453866350711581996" nodeInfo="ng">

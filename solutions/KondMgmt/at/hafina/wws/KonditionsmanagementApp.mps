@@ -54,6 +54,10 @@
     <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="variant" nameId="un0u.7782735571954932795" value="BABY" />
+    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="3479891661944635095" nodeInfo="ng">
+      <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
+      <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina" />
+    </node>
   </root>
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998671" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KonditionsmanagementUI" />
@@ -1676,11 +1680,11 @@
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.FieldDeclaration" typeId="tpee.1068390468200" id="7159955145645611560" nodeInfo="igu">
-      <property name="name" nameId="tpck.1169194664001" value="umsatzBuchungenAlt" />
+      <property name="name" nameId="tpck.1169194664001" value="umsatzBuchungenVergleich" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="7159955145645611561" nodeInfo="nn" />
       <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="7159955145645611565" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7159955145645611567" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.7159955145645611380" resolveInfo="LieferantenUmsatzBuchungAlt" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.7159955145645611380" resolveInfo="LieferantenUmsatzBuchungVergleich" />
         </node>
       </node>
     </node>
@@ -1699,7 +1703,7 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="7159955145645611217" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="7159955145645611218" nodeInfo="nn" />
       <node role="description" roleId="un0u.3262649880240512230" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7159955145645611219" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Test Lieferantenumsätze 2013" />
+        <property name="value" nameId="tpee.1070475926801" value="Test Lieferantenumsätze 2014" />
       </node>
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="7159955145645611220" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7159955145645623413" nodeInfo="nn">
@@ -1724,7 +1728,7 @@
         </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="7159955145645611574" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7159955145645611575" nodeInfo="nr">
-            <property name="name" nameId="tpck.1169194664001" value="lieferanten2013" />
+            <property name="name" nameId="tpck.1169194664001" value="lieferantenAktiv" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="7159955145645611576" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7159955145645611578" nodeInfo="in">
                 <link role="classifier" roleId="tpee.1107535924139" targetNodeId="nq1x.2578114784133151121" resolveInfo="Lieferant" />
@@ -1742,7 +1746,7 @@
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7159955145645619893" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7159955145645619909" nodeInfo="nn">
             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360408744" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7159955145645611575" resolveInfo="lieferanten2013" />
+              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7159955145645611575" resolveInfo="lieferantenAktiv" />
             </node>
             <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="7159955145645619914" nodeInfo="nn">
               <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="7159955145645619915" nodeInfo="nn">
@@ -1790,7 +1794,7 @@
                               </node>
                             </node>
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7159955145645621881" nodeInfo="nn">
-                              <property name="value" nameId="tpee.1068580320021" value="2013" />
+                              <property name="value" nameId="tpee.1068580320021" value="2014" />
                             </node>
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="7159955145647337661" nodeInfo="nn">
@@ -1832,7 +1836,7 @@
                         <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7159955145647337735" nodeInfo="nn">
                           <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="7159955145645622002" nodeInfo="ng">
                             <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="1v76.7841632776554301330" resolveInfo="LieferantenUmsatzRepo" />
-                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7159955145645621886" resolveInfo="findAllUmsatzBuchungenAltForLieferantAndYear" />
+                            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7159955145645621886" resolveInfo="findAllVergleichsUmsatzBuchungenForLieferantAndYear" />
                             <node role="sessionExpression" roleId="un0u.3262649880243657037" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360406831" nodeInfo="nn">
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7159955145645611362" resolveInfo="session" />
                             </node>
@@ -1845,7 +1849,7 @@
                               </node>
                             </node>
                             <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="7159955145645622007" nodeInfo="nn">
-                              <property name="value" nameId="tpee.1068580320021" value="2013" />
+                              <property name="value" nameId="tpee.1068580320021" value="2014" />
                             </node>
                           </node>
                           <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="7159955145647337743" nodeInfo="nn">
@@ -1876,8 +1880,8 @@
                         </node>
                         <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="7159955145645622008" nodeInfo="nn" />
                       </node>
-                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360406879" nodeInfo="nn">
-                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7159955145645611560" resolveInfo="umsatzBuchungenAlt" />
+                      <node role="lValue" roleId="tpee.1068498886295" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7796496132406008918" nodeInfo="nn">
+                        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7159955145645611560" resolveInfo="umsatzBuchungenVergleich" />
                       </node>
                     </node>
                   </node>
@@ -1923,7 +1927,7 @@
                         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="7159955145645622446" nodeInfo="nn">
                           <node role="expression" roleId="tpee.1068580123156" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7159955145645622463" nodeInfo="nn">
                             <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360406967" nodeInfo="nn">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7159955145645611560" resolveInfo="umsatzBuchungenAlt" />
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7159955145645611560" resolveInfo="umsatzBuchungenVergleich" />
                             </node>
                             <node role="operation" roleId="tpee.1197027833540" type="tp2q.VisitAllOperation" typeId="tp2q.1204980550705" id="7159955145645622469" nodeInfo="nn">
                               <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="7159955145645622470" nodeInfo="nn">
