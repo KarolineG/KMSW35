@@ -22,6 +22,9 @@
   <import index="ybr6" modelUID="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time.base(org.modellwerkstatt.manmap.solution/org.joda.time.base@java_stub)" version="-1" />
   <import index="26n1" modelUID="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time(org.modellwerkstatt.manmap.solution/org.joda.time@java_stub)" version="-1" />
   <import index="vt2g" modelUID="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time.format(org.modellwerkstatt.manmap.solution/org.joda.time.format@java_stub)" version="-1" />
+  <import index="2k0i" modelUID="r:c5d4da5d-b8fe-4540-a060-b6d7af258118(at.hafina.wws.Forderungsstellung)" version="-1" />
+  <import index="o9h8" modelUID="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" version="-1" />
+  <import index="8tpd" modelUID="r:a708151c-db77-44e8-9fa7-6f852fc8df10(at.hafina.wws.Rechnungspruefung)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
@@ -162,11 +165,11 @@
       <link role="command" roleId="un0u.1881524139087020879" targetNodeId="2647181365808863055" resolveInfo="Start Batch Forderungsstellung" />
     </node>
     <node role="creatorsAndViews" roleId="un0u.1881524139088097910" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="8757269665091070059" nodeInfo="ng">
-      <link role="command" roleId="un0u.1881524139087020879" targetNodeId="7841632776554179642" resolveInfo="Batchprozess starten" />
+      <link role="command" roleId="un0u.1881524139087020879" targetNodeId="7841632776554179642" resolveInfo="Batchprozess Umsatzberechnung starten" />
     </node>
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="7841632776554179642" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Batchprozess starten" />
+    <property name="name" nameId="tpck.1169194664001" value="Batchprozess Umsatzberechnung starten" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
     <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
@@ -225,39 +228,9 @@
                     <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133120840" resolveInfo="Vertrag" />
                   </node>
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6434208125139413193" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6884946291587045335" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="6434208125139413194" nodeInfo="ng">
-                      <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="1v76.346759792891204465" resolveInfo="VertragRepo" />
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7841632776554180213" resolveInfo="findAllAktivVertraege" />
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="6884946291587052318" nodeInfo="nn">
-                      <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="6884946291587052320" nodeInfo="nn">
-                        <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="6884946291587052321" nodeInfo="sn">
-                          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6884946291587052330" nodeInfo="nn">
-                            <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="6884946291587072923" nodeInfo="nn">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6884946291587072935" nodeInfo="nn">
-                                <property name="value" nameId="tpee.1068580320021" value="100440" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6884946291587058479" nodeInfo="nn">
-                                <node role="operand" roleId="tpee.1197027771414" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6884946291587052329" nodeInfo="nn">
-                                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6884946291587052322" resolveInfo="it" />
-                                </node>
-                                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="6884946291587065379" nodeInfo="nn">
-                                  <link role="property" roleId="tpee.1201385237847" targetNodeId="1v76.2578114784133122666" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="6884946291587052322" nodeInfo="ig">
-                          <property name="name" nameId="tpck.1169194664001" value="it" />
-                          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="6884946291587052323" nodeInfo="in" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="6434208125139413196" nodeInfo="nn" />
+                <node role="initializer" roleId="tpee.1068431790190" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="6434208125139413194" nodeInfo="ng">
+                  <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="1v76.346759792891204465" resolveInfo="VertragRepo" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7841632776554180213" resolveInfo="findAllAktivVertraege" />
                 </node>
               </node>
             </node>
@@ -2239,10 +2212,10 @@
               </node>
             </node>
           </node>
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="6434208125137701913" nodeInfo="nn" />
+          <node role="statement" roleId="tpee.1068581517665" type="tpee.Statement" typeId="tpee.1068580123157" id="4876739376300344227" nodeInfo="nn" />
           <node role="statement" roleId="tpee.1068581517665" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="6434208125137701945" nodeInfo="ng">
             <link role="process" roleId="un0u.4419932786254844466" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
-            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="7841632776554179642" resolveInfo="Batchprozess starten" />
+            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="7841632776554179642" resolveInfo="Batchprozess Umsatzberechnung starten" />
             <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6434208125138577254" nodeInfo="nn" />
             <node role="sessionExpression" roleId="un0u.5196923997522444846" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6434208125137701971" nodeInfo="nn">
               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6434208125137701848" resolveInfo="sessionUmsatzBerechnung" />
@@ -2433,6 +2406,26 @@
         </node>
       </node>
     </node>
+    <node role="onStartup" roleId="un0u.8399801448180977968" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="4876739376299305588" nodeInfo="nn">
+      <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="4876739376299305589" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="un0u.LogStatement" typeId="un0u.2356914237085017468" id="4876739376299305599" nodeInfo="ng">
+          <property name="logLevel" nameId="un0u.830334255848575723" value="DEBUG" />
+          <node role="exp" roleId="un0u.2356914237085088917" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4876739376299305610" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="Starting Batch..." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="onShutdown" roleId="un0u.8399801448180977969" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="4876739376299305612" nodeInfo="nn">
+      <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="4876739376299305613" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="un0u.LogStatement" typeId="un0u.2356914237085017468" id="4876739376299305623" nodeInfo="ng">
+          <property name="logLevel" nameId="un0u.830334255848575723" value="DEBUG" />
+          <node role="exp" roleId="un0u.2356914237085088917" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4876739376299305634" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="Shutdown." />
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3989037348208998490" nodeInfo="ng">
     <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
@@ -2444,23 +2437,9 @@
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="variant" nameId="un0u.7782735571954932795" value="BABY" />
     <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
-    <node role="logger" roleId="un0u.3362854910565924927" type="un0u.MailLogger" typeId="un0u.3362854910565924249" id="6434208125136764348" nodeInfo="ng">
-      <node role="to" roleId="un0u.3362854910573696148" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764350" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="christian.winklmair@mpreis.at" />
-      </node>
-      <node role="from" roleId="un0u.3362854910573696150" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764352" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="kmsw@mpreis.at" />
-      </node>
-      <node role="subject" roleId="un0u.3362854910573696153" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764354" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Fehlermeldung KMSW-Batch" />
-      </node>
-      <node role="server" roleId="un0u.3362854910573856934" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764356" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="10.1.1.250" />
-      </node>
-    </node>
     <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="1637726519041589489" nodeInfo="ng">
       <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina.wws.KonditionsmanagementBatch" />
-      <property name="logLevel" nameId="un0u.830334255848344171" value="ERROR" />
+      <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
     </node>
   </root>
   <root type="un0u.ViewObject" typeId="un0u.5225022991485184063" id="6500961320733648238" nodeInfo="ig">
@@ -4160,35 +4139,10 @@
                 <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="6500961320733647477" nodeInfo="in">
                   <node role="elementType" roleId="tp2q.1151688676805" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2647181365808860700" nodeInfo="in" />
                 </node>
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6884946291587985307" nodeInfo="nn">
-                  <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6884946291587973537" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="6500961320733647479" nodeInfo="ng">
-                      <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7841632776554217439" resolveInfo="findAllRunningVertraege" />
-                      <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="1v76.346759792891204465" resolveInfo="VertragRepo" />
-                      <node role="sessionExpression" roleId="un0u.3262649880243657037" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6884946291588427605" nodeInfo="nn" />
-                    </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tp2q.WhereOperation" typeId="tp2q.1202120902084" id="6884946291587976426" nodeInfo="nn">
-                      <node role="closure" roleId="tp2q.1204796294226" type="tp2c.ClosureLiteral" typeId="tp2c.1199569711397" id="6884946291587976428" nodeInfo="nn">
-                        <node role="body" roleId="tp2c.1199569916463" type="tpee.StatementList" typeId="tpee.1068580123136" id="6884946291587976429" nodeInfo="sn">
-                          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6884946291587976438" nodeInfo="nn">
-                            <node role="expression" roleId="tpee.1068580123156" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="6884946291587979258" nodeInfo="nn">
-                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6884946291587983174" nodeInfo="nn">
-                                <property name="value" nameId="tpee.1068580320021" value="100440" />
-                              </node>
-                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.VariableReference" typeId="tpee.1068498886296" id="6884946291587976437" nodeInfo="nn">
-                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6884946291587976430" resolveInfo="it" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node role="parameter" roleId="tp2c.1199569906740" type="tp2q.SmartClosureParameterDeclaration" typeId="tp2q.1203518072036" id="6884946291587976430" nodeInfo="ig">
-                          <property name="name" nameId="tpck.1169194664001" value="it" />
-                          <node role="type" roleId="tpee.5680397130376446158" type="tpee.UndefinedType" typeId="tpee.4836112446988635817" id="6884946291587976431" nodeInfo="in" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node role="operation" roleId="tpee.1197027833540" type="tp2q.ToListOperation" typeId="tp2q.1151702311717" id="6884946291587987937" nodeInfo="nn" />
+                <node role="initializer" roleId="tpee.1068431790190" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="6500961320733647479" nodeInfo="ng">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7841632776554217439" resolveInfo="findAllRunningVertraege" />
+                  <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="1v76.346759792891204465" resolveInfo="VertragRepo" />
+                  <node role="sessionExpression" roleId="un0u.3262649880243657037" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="6884946291588427605" nodeInfo="nn" />
                 </node>
               </node>
             </node>
@@ -9660,6 +9614,40 @@
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="6434208125137504141" nodeInfo="ng">
         <property name="text" nameId="un0u.6525155817177697682" value="Verbucht die auf einem We-Beleg enthaltenen Positionen auf dem Umsatzkonto der Konditionen und der Lieferanten" />
       </node>
+    </node>
+  </root>
+  <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="4876739376297928401" nodeInfo="ng">
+    <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
+    <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//lola:1521/LOLA" />
+    <property name="name" nameId="tpck.1169194664001" value="BasisConfigurationBatch" />
+    <property name="username" nameId="un0u.8537348545916385360" value="KMSW" />
+    <property name="password" nameId="un0u.8537348545916385361" value="lola" />
+    <property name="maxPoolSize" nameId="un0u.3517052249650441955" value="1" />
+    <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
+    <property name="variant" nameId="un0u.7782735571954932795" value="BABY" />
+    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
+    <node role="logger" roleId="un0u.3362854910565924927" type="un0u.FileLogger" typeId="un0u.3362854910565924312" id="4876739376297928402" nodeInfo="ng">
+      <node role="fileName" roleId="un0u.3362854910573696144" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4876739376297928403" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="C:/Users/christianw/BatchLogs" />
+      </node>
+    </node>
+    <node role="logger" roleId="un0u.3362854910565924927" type="un0u.MailLogger" typeId="un0u.3362854910565924249" id="6434208125136764348" nodeInfo="ng">
+      <node role="to" roleId="un0u.3362854910573696148" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764350" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="christian.winklmair@mpreis.at" />
+      </node>
+      <node role="from" roleId="un0u.3362854910573696150" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764352" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="kmsw@mpreis.at" />
+      </node>
+      <node role="subject" roleId="un0u.3362854910573696153" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764354" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Fehlermeldung KMSW-Batch" />
+      </node>
+      <node role="server" roleId="un0u.3362854910573856934" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="6434208125136764356" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="10.1.1.250" />
+      </node>
+    </node>
+    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="4876739376297928404" nodeInfo="ng">
+      <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina.wws.KonditionsmanagementBatch" />
+      <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
     </node>
   </root>
 </model>

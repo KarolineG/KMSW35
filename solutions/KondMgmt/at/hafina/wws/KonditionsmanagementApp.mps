@@ -28,7 +28,7 @@
   <import index="8tpd" modelUID="r:a708151c-db77-44e8-9fa7-6f852fc8df10(at.hafina.wws.Rechnungspruefung)" version="-1" />
   <import index="2k0i" modelUID="r:c5d4da5d-b8fe-4540-a060-b6d7af258118(at.hafina.wws.Forderungsstellung)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
@@ -43,6 +43,7 @@
     <property name="maxPoolSize" nameId="un0u.3517052249650441955" value="1" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
+    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3989037348208998490" nodeInfo="ng">
     <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
@@ -170,7 +171,7 @@
       <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="7526723334961060005" nodeInfo="ng">
         <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="7526723334961060006" nodeInfo="ng">
           <link role="process" roleId="un0u.4419932786254844466" targetNodeId="6kvc.7841632776554165404" resolveInfo="BatchKmsw" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="6kvc.7841632776554179642" resolveInfo="Batchprozess starten" />
+          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="6kvc.7841632776554179642" resolveInfo="Batchprozess Umsatzberechnung starten" />
           <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7526723334961060008" nodeInfo="nn" />
           <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="7526723334961060009" nodeInfo="ng">
             <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="6kvc.6206991355457808640" resolveInfo="Datumseingabe" />
