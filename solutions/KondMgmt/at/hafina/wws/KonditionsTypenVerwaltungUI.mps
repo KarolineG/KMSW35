@@ -10,7 +10,7 @@
   <import index="c9yi" modelUID="r:775c0fa7-99cc-49ff-86b2-34796e752e4b(org.modellwerkstatt.forms.api)" version="1" />
   <import index="mma5" modelUID="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" version="1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="4" implicit="yes" />
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
@@ -182,12 +182,12 @@
         <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669470" nodeInfo="ng">
           <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
           <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415667074" resolveInfo="Forderungstyp ändern" />
+          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="3012906531667570601" nodeInfo="ng">
+            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+          </node>
           <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669471" nodeInfo="ng">
             <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415670104" resolveInfo="ForderungsTypFC" />
             <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415667075" resolveInfo="Edit" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415669472" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
           </node>
         </node>
       </node>
@@ -196,12 +196,12 @@
         <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669474" nodeInfo="ng">
           <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415667028" resolveInfo="Forderungssubtyp ändern" />
           <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
+          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="3012906531666656373" nodeInfo="ng">
+            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+          </node>
           <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669475" nodeInfo="ng">
             <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415670085" resolveInfo="ForderungsSubTypFC" />
             <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415667029" resolveInfo="Edit" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415669476" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
           </node>
         </node>
       </node>

@@ -17,14 +17,15 @@
   <import index="26n1" modelUID="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time(org.modellwerkstatt.manmap.solution/org.joda.time@java_stub)" version="-1" />
   <import index="ybr6" modelUID="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time.base(org.modellwerkstatt.manmap.solution/org.joda.time.base@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
+  <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" implicit="yes" />
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="3989037348208997806" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="UmbauNeuTankstelle" />
+    <property name="name" nameId="tpck.1169194664001" value="UmbauNeueroeffnung" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="3989037348208997807" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="UntTyp" />
@@ -39,12 +40,6 @@
         <property name="value" nameId="un0u.4533072425307715682" value="N" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Neueröffnung" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Neueröffnung" />
-      </node>
-      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="3989037348208997810" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Tankstelle" />
-        <property name="value" nameId="un0u.4533072425307715682" value="T" />
-        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Tankstelle" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Tankstelle" />
       </node>
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="3989037348208998737" nodeInfo="ng">
@@ -107,10 +102,55 @@
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Osttirol" />
       </node>
     </node>
+    <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="5856134677457235945" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="Vertriebslinie" />
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2578114784133134199" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Mpreis" />
+        <property name="value" nameId="un0u.4533072425307715682" value="MPR" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="MPREIS" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="MPREIS" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2578114784133134202" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Tankstelle" />
+        <property name="value" nameId="un0u.4533072425307715682" value="GUT" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Tankstelle" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Tankstelle" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2578114784133134200" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="TundG" />
+        <property name="value" nameId="un0u.4533072425307715682" value="TUG" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="T &amp; G" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="T &amp; G" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2578114784133134198" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="MiniM" />
+        <property name="value" nameId="un0u.4533072425307715682" value="MIM" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Mini M" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Mini M" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2578114784133134196" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Mitalia" />
+        <property name="value" nameId="un0u.4533072425307715682" value="ITL" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="M Italia" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="M Italia" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2578114784133134195" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Blumenmarkt" />
+        <property name="value" nameId="un0u.4533072425307715682" value="FLO" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Blumenhandel" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Blumenhandel" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2578114784133134194" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Baguette" />
+        <property name="value" nameId="un0u.4533072425307715682" value="BAG" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Baguette" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Baguette" />
+      </node>
+    </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3989037348208997879" nodeInfo="nn" />
     <node role="documentation2" roleId="un0u.5847590543402877731" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="4361990240948119276" nodeInfo="ng">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="4361990240948119277" nodeInfo="ng">
-        <property name="text" nameId="un0u.6525155817177697682" value="Erfassung von Neueröffnungen, Umbauten und Tankstellen" />
+        <property name="text" nameId="un0u.6525155817177697682" value="Erfassung von Neueröffnungen, Totalumbauten" />
       </node>
     </node>
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="3989037348208997880" nodeInfo="igu">
@@ -474,6 +514,30 @@
         <property name="value" nameId="tpee.1070475926801" value="Typ" />
       </node>
     </node>
+    <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5856134677457235266" nodeInfo="ig">
+      <property name="propertyName" nameId="tpee.1201371481316" value="vertriebslinie" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5856134677457235268" nodeInfo="nn" />
+      <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5856134677457235269" nodeInfo="ng">
+        <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5856134677457235270" nodeInfo="ng" />
+        <node role="defaultSetAccessor" roleId="tpee.1202078082794" type="tpee.DefaultSetAccessor" typeId="tpee.1202077725299" id="5856134677457235271" nodeInfo="ng">
+          <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5856134677457235273" nodeInfo="nn" />
+        </node>
+      </node>
+      <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677457235545" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Vertriebslinie" />
+      </node>
+      <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677457235547" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Vertriebslinie" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5856134677457235549" nodeInfo="ng">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5856134677457235550" nodeInfo="ng">
+          <property name="text" nameId="un0u.6525155817177697682" value="Vertriebslinie" />
+        </node>
+      </node>
+      <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5856134677457236031" nodeInfo="ig">
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5856134677457235945" resolveInfo="Vertriebslinie" />
+      </node>
+    </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3989037348208997849" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="filialNr" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3989037348208997850" nodeInfo="nn" />
@@ -825,27 +889,6 @@
                   </node>
                 </node>
               </node>
-              <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="3989037348208997926" nodeInfo="ng">
-                <node role="condition" roleId="tpee.1206060619838" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3989037348208997927" nodeInfo="nn">
-                  <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="3989037348208997928" nodeInfo="ng">
-                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3989037348208997807" resolveInfo="UntTyp" />
-                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3989037348208997810" resolveInfo="Tankstelle" />
-                  </node>
-                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3989037348208997929" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="3989037348208997930" nodeInfo="nn" />
-                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3989037348208997931" nodeInfo="nn">
-                      <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997842" />
-                    </node>
-                  </node>
-                </node>
-                <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="3989037348208997932" nodeInfo="sn">
-                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="3989037348208997933" nodeInfo="nn">
-                    <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3989037348208997934" nodeInfo="nn">
-                      <property name="value" nameId="tpee.1070475926801" value="TANK" />
-                    </node>
-                  </node>
-                </node>
-              </node>
               <node role="ifFalseStatement" roleId="tpee.1082485599094" type="tpee.BlockStatement" typeId="tpee.1082485599095" id="3989037348208997935" nodeInfo="nn">
                 <node role="statements" roleId="tpee.1082485599096" type="tpee.StatementList" typeId="tpee.1068580123136" id="3989037348208997936" nodeInfo="sn">
                   <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="3989037348208997937" nodeInfo="nn">
@@ -990,7 +1033,7 @@
     <node role="parameter" roleId="un0u.7192042020164640429" type="un0u.ContainerParameter" typeId="un0u.7192042020164640431" id="3989037348208998733" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="unt" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3989037348208998734" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
       </node>
     </node>
     <node role="creatorsAndViews" roleId="un0u.1881524139088097910" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="3989037348209007674" nodeInfo="ng">
@@ -1008,9 +1051,6 @@
     <node role="creatorsAndViews" roleId="un0u.1881524139088097910" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="2453866350712300090" nodeInfo="ng">
       <link role="command" roleId="un0u.1881524139087020879" targetNodeId="1905251065026851902" resolveInfo="Totalumbau erfassen" />
     </node>
-    <node role="creatorsAndViews" roleId="un0u.1881524139088097910" type="un0u.OnTriggerTransition" typeId="un0u.1881524139087047680" id="2453866350712300091" nodeInfo="ng">
-      <link role="command" roleId="un0u.1881524139087020879" targetNodeId="1905251065026851903" resolveInfo="Tankstelle erfassen" />
-    </node>
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="3989037348208998750" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Neueröffnung erfassen" />
@@ -1020,7 +1060,7 @@
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="2453866350712037218" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Neueröffnung editieren" />
-      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="2453866350712037223" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
@@ -1046,7 +1086,7 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3989037348209007627" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="3989037348209007630" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="3989037348209007631" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348208997880" resolveInfo="UmbauNeuTankstelle" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348208997880" resolveInfo="UmbauNeueroeffnung" />
               </node>
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546833" nodeInfo="ng">
@@ -1066,6 +1106,22 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2453866350712037269" nodeInfo="nn">
                 <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997842" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5856134677457236597" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5856134677457237411" nodeInfo="nn">
+            <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="5856134677457237443" nodeInfo="ng">
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5856134677457235945" resolveInfo="Vertriebslinie" />
+              <link role="element" roleId="un0u.1707329006119989962" targetNodeId="2578114784133134199" resolveInfo="Mpreis" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677457236664" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677457236596" nodeInfo="ng">
+                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677457237146" nodeInfo="nn">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="5856134677457235266" />
               </node>
             </node>
           </node>
@@ -1155,7 +1211,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889573591" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712037279" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="2453866350712037280" nodeInfo="ng">
-            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
+            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeueroeffnungRepo" />
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348209013621" resolveInfo="checkinUntEinheit" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546846" nodeInfo="ng">
               <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
@@ -1177,7 +1233,7 @@
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="9103376104371871827" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="filiale bearbeiten" />
-      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="8804209178907175331" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
@@ -1526,12 +1582,12 @@
               <property name="name" nameId="tpck.1169194664001" value="unts" />
               <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3243506821944268989" nodeInfo="in">
                 <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3243506821944268990" nodeInfo="in">
-                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+                  <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
                 </node>
               </node>
               <node role="initializer" roleId="tpee.1068431790190" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="3243506821944268991" nodeInfo="ng">
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348209013068" resolveInfo="findUntEinheiten" />
-                <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
+                <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeueroeffnungRepo" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="9103376104371759145" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="9103376104371759146" nodeInfo="ng">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209007666" resolveInfo="filialListeCriteria" />
@@ -1554,6 +1610,14 @@
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3243506821944884768" nodeInfo="nn">
                     <link role="property" roleId="tpee.1201385237847" targetNodeId="3243506821944818839" />
+                  </node>
+                </node>
+                <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677489244704" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="5856134677489243832" nodeInfo="ng">
+                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209007666" resolveInfo="filialListeCriteria" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677489245692" nodeInfo="nn">
+                    <link role="property" roleId="tpee.1201385237847" targetNodeId="5856134677489239944" />
                   </node>
                 </node>
                 <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3243506821944884774" nodeInfo="nn">
@@ -1692,11 +1756,24 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5856134677489989631" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5856134677489990739" nodeInfo="nn">
+            <node role="rValue" roleId="tpee.1068498886297" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="5856134677489991529" nodeInfo="nn" />
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677489990460" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="5856134677489989630" nodeInfo="ng">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209007666" resolveInfo="filialListeCriteria" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677489990714" nodeInfo="nn">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="5856134677489239944" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </root>
   <root type="un0u.ModelRepository" typeId="un0u.8009046666043401703" id="3989037348209013062" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="UmbauNeuTankstelleRepo" />
+    <property name="name" nameId="tpck.1169194664001" value="UmbauNeueroeffnungRepo" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="MAP" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3989037348209013063" nodeInfo="nn" />
     <node role="member" roleId="tpee.5375687026011219971" type="un0u.ModelRepositoryMethod" typeId="un0u.8009046666043401704" id="3989037348209013068" nodeInfo="igu">
@@ -1710,7 +1787,7 @@
             <property name="name" nameId="tpck.1169194664001" value="untEinheiten" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3989037348209013110" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3989037348209013112" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
               </node>
             </node>
           </node>
@@ -1731,50 +1808,63 @@
                       <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="6159375316625519804" />
                     </node>
                   </node>
-                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3500752603055775756" nodeInfo="nn">
-                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3500752603055700845" nodeInfo="nn">
-                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3500752603055623506" nodeInfo="nn">
-                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.GreaterThanOrEqualsExpression" typeId="tpee.1153417849900" id="3500752603055623507" nodeInfo="nn">
-                          <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="3500752603055623508" nodeInfo="ng">
-                            <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
-                            <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041584" />
-                          </node>
-                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360416267" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013074" resolveInfo="fromDatum" />
-                          </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="5856134677489241893" nodeInfo="nn">
+                    <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="5856134677489241949" nodeInfo="ng">
+                      <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5856134677489243748" nodeInfo="nn">
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="5856134677489243815" nodeInfo="nn">
+                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5856134677489243788" resolveInfo="vli" />
                         </node>
-                        <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="6299401094195526725" nodeInfo="ng">
-                          <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.LessThanOrEqualsExpression" typeId="tpee.1153422305557" id="891173884600633167" nodeInfo="nn">
-                            <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="891173884600633168" nodeInfo="ng">
-                              <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041584" />
-                              <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
-                            </node>
-                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360416096" nodeInfo="nn">
-                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5388256980440388476" resolveInfo="toDatum" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="3500752603055700849" nodeInfo="ng">
-                        <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3500752603055700861" nodeInfo="nn">
-                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360416011" nodeInfo="nn">
-                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013076" resolveInfo="typ" />
-                          </node>
-                          <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="3500752603055700852" nodeInfo="ng">
-                            <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041588" />
-                            <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
-                          </node>
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="5856134677489241964" nodeInfo="ng">
+                          <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
+                          <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5856134677457242616" />
                         </node>
                       </node>
                     </node>
-                    <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="1905251065026851828" nodeInfo="ng">
-                      <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="1905251065026851837" nodeInfo="nn">
-                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360414522" nodeInfo="nn">
-                          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013080" resolveInfo="status" />
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3500752603055775756" nodeInfo="nn">
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3500752603055700845" nodeInfo="nn">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3500752603055623506" nodeInfo="nn">
+                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.GreaterThanOrEqualsExpression" typeId="tpee.1153417849900" id="3500752603055623507" nodeInfo="nn">
+                            <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="3500752603055623508" nodeInfo="ng">
+                              <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
+                              <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041584" />
+                            </node>
+                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360416267" nodeInfo="nn">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013074" resolveInfo="fromDatum" />
+                            </node>
+                          </node>
+                          <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="6299401094195526725" nodeInfo="ng">
+                            <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.LessThanOrEqualsExpression" typeId="tpee.1153422305557" id="891173884600633167" nodeInfo="nn">
+                              <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="891173884600633168" nodeInfo="ng">
+                                <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041584" />
+                                <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
+                              </node>
+                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360416096" nodeInfo="nn">
+                                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5388256980440388476" resolveInfo="toDatum" />
+                              </node>
+                            </node>
+                          </node>
                         </node>
-                        <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="1905251065026851830" nodeInfo="ng">
-                          <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="3989037348209013560" />
-                          <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="3500752603055700849" nodeInfo="ng">
+                          <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="3500752603055700861" nodeInfo="nn">
+                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360416011" nodeInfo="nn">
+                              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013076" resolveInfo="typ" />
+                            </node>
+                            <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="3500752603055700852" nodeInfo="ng">
+                              <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041588" />
+                              <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="1905251065026851828" nodeInfo="ng">
+                        <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="1905251065026851837" nodeInfo="nn">
+                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360414522" nodeInfo="nn">
+                            <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013080" resolveInfo="status" />
+                          </node>
+                          <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="1905251065026851830" nodeInfo="ng">
+                            <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="3989037348209013560" />
+                            <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -1824,7 +1914,7 @@
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3989037348209013071" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3989037348209013073" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3989037348209013074" nodeInfo="ir">
@@ -1843,6 +1933,12 @@
         <property name="name" nameId="tpck.1169194664001" value="typ" />
         <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="3989037348209013079" nodeInfo="ig">
           <link role="status" roleId="un0u.6600213247848012755" targetNodeId="3989037348208997807" resolveInfo="UntTyp" />
+        </node>
+      </node>
+      <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="5856134677489243788" nodeInfo="ir">
+        <property name="name" nameId="tpck.1169194664001" value="vli" />
+        <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5856134677489243800" nodeInfo="ig">
+          <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5856134677457235945" resolveInfo="Vertriebslinie" />
         </node>
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3989037348209013080" nodeInfo="ir">
@@ -1923,7 +2019,7 @@
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tp2q.ListType" typeId="tp2q.1151688443754" id="891173884600209356" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="891173884600209358" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
         </node>
       </node>
     </node>
@@ -1936,7 +2032,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="3989037348209013604" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="untEinheit" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3989037348209013605" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
             </node>
           </node>
         </node>
@@ -1963,7 +2059,7 @@
         </node>
       </node>
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3989037348209013598" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
       </node>
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3989037348209013599" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="id" />
@@ -1986,7 +2082,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3989037348209013625" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="untEinheit" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3989037348209013627" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
         </node>
       </node>
     </node>
@@ -2006,7 +2102,7 @@
       <node role="parameter" roleId="tpee.1068580123134" type="tpee.ParameterDeclaration" typeId="tpee.1068498886292" id="3989037348209013639" nodeInfo="ir">
         <property name="name" nameId="tpck.1169194664001" value="untEinheit" />
         <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3989037348209013640" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
         </node>
       </node>
     </node>
@@ -2015,20 +2111,20 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="MAP" />
     <node role="persistenceMapping" roleId="r5tz.871579071900209328" type="r5tz.EntityMapping" typeId="r5tz.871579071900209258" id="1833852648258041573" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MapUmbauNeuTankstelle" />
-      <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+      <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041574" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="KM_UNT_EH_NEU" />
+        <property name="value" nameId="tpee.1070475926801" value="KM_UNT_EH" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.OptimisticOption" typeId="r5tz.774207833082448725" id="1833852648258041575" nodeInfo="ng" />
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="1833852648258041576" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="3989037348208997812" resolveInfo="id" />
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041577" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="KEY_UNT" />
+          <property name="value" nameId="tpee.1070475926801" value="KEY_UNT_EH" />
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1833852648258041578" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="1833852648258041579" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041580" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="S_KM_UNT_EH_NEU" />
+            <property name="value" nameId="tpee.1070475926801" value="S_KM_UNT_EH" />
           </node>
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.NotnullOption" typeId="r5tz.774207833082557430" id="1833852648258041581" nodeInfo="ng" />
@@ -2061,6 +2157,16 @@
           <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
         </node>
       </node>
+      <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="5856134677457242616" nodeInfo="ng">
+        <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5856134677457235266" />
+        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.SizeOption" typeId="r5tz.774207833082557411" id="5856134677457242658" nodeInfo="ng">
+          <property name="value" nameId="r5tz.774207833082557412" value="3" />
+          <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
+        </node>
+        <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677457242617" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="KZ_VLI" />
+        </node>
+      </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="1833852648258041590" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="3989037348208997849" resolveInfo="filialNr" />
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041591" nodeInfo="nn">
@@ -2077,7 +2183,7 @@
           <property name="value" nameId="tpee.1070475926801" value="TXT_ORT" />
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.SizeOption" typeId="r5tz.774207833082557411" id="3243506821945090407" nodeInfo="ng">
-          <property name="value" nameId="r5tz.774207833082557412" value="20" />
+          <property name="value" nameId="r5tz.774207833082557412" value="40" />
           <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
         </node>
       </node>
@@ -2133,7 +2239,7 @@
       </node>
     </node>
     <node role="entityReference" roleId="r5tz.871579071900209323" type="r5tz.EntityReference" typeId="r5tz.871579071900209276" id="3243506821944544486" nodeInfo="ng">
-      <link role="classConcept" roleId="r5tz.871579071900209277" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+      <link role="classConcept" roleId="r5tz.871579071900209277" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
     </node>
   </root>
   <root type="un0u.ViewObject" typeId="un0u.5225022991485184063" id="3243506821944818837" nodeInfo="ig">
@@ -2173,6 +2279,27 @@
       </node>
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379185" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Typ" />
+      </node>
+    </node>
+    <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5856134677489239944" nodeInfo="ig">
+      <property name="propertyName" nameId="tpee.1201371481316" value="vli" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5856134677489239946" nodeInfo="nn" />
+      <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5856134677489239947" nodeInfo="ng">
+        <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5856134677489239948" nodeInfo="ng" />
+        <node role="defaultSetAccessor" roleId="tpee.1202078082794" type="tpee.DefaultSetAccessor" typeId="tpee.1202077725299" id="5856134677489239949" nodeInfo="ng">
+          <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5856134677489239951" nodeInfo="nn" />
+        </node>
+      </node>
+      <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5856134677489240016" nodeInfo="ig">
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5856134677457235945" resolveInfo="Vertriebslinie" />
+      </node>
+      <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677489240018" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Vertriebslinie" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5856134677489240020" nodeInfo="ng">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5856134677489240021" nodeInfo="ng">
+          <property name="text" nameId="un0u.6525155817177697682" value="Vertriebslinie" />
+        </node>
       </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3243506821944818846" nodeInfo="ig">
@@ -2262,7 +2389,7 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3243506821944818873" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7967778343314807880" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
         </node>
       </node>
       <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953341" nodeInfo="ng">
@@ -2296,7 +2423,7 @@
     </node>
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="5388256980440577390" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="filiale anzeigen" />
-      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="2453866350711486731" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="COMMIT_SESSION_CONCLUSION" />
@@ -2312,7 +2439,7 @@
           <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="1905251065026851847" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="1905251065026851851" nodeInfo="nn">
               <node role="rValue" roleId="tpee.1068498886297" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="1905251065026851854" nodeInfo="ng">
-                <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
+                <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeueroeffnungRepo" />
                 <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348209013595" resolveInfo="checkoutUntEinheit" />
                 <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="8375946850160104872" nodeInfo="ng">
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8375946850160083130" resolveInfo="idUnt" />
@@ -2422,6 +2549,146 @@
           </node>
         </node>
       </node>
+      <node role="dynamicPageTitle" roleId="un0u.8413087471126127955" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490900008" nodeInfo="nn">
+        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490443837" nodeInfo="nn">
+          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490907848" nodeInfo="nn">
+            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490907851" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value=")" />
+            </node>
+            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490905455" nodeInfo="nn">
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490904485" nodeInfo="nn">
+                <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490903075" nodeInfo="nn">
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490902143" nodeInfo="nn">
+                    <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490441793" nodeInfo="nn">
+                      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490896987" nodeInfo="nn">
+                        <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490908754" nodeInfo="nn">
+                          <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490910375" nodeInfo="nn">
+                            <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490910393" nodeInfo="nn">
+                              <property name="value" nameId="tpee.1070475926801" value=" " />
+                            </node>
+                            <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677490899120" nodeInfo="nn">
+                              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490899131" nodeInfo="nn">
+                                <property name="value" nameId="tpee.1070475926801" value="" />
+                              </node>
+                              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677491602643" nodeInfo="nn">
+                                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677490897471" nodeInfo="nn">
+                                  <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677490896994" nodeInfo="ng">
+                                    <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                                  </node>
+                                  <node role="operation" roleId="tpee.1197027833540" type="un0u.BPMetaReference" typeId="un0u.1410680821326658964" id="5856134677491601743" nodeInfo="ng">
+                                    <link role="businessProperty" roleId="un0u.1410680821326658966" targetNodeId="3989037348208997842" />
+                                  </node>
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5856134677491604365" nodeInfo="nn">
+                                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="28jr.3693325157571911615" resolveInfo="getShortText" />
+                                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677491604379" nodeInfo="nn">
+                                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677491604380" nodeInfo="ng">
+                                      <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                                    </node>
+                                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677491605311" nodeInfo="nn">
+                                      <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997842" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677491607300" nodeInfo="nn">
+                            <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677490909355" nodeInfo="nn">
+                              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677490908772" nodeInfo="ng">
+                                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                              </node>
+                              <node role="operation" roleId="tpee.1197027833540" type="un0u.BPMetaReference" typeId="un0u.1410680821326658964" id="5856134677491606373" nodeInfo="ng">
+                                <link role="businessProperty" roleId="un0u.1410680821326658966" targetNodeId="5856134677457235266" />
+                              </node>
+                            </node>
+                            <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5856134677491609073" nodeInfo="nn">
+                              <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="28jr.3693325157571911615" resolveInfo="getShortText" />
+                              <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677491609127" nodeInfo="nn">
+                                <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677491609075" nodeInfo="ng">
+                                  <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                                </node>
+                                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677491609623" nodeInfo="nn">
+                                  <link role="property" roleId="tpee.1201385237847" targetNodeId="5856134677457235266" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490441794" nodeInfo="nn">
+                          <property name="value" nameId="tpee.1070475926801" value="-Filiale " />
+                        </node>
+                      </node>
+                      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677490441795" nodeInfo="nn">
+                        <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677490441796" nodeInfo="ng">
+                          <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                        </node>
+                        <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677490441797" nodeInfo="nn">
+                          <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997849" />
+                        </node>
+                      </node>
+                    </node>
+                    <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490902173" nodeInfo="nn">
+                      <property name="value" nameId="tpee.1070475926801" value=" " />
+                    </node>
+                  </node>
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677490444954" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677490444499" nodeInfo="ng">
+                      <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677490445860" nodeInfo="nn">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997856" />
+                    </node>
+                  </node>
+                </node>
+                <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490904527" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value=" (" />
+                </node>
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677491611065" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677490906054" nodeInfo="nn">
+                  <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677490905499" nodeInfo="ng">
+                    <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                  </node>
+                  <node role="operation" roleId="tpee.1197027833540" type="un0u.BPMetaReference" typeId="un0u.1410680821326658964" id="5856134677491610111" nodeInfo="ng">
+                    <link role="businessProperty" roleId="un0u.1410680821326658966" targetNodeId="1494795701711922310" />
+                  </node>
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5856134677491612895" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="28jr.3693325157571911615" resolveInfo="getShortText" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677491612949" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677491612897" nodeInfo="ng">
+                      <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+                    </node>
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677491613213" nodeInfo="nn">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="1494795701711922310" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490443855" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value=", am " />
+          </node>
+        </node>
+        <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677490900064" nodeInfo="nn">
+          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677490900065" nodeInfo="nn">
+            <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677490900066" nodeInfo="ng">
+              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+            </node>
+            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677490900067" nodeInfo="nn">
+              <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997828" />
+            </node>
+          </node>
+          <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="5856134677490900068" nodeInfo="nn">
+            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="26n1.~LocalDate%dtoString(java%dlang%dString)%cjava%dlang%dString" resolveInfo="toString" />
+            <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677490900069" nodeInfo="nn">
+              <property name="value" nameId="tpee.1070475926801" value="dd.MM.yyyy" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="icon" roleId="un0u.6185198504743118463" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="5388256980440577359" nodeInfo="nn">
       <link role="classifier" roleId="tpee.1144433057691" targetNodeId="mma5.651453175762553938" resolveInfo="HafinaDefaults" />
@@ -2431,7 +2698,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889573584" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6188112537889573587" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="2453866350712633974" nodeInfo="ng">
-            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
+            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeueroeffnungRepo" />
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348209013621" resolveInfo="checkinUntEinheit" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="8375946850160083146" nodeInfo="ng">
               <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
@@ -2445,6 +2712,19 @@
         <property name="text" nameId="un0u.6525155817177697682" value="Öffnet die gewählte Filiale und zeigt alle mit ihr verbundenen Forderungen an" />
       </node>
     </node>
+    <node role="titleAddOn" roleId="un0u.3748648354049763742" type="tpee.PlusExpression" typeId="tpee.1068581242875" id="5856134677508994076" nodeInfo="nn">
+      <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5856134677492071186" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Filiale " />
+      </node>
+      <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677492069010" nodeInfo="nn">
+        <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677492068311" nodeInfo="ng">
+          <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+        </node>
+        <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677492071154" nodeInfo="nn">
+          <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997849" />
+        </node>
+      </node>
+    </node>
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="1905251065026851902" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Totalumbau erfassen" />
@@ -2454,7 +2734,7 @@
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="2453866350712300021" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Totalumbau editieren" />
-      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
       <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="2453866350712300022" nodeInfo="ng">
         <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
         <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
@@ -2480,7 +2760,7 @@
           <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2453866350712299981" nodeInfo="nn">
             <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2453866350712299982" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="2453866350712299983" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348208997880" resolveInfo="UmbauNeuTankstelle" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348208997880" resolveInfo="UmbauNeueroeffnung" />
               </node>
             </node>
             <node role="lValue" roleId="tpee.1068498886295" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546839" nodeInfo="ng">
@@ -2500,6 +2780,22 @@
               </node>
               <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2453866350712299990" nodeInfo="nn">
                 <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997842" resolveInfo="untTyp" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="5856134677457237857" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="5856134677457238863" nodeInfo="nn">
+            <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="5856134677457238895" nodeInfo="ng">
+              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5856134677457235945" resolveInfo="Vertriebslinie" />
+              <link role="element" roleId="un0u.1707329006119989962" targetNodeId="2578114784133134199" resolveInfo="Mpreis" />
+            </node>
+            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5856134677457238112" nodeInfo="nn">
+              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="5856134677457237856" nodeInfo="ng">
+                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
+              </node>
+              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5856134677457238594" nodeInfo="nn">
+                <link role="property" roleId="tpee.1201385237847" targetNodeId="5856134677457235266" />
               </node>
             </node>
           </node>
@@ -2589,7 +2885,7 @@
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889573598" nodeInfo="sn">
         <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300025" nodeInfo="nn">
           <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="2453866350712300026" nodeInfo="ng">
-            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
+            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeueroeffnungRepo" />
             <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348209013621" resolveInfo="checkinUntEinheit" />
             <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546845" nodeInfo="ng">
               <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
@@ -2601,165 +2897,6 @@
     <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912220" nodeInfo="ng">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912221" nodeInfo="ng">
         <property name="text" nameId="un0u.6525155817177697682" value="Legt eine Neueröffnung einer Filiale nach einem Totalumbau an" />
-      </node>
-    </node>
-  </root>
-  <root type="un0u.Command" typeId="un0u.7192042020163999178" id="1905251065026851903" nodeInfo="ng">
-    <property name="name" nameId="tpck.1169194664001" value="Tankstelle erfassen" />
-    <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
-    <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
-    <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
-    <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="2453866350712300074" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="Tankstelle editieren" />
-      <link role="boundClass" roleId="un0u.4152417163565704942" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
-      <node role="conclusion" roleId="un0u.1881524139084590837" type="un0u.PageConclusion" typeId="un0u.1881524139084590827" id="2453866350712300075" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="Speichern &amp; Beenden" />
-        <property name="conclusionType" nameId="un0u.1881524139085356503" value="SAVE_CONCLUSION" />
-        <property name="hotkey" nameId="un0u.5725201540142890812" value="NONE" />
-        <node role="function" roleId="un0u.1881524139085091981" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="2453866350712300076" nodeInfo="ng">
-          <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2453866350712300077" nodeInfo="sn">
-            <node role="statement" roleId="tpee.1068581517665" type="un0u.DoneCommand" typeId="un0u.1881524139085552751" id="2453866350712300081" nodeInfo="ng" />
-          </node>
-        </node>
-      </node>
-      <node role="pageInit" roleId="un0u.1881524139084590808" type="un0u.PageInitConceptFunc" typeId="un0u.6525155817176738379" id="2453866350712300086" nodeInfo="ng">
-        <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2453866350712300087" nodeInfo="sn">
-          <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300088" nodeInfo="nn">
-            <node role="expression" roleId="tpee.1068580123156" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546852" nodeInfo="ng">
-              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="commandInit" roleId="un0u.7192042020164579739" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="2453866350712300039" nodeInfo="ng">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="2453866350712300040" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300041" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2453866350712300042" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="2453866350712300043" nodeInfo="nn">
-              <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="2453866350712300044" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348208997880" resolveInfo="UmbauNeuTankstelle" />
-              </node>
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546847" nodeInfo="ng">
-              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300046" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2453866350712300047" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="2453866350712300048" nodeInfo="ng">
-              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3989037348208997807" resolveInfo="UntTyp" />
-              <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3989037348208997810" resolveInfo="Tankstelle" />
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2453866350712300049" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546848" nodeInfo="ng">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2453866350712300051" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997842" resolveInfo="untTyp" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300052" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2453866350712300053" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="un0u.DateLiteral" typeId="un0u.569389511234497391" id="6497286539890190371" nodeInfo="ng">
-              <property name="day" nameId="un0u.569389511234497410" value="0" />
-              <property name="month" nameId="un0u.569389511234497409" value="0" />
-              <property name="year" nameId="un0u.569389511234497408" value="0" />
-              <property name="fromServer" nameId="un0u.569389511234497411" value="true" />
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2453866350712300055" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546849" nodeInfo="ng">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2453866350712300057" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997821" resolveInfo="datumAnlage" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300058" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2453866350712300059" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="2453866350712300060" nodeInfo="ng">
-              <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3989037348208998739" resolveInfo="Angelegt" />
-              <link role="status" roleId="un0u.4533072425307838444" targetNodeId="3989037348208998737" resolveInfo="UntStatus" />
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2453866350712300061" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546850" nodeInfo="ng">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2453866350712300063" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208998742" resolveInfo="untStatus" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300064" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="2453866350712300065" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2453866350712300066" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="0" />
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2453866350712300067" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546851" nodeInfo="ng">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2453866350712300069" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="3989037348208997864" resolveInfo="verbucht" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6159375316625519902" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6159375316625519940" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6159375316625519943" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="0" />
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6159375316625519918" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="6159375316625519903" nodeInfo="ng">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="6159375316625519924" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="6159375316625478521" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="6159375316625519945" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="6159375316625519983" nodeInfo="nn">
-            <node role="rValue" roleId="tpee.1068498886297" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6159375316625519986" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="0" />
-            </node>
-            <node role="lValue" roleId="tpee.1068498886295" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6159375316625519961" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="6159375316625519946" nodeInfo="ng">
-                <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="6159375316625519967" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="6159375316625478491" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6188112537889573593" nodeInfo="ng">
-      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6188112537889573594" nodeInfo="sn">
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="2453866350712300078" nodeInfo="nn">
-          <node role="expression" roleId="tpee.1068580123156" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="2453866350712300079" nodeInfo="ng">
-            <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
-            <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348209013621" resolveInfo="checkinUntEinheit" />
-            <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ProcessDocumentReference" typeId="un0u.1881524139088778970" id="2453866350712546853" nodeInfo="ng">
-              <link role="processDocument" roleId="un0u.1881524139088778971" targetNodeId="3989037348208998733" resolveInfo="unt" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912216" nodeInfo="ng">
-      <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912217" nodeInfo="ng">
-        <property name="text" nameId="un0u.6525155817177697682" value="Legt eine Neueröffnung einer Tankstelle an" />
       </node>
     </node>
   </root>
@@ -4140,6 +4277,12 @@
         <link role="status" roleId="un0u.6600213247848012755" targetNodeId="3989037348208997807" resolveInfo="UntTyp" />
       </node>
     </node>
+    <node role="parameter" roleId="un0u.7192042020164640429" type="un0u.ContainerParameter" typeId="un0u.7192042020164640431" id="5856134677489245887" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="vli" />
+      <node role="type" roleId="tpee.5680397130376446158" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5856134677489245897" nodeInfo="ig">
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5856134677457235945" resolveInfo="Vertriebslinie" />
+      </node>
+    </node>
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="3500752603055271918" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="forderungsSummenAnzeigen" />
       <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3500752603055271920" nodeInfo="in">
@@ -4247,11 +4390,11 @@
             <property name="name" nameId="tpck.1169194664001" value="untListe" />
             <node role="type" roleId="tpee.5680397130376446158" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3500752603055543177" nodeInfo="in">
               <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3500752603055543179" nodeInfo="in">
-                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+                <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
               </node>
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="3500752603055543185" nodeInfo="ng">
-              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
+              <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="3989037348209013062" resolveInfo="UmbauNeueroeffnungRepo" />
               <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="3989037348209013068" resolveInfo="findUntEinheiten" />
               <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="3500752603055543192" nodeInfo="ng">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3500752603055271926" resolveInfo="fromDate" />
@@ -4261,6 +4404,9 @@
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="3918017161318881300" nodeInfo="ng">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3918017161318873295" resolveInfo="typ" />
+              </node>
+              <node role="actualArgument" roleId="tpee.1068499141038" type="un0u.ContainerParamReference" typeId="un0u.7192042020165155254" id="5856134677489245906" nodeInfo="ng">
+                <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5856134677489245887" resolveInfo="vli" />
               </node>
               <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="3500752603055543204" nodeInfo="nn" />
             </node>
@@ -4706,7 +4852,7 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tp2q.ListType" typeId="tp2q.1151688443754" id="3500752603055257792" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="3500752603055257794" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeuTankstelle" />
+          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="3989037348208997806" resolveInfo="UmbauNeueroeffnung" />
         </node>
       </node>
       <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823953369" nodeInfo="ng">

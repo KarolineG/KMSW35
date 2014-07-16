@@ -835,6 +835,7 @@
     </node>
   </root>
   <root type="r5tz.PersistenceDescription" typeId="r5tz.871579071900124823" id="9143642913023246352" nodeInfo="ng">
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="MAP" />
     <node role="persistenceMapping" roleId="r5tz.871579071900209328" type="r5tz.EntityMapping" typeId="r5tz.871579071900209258" id="9143642913023246355" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="MapEkMitarbFunktionen" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="9143642913023241087" resolveInfo="EkMitarbFunktionen" />

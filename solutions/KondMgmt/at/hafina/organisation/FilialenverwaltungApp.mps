@@ -15,11 +15,11 @@
   <import index="o9h8" modelUID="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" version="-1" />
   <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998718" nodeInfo="ig">
-    <property name="name" nameId="tpck.1169194664001" value="UmbauNeubauTankstelleApp" />
+    <property name="name" nameId="tpck.1169194664001" value="UmbauNeueroeffnungenApp" />
     <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement für Neueröffnungen V1.0" />
     <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3955449600776371260" resolveInfo="BasisConfigurationUntTest" />
     <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="3243506821944818833" nodeInfo="ng">
@@ -56,17 +56,6 @@
         <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="708430027535130661" nodeInfo="nn" />
         <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="708430027535130662" nodeInfo="ng">
           <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="h02c.2453866350712300021" resolveInfo="Totalumbau editieren" />
-          <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="tqei.1905251065026497071" resolveInfo="FilialeBearbeitenFC" />
-        </node>
-      </node>
-    </node>
-    <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="708430027535130663" nodeInfo="ng">
-      <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="708430027535130664" nodeInfo="ng">
-        <link role="process" roleId="un0u.4419932786254844466" targetNodeId="h02c.3989037348208998732" resolveInfo="Filialenverwaltung" />
-        <link role="command" roleId="un0u.4419932786254844467" targetNodeId="h02c.1905251065026851903" resolveInfo="Tankstelle erfassen" />
-        <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="708430027535130665" nodeInfo="nn" />
-        <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="708430027535130666" nodeInfo="ng">
-          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="h02c.2453866350712300074" resolveInfo="Tankstelle editieren" />
           <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="tqei.1905251065026497071" resolveInfo="FilialeBearbeitenFC" />
         </node>
       </node>
@@ -252,6 +241,7 @@
     <property name="password" nameId="un0u.8537348545916385361" value="KMSW" />
     <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
+    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3955449600776371260" nodeInfo="ng">
     <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
@@ -263,6 +253,11 @@
     <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="variant" nameId="un0u.7782735571954932795" value="BABY" />
+    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
+    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="3479891661944635095" nodeInfo="ng">
+      <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
+      <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina" />
+    </node>
   </root>
 </model>
 

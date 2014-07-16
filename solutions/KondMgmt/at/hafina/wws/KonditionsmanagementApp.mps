@@ -55,6 +55,7 @@
     <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="variant" nameId="un0u.7782735571954932795" value="BABY" />
+    <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
     <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="3479891661944635095" nodeInfo="ng">
       <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
       <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina" />
@@ -337,7 +338,7 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7532131406340959948" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="repo6" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7532131406340959949" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="h02c.3989037348209013062" resolveInfo="UmbauNeuTankstelleRepo" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="h02c.3989037348209013062" resolveInfo="UmbauNeueroeffnungRepo" />
             </node>
           </node>
         </node>
