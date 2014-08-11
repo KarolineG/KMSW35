@@ -8,7 +8,7 @@
   <language namespace="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" />
   <language-engaged-on-generation namespace="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
@@ -17,6 +17,31 @@
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="2578114784133151242" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Mitarbeiter" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
+    <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="2391590465208310347" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="StatusMaAktiv" />
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2391590465208310349" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="nein" />
+        <property name="value" nameId="un0u.4533072425307715682" value="0" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="nein" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="nein" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2391590465208310351" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2391590465208310352" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="nicht aktiv" />
+          </node>
+        </node>
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2391590465208310355" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="ja" />
+        <property name="value" nameId="un0u.4533072425307715682" value="1" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="ja" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="ja" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2391590465208310360" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2391590465208310361" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="aktiv" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133151247" nodeInfo="nn" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2578114784133151243" nodeInfo="igu">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2578114784133151244" nodeInfo="in" />
@@ -201,6 +226,30 @@
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2578114784133151254" nodeInfo="in" />
       <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="2578114784133151255" nodeInfo="ng" />
     </node>
+    <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2391590465208310775" nodeInfo="ig">
+      <property name="propertyName" nameId="tpee.1201371481316" value="isMaAktiv" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2391590465208310777" nodeInfo="nn" />
+      <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="2391590465208310778" nodeInfo="ng">
+        <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="2391590465208310779" nodeInfo="ng" />
+        <node role="defaultSetAccessor" roleId="tpee.1202078082794" type="tpee.DefaultSetAccessor" typeId="tpee.1202077725299" id="2391590465208310780" nodeInfo="ng">
+          <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2391590465208310782" nodeInfo="nn" />
+        </node>
+      </node>
+      <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="2391590465208310882" nodeInfo="ig">
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="2391590465208310347" resolveInfo="StatusMaAktiv" />
+      </node>
+      <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2391590465208310884" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="MA aktiv" />
+      </node>
+      <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2391590465208310886" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Mitarbeiter aktiv" />
+      </node>
+      <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2391590465208311308" nodeInfo="ng">
+        <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2391590465208311309" nodeInfo="ng">
+          <property name="text" nameId="un0u.6525155817177697682" value="Mitarbeiter aktiv (angestellt)" />
+        </node>
+      </node>
+    </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133151258" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="userID" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133151259" nodeInfo="nn" />
@@ -363,7 +412,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapMitarbeiter" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151242" resolveInfo="Mitarbeiter" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332582" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332583" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151248" />
@@ -372,6 +421,17 @@
         </node>
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="3687014260077332585" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.NotnullOption" typeId="r5tz.774207833082557430" id="3687014260077332588" nodeInfo="ng" />
+      </node>
+      <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="2391590465208311359" nodeInfo="ng">
+        <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2391590465208310775" />
+        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.SizeOption" typeId="r5tz.774207833082557411" id="2391590465208311824" nodeInfo="ng">
+          <property name="value" nameId="r5tz.774207833082557412" value="1" />
+          <property name="decvalue" nameId="r5tz.774207833082557413" value="0" />
+        </node>
+        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.NotnullOption" typeId="r5tz.774207833082557430" id="2391590465208311830" nodeInfo="ng" />
+        <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2391590465208311360" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="BOOL_AKTIV" />
+        </node>
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332589" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151258" />
@@ -476,7 +536,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapAppManager" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2078185796870049952" resolveInfo="MitarbeiterAppRechte" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2078185796870051297" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="2078185796870051300" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="4943983682752418081" />

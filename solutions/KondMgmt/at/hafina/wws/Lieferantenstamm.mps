@@ -8,18 +8,161 @@
   <language-engaged-on-generation namespace="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
   <import index="epq1" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="2578114784133151121" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Lieferant" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
+    <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="5727972897538678205" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="SteuerZone" />
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538678207" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Inland" />
+        <property name="value" nameId="un0u.4533072425307715682" value="INL" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Inland" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Inland" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538678209" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538678210" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Versteuerung in Österreich" />
+          </node>
+        </node>
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538678213" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Emu" />
+        <property name="value" nameId="un0u.4533072425307715682" value="EMU" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Emu" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Innergemeinschaftlich" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538678218" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538678219" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Innergemeinschaftliche Versteuerung" />
+          </node>
+        </node>
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538678222" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Drittland" />
+        <property name="value" nameId="un0u.4533072425307715682" value="WLD" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Drittland" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Drittland" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538678246" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538678247" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Außergemeinschaftliche Versteuerung" />
+          </node>
+        </node>
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538678250" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Schweiz" />
+        <property name="value" nameId="un0u.4533072425307715682" value="CH1" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Schweiz" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Schweiz" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538678261" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538678262" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Schweiz" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133151126" nodeInfo="nn" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2578114784133151122" nodeInfo="igu">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2578114784133151123" nodeInfo="in" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133151124" nodeInfo="nn" />
       <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="2578114784133151125" nodeInfo="sn" />
+    </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5727972897538691456" nodeInfo="ngu" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5727972897538691524" nodeInfo="igu">
+      <property name="name" nameId="tpck.1169194664001" value="isLieferantInland" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5727972897538691525" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5727972897538691526" nodeInfo="nn" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5727972897538691527" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5727972897538691528" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="5727972897538691529" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1079359253376" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5727972897538691530" nodeInfo="nn">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="5727972897538691531" nodeInfo="ng">
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5727972897538678205" resolveInfo="SteuerZone" />
+                <link role="element" roleId="un0u.1707329006119989962" targetNodeId="5727972897538678207" resolveInfo="Inland" />
+              </node>
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5727972897538691532" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5727972897538691533" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5727972897538691534" nodeInfo="nn">
+                  <link role="property" roleId="tpee.1201385237847" targetNodeId="5727972897538678064" resolveInfo="steuerZone" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5727972897538691473" nodeInfo="ngu" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5727972897538677430" nodeInfo="igu">
+      <property name="name" nameId="tpck.1169194664001" value="isLieferantEmu" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5727972897538677444" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5727972897538677433" nodeInfo="nn" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5727972897538677434" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5727972897538678272" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="5727972897538680289" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1079359253376" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5727972897538680290" nodeInfo="nn">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="5727972897538680291" nodeInfo="ng">
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5727972897538678205" resolveInfo="SteuerZone" />
+                <link role="element" roleId="un0u.1707329006119989962" targetNodeId="5727972897538678213" resolveInfo="Emu" />
+              </node>
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5727972897538680292" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5727972897538680293" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5727972897538680294" nodeInfo="nn">
+                  <link role="property" roleId="tpee.1201385237847" targetNodeId="5727972897538678064" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5727972897538691666" nodeInfo="ngu" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5727972897538691606" nodeInfo="igu">
+      <property name="name" nameId="tpck.1169194664001" value="isLieferantDrittland" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5727972897538691607" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5727972897538691608" nodeInfo="nn" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5727972897538691609" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5727972897538691610" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="5727972897538691611" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1079359253376" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5727972897538691612" nodeInfo="nn">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="5727972897538691613" nodeInfo="ng">
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5727972897538678205" resolveInfo="SteuerZone" />
+                <link role="element" roleId="un0u.1707329006119989962" targetNodeId="5727972897538678222" resolveInfo="Drittland" />
+              </node>
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5727972897538691614" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5727972897538691615" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5727972897538691616" nodeInfo="nn">
+                  <link role="property" roleId="tpee.1201385237847" targetNodeId="5727972897538678064" resolveInfo="steuerZone" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.PlaceholderMember" typeId="tpee.1465982738277781862" id="5727972897538691707" nodeInfo="ngu" />
+    <node role="member" roleId="tpee.5375687026011219971" type="tpee.InstanceMethodDeclaration" typeId="tpee.1068580123165" id="5727972897538691825" nodeInfo="igu">
+      <property name="name" nameId="tpck.1169194664001" value="isLieferantSchweiz" />
+      <node role="returnType" roleId="tpee.1068580123133" type="tpee.BooleanType" typeId="tpee.1070534644030" id="5727972897538691826" nodeInfo="in" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5727972897538691827" nodeInfo="nn" />
+      <node role="body" roleId="tpee.1068580123135" type="tpee.StatementList" typeId="tpee.1068580123136" id="5727972897538691828" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="5727972897538691829" nodeInfo="nn">
+          <node role="expression" roleId="tpee.1068581517676" type="tpee.ParenthesizedExpression" typeId="tpee.1079359253375" id="5727972897538691830" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1079359253376" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="5727972897538691831" nodeInfo="nn">
+              <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="5727972897538691832" nodeInfo="ng">
+                <link role="status" roleId="un0u.4533072425307838444" targetNodeId="5727972897538678205" resolveInfo="SteuerZone" />
+                <link role="element" roleId="un0u.1707329006119989962" targetNodeId="5727972897538678250" resolveInfo="Schweiz" />
+              </node>
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5727972897538691833" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="5727972897538691834" nodeInfo="nn" />
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5727972897538691835" nodeInfo="nn">
+                  <link role="property" roleId="tpee.1201385237847" targetNodeId="5727972897538678064" resolveInfo="steuerZone" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133151127" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="id" />
@@ -250,6 +393,25 @@
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.StringType" typeId="tpee.1225271177708" id="4560032055437648092" nodeInfo="in" />
     </node>
+    <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5727972897538678064" nodeInfo="ig">
+      <property name="propertyName" nameId="tpee.1201371481316" value="steuerZone" />
+      <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5727972897538678066" nodeInfo="nn" />
+      <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="5727972897538678067" nodeInfo="ng">
+        <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="5727972897538678068" nodeInfo="ng" />
+        <node role="defaultSetAccessor" roleId="tpee.1202078082794" type="tpee.DefaultSetAccessor" typeId="tpee.1202077725299" id="5727972897538678069" nodeInfo="ng">
+          <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="5727972897538678071" nodeInfo="nn" />
+        </node>
+      </node>
+      <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5727972897538678850" nodeInfo="ig">
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5727972897538678205" resolveInfo="SteuerZone" />
+      </node>
+      <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5727972897538679134" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Steuerzone" />
+      </node>
+      <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5727972897538679136" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Steuerzone" />
+      </node>
+    </node>
   </root>
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="2578114784133151216" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Vorgangsort" />
@@ -298,7 +460,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151121" resolveInfo="Lieferant" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332875" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332876" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151127" />
@@ -377,6 +539,12 @@
           <property name="value" nameId="tpee.1070475926801" value="FAELLIGKEIT_TAGE" />
         </node>
       </node>
+      <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="5727972897556988149" nodeInfo="ng">
+        <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5727972897538678064" />
+        <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5727972897556988150" nodeInfo="nn">
+          <property name="value" nameId="tpee.1070475926801" value="COD_STEUERCODE" />
+        </node>
+      </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109855490" nodeInfo="ng">
         <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109855491" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15" />
@@ -393,7 +561,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapVorgangsort" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151216" resolveInfo="Vorgangsort" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332901" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332902" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151222" />

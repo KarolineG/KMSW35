@@ -16,7 +16,7 @@
   <import index="c9yi" modelUID="r:775c0fa7-99cc-49ff-86b2-34796e752e4b(org.modellwerkstatt.forms.api)" version="1" />
   <import index="26n1" modelUID="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time(org.modellwerkstatt.manmap.solution/org.joda.time@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
@@ -141,7 +141,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapBestellung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315302" resolveInfo="Bestellung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332915" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332916" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315303" />
@@ -192,7 +192,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapRechnung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315383" resolveInfo="Rechnung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332927" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332928" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315384" />
@@ -370,7 +370,7 @@
         </node>
       </node>
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5431775171647312561" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858185" nodeInfo="ng">
         <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858187" nodeInfo="nn">
@@ -410,7 +410,7 @@
         </node>
       </node>
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7362161567117800098" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_RECHEIGENSCHAFT@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_RECHEIGENSCHAFT" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858314" nodeInfo="ng">
         <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858316" nodeInfo="nn">

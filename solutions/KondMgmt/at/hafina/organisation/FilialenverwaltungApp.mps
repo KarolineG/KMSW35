@@ -20,8 +20,8 @@
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998718" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="UmbauNeueroeffnungenApp" />
-    <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement für Neueröffnungen V1.0" />
-    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3955449600776371260" resolveInfo="BasisConfigurationUntTest" />
+    <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement für Neueröffnungen V2.0" />
+    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998726" resolveInfo="BasisConfigurationUNT" />
     <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="3243506821944818833" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="3243506821944818834" nodeInfo="ng">
         <link role="command" roleId="un0u.4419932786254844467" targetNodeId="h02c.3989037348209007663" resolveInfo="Filialliste anzeigen" />
@@ -242,6 +242,14 @@
     <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
+    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="9134554987663885859" nodeInfo="ng">
+      <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina" />
+    </node>
+    <node role="logger" roleId="un0u.3362854910565924927" type="un0u.FileLogger" typeId="un0u.3362854910565924312" id="9134554987711579734" nodeInfo="ng">
+      <node role="fileName" roleId="un0u.3362854910573696144" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9134554987711579735" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="C:\\javaware35\\KondMgmt2_0\\errorlogUnt.log" />
+      </node>
+    </node>
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3955449600776371260" nodeInfo="ng">
     <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />

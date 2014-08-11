@@ -44,6 +44,9 @@
     <property name="jmxuri" nameId="un0u.8603748575145006884" value=" " />
     <property name="javafx" nameId="un0u.5528342994742670972" value="true" />
     <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
+    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="9134554987663885847" nodeInfo="ng">
+      <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina" />
+    </node>
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3989037348208998490" nodeInfo="ng">
     <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
@@ -64,7 +67,7 @@
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998671" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KonditionsmanagementUI" />
     <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Konditionsmanagementsoftware V2.0" />
-    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998490" resolveInfo="BasisConfigurationTest" />
+    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998487" resolveInfo="BasisConfiguration" />
     <node role="extrasMenu" roleId="sgb.3354235353006401278" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="5431775171647223477" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="5431775171647223478" nodeInfo="ng">
         <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
@@ -167,39 +170,6 @@
             <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="tv9b.2075539057415669438" resolveInfo="ZeilenEinheitenListeFC" />
           </node>
           <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415670045" nodeInfo="nn" />
-        </node>
-      </node>
-      <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="7526723334961060005" nodeInfo="ng">
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="7526723334961060006" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="6kvc.7841632776554165404" resolveInfo="BatchKmsw" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="6kvc.7841632776554179642" resolveInfo="Batchprozess Umsatzberechnung starten" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7526723334961060008" nodeInfo="nn" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="7526723334961060009" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="6kvc.6206991355457808640" resolveInfo="Datumseingabe" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="6kvc.609770079932177978" resolveInfo="EditBatchDateFC" />
-          </node>
-        </node>
-      </node>
-      <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="7526723334961060011" nodeInfo="ng">
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="7526723334961060012" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="6kvc.7841632776554165404" resolveInfo="BatchKmsw" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="6kvc.2647181365808863055" resolveInfo="Start Batch Forderungsstellung" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7526723334961060014" nodeInfo="nn" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="7526723334961060015" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="6kvc.2647181365808863060" resolveInfo="Datumseingabe" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="6kvc.609770079932177978" resolveInfo="EditBatchDateFC" />
-          </node>
-        </node>
-      </node>
-      <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="7526723334961060017" nodeInfo="ng">
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="7526723334961060018" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="6kvc.7841632776554165404" resolveInfo="BatchKmsw" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="6kvc.609770079932177622" resolveInfo="Start UNT-Batch" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7526723334961060020" nodeInfo="nn" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="7526723334961060021" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="6kvc.609770079932177627" resolveInfo="Datumseingabe" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="6kvc.609770079932177978" resolveInfo="EditBatchDateFC" />
-          </node>
         </node>
       </node>
     </node>

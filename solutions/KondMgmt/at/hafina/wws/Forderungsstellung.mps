@@ -15,7 +15,7 @@
   <import index="fxg7" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.io(JDK/java.io@java_stub)" version="-1" />
   <import index="26n1" modelUID="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time(org.modellwerkstatt.manmap.solution/org.joda.time@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="146" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
@@ -31,21 +31,6 @@
         <property name="value" nameId="un0u.4533072425307715682" value="R" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Read" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Read" />
-      </node>
-    </node>
-    <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="1905251065026864423" nodeInfo="ng">
-      <property name="name" nameId="tpck.1169194664001" value="JaNeinStatus" />
-      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="1905251065026864425" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="ja" />
-        <property name="value" nameId="un0u.4533072425307715682" value="1" />
-        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Ja" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Ja" />
-      </node>
-      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="1905251065026864426" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="nein" />
-        <property name="value" nameId="un0u.4533072425307715682" value="0" />
-        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Nein" />
-        <property name="longDesc" nameId="un0u.1085421207787009239" value="Nein" />
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133106681" nodeInfo="nn" />
@@ -578,13 +563,11 @@
           <node role="statementList" roleId="tpee.1202593363480" type="tpee.StatementList" typeId="tpee.1068580123136" id="1088173395040013656" nodeInfo="sn">
             <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="1088173395040013660" nodeInfo="nn">
               <node role="expression" roleId="tpee.1068581517676" type="tpee.TernaryOperatorExpression" typeId="tpee.1163668896201" id="1088173395040013661" nodeInfo="nn">
-                <node role="ifTrue" roleId="tpee.1163668922816" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4415070461626728825" nodeInfo="ng">
-                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1905251065026864423" resolveInfo="JaNeinStatus" />
-                  <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1905251065026864425" resolveInfo="ja" />
+                <node role="ifTrue" roleId="tpee.1163668922816" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9134554987711644859" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="Ja" />
                 </node>
-                <node role="ifFalse" roleId="tpee.1163668934364" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="4415070461626728839" nodeInfo="ng">
-                  <link role="status" roleId="un0u.4533072425307838444" targetNodeId="1905251065026864423" resolveInfo="JaNeinStatus" />
-                  <link role="element" roleId="un0u.1707329006119989962" targetNodeId="1905251065026864426" resolveInfo="nein" />
+                <node role="ifFalse" roleId="tpee.1163668934364" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9134554987711644867" nodeInfo="nn">
+                  <property name="value" nameId="tpee.1070475926801" value="Nein" />
                 </node>
                 <node role="condition" roleId="tpee.1163668914799" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="1088173395040013664" nodeInfo="nn">
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="1088173395040013665" nodeInfo="nn">
@@ -602,9 +585,7 @@
           </node>
         </node>
       </node>
-      <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="4415070461626728790" nodeInfo="ig">
-        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="1905251065026864423" resolveInfo="JaNeinStatus" />
-      </node>
+      <node role="type" roleId="tpee.1201371521209" type="tpee.StringType" typeId="tpee.1225271177708" id="9134554987711644869" nodeInfo="in" />
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376511" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Storniert" />
       </node>
@@ -1006,6 +987,53 @@
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="2578114784133107008" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ForderungsTyp" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
+    <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="5727972897538657162" nodeInfo="ng">
+      <property name="name" nameId="tpck.1169194664001" value="ForderungsTypStatus" />
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538657164" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Marketingbeitrag" />
+        <property name="value" nameId="un0u.4533072425307715682" value="M" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Marketing" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Marketingbeitrag" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538657166" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538657167" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Marketingbeitrag, Eröffnung" />
+          </node>
+        </node>
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538657170" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Bonus" />
+        <property name="value" nameId="un0u.4533072425307715682" value="B" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Bonus" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Bonifikation" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538657175" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538657176" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Bonuszahlung" />
+          </node>
+        </node>
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538657179" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Warenrechnung" />
+        <property name="value" nameId="un0u.4533072425307715682" value="W" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Warenrechnung" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Warenrechnung" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538657187" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538657188" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Warenrechnung, Preisstützung" />
+          </node>
+        </node>
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5727972897538657191" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="Poenale" />
+        <property name="value" nameId="un0u.4533072425307715682" value="P" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Pönale" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Pönale" />
+        <node role="doc" roleId="un0u.3140039561980674369" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="5727972897538657202" nodeInfo="ng">
+          <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="5727972897538657203" nodeInfo="ng">
+            <property name="text" nameId="un0u.6525155817177697682" value="Pönale" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="2578114784133107013" nodeInfo="nn" />
     <node role="member" roleId="tpee.5375687026011219971" type="tpee.ConstructorDeclaration" typeId="tpee.1068580123140" id="2578114784133107009" nodeInfo="igu">
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.VoidType" typeId="tpee.1068581517677" id="2578114784133107010" nodeInfo="in" />
@@ -1044,7 +1072,9 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PrivateVisibility" typeId="tpee.1146644623116" id="2578114784133107038" nodeInfo="nn" />
         </node>
       </node>
-      <node role="type" roleId="tpee.1201371521209" type="tpee.StringType" typeId="tpee.1225271177708" id="2578114784133107039" nodeInfo="in" />
+      <node role="type" roleId="tpee.1201371521209" type="un0u.StatusType" typeId="un0u.4533072425307800381" id="5727972897538669037" nodeInfo="ig">
+        <link role="status" roleId="un0u.6600213247848012755" targetNodeId="5727972897538657162" resolveInfo="ForderungsTypStatus" />
+      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133107042" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="umsatzTyp" />
@@ -1098,7 +1128,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsKopf" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106353" resolveInfo="ForderungsKopf" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332682" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_kopf@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_kopf" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332684" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106392" />
@@ -1356,7 +1386,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsPosition" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106687" resolveInfo="ForderungsPosition" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332773" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_pos@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_pos" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.ReferenceMapping" typeId="r5tz.8440420766105723374" id="3687014260077332775" nodeInfo="ng">
         <link role="property" roleId="r5tz.8440420766105723376" targetNodeId="2578114784133106693" />
@@ -1486,7 +1516,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsSubTyp" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106921" resolveInfo="ForderungsSubTyp" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332821" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen_subtyp@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen_subtyp" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332822" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106927" />
@@ -1573,7 +1603,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsTyp" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133107008" resolveInfo="ForderungsTyp" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332851" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332852" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133107014" />
@@ -2440,20 +2470,6 @@
       <node role="returnType" roleId="tpee.1068580123133" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="6954739765073064902" nodeInfo="in">
         <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2578114784133107008" resolveInfo="ForderungsTyp" />
       </node>
-    </node>
-  </root>
-  <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3989037348208998726" nodeInfo="ng">
-    <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
-    <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//lola:1521/LOLA" />
-    <property name="jmxuri" nameId="un0u.8603748575145006884" value="service:jmx:rmi://localhost/jndi/rmi://localhost:1099/DanMan" />
-    <property name="maxPoolSize" nameId="un0u.3517052249650441955" value="1" />
-    <property name="name" nameId="tpck.1169194664001" value="BasisConfigurationUNTest" />
-    <property name="username" nameId="un0u.8537348545916385360" value="KMSW" />
-    <property name="password" nameId="un0u.8537348545916385361" value="lola" />
-    <property name="proxyDataSource" nameId="un0u.4558749542213433307" value="true" />
-    <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="4257137775275777188" nodeInfo="ng">
-      <property name="packageName" nameId="un0u.830334255848344170" value="net.ttddyy" />
-      <property name="logLevel" nameId="un0u.830334255848344171" value="TRACE" />
     </node>
   </root>
 </model>
