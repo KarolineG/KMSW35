@@ -1362,24 +1362,6 @@
                 <property name="text" nameId="tpee.6329021646629104958" value="Setze alle Lieferanten zurück" />
               </node>
             </node>
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8104064611855104468" nodeInfo="nn">
-              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8104064611855104469" nodeInfo="nr">
-                <property name="name" nameId="tpck.1169194664001" value="lieferantKreditor" />
-                <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8104064611855104470" nodeInfo="in" />
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8104064611855104471" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="0" />
-                </node>
-              </node>
-            </node>
-            <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8104064611855104472" nodeInfo="nn">
-              <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8104064611855104473" nodeInfo="nr">
-                <property name="name" nameId="tpck.1169194664001" value="lieferantHersteller" />
-                <node role="type" roleId="tpee.5680397130376446158" type="tpee.IntegerType" typeId="tpee.1070534370425" id="8104064611855104474" nodeInfo="in" />
-                <node role="initializer" roleId="tpee.1068431790190" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="8104064611855104475" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="0" />
-                </node>
-              </node>
-            </node>
             <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="8104064611855104476" nodeInfo="nn">
               <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="8104064611855104477" nodeInfo="nr">
                 <property name="name" nameId="tpck.1169194664001" value="lieferantStandard" />
@@ -3604,7 +3586,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegDetail" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153190" resolveInfo="WareneingangsBeleg" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332964" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729345379" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133153204" />
@@ -3966,7 +3948,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegPosDetail" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153331" resolveInfo="WareneingangsBelegPos" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077333003" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366263" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="9189473878729366265" resolveInfo="id" />
@@ -4551,7 +4533,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegSimple" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153190" resolveInfo="WareneingangsBeleg" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9189473878729366282" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366283" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133153204" resolveInfo="id" />
@@ -4671,7 +4653,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegPosSimple" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153331" resolveInfo="WareneingangsBelegPos" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9189473878729366398" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366399" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="9189473878729366265" resolveInfo="id" />

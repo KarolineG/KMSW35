@@ -412,7 +412,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapMitarbeiter" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151242" resolveInfo="Mitarbeiter" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332582" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.mitarbeiter@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332583" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151248" />
@@ -586,7 +586,7 @@
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109845058" nodeInfo="ng">
         <property name="variant" nameId="r5tz.4388680175614543797" value="BABY" />
         <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109845060" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager@p_wws" />
+          <property name="value" nameId="tpee.1070475926801" value="mpreis.appmanager" />
         </node>
       </node>
     </node>
@@ -659,11 +659,11 @@
             </node>
           </node>
         </node>
-        <node role="statement" roleId="tpee.1068581517665" type="tpee.CommentedStatementsBlock" typeId="tpee.1177326519037" id="4517008050413822960" nodeInfo="nn">
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.CommentedStatementsBlock" typeId="tpee.1177326519037" id="7327814000961591367" nodeInfo="nn">
           <node role="statement" roleId="tpee.1177326540772" type="tpee.ExpressionStatement" typeId="tpee.1068580123155" id="3177567933509140194" nodeInfo="nn">
             <node role="expression" roleId="tpee.1068580123156" type="tpee.AssignmentExpression" typeId="tpee.1068498886294" id="3177567933509140210" nodeInfo="nn">
               <node role="rValue" roleId="tpee.1068498886297" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3177567933509140213" nodeInfo="nn">
-                <property name="value" nameId="tpee.1070475926801" value="sanelat" />
+                <property name="value" nameId="tpee.1070475926801" value="guntharisa" />
               </node>
               <node role="lValue" roleId="tpee.1068498886295" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360409861" nodeInfo="nn">
                 <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6299401094195367075" resolveInfo="user" />

@@ -21,7 +21,7 @@
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998718" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="UmbauNeueroeffnungenApp" />
     <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement für Neueröffnungen V2.0" />
-    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998726" resolveInfo="BasisConfigurationUNT" />
+    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3955449600776371260" resolveInfo="BasisConfigurationUntTest" />
     <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="3243506821944818833" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="3243506821944818834" nodeInfo="ng">
         <link role="command" roleId="un0u.4419932786254844467" targetNodeId="h02c.3989037348209007663" resolveInfo="Filialliste anzeigen" />

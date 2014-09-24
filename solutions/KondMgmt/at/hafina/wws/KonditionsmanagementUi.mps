@@ -4700,6 +4700,15 @@
             </node>
           </node>
         </node>
+        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="3233279328132574425" nodeInfo="ng">
+          <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="3233279328132574427" nodeInfo="ng">
+            <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.9143642913023200727" resolveInfo="AnforderungsVerwaltung" />
+            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.3233279328107576286" resolveInfo="Forderung drucken" />
+            <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="3233279328132574449" nodeInfo="ng">
+              <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="1v76.2578114784133107068" resolveInfo="AnforderungKopf" />
+            </node>
+          </node>
+        </node>
       </node>
       <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="4235813073708262823" nodeInfo="in">
         <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4235813073708262824" nodeInfo="in">
@@ -9216,7 +9225,7 @@
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4642584926047856939" nodeInfo="ng">
-              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="width" nameId="sgb.8089681376575535775" value="150" />
               <property name="label" nameId="sgb.8089681376575535776" value="-" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375239" nodeInfo="nn">
@@ -9723,7 +9732,7 @@
               </node>
             </node>
             <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="4188926249118505770" nodeInfo="ng">
-              <property name="width" nameId="sgb.8089681376575535775" value="100" />
+              <property name="width" nameId="sgb.8089681376575535775" value="150" />
               <property name="label" nameId="sgb.8089681376575535776" value="-" />
               <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
               <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370455" nodeInfo="nn">

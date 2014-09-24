@@ -141,7 +141,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapBestellung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315302" resolveInfo="Bestellung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332915" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.bestellungen@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332916" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315303" />
@@ -192,7 +192,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapRechnung" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="5141182004961315383" resolveInfo="Rechnung" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332927" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung" />
+        <property name="value" nameId="tpee.1070475926801" value="reko.reko_rechnung@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332928" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="5141182004961315384" />
@@ -370,7 +370,7 @@
         </node>
       </node>
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5431775171647312561" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT" />
+        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_REKOAKT@p_wws" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858185" nodeInfo="ng">
         <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858187" nodeInfo="nn">
@@ -410,7 +410,7 @@
         </node>
       </node>
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7362161567117800098" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_RECHEIGENSCHAFT" />
+        <property name="value" nameId="tpee.1070475926801" value="REKO.REKO_RECHEIGENSCHAFT@p_wws" />
       </node>
       <node role="tableOption" roleId="r5tz.774207833082448730" type="r5tz.AlternativeTableName" typeId="r5tz.4388680175614537753" id="8553975876109858314" nodeInfo="ng">
         <node role="tablename" roleId="r5tz.4388680175614543803" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8553975876109858316" nodeInfo="nn">
