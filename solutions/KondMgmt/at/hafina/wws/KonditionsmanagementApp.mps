@@ -46,6 +46,7 @@
     <property name="clusterRuntime" nameId="un0u.992254328177921271" value=" " />
     <node role="logConfiguration" roleId="un0u.830334255848383637" type="un0u.LogConfiguration" typeId="un0u.830334255848344169" id="9134554987663885847" nodeInfo="ng">
       <property name="packageName" nameId="un0u.830334255848344170" value="at.hafina" />
+      <property name="logLevel" nameId="un0u.830334255848344171" value="DEBUG" />
     </node>
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3989037348208998490" nodeInfo="ng">
