@@ -1151,11 +1151,11 @@
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2075539057415667570" nodeInfo="nn">
                   <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="28jr.1410680821329041462" resolveInfo="enableElements" />
-                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2075539057415667571" nodeInfo="nn">
-                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="2075539057415667572" nodeInfo="ng">
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3331017651194981412" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="un0u.ContainerVariableReference" typeId="un0u.7192042020165155288" id="3331017651194981460" nodeInfo="ng">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="2075539057415667534" resolveInfo="selListeView" />
                     </node>
-                    <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="2075539057415667573" nodeInfo="nn">
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="3331017651194981414" nodeInfo="nn">
                       <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2075539057415668828" resolveInfo="getSelectionString" />
                     </node>
                   </node>
@@ -2166,6 +2166,12 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Pönale für Rechnungslegungsfehler" />
         <property name="longDesc" nameId="un0u.1085421207787009239" value="Pönale für Fehler bei der Rechnungslegung" />
       </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="8992396410959593790" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="PoenaleAufwandProArt" />
+        <property name="value" nameId="un0u.4533072425307715682" value="PNAWA" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="Aufwandsendtschädigung" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="Aufwandsendtschädigung Artikel" />
+      </node>
       <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="2075539057415668041" nodeInfo="ng">
         <property name="longDesc" nameId="un0u.1085421207787009239" value="*** Bonifikation allgemein ***" />
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Bonifikation allgemein" />
@@ -2291,6 +2297,12 @@
         <property name="shortDesc" nameId="un0u.1085421207787009238" value="Sonderaktion -50%" />
         <property name="name" nameId="tpck.1169194664001" value="SonderaktionM50Proz" />
         <property name="value" nameId="un0u.4533072425307715682" value="SAM50" />
+      </node>
+      <node role="element" roleId="un0u.4533072425307715672" type="un0u.StatusElement" typeId="un0u.4533072425307715670" id="5559694214111576051" nodeInfo="ng">
+        <property name="name" nameId="tpck.1169194664001" value="AraRechnung" />
+        <property name="value" nameId="un0u.4533072425307715682" value="ARARE" />
+        <property name="shortDesc" nameId="un0u.1085421207787009238" value="ARA Rechnung" />
+        <property name="longDesc" nameId="un0u.1085421207787009239" value="ARA Rechnung" />
       </node>
     </node>
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="2075539057415668063" nodeInfo="ng">
@@ -4712,6 +4724,12 @@
           <property name="text" nameId="un0u.6525155817177697682" value="Status des Konditionstyps: Aktiv, Inaktiv" />
         </node>
       </node>
+      <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2938153221313046980" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Status" />
+      </node>
+      <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2938153221313052129" nodeInfo="nn">
+        <property name="value" nameId="tpee.1070475926801" value="Status" />
+      </node>
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2075539057415668113" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="isBezeichnungEditable" />
@@ -5508,6 +5526,48 @@
                     <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="2075539057415668631" nodeInfo="nn" />
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2075539057415668632" nodeInfo="nn">
                       <link role="property" roleId="tpee.1201385237847" targetNodeId="2075539057415667912" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="2938153221442313657" nodeInfo="ng">
+                <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="2938153221442313659" nodeInfo="sn">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2938153221442313944" nodeInfo="nn">
+                    <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2938153221442313945" nodeInfo="nn">
+                      <property name="value" nameId="tpee.1070475926801" value="Preisstützungen" />
+                    </node>
+                  </node>
+                </node>
+                <node role="condition" roleId="tpee.1206060619838" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="2938153221442313778" nodeInfo="nn">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="2938153221442313779" nodeInfo="ng">
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="2075539057415668013" resolveInfo="Konditionsgruppe" />
+                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3012906531636318247" resolveInfo="Preisstuetzung" />
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2938153221442313780" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="2938153221442313781" nodeInfo="nn" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2938153221442313782" nodeInfo="nn">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="2075539057415667912" resolveInfo="konditionsGruppe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node role="elsifClauses" roleId="tpee.1206060520071" type="tpee.ElsifClause" typeId="tpee.1206060495898" id="2938153221442313798" nodeInfo="ng">
+                <node role="statementList" roleId="tpee.1206060644605" type="tpee.StatementList" typeId="tpee.1068580123136" id="2938153221442313800" nodeInfo="sn">
+                  <node role="statement" roleId="tpee.1068581517665" type="tpee.ReturnStatement" typeId="tpee.1068581242878" id="2938153221442313954" nodeInfo="nn">
+                    <node role="expression" roleId="tpee.1068581517676" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2938153221442313955" nodeInfo="nn">
+                      <property name="value" nameId="tpee.1070475926801" value="Warenrechnungen" />
+                    </node>
+                  </node>
+                </node>
+                <node role="condition" roleId="tpee.1206060619838" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="2938153221442313916" nodeInfo="nn">
+                  <node role="rightExpression" roleId="tpee.1081773367579" type="un0u.StatusConstReference" typeId="un0u.4533072425307838443" id="2938153221442313917" nodeInfo="ng">
+                    <link role="status" roleId="un0u.4533072425307838444" targetNodeId="2075539057415668013" resolveInfo="Konditionsgruppe" />
+                    <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3012906531636318233" resolveInfo="Warenrechnung" />
+                  </node>
+                  <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2938153221442313918" nodeInfo="nn">
+                    <node role="operand" roleId="tpee.1197027771414" type="tpee.ThisExpression" typeId="tpee.1070475354124" id="2938153221442313919" nodeInfo="nn" />
+                    <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2938153221442313920" nodeInfo="nn">
+                      <link role="property" roleId="tpee.1201385237847" targetNodeId="2075539057415667912" resolveInfo="konditionsGruppe" />
                     </node>
                   </node>
                 </node>
@@ -12308,6 +12368,46 @@
         <property name="text" nameId="un0u.6525155817177697682" value="Anzeige/Änderung der Einheiten für die Berechnungsgrundlage" />
       </node>
     </node>
+    <node role="commandInit" roleId="un0u.7192042020164579739" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="7988850045555340849" nodeInfo="ng">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7988850045555340850" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="un0u.FlagCommand" typeId="un0u.1881524139085549729" id="7988850045555340892" nodeInfo="ng">
+          <node role="msgExpression" roleId="un0u.1881524139085549730" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340893" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="Sie haben LEIDER nicht die erforderlichen Rechte :(" />
+          </node>
+          <node role="conditionExpression" roleId="un0u.1881524139085549731" type="tpee.NotExpression" typeId="tpee.1081516740877" id="7988850045555340894" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1081516765348" type="tpee.OrExpression" typeId="tpee.1080223426719" id="7988850045555340895" nodeInfo="nn">
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7988850045555340896" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="7988850045555340897" nodeInfo="ng">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870051359" resolveInfo="findCurrentUser" />
+                  <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="o9h8.9103376104371014774" resolveInfo="MitarbeiterstammRepo" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7988850045555340898" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870052158" resolveInfo="isUserAdmin" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340899" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="KONDMGMT" />
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7988850045555340900" nodeInfo="nn">
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7988850045555340901" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870052198" resolveInfo="hasRole" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340902" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="KONDMGMT" />
+                  </node>
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340903" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="superuser" />
+                  </node>
+                </node>
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="7988850045555340904" nodeInfo="ng">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870051359" resolveInfo="findCurrentUser" />
+                  <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="o9h8.9103376104371014774" resolveInfo="MitarbeiterstammRepo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="2987152407127836563" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Neue Bgl-Einheit anlegen" />
@@ -12605,6 +12705,46 @@
     <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2987152407127836632" nodeInfo="ng">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2987152407127836633" nodeInfo="ng">
         <property name="text" nameId="un0u.6525155817177697682" value="Anzeige/Änderung der Einheiten für die Konditionszeilen" />
+      </node>
+    </node>
+    <node role="commandInit" roleId="un0u.7192042020164579739" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="7988850045555340918" nodeInfo="ng">
+      <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="7988850045555340919" nodeInfo="sn">
+        <node role="statement" roleId="tpee.1068581517665" type="un0u.FlagCommand" typeId="un0u.1881524139085549729" id="7988850045555340961" nodeInfo="ng">
+          <node role="msgExpression" roleId="un0u.1881524139085549730" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340962" nodeInfo="nn">
+            <property name="value" nameId="tpee.1070475926801" value="Sie haben LEIDER nicht die erforderlichen Rechte :(" />
+          </node>
+          <node role="conditionExpression" roleId="un0u.1881524139085549731" type="tpee.NotExpression" typeId="tpee.1081516740877" id="7988850045555340963" nodeInfo="nn">
+            <node role="expression" roleId="tpee.1081516765348" type="tpee.OrExpression" typeId="tpee.1080223426719" id="7988850045555340964" nodeInfo="nn">
+              <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7988850045555340965" nodeInfo="nn">
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="7988850045555340966" nodeInfo="ng">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870051359" resolveInfo="findCurrentUser" />
+                  <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="o9h8.9103376104371014774" resolveInfo="MitarbeiterstammRepo" />
+                </node>
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7988850045555340967" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870052158" resolveInfo="isUserAdmin" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340968" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="KONDMGMT" />
+                  </node>
+                </node>
+              </node>
+              <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.DotExpression" typeId="tpee.1197027756228" id="7988850045555340969" nodeInfo="nn">
+                <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7988850045555340970" nodeInfo="nn">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870052198" resolveInfo="hasRole" />
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340971" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="KONDMGMT" />
+                  </node>
+                  <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="7988850045555340972" nodeInfo="nn">
+                    <property name="value" nameId="tpee.1070475926801" value="superuser" />
+                  </node>
+                </node>
+                <node role="operand" roleId="tpee.1197027771414" type="un0u.OperationCall" typeId="un0u.7926373352206300571" id="7988850045555340973" nodeInfo="ng">
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="o9h8.2078185796870051359" resolveInfo="findCurrentUser" />
+                  <link role="runtimeHandledObject" roleId="un0u.7926373352206300596" targetNodeId="o9h8.9103376104371014774" resolveInfo="MitarbeiterstammRepo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </root>

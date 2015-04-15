@@ -477,7 +477,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151121" resolveInfo="Lieferant" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332875" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.gs15" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332876" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151127" />
@@ -588,7 +588,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapVorgangsort" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133151216" resolveInfo="Vorgangsort" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332901" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort@p_wws" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_vorgangsort" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332902" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133151222" />

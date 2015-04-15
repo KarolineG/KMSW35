@@ -14,14 +14,18 @@
   <import index="nq1x" modelUID="r:96727cd1-f9d8-4cf6-87cf-109a07175d18(at.hafina.wws.Lieferantenstamm)" version="-1" />
   <import index="o9h8" modelUID="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" version="-1" />
   <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" />
+  <import index="hqqe" modelUID="r:a21d359e-b425-4f5f-af67-8aa3c0a353f4(at.hafina.wws.LieferantenZuordnung)" version="-1" />
+  <import index="1v76" modelUID="r:4df79bb7-19c1-4cef-b629-1e238f25be49(at.hafina.wws.Konditionsmanagement)" version="2" />
+  <import index="8z9b" modelUID="r:90ef3146-e171-4eff-aee5-122e613b5ee8(at.hafina.wws.KonditionsTypenVerwaltung)" version="-1" />
+  <import index="zrij" modelUID="r:0b00ad78-5fe8-4eb1-9358-7ece907cff0c(at.hafina.wws.KonditionsmanagementMaFunktionen)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
   <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="3" implicit="yes" />
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998718" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="UmbauNeueroeffnungenApp" />
-    <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement für Neueröffnungen V2.0" />
-    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3955449600776371260" resolveInfo="BasisConfigurationUntTest" />
+    <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Filialenmanagement für Neueröffnungen V2.1" />
+    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998726" resolveInfo="BasisConfigurationUNT" />
     <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="3243506821944818833" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="3243506821944818834" nodeInfo="ng">
         <link role="command" roleId="un0u.4419932786254844467" targetNodeId="h02c.3989037348209007663" resolveInfo="Filialliste anzeigen" />
@@ -90,6 +94,22 @@
             </node>
           </node>
         </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4211941675543431623" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4211941675543431624" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="repo1" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4211941675543431625" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.9143642913023234637" resolveInfo="AnforderungenRepo" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="1757475292397555132" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="1757475292397555133" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="repo6" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="1757475292397555134" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.346759792891204465" resolveInfo="VertragRepo" />
+            </node>
+          </node>
+        </node>
         <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="9103376104370912194" nodeInfo="nn">
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="9103376104370912195" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="repo3" />
@@ -111,6 +131,14 @@
             <property name="name" nameId="tpck.1169194664001" value="repo5" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="9103376104371024531" nodeInfo="in">
               <link role="classifier" roleId="tpee.1107535924139" targetNodeId="o9h8.9103376104371014774" resolveInfo="MitarbeiterstammRepo" />
+            </node>
+          </node>
+        </node>
+        <node role="statement" roleId="tpee.1068581517665" type="tpee.LocalVariableDeclarationStatement" typeId="tpee.1068581242864" id="4211941675664018838" nodeInfo="nn">
+          <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="4211941675664018839" nodeInfo="nr">
+            <property name="name" nameId="tpck.1169194664001" value="repo7" />
+            <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="4211941675664018840" nodeInfo="in">
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="zrij.9143642913023241128" resolveInfo="EkMitarbeiterFunktionenRepo" />
             </node>
           </node>
         </node>
@@ -253,7 +281,7 @@
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3955449600776371260" nodeInfo="ng">
     <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
-    <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//lola:1521/LOLA" />
+    <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
     <property name="maxPoolSize" nameId="un0u.3517052249650441955" value="1" />
     <property name="name" nameId="tpck.1169194664001" value="BasisConfigurationUntTest" />
     <property name="username" nameId="un0u.8537348545916385360" value="KMSW" />

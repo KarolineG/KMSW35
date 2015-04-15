@@ -51,7 +51,7 @@
   </root>
   <root type="un0u.Configuration" typeId="un0u.8537348545916279017" id="3989037348208998490" nodeInfo="ng">
     <property name="driver" nameId="un0u.8537348545916385363" value="oracle.jdbc.driver.OracleDriver" />
-    <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//lola:1521/LOLA" />
+    <property name="uri" nameId="un0u.8537348545916385362" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
     <property name="name" nameId="tpck.1169194664001" value="BasisConfigurationTest" />
     <property name="username" nameId="un0u.8537348545916385360" value="KMSW" />
     <property name="password" nameId="un0u.8537348545916385361" value="lola" />
@@ -67,8 +67,8 @@
   </root>
   <root type="sgb.Application" typeId="sgb.1472214787652375087" id="3989037348208998671" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KonditionsmanagementUI" />
-    <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Konditionsmanagementsoftware V2.0" />
-    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998490" resolveInfo="BasisConfigurationTest" />
+    <property name="versionInformation" nameId="sgb.293796121013651477" value="MPreis Konditionsmanagementsoftware V2.5.0" />
+    <link role="configuration" roleId="sgb.2470353161578441261" targetNodeId="3989037348208998487" resolveInfo="BasisConfiguration" />
     <node role="extrasMenu" roleId="sgb.3354235353006401278" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="5431775171647223477" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="5431775171647223478" nodeInfo="ng">
         <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
@@ -84,6 +84,17 @@
         <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="5431775171647223480" nodeInfo="nn" />
       </node>
     </node>
+    <node role="extrasMenu" roleId="sgb.3354235353006401278" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="5126648898119370603" nodeInfo="ng">
+      <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="5126648898119370605" nodeInfo="ng">
+        <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
+        <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.5126648898116546915" resolveInfo="Umsatzziele anzeigen" />
+        <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="5126648898119370677" nodeInfo="nn" />
+        <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="5126648898119370680" nodeInfo="ng">
+          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.5126648898118204871" resolveInfo="Liste der Konditionen mit Umsatzzielen" />
+          <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="znt7.5126648898118445138" resolveInfo="UmsatzZieleListeFC" />
+        </node>
+      </node>
+    </node>
     <node role="extrasMenu" roleId="sgb.3354235353006401278" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="6159375316626796118" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="6159375316626796119" nodeInfo="ng">
         <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.1833852648258071339" resolveInfo="Konditionsmanagement" />
@@ -95,21 +106,21 @@
         </node>
         <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="8104064611855127963" nodeInfo="ng">
           <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="qm2g.5141182004961315166" resolveInfo="WeBelegListeFC" />
-          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.9189473878729366603" resolveInfo="Wareneingangsbeleg Liste" />
+          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.9189473878729366603" resolveInfo="Liste der Wareneingangsbelege" />
         </node>
       </node>
     </node>
     <node role="extrasMenu" roleId="sgb.3354235353006401278" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="308340049801684350" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="308340049801684351" nodeInfo="ng">
         <link role="process" roleId="un0u.4419932786254844466" targetNodeId="46c4.7676363187707316359" resolveInfo="ArtikelNettoAbzuege" />
-        <link role="command" roleId="un0u.4419932786254844467" targetNodeId="46c4.7676363187707324773" resolveInfo="Liste der Nettoabzüge anzeigen/bearbeiten" />
+        <link role="command" roleId="un0u.4419932786254844467" targetNodeId="46c4.7676363187707324773" resolveInfo="Nettoabzüge anzeigen/bearbeiten" />
         <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="308340049801684358" nodeInfo="nn" />
         <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="308340049801684354" nodeInfo="ng">
           <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="46c4.7676363187707324821" resolveInfo="Auswahlkriterium" />
           <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="vi8x.308340049801684296" resolveInfo="NettoAbzugCriteriaFC" />
         </node>
         <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="308340049801684356" nodeInfo="ng">
-          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="46c4.7676363187707324930" resolveInfo="Abzugsliste Anzeigen" />
+          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="46c4.7676363187707324930" resolveInfo="Abzugsliste" />
           <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="vi8x.308340049801564717" resolveInfo="NettoAbzugListeFC" />
         </node>
       </node>
@@ -206,6 +217,17 @@
           </node>
         </node>
       </node>
+      <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="7493229696639193589" nodeInfo="ng">
+        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="7493229696639193591" nodeInfo="ng">
+          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="6kvc.7841632776554165404" resolveInfo="BatchKmsw" />
+          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="6kvc.7493229696639068211" resolveInfo="Start Batch Jahresumsatzberechnung" />
+          <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7493229696639193643" nodeInfo="nn" />
+          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="7493229696639193646" nodeInfo="ng">
+            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="6kvc.7493229696639069554" resolveInfo="Datumseingabe" />
+            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="6kvc.609770079932177978" resolveInfo="EditBatchDateFC" />
+          </node>
+        </node>
+      </node>
     </node>
     <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="5176117387240967620" nodeInfo="ng">
       <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="5176117387240967621" nodeInfo="ng">
@@ -292,6 +314,21 @@
         <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="1757475292396968882" nodeInfo="ng">
           <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.9143642913023234588" resolveInfo="Anforderungsliste" />
           <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="znt7.5378941860657653591" resolveInfo="AnforderungenListeFC" />
+        </node>
+      </node>
+    </node>
+    <node role="startMenu" roleId="sgb.1472214787652375128" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="8407781686625955256" nodeInfo="ng">
+      <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="8407781686625955258" nodeInfo="ng">
+        <link role="process" roleId="un0u.4419932786254844466" targetNodeId="1v76.9143642913023200727" resolveInfo="AnforderungsVerwaltung" />
+        <link role="command" roleId="un0u.4419932786254844467" targetNodeId="1v76.8407781686625100558" resolveInfo="Beleg suchen" />
+        <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="8407781686625955309" nodeInfo="nn" />
+        <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="8407781686625955312" nodeInfo="ng">
+          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.8407781686625100616" resolveInfo="Belegnummer eingeben" />
+          <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="znt7.8407781686625955474" resolveInfo="BelegnummerneingabeFC" />
+        </node>
+        <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="8407781686625955547" nodeInfo="ng">
+          <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="1v76.8407781686625935764" resolveInfo="Detailansicht" />
+          <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="znt7.6274437086638231324" resolveInfo="BelegSucheDetailFC" />
         </node>
       </node>
     </node>
@@ -550,11 +587,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7571418271465252876" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="anforderung" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7571418271465252877" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133107068" resolveInfo="AnforderungKopf" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2k0i.6387131309318750352" resolveInfo="AnforderungKopf" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7571418271465252878" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7571418271465252879" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.2578114784133108580" resolveInfo="AnforderungKopf" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2k0i.6387131309318750367" resolveInfo="AnforderungKopf" />
               </node>
             </node>
           </node>
@@ -567,7 +604,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465252876" resolveInfo="anforderung" />
                 </node>
                 <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7571418271465252888" nodeInfo="nn">
-                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7571418271465200432" resolveInfo="appendString" />
+                  <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2k0i.6387131309318753146" resolveInfo="appendString" />
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360406955" nodeInfo="nn">
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465252848" resolveInfo="str1" />
                   </node>
@@ -659,11 +696,11 @@
           <node role="localVariableDeclaration" roleId="tpee.1068581242865" type="tpee.LocalVariableDeclaration" typeId="tpee.1068581242863" id="7571418271465659051" nodeInfo="nr">
             <property name="name" nameId="tpck.1169194664001" value="anforderung" />
             <node role="type" roleId="tpee.5680397130376446158" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="7571418271465659052" nodeInfo="in">
-              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="1v76.2578114784133107068" resolveInfo="AnforderungKopf" />
+              <link role="classifier" roleId="tpee.1107535924139" targetNodeId="2k0i.6387131309318750352" resolveInfo="AnforderungKopf" />
             </node>
             <node role="initializer" roleId="tpee.1068431790190" type="tpee.GenericNewExpression" typeId="tpee.1145552977093" id="7571418271465659053" nodeInfo="nn">
               <node role="creator" roleId="tpee.1145553007750" type="tpee.ClassCreator" typeId="tpee.1212685548494" id="7571418271465659054" nodeInfo="nn">
-                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.2578114784133108580" resolveInfo="AnforderungKopf" />
+                <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2k0i.6387131309318750367" resolveInfo="AnforderungKopf" />
               </node>
             </node>
           </node>
@@ -707,7 +744,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465659051" resolveInfo="anforderung" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7571418271465659065" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7571418271465200432" resolveInfo="appendString" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2k0i.6387131309318753146" resolveInfo="appendString" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360406897" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465252848" resolveInfo="str1" />
                     </node>
@@ -731,7 +768,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465659051" resolveInfo="anforderung" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7571418271465669559" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7571418271465200432" resolveInfo="appendString" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2k0i.6387131309318753146" resolveInfo="appendString" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360406913" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465252848" resolveInfo="str1" />
                     </node>
@@ -755,7 +792,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465659051" resolveInfo="anforderung" />
                   </node>
                   <node role="operation" roleId="tpee.1197027833540" type="tpee.InstanceMethodCallOperation" typeId="tpee.1202948039474" id="7571418271465669649" nodeInfo="nn">
-                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="1v76.7571418271465200432" resolveInfo="appendString" />
+                    <link role="baseMethodDeclaration" roleId="tpee.1068499141037" targetNodeId="2k0i.6387131309318753146" resolveInfo="appendString" />
                     <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.VariableReference" typeId="tpee.1068498886296" id="3972025135360406937" nodeInfo="nn">
                       <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7571418271465252848" resolveInfo="str1" />
                     </node>
