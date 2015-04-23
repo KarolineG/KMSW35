@@ -19,11 +19,11 @@
   <import index="1v76" modelUID="r:4df79bb7-19c1-4cef-b629-1e238f25be49(at.hafina.wws.Konditionsmanagement)" version="2" />
   <import index="8z9b" modelUID="r:90ef3146-e171-4eff-aee5-122e613b5ee8(at.hafina.wws.KonditionsTypenVerwaltung)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
+  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="41" implicit="yes" />
   <import index="e2lb" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" version="-1" implicit="yes" />
   <import index="28jr" modelUID="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" version="-1" implicit="yes" />
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="3989037348208997806" nodeInfo="ig">
@@ -425,12 +425,12 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="3989037348208997818" nodeInfo="in" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="3989037348208997819" nodeInfo="ng" />
       <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823912167" nodeInfo="ng">
         <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823912168" nodeInfo="ng">
           <property name="text" nameId="un0u.6525155817177697682" value="ID" />
         </node>
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632702" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3989037348208997821" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="datumAnlage" />
@@ -1073,7 +1073,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Neueröffnung erfassen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="2453866350712037218" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Neueröffnung editieren" />
@@ -1247,7 +1247,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Filiale bearbeiten" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SUB_GRAPH_OWNER" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SUB_GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="9103376104371871827" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="filiale bearbeiten" />
@@ -1468,7 +1468,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Filiale löschen" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SUB_GRAPH_OWNER" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SUB_GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6159375316625571454" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6159375316625571455" nodeInfo="sn">
@@ -1550,6 +1550,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Filialliste anzeigen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="4211941675588588401" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="criteriaText" />
@@ -2143,6 +2144,7 @@
                       <property name="value" nameId="tpee.1068580320021" value="0" />
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="6159375316625520098" nodeInfo="ng">
+                      <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                       <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
                       <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="6159375316625519804" />
                     </node>
@@ -2154,6 +2156,7 @@
                           <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5856134677489243788" resolveInfo="vli" />
                         </node>
                         <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="5856134677489241964" nodeInfo="ng">
+                          <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                           <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
                           <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5856134677457242616" />
                         </node>
@@ -2164,6 +2167,7 @@
                         <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="3500752603055623506" nodeInfo="nn">
                           <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.GreaterThanOrEqualsExpression" typeId="tpee.1153417849900" id="3500752603055623507" nodeInfo="nn">
                             <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="3500752603055623508" nodeInfo="ng">
+                              <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                               <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
                               <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041584" />
                             </node>
@@ -2174,6 +2178,7 @@
                           <node role="rightExpression" roleId="tpee.1081773367579" type="r5tz.OptionalOperator" typeId="r5tz.8915366638470090989" id="6299401094195526725" nodeInfo="ng">
                             <node role="expression" roleId="r5tz.8915366638470090994" type="tpee.LessThanExpression" typeId="tpee.1081506773034" id="4211941675603411399" nodeInfo="nn">
                               <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="4211941675603411401" nodeInfo="ng">
+                                <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                                 <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
                                 <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041584" />
                               </node>
@@ -2189,6 +2194,7 @@
                               <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013076" resolveInfo="typ" />
                             </node>
                             <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="3500752603055700852" nodeInfo="ng">
+                              <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                               <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041588" />
                               <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
                             </node>
@@ -2201,6 +2207,7 @@
                             <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="3989037348209013080" resolveInfo="status" />
                           </node>
                           <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="1905251065026851830" nodeInfo="ng">
+                            <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                             <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="3989037348209013560" />
                             <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="3500752603055623497" />
                           </node>
@@ -2329,6 +2336,7 @@
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="891173884600278971" nodeInfo="nn">
                   <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="891173884600209387" nodeInfo="nn">
                     <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="891173884600209388" nodeInfo="ng">
+                      <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                       <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="891173884600209362" />
                       <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="6159375316625519804" />
                     </node>
@@ -2339,6 +2347,7 @@
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.AndExpression" typeId="tpee.1080120340718" id="891173884600278991" nodeInfo="nn">
                     <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.GreaterThanOrEqualsExpression" typeId="tpee.1153417849900" id="891173884600278974" nodeInfo="nn">
                       <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="891173884600278975" nodeInfo="ng">
+                        <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                         <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="891173884600209362" />
                         <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041586" />
                       </node>
@@ -2348,6 +2357,7 @@
                     </node>
                     <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.LessThanOrEqualsExpression" typeId="tpee.1153422305557" id="891173884600633164" nodeInfo="nn">
                       <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="891173884600633165" nodeInfo="ng">
+                        <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                         <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="891173884600209362" />
                         <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="1833852648258041586" />
                       </node>
@@ -2363,6 +2373,7 @@
                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="3989037348208998740" resolveInfo="Freigegeben" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="891173884600209410" nodeInfo="ng">
+                    <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                     <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="3989037348209013560" />
                     <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="891173884600209362" />
                   </node>
@@ -2476,7 +2487,6 @@
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041577" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="KEY_UNT_EH" />
         </node>
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1833852648258041578" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="1833852648258041579" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="1833852648258041580" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="S_KM_UNT_EH" />
@@ -2758,7 +2768,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Filiale öffnen und Forderungen anzeigen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="DO_NOT_COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="5388256980440577390" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="filiale anzeigen" />
@@ -2988,7 +2998,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Totalumbau erfassen" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="2453866350712300021" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Totalumbau editieren" />
@@ -3162,6 +3172,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Nicht filialspezifische Forderungen anzeigen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="2453866350711632516" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="vonDatum" />
@@ -4781,6 +4792,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Forderungssummen für Filiale(n) berechnen" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="parameter" roleId="un0u.7192042020164640429" type="un0u.ContainerParameter" typeId="un0u.7192042020164640431" id="4211941675598726986" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="untList" />
@@ -5047,7 +5059,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Forderungsstellung für Filiale sperren" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SUB_GRAPH_OWNER" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SUB_GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="finalOkMessage" roleId="un0u.401328192105404304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2453866350711786037" nodeInfo="nn">
       <property name="value" nameId="tpee.1070475926801" value="Forderungsstellung wurde für die gewählte Filiale gesperrt" />
@@ -5163,7 +5175,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Forderungsstellung für Filiale freigeben" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SUB_GRAPH_OWNER" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SUB_GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="okConclusionStatements" roleId="un0u.1881524139085993257" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="6159375316625720770" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="6159375316625720771" nodeInfo="sn">
@@ -5488,7 +5500,7 @@
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
     <property name="name" nameId="tpck.1169194664001" value="Filiale wiederherstellen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SUB_GRAPH_OWNER" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SUB_GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="3989037348208998732" resolveInfo="Filialenverwaltung" />
     <node role="documentation" roleId="un0u.6525155817177697707" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="4211941675661338700" nodeInfo="ng">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="4211941675661338701" nodeInfo="ng">

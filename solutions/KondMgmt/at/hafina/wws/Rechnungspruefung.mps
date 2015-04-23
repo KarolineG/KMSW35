@@ -40,7 +40,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="5141182004961315309" nodeInfo="in" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="5141182004961315310" nodeInfo="ng" />
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632676" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5141182004961315313" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="status" />
@@ -84,7 +84,7 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377790178" nodeInfo="nn" />
         </node>
       </node>
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="5141182004961315391" nodeInfo="ng" />
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632766" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5141182004961315394" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="rekoAkt" />
@@ -147,7 +147,6 @@
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332917" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="NUM_BESTELLUNG" />
         </node>
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="3687014260077332918" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="3687014260077332919" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332920" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="S_BESTELLUNGEN" />
@@ -198,7 +197,6 @@
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332929" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="KEY_RECHNUNG" />
         </node>
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="3687014260077332930" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="3687014260077332931" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332932" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="SREKO_RECHNUNG" />
@@ -255,7 +253,6 @@
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8083552047565875575" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="KEY_REKOAKT" />
         </node>
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="8083552047565875576" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="8083552047565875577" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8083552047565875578" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="SREKO_REKOAKT" />
@@ -391,7 +388,6 @@
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8083552047565708417" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="KEY_RECHEIGENSCHAFT" />
         </node>
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="8083552047565708418" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="8083552047565708419" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8083552047565708420" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="S_REKO_RECHEIGENSCHAFT" />
@@ -441,6 +437,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8104064611855105118" resolveInfo="idRekoAkt" />
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="8104064611855114019" nodeInfo="ng">
+                  <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                   <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="8104064611855114006" />
                   <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="3687014260077332934" />
                 </node>
@@ -768,10 +765,10 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377847875" nodeInfo="nn" />
         </node>
       </node>
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="5431775171647229048" nodeInfo="ng" />
       <node role="shortDesc" roleId="un0u.5770301300929026304" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376527" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Id" />
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632762" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="7362161567117668418" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="lieferant2" />
@@ -1184,6 +1181,7 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377860189" nodeInfo="nn" />
         </node>
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.CreatedAtFieldOption" typeId="r5tz.7925018510953787849" id="1572988785232725734" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5431775171647229283" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="zzCreatedAtUid" />
@@ -1195,6 +1193,7 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377783284" nodeInfo="nn" />
         </node>
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.CreatedByFieldOption" typeId="r5tz.7925018510953790007" id="1572988785232725750" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5431775171647229290" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="zzModifiedAt" />
@@ -1208,6 +1207,7 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377859847" nodeInfo="nn" />
         </node>
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.ModifiedAtFieldOption" typeId="r5tz.7925018510953791520" id="1572988785232725740" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="5431775171647229297" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="zzModifiedAtUid" />
@@ -1219,12 +1219,14 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377859975" nodeInfo="nn" />
         </node>
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.ModifiedByFieldOption" typeId="r5tz.7925018510953792277" id="1572988785232725756" nodeInfo="ng" />
     </node>
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="5431775171647229304" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Rekoakte anzeigen" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC.Reko" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7032039167865246979" resolveInfo="Rechnungskontrolle" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="5431775171647229305" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Suchen" />
@@ -1782,6 +1784,7 @@
                   <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="5431775171647311816" resolveInfo="idLieferant" />
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="5431775171647311810" nodeInfo="ng">
+                  <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                   <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="5431775171647311806" />
                   <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="8083552047565875581" />
                 </node>
@@ -1992,7 +1995,7 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377852114" nodeInfo="nn" />
         </node>
       </node>
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="8083552047565874945" nodeInfo="ng" />
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632746" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="6216169895915811632" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="artikel" />
@@ -2119,7 +2122,7 @@
           <node role="visibility" roleId="tpee.1202077744034" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8617040751377859130" nodeInfo="nn" />
         </node>
       </node>
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="8083552047565708265" nodeInfo="ng" />
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632732" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="7362161567117800102" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="lieferant" />

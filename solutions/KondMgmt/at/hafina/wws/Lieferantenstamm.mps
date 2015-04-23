@@ -8,10 +8,10 @@
   <language-engaged-on-generation namespace="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
   <import index="epq1" modelUID="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.math(JDK/java.math@java_stub)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
+  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="41" implicit="yes" />
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="2578114784133151121" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="Lieferant" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
@@ -174,10 +174,10 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2578114784133151133" nodeInfo="in" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="2578114784133151134" nodeInfo="ng" />
       <node role="longDesc" roleId="un0u.5770301300929026308" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377439" nodeInfo="nn">
         <property name="value" nameId="tpee.1070475926801" value="Lfnr." />
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632696" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="7362161567117695146" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="isGeloescht" />
@@ -449,7 +449,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="2578114784133151228" nodeInfo="in" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="2578114784133151229" nodeInfo="ng" />
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632726" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="2578114784133151232" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="refLieferant" />
@@ -484,7 +484,6 @@
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332877" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="LIEFERANT" />
         </node>
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="3687014260077332878" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="3687014260077332879" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332880" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="NO_SEQ" />
@@ -595,7 +594,6 @@
         <node role="fieldName" roleId="r5tz.871579071900290535" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332903" nodeInfo="nn">
           <property name="value" nameId="tpee.1070475926801" value="KEY_VORGANGSORT" />
         </node>
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="3687014260077332904" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="3687014260077332905" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332906" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="NO_SEQ" />
@@ -733,6 +731,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="864181794959726953" resolveInfo="idLieferant" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="864181794959726960" nodeInfo="ng">
+                    <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                     <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="864181794959726956" />
                     <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="3687014260077332909" />
                   </node>

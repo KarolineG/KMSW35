@@ -12,15 +12,16 @@
   <import index="o9h8" modelUID="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" version="-1" />
   <import index="nq1x" modelUID="r:96727cd1-f9d8-4cf6-87cf-109a07175d18(at.hafina.wws.Lieferantenstamm)" version="-1" />
   <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="154" implicit="yes" />
+  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
   <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
   <import index="tp2c" modelUID="r:00000000-0000-4000-0000-011c89590338(jetbrains.mps.baseLanguage.closures.structure)" version="3" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="39" implicit="yes" />
+  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="41" implicit="yes" />
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="489969188104799262" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Neue Zuordnung erstellen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="OPERATION_ADD" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_EDIT_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="489969188104799421" resolveInfo="Zuordungsverwaltung" />
     <node role="parameter" roleId="un0u.7192042020164640429" type="un0u.ContainerParameter" typeId="un0u.7192042020164640431" id="4442777440661796883" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="view" />
@@ -262,8 +263,8 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="489969188104799286" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Lieferanten für Zuordnung wählen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="OPERATION_ADD" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="DO_NOT_COMMIT_SESSION" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_EDIT_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="489969188104799421" resolveInfo="Zuordungsverwaltung" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="5828583037094910425" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="lieferantStdAlt" />
@@ -553,8 +554,8 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="489969188104799390" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Zuordnung löschen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="OPERATION_ADD" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="DO_NOT_COMMIT_SESSION" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_EDIT_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="489969188104799421" resolveInfo="Zuordungsverwaltung" />
     <node role="commandInit" roleId="un0u.7192042020164579739" type="un0u.VoidStatementList" typeId="un0u.6525155817176754757" id="489969188106309251" nodeInfo="ng">
       <node role="body" roleId="tpee.1137022507850" type="tpee.StatementList" typeId="tpee.1068580123136" id="489969188106309252" nodeInfo="sn">
@@ -598,8 +599,8 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="489969188104799403" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Zuordnungstabelle bearbeiten" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
-    <property name="commandCommitType" nameId="un0u.7597083895870343939" value="COMMIT_SESSION" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="489969188104799421" resolveInfo="Zuordungsverwaltung" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="489969188106082372" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="view" />
@@ -798,12 +799,12 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="489969188104799447" nodeInfo="in" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="489969188104799448" nodeInfo="ng" />
       <node role="documentation" roleId="un0u.6287236659904683502" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="2864156838823911901" nodeInfo="ng">
         <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="2864156838823911902" nodeInfo="ng">
           <property name="text" nameId="un0u.6525155817177697682" value="ID" />
         </node>
       </node>
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632778" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="489969188104799449" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="codeStatus" />
@@ -1044,6 +1045,7 @@
                     <link role="element" roleId="un0u.1707329006119989962" targetNodeId="489969188104799433" resolveInfo="Geloescht" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="489969188106304693" nodeInfo="ng">
+                    <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                     <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="8104064611855128155" />
                     <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5141888444943636906" />
                   </node>
@@ -1438,6 +1440,7 @@
                     <link role="status" roleId="un0u.4533072425307838444" targetNodeId="489969188104799429" resolveInfo="StatusZuordnung" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="489969188106450812" nodeInfo="ng">
+                    <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                     <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5141888444943636906" />
                     <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="489969188106450808" />
                   </node>
@@ -1832,12 +1835,14 @@
                       <link role="element" roleId="un0u.1707329006119989962" targetNodeId="489969188104799433" resolveInfo="Geloescht" />
                     </node>
                     <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="489969188106304729" nodeInfo="ng">
+                      <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                       <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="8104064611855128238" />
                       <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5141888444943636906" />
                     </node>
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="8104064611855128266" nodeInfo="nn">
                     <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="8104064611855128263" nodeInfo="ng">
+                      <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                       <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="8104064611855128238" />
                       <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5141888444944041860" />
                     </node>
@@ -2244,6 +2249,7 @@
                         <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8778937725042661288" resolveInfo="idLieferant" />
                       </node>
                       <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="8778937725042678502" nodeInfo="ng">
+                        <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                         <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="8778937725042675442" />
                         <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="5141888444944041947" />
                       </node>
@@ -2264,6 +2270,7 @@
                           <node role="queryOperation" roleId="r5tz.774207833082779687" type="r5tz.WhereQuery" typeId="r5tz.774207833082734171" id="8778937725042710656" nodeInfo="ng">
                             <node role="filter" roleId="r5tz.774207833082734172" type="tpee.EqualsExpression" typeId="tpee.1068580123152" id="8778937725042714020" nodeInfo="nn">
                               <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="8778937725042710680" nodeInfo="ng">
+                                <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                                 <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="8778937725042707977" />
                                 <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="nq1x.3687014260077332909" />
                               </node>
@@ -2326,6 +2333,7 @@
                     <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="8778937725042661288" resolveInfo="idLieferant" />
                   </node>
                   <node role="leftExpression" roleId="tpee.1081773367580" type="r5tz.MappingReference" typeId="r5tz.1974135804380344167" id="8778937725042673064" nodeInfo="ng">
+                    <property name="option" nameId="r5tz.8771400347576083753" value="NOP" />
                     <link role="mappingSource" roleId="r5tz.1974135804380645439" targetNodeId="8778937725042673060" />
                     <link role="fieldMapping" roleId="r5tz.5159282717680535116" targetNodeId="nq1x.3687014260077332909" />
                   </node>
@@ -2774,7 +2782,6 @@
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="489969188104799428" resolveInfo="LieferantenZuordnung" />
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="8104064611855127982" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="489969188104799441" resolveInfo="id" />
-        <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="8104064611855128015" nodeInfo="ng" />
         <node role="mappingOption" roleId="r5tz.774207833082375248" type="r5tz.AutoidOption" typeId="r5tz.774207833082557394" id="8104064611855128016" nodeInfo="ng">
           <node role="sequenceName" roleId="r5tz.774207833082557396" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="8104064611855128017" nodeInfo="nn">
             <property name="value" nameId="tpee.1070475926801" value="S_KM_KS_ZUORDNUNG" />
@@ -2960,6 +2967,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Artikel für Zuordnung wählen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="OPERATION_ADD" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_EDIT_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="489969188104799421" resolveInfo="Zuordungsverwaltung" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="489969188106525085" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="artikelAuswahl" />
@@ -3172,6 +3180,7 @@
     <property name="name" nameId="tpck.1169194664001" value="Teilsortimente für Zuordnung wählen" />
     <property name="commandType" nameId="un0u.943115150037896890" value="OPERATION_ADD" />
     <property name="virtualPackage" nameId="tpck.1193676396447" value="PROC" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_EDIT_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="489969188104799421" resolveInfo="Zuordungsverwaltung" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="5828583037094910204" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="ksStdAlt" />

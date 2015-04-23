@@ -32,6 +32,7 @@
   <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
   <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
   <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
+  <import index="r5tz" modelUID="r:0099bcb7-afa1-43de-901e-d5e48f4490ca(org.modellwerkstatt.manmap.structure)" version="41" implicit="yes" />
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="4235813073708234098" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="BatchProcKmsw" />
     <node role="status" roleId="un0u.4533072425307746563" type="un0u.Status" typeId="un0u.4533072425307715669" id="7841632776554179604" nodeInfo="ng">
@@ -95,7 +96,6 @@
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="4235813073708234099" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="id" />
-      <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.KeyOption" typeId="un0u.3674496190757459069" id="4235813073708234100" nodeInfo="ng" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="4235813073708234102" nodeInfo="nn" />
       <node role="propertyImplementation" roleId="tpee.1201372378714" type="tpee.DefaultPropertyImplementation" typeId="tpee.1201372606839" id="4235813073708234103" nodeInfo="ng">
         <node role="defaultGetAccessor" roleId="tpee.1202065356069" type="tpee.DefaultGetAccessor" typeId="tpee.1202065242027" id="4235813073708234104" nodeInfo="ng" />
@@ -104,6 +104,7 @@
         </node>
       </node>
       <node role="type" roleId="tpee.1201371521209" type="tpee.IntegerType" typeId="tpee.1070534370425" id="4235813073708234107" nodeInfo="in" />
+      <node role="propertyOption" roleId="un0u.3674496190757459099" type="r5tz.KeyOption" typeId="r5tz.774207833082557389" id="1572988785232632724" nodeInfo="ng" />
     </node>
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="4235813073708234108" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="datum" />
@@ -183,7 +184,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="7841632776554179642" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Batchprozess Umsatzberechnung starten" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
-    <property name="commandCommitType" value="DO_NOT_COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="1517919514413807433" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="stammKonditionen" />
@@ -441,9 +442,6 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4681617032813328618" nodeInfo="nn">
                       <link role="property" roleId="tpee.1201385237847" targetNodeId="6500961320733648248" />
                     </node>
-                  </node>
-                  <node role="sessionExpression" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4681617032780178420" nodeInfo="nn">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4681617032780169275" resolveInfo="session" />
                   </node>
                 </node>
               </node>
@@ -799,9 +797,6 @@
                   <property name="year" nameId="un0u.569389511234497408" value="0" />
                   <property name="fromServer" nameId="un0u.569389511234497411" value="true" />
                 </node>
-                <node role="sessionExpression" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4681617032780181677" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="6434208125137701848" resolveInfo="sessionUmsatzBerechnung" />
-                </node>
               </node>
             </node>
           </node>
@@ -913,9 +908,6 @@
                   <property name="year" nameId="un0u.569389511234497408" value="0" />
                   <property name="fromServer" nameId="un0u.569389511234497411" value="true" />
                 </node>
-                <node role="sessionExpression" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4681617032831194211" nodeInfo="nn">
-                  <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1517919514433253471" resolveInfo="sessionForderungsstellung" />
-                </node>
               </node>
             </node>
           </node>
@@ -962,9 +954,6 @@
             <link role="process" roleId="un0u.4419932786254844466" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
             <link role="command" roleId="un0u.4419932786254844467" targetNodeId="609770079932177622" resolveInfo="Start UNT-Batch" />
             <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="1517919514416074168" nodeInfo="nn" />
-            <node role="sessionExpression" type="tpee.VariableReference" typeId="tpee.1068498886296" id="1517919514415359953" nodeInfo="nn">
-              <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="1517919514415359857" resolveInfo="sessionUNTAbrechnung" />
-            </node>
             <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.FakeCommandView" typeId="un0u.4296094616050456083" id="1517919514415359955" nodeInfo="ng">
               <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="609770079932177627" resolveInfo="Datumseingabe" />
               <link role="pageConclusion" roleId="un0u.4296094616050456085" targetNodeId="609770079932177628" resolveInfo="Starten" />
@@ -1112,7 +1101,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="609770079932177622" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Start UNT-Batch" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
-    <property name="commandCommitType" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="609770079932177627" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Datumseingabe" />
@@ -3093,7 +3082,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="2647181365808863055" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Start Batch Forderungsstellung" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
-    <property name="commandCommitType" value="DO_NOT_COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="2647181365808863056" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="dateView" />
@@ -3200,9 +3189,6 @@
                     <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="4681617032813383243" nodeInfo="nn">
                       <link role="property" roleId="tpee.1201385237847" targetNodeId="6500961320733648248" resolveInfo="datum" />
                     </node>
-                  </node>
-                  <node role="sessionExpression" type="tpee.VariableReference" typeId="tpee.1068498886296" id="4681617032813386054" nodeInfo="nn">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="4681617032813384748" resolveInfo="session" />
                   </node>
                 </node>
               </node>
@@ -7801,7 +7787,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="4681617032779580450" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="UmsatzberechnungLieferantenVertrag" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
-    <property name="commandCommitType" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="4681617032779665664" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="stammKonditionen" />
@@ -9647,8 +9633,8 @@
   </root>
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="4681617032813264126" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="ForderungsstellungVertrag" />
-    <property name="commandCommitType" value="COMMIT_SESSION" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="4681617032813348180" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="forderungenForSave" />
@@ -10889,7 +10875,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="7493229696635441622" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="UmsatzberechnungTeilsortimenteVertrag" />
     <property name="commandType" nameId="un0u.943115150037896890" value="GRAPH_OWNER" />
-    <property name="commandCommitType" value="COMMIT_SESSION" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="GRAPH_OWNER_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
     <node role="variable" roleId="un0u.7192042020164640432" type="un0u.ContainerVariable" typeId="un0u.7192042020164640430" id="7493229696639103906" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="umsaetzeVJ" />
@@ -12168,6 +12154,7 @@
   <root type="un0u.Command" typeId="un0u.7192042020163999178" id="7493229696639068211" nodeInfo="ng">
     <property name="name" nameId="tpck.1169194664001" value="Start Batch Jahresumsatzberechnung" />
     <property name="commandType" nameId="un0u.943115150037896890" value="SEARCH_VIEW" />
+    <property name="newCommandType" nameId="un0u.7912134052599426179" value="SEARCH_CMD" />
     <link role="process" roleId="un0u.1993450443311478185" targetNodeId="7841632776554165404" resolveInfo="BatchKmsw" />
     <node role="pages" roleId="un0u.7192042020164064743" type="un0u.Page" typeId="un0u.7192042020163999174" id="7493229696639069554" nodeInfo="ng">
       <property name="name" nameId="tpck.1169194664001" value="Datumseingabe" />
@@ -12285,9 +12272,6 @@
                   <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="7493229696639069634" nodeInfo="nn" />
                   <node role="actualArgument" roleId="un0u.4419932786254844498" type="tp2q.ForEachVariableReference" typeId="tp2q.1153944233411" id="7493229696639069635" nodeInfo="nn">
                     <link role="variable" roleId="tp2q.1153944258490" targetNodeId="7493229696639069595" resolveInfo="vertrag" />
-                  </node>
-                  <node role="sessionExpression" type="tpee.VariableReference" typeId="tpee.1068498886296" id="7493229696639069644" nodeInfo="nn">
-                    <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="7493229696639069559" resolveInfo="session" />
                   </node>
                 </node>
               </node>
