@@ -1,3356 +1,3474 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model modelUID="r:07051759-2828-4a67-b1ad-c67580d1aa34(at.hafina.wws.KonditionsTypenVerwaltungUI)">
-  <persistence version="8" />
-  <language namespace="0f69ff68-7ed4-4ee4-8dc6-1619facda18d(org.modellwerkstatt.forms)" />
-  <language namespace="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" />
-  <language namespace="ec097fca-5b84-41f2-847d-6a5690cae277(org.modellwerkstatt.objectflow)" />
-  <language namespace="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" />
-  <language-engaged-on-generation namespace="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
-  <import index="8z9b" modelUID="r:90ef3146-e171-4eff-aee5-122e613b5ee8(at.hafina.wws.KonditionsTypenVerwaltung)" version="-1" />
-  <import index="c9yi" modelUID="r:775c0fa7-99cc-49ff-86b2-34796e752e4b(org.modellwerkstatt.forms.api)" version="1" />
-  <import index="mma5" modelUID="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" version="1" />
-  <import index="tpck" modelUID="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" version="0" implicit="yes" />
-  <import index="un0u" modelUID="r:5abca60f-e29b-478e-90f5-405db58d17d2(org.modellwerkstatt.objectflow.structure)" version="161" implicit="yes" />
-  <import index="tpee" modelUID="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" version="5" implicit="yes" />
-  <import index="sgb" modelUID="r:ff1c5781-322e-4061-ae5c-5f435235d5a8(org.modellwerkstatt.forms.structure)" version="164" implicit="yes" />
-  <import index="tp2q" modelUID="r:00000000-0000-4000-0000-011c8959032e(jetbrains.mps.baseLanguage.collections.structure)" version="7" implicit="yes" />
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669421" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditBezugsBasisFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669422" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditBezugsBasisDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669423" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="bezugsBasis" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669424" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370404" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370405" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370406" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667926" />
+<model ref="r:07051759-2828-4a67-b1ad-c67580d1aa34(at.hafina.wws.KonditionsTypenVerwaltungUI)">
+  <persistence version="9" />
+  <languages>
+    <use id="0f69ff68-7ed4-4ee4-8dc6-1619facda18d" name="org.modellwerkstatt.forms" version="-1" />
+    <use id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <generationPart ref="77d14628-0cd9-4192-8ee6-d86cbfeb4819(org.modellwerkstatt.fatflow)" />
+  </languages>
+  <imports>
+    <import index="8z9b" ref="r:90ef3146-e171-4eff-aee5-122e613b5ee8(at.hafina.wws.KonditionsTypenVerwaltung)" />
+    <import index="c9yi" ref="r:775c0fa7-99cc-49ff-86b2-34796e752e4b(org.modellwerkstatt.forms.api)" />
+    <import index="mma5" ref="r:bd45a0c2-84a2-4253-86a2-c9c160a8121d(org.modellwerkstatt.forms.FormsRT)" />
+  </imports>
+  <registry>
+    <language id="0f69ff68-7ed4-4ee4-8dc6-1619facda18d" name="org.modellwerkstatt.forms">
+      <concept id="5945580863363863223" name="org.modellwerkstatt.forms.structure.BoundObject" flags="ng" index="2EM3W" />
+      <concept id="1472214787652375098" name="org.modellwerkstatt.forms.structure.Folder" flags="ng" index="2ftCAQ">
+        <child id="1472214787652375112" name="element" index="2ftCB4" />
+      </concept>
+      <concept id="116370668401845264" name="org.modellwerkstatt.forms.structure.SelectedList" flags="ng" index="2xK8Eh">
+        <reference id="116370668401845265" name="classConcept" index="2xK8Eg" />
+      </concept>
+      <concept id="116370668401456157" name="org.modellwerkstatt.forms.structure.SelectedObject" flags="ng" index="2xMDEs">
+        <reference id="116370668401685500" name="classConcept" index="2xLxPX" />
+      </concept>
+      <concept id="8089681376574861170" name="org.modellwerkstatt.forms.structure.FormContainer" flags="ng" index="2G$zOF">
+        <child id="1569134824193054829" name="actionLink" index="dvBuy" />
+        <child id="3792563709707276307" name="rowWeight" index="2lwzia" />
+        <child id="8089681376574861180" name="baseForm" index="2G$zO_" />
+        <child id="940368958464562064" name="heading" index="3i6kW5" />
+        <child id="8264937784151109659" name="columnWeight" index="1THgkV" />
+      </concept>
+      <concept id="8089681376574861172" name="org.modellwerkstatt.forms.structure.IBaseForm" flags="ng" index="2G$zOH">
+        <property id="4559353072057000008" name="minWdith" index="1mNjcY" />
+        <property id="1817733841498849496" name="debugIObjectView" index="1nxMek" />
+      </concept>
+      <concept id="8089681376574938514" name="org.modellwerkstatt.forms.structure.TableForm" flags="ng" index="2G$WZb">
+        <child id="8089681376575535794" name="tableFormRow" index="2GDezF" />
+        <child id="4559353072056236738" name="actionLink" index="1memAO" />
+        <child id="4559353072057000037" name="heading" index="1mNjcj" />
+      </concept>
+      <concept id="8089681376574696124" name="org.modellwerkstatt.forms.structure.IBoundConcept" flags="ng" index="2G_Vz_">
+        <reference id="4554792820669879843" name="selectedClass" index="qGGBj" />
+        <reference id="8089681376575178480" name="containedProperty" index="2GBLiD" />
+        <child id="4554792820669238526" name="type" index="qi9ce" />
+      </concept>
+      <concept id="8089681376575535774" name="org.modellwerkstatt.forms.structure.TableFormRow" flags="ng" index="2GDez7">
+        <property id="8089681376575535775" name="width" index="2GDez6" />
+        <property id="8089681376575535776" name="label" index="2GDezT" />
+        <property id="8264937784150739374" name="numberFormat" index="1TGbMe" />
+        <child id="8089681376575671084" name="xPropPath" index="2GDD_P" />
+      </concept>
+      <concept id="4419932786254844460" name="org.modellwerkstatt.forms.structure.CommandTrigger" flags="ng" index="2Ux5dv">
+        <property id="943115150038430512" name="hotkey" index="1xgIOb" />
+        <child id="4419932786255200366" name="runCommand" index="2UzG4t" />
+      </concept>
+      <concept id="5005516259701333694" name="org.modellwerkstatt.forms.structure.InputDelegateParameter2" flags="ng" index="3lxVgU">
+        <reference id="5005516259701333696" name="methodDeclaration" index="3lxVh4" />
+        <child id="5005516259701333695" name="expression" index="3lxVgV" />
+      </concept>
+      <concept id="5005516259700566609" name="org.modellwerkstatt.forms.structure.MenuSeperator" flags="ng" index="3l$W3l" />
+      <concept id="7105808579467853411" name="org.modellwerkstatt.forms.structure.InputDelegateDeclaration" flags="ng" index="1vx_$y">
+        <property id="5005516259701333684" name="delegateType" index="3lxVgK" />
+        <child id="5005516259701333683" name="parameter2" index="3lxVgR" />
+      </concept>
+      <concept id="7105808579467823062" name="org.modellwerkstatt.forms.structure.DelegateForm" flags="ng" index="1vxE2n">
+        <child id="3792563709709170442" name="lable" index="2lSlej" />
+        <child id="7105808579467853410" name="delegate" index="1vx_$z" />
+        <child id="8264937784151109663" name="colWeight" index="1THgkZ" />
+      </concept>
+      <concept id="7968457660428854080" name="org.modellwerkstatt.forms.structure.ActionLinkContainer" flags="ng" index="1J3Sl6">
+        <property id="7968457660428854083" name="title" index="1J3Sl5" />
+        <child id="3985184476073673634" name="imageString" index="2jyZI8" />
+        <child id="7968457660428854084" name="actionLink" index="1J3Sl2" />
+      </concept>
+      <concept id="8264937784151109645" name="org.modellwerkstatt.forms.structure.WeightLayoutParam" flags="ng" index="1THgkH">
+        <child id="8264937784151109646" name="weightParam" index="1THgkI" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
+        <reference id="1201385237847" name="property" index="2S8YL0" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+    </language>
+    <language id="ec097fca-5b84-41f2-847d-6a5690cae277" name="org.modellwerkstatt.objectflow">
+      <concept id="1444282517685285791" name="org.modellwerkstatt.objectflow.structure.RealCommandView" flags="ng" index="xYMNj">
+        <reference id="1444282517685285794" name="externalView" index="xYMNI" />
+      </concept>
+      <concept id="4419932786254844465" name="org.modellwerkstatt.objectflow.structure.RunCommand" flags="ng" index="2Ux5d2">
+        <reference id="4419932786254844467" name="command" index="2Ux5d0" />
+        <reference id="4419932786254844466" name="process" index="2Ux5d1" />
+        <child id="4296094616050456129" name="viewsForCommands" index="2sIhOb" />
+        <child id="4419932786254844498" name="actualArgument" index="2Ux5cx" />
+      </concept>
+      <concept id="4152417163566536218" name="org.modellwerkstatt.objectflow.structure.IViewForPage" flags="ng" index="3gfwXM">
+        <reference id="1444282517685285790" name="pageReference" index="xYMNi" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2G$zOF" id="1NdMWqEHsqH">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditBezugsBasisFC" />
+    <node concept="1vxE2n" id="1NdMWqEHsqI" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditBezugsBasisDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsqJ" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="bezugsBasis" />
+        <node concept="3lxVgU" id="1NdMWqEHsqK" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8M$$" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8M$_" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8M$A" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3m" resolve="bezugsBasis" />
             </node>
           </node>
         </node>
       </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669430" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669431" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
+      <node concept="1THgkH" id="1NdMWqEHsqQ" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsqR" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
         </node>
       </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669432" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+      <node concept="3uibUv" id="1NdMWqEHsqS" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
       </node>
     </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669433" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669434" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="1NdMWqEHsqT" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsqU" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669435" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669436" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="1NdMWqEHsqV" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsqW" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669437" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+    <node concept="3uibUv" id="1NdMWqEHsqX" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
     </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669438" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="ZeilenEinheitenListeFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.TableForm" typeId="sgb.8089681376574938514" id="2075539057415669439" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="ZeilenEinheitenListeTF" />
-      <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="2075539057415669440" nodeInfo="ng">
-        <property name="title" nameId="sgb.7968457660428854083" value="Edit" />
-        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669442" nodeInfo="ng">
-          <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
-          <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669443" nodeInfo="ng">
-            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2987152407127836607" resolveInfo="Selektierte Zeileneinheit bearbeiten" />
-            <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2987152407127836645" resolveInfo="Zeileneinheitenverwaltung" />
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2987152407129000748" nodeInfo="nn" />
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2987152407129000739" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415669444" nodeInfo="ng">
-                <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsqY">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="ZeilenEinheitenListeFC" />
+    <node concept="2G$WZb" id="1NdMWqEHsqZ" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="ZeilenEinheitenListeTF" />
+      <node concept="1J3Sl6" id="1NdMWqEHsr0" role="1memAO">
+        <property role="1J3Sl5" value="Edit" />
+        <node concept="2Ux5dv" id="1NdMWqEHsr2" role="1J3Sl2">
+          <property role="1xgIOb" value="ENTER_10" />
+          <node concept="2Ux5d2" id="1NdMWqEHsr3" role="2UzG4t">
+            <ref role="2Ux5d0" to="8z9b:2_OvOA$NGuZ" resolve="Selektierte Zeileneinheit bearbeiten" />
+            <ref role="2Ux5d1" to="8z9b:2_OvOA$NGv_" resolve="Zeileneinheitenverwaltung" />
+            <node concept="10Nm6u" id="2_OvOA$S8GG" role="2Ux5cx" />
+            <node concept="2OqwBi" id="2_OvOA$S8Gz" role="2Ux5cx">
+              <node concept="2xMDEs" id="1NdMWqEHsr4" role="2Oq$k0">
+                <ref role="2xLxPX" to="8z9b:1NdMWqEHset" resolve="ZeilenEinheitFromList" />
               </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2987152407129000744" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668642" resolveInfo="id" />
-              </node>
-            </node>
-            <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669445" nodeInfo="ng">
-              <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2987152407127836608" resolveInfo="Zeileneinheit" />
-              <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2987152407127836684" resolveInfo="EditZeilenEinheitFC" />
-            </node>
-          </node>
-        </node>
-        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669446" nodeInfo="ng">
-          <property name="hotkey" nameId="sgb.943115150038430512" value="ADD_107" />
-          <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669447" nodeInfo="ng">
-            <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2987152407127836645" resolveInfo="Zeileneinheitenverwaltung" />
-            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2987152407127836585" resolveInfo="Neue Zeileneinheit anlegen" />
-            <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669448" nodeInfo="ng">
-              <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2987152407127836684" resolveInfo="EditZeilenEinheitFC" />
-              <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2987152407127836586" resolveInfo="Zeileneinheit Edit" />
-            </node>
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415669449" nodeInfo="nn" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669450" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372696" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372697" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372698" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668666" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669452" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="200" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373342" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373343" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373344" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668650" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669454" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="200" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374100" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374101" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374102" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668658" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669456" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="50" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375192" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375193" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375194" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668674" />
-          </node>
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2075539057415669458" nodeInfo="in">
-        <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669459" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
-        </node>
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669460" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669461" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669462" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669463" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2075539057415669464" nodeInfo="in">
-      <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669465" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
-      </node>
-    </node>
-    <node role="heading" roleId="sgb.940368958464562064" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669466" nodeInfo="nn">
-      <property name="value" nameId="tpee.1070475926801" value="Liste der Einheiten für die Konditionszeilen" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669467" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTyp1FC" />
-    <node role="actionLink" roleId="sgb.1569134824193054829" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="2075539057415669468" nodeInfo="ng">
-      <property name="title" nameId="sgb.7968457660428854083" value="Edit" />
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669469" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F3_114" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669470" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415667074" resolveInfo="Forderungstyp ändern" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="3012906531667570601" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669471" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415670104" resolveInfo="ForderungsTypFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415667075" resolveInfo="Edit" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669473" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F4_115" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669474" nodeInfo="ng">
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415667028" resolveInfo="Forderungssubtyp ändern" />
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="3012906531666656373" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669475" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415670085" resolveInfo="ForderungsSubTypFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415667029" resolveInfo="Edit" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.MenuSeperator" typeId="sgb.5005516259700566609" id="2075539057417375664" nodeInfo="ng" />
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669477" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F5_116" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669478" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415667533" resolveInfo="Konditionswirkung bearbeiten" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669479" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669990" resolveInfo="EditParameterSelectionFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415667536" resolveInfo="Selektionsliste" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669480" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669880" resolveInfo="EditKonditionsWirkungFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415667579" resolveInfo="Defaulteinstellung" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415669481" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669482" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F6_117" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669483" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415669119" resolveInfo="Berechnungsgrundlageneinheit bearbeiten" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669484" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415669120" resolveInfo="Selektionsliste" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669990" resolveInfo="EditParameterSelectionFC" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669485" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415669156" resolveInfo="Defaulteinstellung" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669912" resolveInfo="EditBerechnungsGrundlageEinheitKTypFC" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415669486" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057417166823" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F7_118" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057417166824" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057416456909" resolveInfo="Bezugsbasis bearbeiten" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166825" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669990" resolveInfo="EditParameterSelectionFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416456956" resolveInfo="Selektionsliste" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166826" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416456999" resolveInfo="Defaulteinstellung" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669421" resolveInfo="EditBezugsBasisFC" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057417166827" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057417166828" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F8_119" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057417166829" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057416457024" resolveInfo="Kalkulationsbasis bearbeiten" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166830" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669990" resolveInfo="EditParameterSelectionFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457041" resolveInfo="Selektionsliste" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166831" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457084" resolveInfo="Defaulteinstellung" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669865" resolveInfo="EditKalkulationsBasisFC" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057417166832" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057417166833" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F9_120" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057417166834" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057416457284" resolveInfo="Zeileneinheit bearbeiten" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166835" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669990" resolveInfo="EditParameterSelectionFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457619" resolveInfo="Selektionsliste" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166836" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457655" resolveInfo="Defaulteinstellung" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669944" resolveInfo="EditZeilenEinheitKTypFC" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057417166837" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057417166838" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F10_121" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057417166839" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057416457197" resolveInfo="Zyklus bearbeiten" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166840" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669990" resolveInfo="EditParameterSelectionFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457216" resolveInfo="Selektionsliste" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166841" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457259" resolveInfo="Defaulteinstellung" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669897" resolveInfo="EditZyklusKTypFC" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057417166842" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057417166843" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="F11_122" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057417166844" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057416457108" resolveInfo="Zeitkennung bearbeiten" />
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166845" nodeInfo="ng">
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669990" resolveInfo="EditParameterSelectionFC" />
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457129" resolveInfo="Selektionsliste" />
-          </node>
-          <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057417166846" nodeInfo="ng">
-            <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057416457172" resolveInfo="Defaulteinstellung" />
-            <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669929" resolveInfo="EditZeitkennungKTypFC" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057417166847" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-          </node>
-        </node>
-      </node>
-      <node role="imageString" roleId="sgb.3985184476073673634" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2075539057415669487" nodeInfo="nn">
-        <link role="classifier" roleId="tpee.1144433057691" targetNodeId="mma5.651453175762553938" resolveInfo="HafinaDefaults" />
-        <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="mma5.5428517324472163684" resolveInfo="ICON_EDIT" />
-      </node>
-    </node>
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669488" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTyp1DF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669489" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="reihung" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="IntegerDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669490" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370652" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370653" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370654" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667890" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400099820" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400099829" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669494" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="kondGruppe" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669495" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371362" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371363" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371364" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667912" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400099839" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400099840" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669499" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="gewaehrung" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669500" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374052" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374053" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374054" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668071" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134372" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134373" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669504" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="steuerKennZeichen" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669505" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371548" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371549" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371550" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668078" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669509" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669510" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="steuerCode,steuerBez" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134387" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134388" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669511" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="forderungsTyp" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669512" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372496" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372497" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372498" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668281" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669516" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669517" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="id,titel" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="3170441440303838" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379991" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Forderungstyp (F3)" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669518" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669519" nodeInfo="nn" />
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669520" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669521" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669522" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="forderungsSubTyp" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669523" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371398" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371399" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371400" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668288" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669527" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669528" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="id,titel" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="3170441440303859" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379125" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="Forderungs Subtyp (F4)" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669529" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669530" nodeInfo="nn" />
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669531" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669532" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669533" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="profitCenter" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669534" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374502" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374503" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374504" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668099" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134404" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134405" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2938153221313046886" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="status" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2938153221313046887" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2938153221313046888" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="2938153221313046889" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2938153221313046890" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668106" resolveInfo="status" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2938153221313046969" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2938153221313046978" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669540" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669541" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669542" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669543" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669544" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669545" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-      <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669546" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Grundeinstellung" />
-      </node>
-    </node>
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669547" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypParameterVal1DF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669548" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="bezeichnung" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669549" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372684" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372685" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372686" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667904" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134419" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134420" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669553" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isBezeichnungEditable" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669554" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375040" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375041" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375042" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668113" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134434" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134435" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669558" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="konditionsSatz" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="DecimalDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669559" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374158" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374159" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374160" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667940" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134449" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134450" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669563" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isKonditionsSatzEditable" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669564" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370492" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370493" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370494" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668141" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134464" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134465" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669568" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="konditionsBedRf" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="IntegerDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669569" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371326" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371327" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371328" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667933" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134479" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134480" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669573" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isKonditionsBedRfEditable" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669574" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371218" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371219" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371220" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668134" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134494" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134495" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669578" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669579" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="450" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669580" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="150" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669581" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-      <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669582" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Parameterdefinitionen Grundtypen / Freigabe" />
-      </node>
-    </node>
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669583" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypParameterListen1FC" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669584" nodeInfo="ng">
-        <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-        <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-        <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypParameterListen1DF" />
-        <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669585" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="konditionsWirkung" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669586" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375046" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375047" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375048" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667947" />
+              <node concept="2S8uIT" id="2_OvOA$S8GC" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHsey" resolve="id" />
               </node>
             </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669590" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669591" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463762" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379933" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Konditionswirkung (F5)" />
+            <node concept="xYMNj" id="1NdMWqEHsr5" role="2sIhOb">
+              <ref role="xYMNi" to="8z9b:2_OvOA$NGv0" resolve="Zeileneinheit" />
+              <ref role="xYMNI" node="2_OvOA$NGwc" resolve="EditZeilenEinheitFC" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669592" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isKonditionsWirkungEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669593" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374730" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374731" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374732" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668148" />
-              </node>
+        <node concept="2Ux5dv" id="1NdMWqEHsr6" role="1J3Sl2">
+          <property role="1xgIOb" value="ADD_107" />
+          <node concept="2Ux5d2" id="1NdMWqEHsr7" role="2UzG4t">
+            <ref role="2Ux5d1" to="8z9b:2_OvOA$NGv_" resolve="Zeileneinheitenverwaltung" />
+            <ref role="2Ux5d0" to="8z9b:2_OvOA$NGuD" resolve="Neue Zeileneinheit anlegen" />
+            <node concept="xYMNj" id="1NdMWqEHsr8" role="2sIhOb">
+              <ref role="xYMNI" node="2_OvOA$NGwc" resolve="EditZeilenEinheitFC" />
+              <ref role="xYMNi" to="8z9b:2_OvOA$NGuE" resolve="Zeileneinheit Edit" />
             </node>
+            <node concept="10Nm6u" id="1NdMWqEHsr9" role="2Ux5cx" />
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134509" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134510" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHsra" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8N8o" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8N8p" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8N8q" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHseU" resolve="kurzBezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHsrc" role="2GDezF">
+        <property role="2GDez6" value="200" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Niu" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Niv" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Niw" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHseE" resolve="bezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHsre" role="2GDezF">
+        <property role="2GDez6" value="200" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Nuk" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Nul" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Num" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHseM" resolve="bezeichnungMz" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHsrg" role="2GDezF">
+        <property role="2GDez6" value="50" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NJo" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NJp" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NJq" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsf2" resolve="aktiv" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="1NdMWqEHsri" role="qi9ce">
+        <node concept="3uibUv" id="1NdMWqEHsrj" role="_ZDj9">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHset" resolve="ZeilenEinheitFromList" />
+        </node>
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsrk" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsrl" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsrm" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsrn" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="_YKpA" id="1NdMWqEHsro" role="qi9ce">
+      <node concept="3uibUv" id="1NdMWqEHsrp" role="_ZDj9">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHset" resolve="ZeilenEinheitFromList" />
+      </node>
+    </node>
+    <node concept="Xl_RD" id="1NdMWqEHsrq" role="3i6kW5">
+      <property role="Xl_RC" value="Liste der Einheiten für die Konditionszeilen" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsrr">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditKonditionsTyp1FC" />
+    <node concept="1J3Sl6" id="1NdMWqEHsrs" role="dvBuy">
+      <property role="1J3Sl5" value="Edit" />
+      <node concept="2Ux5dv" id="1NdMWqEHsrt" role="1J3Sl2">
+        <property role="1xgIOb" value="F3_114" />
+        <node concept="2Ux5d2" id="1NdMWqEHsru" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEHrQ2" resolve="Forderungstyp ändern" />
+          <node concept="2xMDEs" id="2BfZCs9vYYD" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEHsrv" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHs_o" resolve="ForderungsTypFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEHrQ3" resolve="Edit" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEHsrx" role="1J3Sl2">
+        <property role="1xgIOb" value="F4_115" />
+        <node concept="2Ux5d2" id="1NdMWqEHsry" role="2UzG4t">
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEHrPk" resolve="Forderungssubtyp ändern" />
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <node concept="2xMDEs" id="2BfZCs9svLP" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEHsrz" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHs_5" resolve="ForderungsSubTypFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEHrPl" resolve="Edit" />
+          </node>
+        </node>
+      </node>
+      <node concept="3l$W3l" id="1NdMWqENWYK" role="1J3Sl2" />
+      <node concept="2Ux5dv" id="1NdMWqEHsr_" role="1J3Sl2">
+        <property role="1xgIOb" value="F5_116" />
+        <node concept="2Ux5d2" id="1NdMWqEHsrA" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEHrXd" resolve="Konditionswirkung bearbeiten" />
+          <node concept="xYMNj" id="1NdMWqEHsrB" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHszA" resolve="EditParameterSelectionFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEHrXg" resolve="Selektionsliste" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEHsrC" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHsxS" resolve="EditKonditionsWirkungFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEHrXV" resolve="Defaulteinstellung" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEHsrD" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEHsrE" role="1J3Sl2">
+        <property role="1xgIOb" value="F6_117" />
+        <node concept="2Ux5d2" id="1NdMWqEHsrF" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEHslZ" resolve="Berechnungsgrundlageneinheit bearbeiten" />
+          <node concept="xYMNj" id="1NdMWqEHsrG" role="2sIhOb">
+            <ref role="xYMNi" to="8z9b:1NdMWqEHsm0" resolve="Selektionsliste" />
+            <ref role="xYMNI" node="1NdMWqEHszA" resolve="EditParameterSelectionFC" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEHsrH" role="2sIhOb">
+            <ref role="xYMNi" to="8z9b:1NdMWqEHsm$" resolve="Defaulteinstellung" />
+            <ref role="xYMNI" node="1NdMWqEHsyo" resolve="EditBerechnungsGrundlageEinheitKTypFC" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEHsrI" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEN9ZB" role="1J3Sl2">
+        <property role="1xgIOb" value="F7_118" />
+        <node concept="2Ux5d2" id="1NdMWqEN9ZC" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEKsFd" resolve="Bezugsbasis bearbeiten" />
+          <node concept="xYMNj" id="1NdMWqEN9ZD" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHszA" resolve="EditParameterSelectionFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsFW" resolve="Selektionsliste" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEN9ZE" role="2sIhOb">
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsGB" resolve="Defaulteinstellung" />
+            <ref role="xYMNI" node="1NdMWqEHsqH" resolve="EditBezugsBasisFC" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEN9ZF" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEN9ZG" role="1J3Sl2">
+        <property role="1xgIOb" value="F8_119" />
+        <node concept="2Ux5d2" id="1NdMWqEN9ZH" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEKsH0" resolve="Kalkulationsbasis bearbeiten" />
+          <node concept="xYMNj" id="1NdMWqEN9ZI" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHszA" resolve="EditParameterSelectionFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsHh" resolve="Selektionsliste" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEN9ZJ" role="2sIhOb">
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsHW" resolve="Defaulteinstellung" />
+            <ref role="xYMNI" node="1NdMWqEHsxD" resolve="EditKalkulationsBasisFC" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEN9ZK" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEN9ZL" role="1J3Sl2">
+        <property role="1xgIOb" value="F9_120" />
+        <node concept="2Ux5d2" id="1NdMWqEN9ZM" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEKsL4" resolve="Zeileneinheit bearbeiten" />
+          <node concept="xYMNj" id="1NdMWqEN9ZN" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHszA" resolve="EditParameterSelectionFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsQj" resolve="Selektionsliste" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEN9ZO" role="2sIhOb">
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsQR" resolve="Defaulteinstellung" />
+            <ref role="xYMNI" node="1NdMWqEHsyS" resolve="EditZeilenEinheitKTypFC" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEN9ZP" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEN9ZQ" role="1J3Sl2">
+        <property role="1xgIOb" value="F10_121" />
+        <node concept="2Ux5d2" id="1NdMWqEN9ZR" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEKsJH" resolve="Zyklus bearbeiten" />
+          <node concept="xYMNj" id="1NdMWqEN9ZS" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHszA" resolve="EditParameterSelectionFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsK0" resolve="Selektionsliste" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEN9ZT" role="2sIhOb">
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsKF" resolve="Defaulteinstellung" />
+            <ref role="xYMNI" node="1NdMWqEHsy9" resolve="EditZyklusKTypFC" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEN9ZU" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEN9ZV" role="1J3Sl2">
+        <property role="1xgIOb" value="F11_122" />
+        <node concept="2Ux5d2" id="1NdMWqEN9ZW" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEKsIk" resolve="Zeitkennung bearbeiten" />
+          <node concept="xYMNj" id="1NdMWqEN9ZX" role="2sIhOb">
+            <ref role="xYMNI" node="1NdMWqEHszA" resolve="EditParameterSelectionFC" />
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsID" resolve="Selektionsliste" />
+          </node>
+          <node concept="xYMNj" id="1NdMWqEN9ZY" role="2sIhOb">
+            <ref role="xYMNi" to="8z9b:1NdMWqEKsJk" resolve="Defaulteinstellung" />
+            <ref role="xYMNI" node="1NdMWqEHsyD" resolve="EditZeitkennungKTypFC" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEN9ZZ" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+          </node>
+        </node>
+      </node>
+      <node concept="10M0yZ" id="1NdMWqEHsrJ" role="2jyZI8">
+        <ref role="1PxDUh" to="mma5:$arjoT88Li" resolve="HafinaDefaults" />
+        <ref role="3cqZAo" to="mma5:4HlXVUYdTP$" resolve="ICON_EDIT" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="1NdMWqEHsrK" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTyp1DF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsrL" role="1vx_$z">
+        <property role="TrG5h" value="reihung" />
+        <property role="3lxVgK" value="IntegerDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsrM" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MCs" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MCt" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MCu" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs2M" resolve="reihung" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669597" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selKonditionsWirkung" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669598" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373458" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373459" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373460" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360815483" />
-              </node>
-            </node>
+        <node concept="3lxVgU" id="4r_rNOh$g7G" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$g7P" role="3lxVgV">
+            <property role="3clFbU" value="false" />
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669602" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669603" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669604" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669605" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="512" />
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsrQ" role="1vx_$z">
+        <property role="TrG5h" value="kondGruppe" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsrR" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MNy" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MNz" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MN$" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs38" resolve="konditionsGruppe" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669606" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="berechGrundlageEh" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669607" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370248" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370249" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370250" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667954" />
-              </node>
-            </node>
+        <node concept="3lxVgU" id="4r_rNOh$g7Z" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$g80" role="3lxVgV">
+            <property role="3clFbU" value="false" />
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669611" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669612" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="bezeichnung" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669613" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669614" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463748" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361380021" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Berechnungsgrundlage Eh (F6)" />
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsrV" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="gewaehrung" />
+        <node concept="3lxVgU" id="1NdMWqEHsrW" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nt$" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nt_" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NtA" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5B" resolve="gewaehrung" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669615" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isBerechGrundlageEhEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669616" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374694" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374695" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374696" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668176" />
-              </node>
-            </node>
+        <node concept="3lxVgU" id="4r_rNOh$oz$" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oz_" role="3lxVgV">
+            <property role="3clFbU" value="false" />
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134524" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134525" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHss0" role="1vx_$z">
+        <property role="TrG5h" value="steuerKennZeichen" />
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHss1" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MQs" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MQt" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MQu" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5I" resolve="steuerKennzeichen" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669620" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selBerechnungsGrundlageEH" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669621" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373236" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373237" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373238" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360915266" />
-              </node>
-            </node>
+        <node concept="3lxVgU" id="1NdMWqEHss5" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="1NdMWqEHss6" role="3lxVgV">
+            <property role="Xl_RC" value="steuerCode,steuerBez" />
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669625" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669626" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="256" />
-            </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$ozN" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$ozO" role="3lxVgV">
+            <property role="3clFbU" value="false" />
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669627" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669628" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHss7" role="1vx_$z">
+        <property role="TrG5h" value="forderungsTyp" />
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHss8" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N5g" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N5h" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N5i" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs8T" resolve="forderungsTyp" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669629" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="bezugsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669630" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370752" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370753" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370754" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667926" />
+        <node concept="3lxVgU" id="1NdMWqEHssc" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="1NdMWqEHssd" role="3lxVgV">
+            <property role="Xl_RC" value="id,titel" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="bgRZFP9Fu" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8OUn" role="3lxVgV">
+            <property role="Xl_RC" value="Forderungstyp (F3)" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsse" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
+          <node concept="3clFbT" id="1NdMWqEHssf" role="3lxVgV" />
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHssg" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHssh" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHssi" role="1vx_$z">
+        <property role="TrG5h" value="forderungsSubTyp" />
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHssj" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MO6" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MO7" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MO8" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs90" resolve="forderungsSubTyp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHssn" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="1NdMWqEHsso" role="3lxVgV">
+            <property role="Xl_RC" value="id,titel" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="bgRZFP9FN" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8OGP" role="3lxVgV">
+            <property role="Xl_RC" value="Forderungs Subtyp (F4)" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHssp" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
+          <node concept="3clFbT" id="1NdMWqEHssq" role="3lxVgV" />
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHssr" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsss" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsst" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="profitCenter" />
+        <node concept="3lxVgU" id="1NdMWqEHssu" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N$A" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N$B" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N$C" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs63" resolve="profitCenter" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o$4" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o$5" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="2z6qGAG2a_A" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="status" />
+        <node concept="3lxVgU" id="2z6qGAG2a_B" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="2z6qGAG2a_C" role="3lxVgV">
+            <node concept="2EM3W" id="2z6qGAG2a_D" role="2Oq$k0" />
+            <node concept="2S8uIT" id="2z6qGAG2a_E" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6a" resolve="status" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="2z6qGAG2aAT" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="2z6qGAG2aB2" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHss$" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHss_" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHssA" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHssB" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHssC" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHssD" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHssE" role="2lSlej">
+        <property role="Xl_RC" value="Grundeinstellung" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="1NdMWqEHssF" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTypParameterVal1DF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHssG" role="1vx_$z">
+        <property role="TrG5h" value="bezeichnung" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHssH" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N8c" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N8d" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N8e" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs30" resolve="bezeichnung" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o$j" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o$k" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHssL" role="1vx_$z">
+        <property role="TrG5h" value="isBezeichnungEditable" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHssM" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NH0" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NH1" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NH2" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6h" resolve="isBezeichnungEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o$y" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o$z" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHssQ" role="1vx_$z">
+        <property role="TrG5h" value="konditionsSatz" />
+        <property role="3lxVgK" value="DecimalDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHssR" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nve" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nvf" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8Nvg" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3$" resolve="konditionsSatz" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o$L" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o$M" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHssV" role="1vx_$z">
+        <property role="TrG5h" value="isKonditionsSatzEditable" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHssW" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8M_W" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8M_X" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8M_Y" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6H" resolve="isKonditionsSatzEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o_0" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o_1" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHst0" role="1vx_$z">
+        <property role="TrG5h" value="konditionsBedRf" />
+        <property role="3lxVgK" value="IntegerDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHst1" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MMY" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MMZ" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MN0" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3t" resolve="konditionsBedRf" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o_f" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o_g" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHst5" role="1vx_$z">
+        <property role="TrG5h" value="isKonditionsBedRfEditable" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHst6" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MLi" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MLj" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MLk" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6A" resolve="isKonditionsBedRfEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o_u" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o_v" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsta" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHstb" role="1THgkI">
+          <property role="Xl_RC" value="450" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHstc" role="1THgkI">
+          <property role="Xl_RC" value="150" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHstd" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHste" role="2lSlej">
+        <property role="Xl_RC" value="Parameterdefinitionen Grundtypen / Freigabe" />
+      </node>
+    </node>
+    <node concept="2G$zOF" id="1NdMWqEHstf" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTypParameterListen1FC" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vxE2n" id="1NdMWqEHstg" role="2G$zO_">
+        <property role="1mNjcY" value="1" />
+        <property role="1nxMek" value="false" />
+        <property role="TrG5h" value="EditKonditionsTypParameterListen1DF" />
+        <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+        <node concept="1vx_$y" id="1NdMWqEHsth" role="1vx_$z">
+          <property role="TrG5h" value="konditionsWirkung" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsti" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NH6" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NH7" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NH8" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3F" resolve="kondWirkung" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669636" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669637" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHstm" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHstn" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463736" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379097" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Bezugsbasis (F7)" />
+          <node concept="3lxVgU" id="3P5uN5zrHWi" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+            <node concept="Xl_RD" id="3svtX3w8OTt" role="3lxVgV">
+              <property role="Xl_RC" value="Konditionswirkung (F5)" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669638" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isBezugsBasisEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669639" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374164" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374165" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374166" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668127" />
+        <node concept="1vx_$y" id="1NdMWqEHsto" role="1vx_$z">
+          <property role="TrG5h" value="isKonditionsWirkungEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHstp" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NCa" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NCb" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NCc" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6O" resolve="isKonditionsWirkungEditable" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134539" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134540" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="4r_rNOh$o_H" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$o_I" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669643" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selBezugsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669644" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372614" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372615" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372616" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360857825" />
+        <node concept="1vx_$y" id="1NdMWqEHstt" role="1vx_$z">
+          <property role="TrG5h" value="selKonditionsWirkung" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHstu" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8Nki" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8Nkj" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Nkk" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w6F5V" resolve="selectionListKondWirkungAsText" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669648" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669649" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsty" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHstz" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669650" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669651" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="512" />
+          <node concept="3lxVgU" id="1NdMWqEHst$" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="1NdMWqEHst_" role="3lxVgV">
+              <property role="3cmrfH" value="512" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669652" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="kalkulationsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669653" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372062" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372063" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372064" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667919" />
+        <node concept="1vx_$y" id="1NdMWqEHstA" role="1vx_$z">
+          <property role="TrG5h" value="berechGrundlageEh" />
+          <property role="3lxVgK" value="ReferenceDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHstB" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8My8" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8My9" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Mya" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3M" resolve="berechnungsGlEh" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669657" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669658" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHstF" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+            <node concept="Xl_RD" id="1NdMWqEHstG" role="3lxVgV">
+              <property role="Xl_RC" value="bezeichnung" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463724" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361377995" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Kalkulationsbasis (F8)" />
+          <node concept="3lxVgU" id="1NdMWqEHstH" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHstI" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="3P5uN5zrHW4" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+            <node concept="Xl_RD" id="3svtX3w8OUP" role="3lxVgV">
+              <property role="Xl_RC" value="Berechnungsgrundlage Eh (F6)" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669659" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isKalkulationsBasisEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669660" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373614" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373615" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373616" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668120" />
+        <node concept="1vx_$y" id="1NdMWqEHstJ" role="1vx_$z">
+          <property role="TrG5h" value="isBerechGrundlageEhEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHstK" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NBA" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NBB" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NBC" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7g" resolve="isBerechGrundlEhEditable" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134554" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134555" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="4r_rNOh$o_W" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$o_X" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669664" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selKalkulationsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669665" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374602" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374603" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374604" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360879217" />
+        <node concept="1vx_$y" id="1NdMWqEHstO" role="1vx_$z">
+          <property role="TrG5h" value="selBerechnungsGrundlageEH" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHstP" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NgO" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NgP" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NgQ" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w73t2" resolve="selectionListBerechnungsGrundlageAsText" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669669" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669670" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHstT" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="1NdMWqEHstU" role="3lxVgV">
+              <property role="3cmrfH" value="256" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669671" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669672" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="512" />
+          <node concept="3lxVgU" id="1NdMWqEHstV" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHstW" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669673" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="zeilenEinheit" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669674" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370936" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370937" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370938" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667968" />
+        <node concept="1vx_$y" id="1NdMWqEHstX" role="1vx_$z">
+          <property role="TrG5h" value="bezugsBasis" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHstY" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8ME0" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8ME1" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8ME2" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3m" resolve="bezugsBasis" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669678" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669679" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="bezeichnung" />
+          <node concept="3lxVgU" id="1NdMWqEHsu4" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsu5" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669680" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669681" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463710" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361376973" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Zeileneinheit (F9)" />
+          <node concept="3lxVgU" id="3P5uN5zrHVS" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+            <node concept="Xl_RD" id="3svtX3w8OGp" role="3lxVgV">
+              <property role="Xl_RC" value="Bezugsbasis (F7)" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669682" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZeilenEinheitEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669683" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372298" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372299" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372300" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668190" />
+        <node concept="1vx_$y" id="1NdMWqEHsu6" role="1vx_$z">
+          <property role="TrG5h" value="isBezugsBasisEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsu7" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8Nvk" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8Nvl" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Nvm" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6v" resolve="isBezugsBasisEditable" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134569" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134570" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="4r_rNOh$oAb" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oAc" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669687" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selZeilenEinheit" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669688" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374046" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374047" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374048" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360999443" />
+        <node concept="1vx_$y" id="1NdMWqEHsub" role="1vx_$z">
+          <property role="TrG5h" value="selBezugsBasis" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsuc" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8N76" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8N77" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8N78" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w6Prx" resolve="selectionListBezugsBasisAsText" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669692" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669693" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsug" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsuh" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669694" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669695" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="1024" />
+          <node concept="3lxVgU" id="1NdMWqEHsui" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="1NdMWqEHsuj" role="3lxVgV">
+              <property role="3cmrfH" value="512" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669696" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="zyklus" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669697" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371588" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371589" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371590" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667961" />
+        <node concept="1vx_$y" id="1NdMWqEHsuk" role="1vx_$z">
+          <property role="TrG5h" value="kalkulationsBasis" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsul" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8MYu" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8MYv" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8MYw" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3f" resolve="kalkulationsBasis" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669701" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669702" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsup" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsuq" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758462911" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361379941" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Zyklus Akontozahlungen (F10)" />
+          <node concept="3lxVgU" id="3P5uN5zrHVG" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+            <node concept="Xl_RD" id="3svtX3w8Orb" role="3lxVgV">
+              <property role="Xl_RC" value="Kalkulationsbasis (F8)" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669703" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZyklusEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669704" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374520" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374521" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374522" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668155" />
+        <node concept="1vx_$y" id="1NdMWqEHsur" role="1vx_$z">
+          <property role="TrG5h" value="isKalkulationsBasisEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsus" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NmI" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NmJ" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NmK" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6o" resolve="isKalkulationsBasisEditable" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134584" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134585" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="4r_rNOh$oAq" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oAr" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669708" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selZyklus" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669709" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375554" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375555" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375556" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135361013868" />
+        <node concept="1vx_$y" id="1NdMWqEHsuw" role="1vx_$z">
+          <property role="TrG5h" value="selKalkulationsBasis" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsux" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NAa" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NAb" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NAc" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w6UDL" resolve="selectionListKalkulationsBasisAsText" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669713" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669714" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsu_" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsuA" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669715" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669716" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="256" />
+          <node concept="3lxVgU" id="1NdMWqEHsuB" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="1NdMWqEHsuC" role="3lxVgV">
+              <property role="3cmrfH" value="512" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669717" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="zeitKennungsTyp" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669718" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373386" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373387" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373388" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667975" />
+        <node concept="1vx_$y" id="1NdMWqEHsuD" role="1vx_$z">
+          <property role="TrG5h" value="zeilenEinheit" />
+          <property role="3lxVgK" value="ReferenceDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsuE" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8MGS" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8MGT" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8MGU" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs40" resolve="zeilenEinheit" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669722" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669723" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsuI" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+            <node concept="Xl_RD" id="1NdMWqEHsuJ" role="3lxVgV">
+              <property role="Xl_RC" value="bezeichnung" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="4415070461758463780" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017413" resolveInfo="setLabel" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3972025135361378645" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="Zeitkennungstyp (F11)" />
+          <node concept="3lxVgU" id="1NdMWqEHsuK" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsuL" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="3P5uN5zrHVu" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+            <node concept="Xl_RD" id="3svtX3w8Obd" role="3lxVgV">
+              <property role="Xl_RC" value="Zeileneinheit (F9)" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669724" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZeitKennungsTypEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669725" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375522" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375523" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375524" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668162" />
+        <node concept="1vx_$y" id="1NdMWqEHsuM" role="1vx_$z">
+          <property role="TrG5h" value="isZeilenEinheitEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsuN" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8N2a" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8N2b" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8N2c" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7u" resolve="isZeilenEinheitEditable" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134599" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134600" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="4r_rNOh$oAD" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oAE" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669729" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selZeitKennungsTyp" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669730" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375180" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375181" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375182" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360913361" />
+        <node concept="1vx_$y" id="1NdMWqEHsuR" role="1vx_$z">
+          <property role="TrG5h" value="selZeilenEinheit" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsuS" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8Ntu" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8Ntv" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Ntw" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w7o0j" resolve="selectionListZeilenEinheitAsText" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669734" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669735" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsuW" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsuX" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669736" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669737" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="256" />
+          <node concept="3lxVgU" id="1NdMWqEHsuY" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="1NdMWqEHsuZ" role="3lxVgV">
+              <property role="3cmrfH" value="1024" />
             </node>
           </node>
         </node>
-        <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669738" nodeInfo="ng">
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669739" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="450" />
-          </node>
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669740" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="150" />
-          </node>
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669741" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="1*" />
-          </node>
-        </node>
-        <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669742" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-        </node>
-      </node>
-      <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669801" nodeInfo="ng">
-        <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-        <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-        <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypSpezial1DF" />
-        <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669802" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isAkontoEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669803" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373596" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373597" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373598" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668169" />
+        <node concept="1vx_$y" id="1NdMWqEHsv0" role="1vx_$z">
+          <property role="TrG5h" value="zyklus" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsv1" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8MR4" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8MR5" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8MR6" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134614" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134615" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsv5" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsv6" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="3P5uN5zrHIZ" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+            <node concept="Xl_RD" id="3svtX3w8OT_" role="3lxVgV">
+              <property role="Xl_RC" value="Zyklus Akontozahlungen (F10)" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669807" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isLieferantenRabattGruppeEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669808" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370972" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370973" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370974" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668197" />
+        <node concept="1vx_$y" id="1NdMWqEHsv7" role="1vx_$z">
+          <property role="TrG5h" value="isZyklusEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsv8" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8N$S" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8N$T" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8N$U" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6V" resolve="isZyklusEditable" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134629" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134630" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="4r_rNOh$oAS" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oAT" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669812" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isArtikelEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669813" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370446" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370447" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370448" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668204" />
+        <node concept="1vx_$y" id="1NdMWqEHsvc" role="1vx_$z">
+          <property role="TrG5h" value="selZyklus" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsvd" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NP2" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NP3" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NP4" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w7rxG" resolve="selectionListZyklusAsText" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134644" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134645" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsvh" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsvi" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="1NdMWqEHsvj" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="1NdMWqEHsvk" role="3lxVgV">
+              <property role="3cmrfH" value="256" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669817" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isFaelligkeitEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669818" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373972" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373973" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373974" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668183" />
+        <node concept="1vx_$y" id="1NdMWqEHsvl" role="1vx_$z">
+          <property role="TrG5h" value="zeitKennungsTyp" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsvm" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8Nja" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8Njb" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Njc" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs47" resolve="zeitKennungsTyp" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134659" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134660" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsvq" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsvr" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="3P5uN5zrHW$" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+            <node concept="Xl_RD" id="3svtX3w8O_l" role="3lxVgV">
+              <property role="Xl_RC" value="Zeitkennungstyp (F11)" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669822" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZeitKennungEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669823" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374058" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374059" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374060" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668211" />
+        <node concept="1vx_$y" id="1NdMWqEHsvs" role="1vx_$z">
+          <property role="TrG5h" value="isZeitKennungsTypEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsvt" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NOy" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NOz" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NO$" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs72" resolve="isZeitKennungsTypEditable" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134674" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134675" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="4r_rNOh$oB7" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oB8" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669827" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isKonditionsZeileEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669828" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373538" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373539" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373540" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668218" />
+        <node concept="1vx_$y" id="1NdMWqEHsvx" role="1vx_$z">
+          <property role="TrG5h" value="selZeitKennungsTyp" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsvy" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NJc" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NJd" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NJe" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w72Zh" resolve="selectionListZeitkennungAsText" />
               </node>
             </node>
           </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134689" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134690" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
+          <node concept="3lxVgU" id="1NdMWqEHsvA" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="1NdMWqEHsvB" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="1NdMWqEHsvC" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="1NdMWqEHsvD" role="3lxVgV">
+              <property role="3cmrfH" value="256" />
             </node>
           </node>
         </node>
-        <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669832" nodeInfo="ng">
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669833" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="450" />
+        <node concept="1THgkH" id="1NdMWqEHsvE" role="1THgkZ">
+          <node concept="Xl_RD" id="1NdMWqEHsvF" role="1THgkI">
+            <property role="Xl_RC" value="450" />
+          </node>
+          <node concept="Xl_RD" id="1NdMWqEHsvG" role="1THgkI">
+            <property role="Xl_RC" value="150" />
+          </node>
+          <node concept="Xl_RD" id="1NdMWqEHsvH" role="1THgkI">
+            <property role="Xl_RC" value="1*" />
           </node>
         </node>
-        <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669834" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-        </node>
-        <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669835" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="Sonstige Freigaben" />
+        <node concept="3uibUv" id="1NdMWqEHsvI" role="qi9ce">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
         </node>
       </node>
-      <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669836" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669837" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669838" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669839" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="-1" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669840" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="-1" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669841" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-      <node role="heading" roleId="sgb.940368958464562064" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669842" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Parameterdefinitionen / Freigabe / Selektionslisten" />
-      </node>
-    </node>
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669843" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypVertragsText1DF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669844" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="vertragsText" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669845" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374404" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374405" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374406" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668092" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669849" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669850" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="768" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669851" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.3423068311895197671" resolveInfo="setNumOfLines" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="2075539057415669852" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="10" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400134704" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400134705" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669853" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669854" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669855" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-      <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669856" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Vertragstext" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669857" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669858" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669859" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669860" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
-      </node>
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669861" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
-      </node>
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669862" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
-      </node>
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669863" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669864" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669865" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditKalkulationsBasisFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669866" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKalkulationsBasisDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669867" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="KalkulationsBasis" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669868" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371888" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371889" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371890" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667919" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669872" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669873" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669874" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669875" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669876" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669877" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669878" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669879" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669880" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditKonditionsWirkungFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669881" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsWirkungDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669882" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="konditionsWirkung" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669885" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371594" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371595" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371596" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667947" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669887" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="2075539057415669888" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669889" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669890" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669891" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669892" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669893" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669894" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669895" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669896" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669897" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditZyklusKTypFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669898" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditZyklusKTypDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669899" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="Zyklus" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669900" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374904" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374905" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374906" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667961" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669904" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669905" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669906" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669907" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669908" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669909" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669910" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669911" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669912" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditBerechnungsGrundlageEinheitKTypFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669913" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditBerechnungsGrundlageEinheitKTypDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669914" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="berechGrundlageEh" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669915" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374938" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374939" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374940" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667954" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669919" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669920" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="bezeichnung" />
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669921" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669922" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669923" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669924" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669925" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669926" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669927" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669928" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669929" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditZeitkennungKTypFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669930" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditZeitkennungKTyp" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669931" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="ZeitkennungsTyp" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669932" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372532" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372533" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372534" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667975" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669936" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669937" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669938" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669939" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669940" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669941" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669942" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669943" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669944" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditZeilenEinheitKTypFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415669945" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditZeilenEinheitKTypDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669946" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669947" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669948" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415669949" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="zeilenEinheit" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669950" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371356" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371357" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371358" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667968" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415669954" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669955" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="bezeichnung" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669956" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669957" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669958" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669959" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669960" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669961" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="BglEinheitenListeFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.TableForm" typeId="sgb.8089681376574938514" id="2075539057415669962" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="BglEinheitenListeTF" />
-      <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="2075539057415669963" nodeInfo="ng">
-        <property name="title" nameId="sgb.7968457660428854083" value="Edit" />
-        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669965" nodeInfo="ng">
-          <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
-          <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669966" nodeInfo="ng">
-            <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2987152407127836520" resolveInfo="Bgl Einheitenverwaltung" />
-            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2987152407127836525" resolveInfo="Selektierte Bgl-Einheit bearbeiten" />
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2987152407129000234" nodeInfo="nn" />
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2987152407129000225" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415669967" nodeInfo="ng">
-                <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415668705" resolveInfo="BglEinheitFromList" />
-              </node>
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2987152407129000230" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668710" resolveInfo="id" />
+      <node concept="1vxE2n" id="1NdMWqEHswD" role="2G$zO_">
+        <property role="1mNjcY" value="1" />
+        <property role="1nxMek" value="false" />
+        <property role="TrG5h" value="EditKonditionsTypSpezial1DF" />
+        <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+        <node concept="1vx_$y" id="1NdMWqEHswE" role="1vx_$z">
+          <property role="TrG5h" value="isAkontoEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHswF" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8Nms" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8Nmt" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Nmu" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs79" resolve="isVorgabeBglEditable" />
               </node>
             </node>
-            <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669968" nodeInfo="ng">
-              <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2987152407127836526" resolveInfo="Bgl Einheit" />
-              <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2987152407127836650" resolveInfo="EditBglEinheitFC" />
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$oBm" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oBn" role="3lxVgV">
+              <property role="3clFbU" value="false" />
             </node>
           </node>
         </node>
-        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669969" nodeInfo="ng">
-          <property name="hotkey" nameId="sgb.943115150038430512" value="ADD_107" />
-          <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669970" nodeInfo="ng">
-            <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2987152407127836520" resolveInfo="Bgl Einheitenverwaltung" />
-            <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2987152407127836563" resolveInfo="Neue Bgl-Einheit anlegen" />
-            <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415669971" nodeInfo="nn" />
-            <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415669972" nodeInfo="ng">
-              <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2987152407127836650" resolveInfo="EditBglEinheitFC" />
-              <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2987152407127836564" resolveInfo="Bgl-Einheit Edit" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669973" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375264" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375265" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375266" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668734" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669975" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="200" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371788" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371789" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371790" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668718" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669977" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="200" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375258" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375259" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375260" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668726" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415669979" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="50" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373774" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373775" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373776" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668742" />
-          </node>
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2075539057415669981" nodeInfo="in">
-        <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669982" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668705" resolveInfo="BglEinheitFromList" />
-        </node>
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669983" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669984" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415669985" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669986" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2075539057415669987" nodeInfo="in">
-      <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415669988" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668705" resolveInfo="BglEinheitFromList" />
-      </node>
-    </node>
-    <node role="heading" roleId="sgb.940368958464562064" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415669989" nodeInfo="nn">
-      <property name="value" nameId="tpee.1070475926801" value="Liste der Einheiten für die Berechnungsgrundlage" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415669990" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditParameterSelectionFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.TableForm" typeId="sgb.8089681376574938514" id="2075539057415669991" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsWirkungSelectionTF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415668816" resolveInfo="SelektionsListeView" />
-      <link role="containedProperty" roleId="sgb.8089681376575178480" targetNodeId="8z9b.2075539057415669017" />
-      <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669992" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="MULTIPLY_106" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669993" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415669076" resolveInfo="Selektion setzen (S)" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415669994" nodeInfo="nn" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedList" typeId="sgb.116370668401845264" id="2075539057415669995" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401845265" targetNodeId="8z9b.2075539057415668773" resolveInfo="SelektionsElementView" />
-          </node>
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415669996" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415668816" resolveInfo="SelektionsListeView" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415669997" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="ADD_107" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415669998" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415669051" resolveInfo="Selektion hinzufügen (+)" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415669999" nodeInfo="nn" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedList" typeId="sgb.116370668401845264" id="2075539057415670000" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401845265" targetNodeId="8z9b.2075539057415668773" resolveInfo="SelektionsElementView" />
-          </node>
-        </node>
-      </node>
-      <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415670001" nodeInfo="ng">
-        <property name="hotkey" nameId="sgb.943115150038430512" value="SUBTRACT_109" />
-        <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415670002" nodeInfo="ng">
-          <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-          <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415669026" resolveInfo="Selektion entfernen (-)" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415670003" nodeInfo="nn" />
-          <node role="actualArgument" roleId="un0u.4419932786254844498" type="sgb.SelectedList" typeId="sgb.116370668401845264" id="2075539057415670004" nodeInfo="ng">
-            <link role="classConcept" roleId="sgb.116370668401845265" targetNodeId="8z9b.2075539057415668773" resolveInfo="SelektionsElementView" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670005" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375116" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375117" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375118" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668781" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670007" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="150" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373242" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373243" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373244" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668788" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670009" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="300" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374336" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374337" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374338" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668795" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670011" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="120" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373260" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373261" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373262" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135361013801" />
-          </node>
-        </node>
-      </node>
-      <node role="heading" roleId="sgb.4559353072057000037" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670013" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Selektionsliste" />
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2075539057415670014" nodeInfo="in">
-        <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670015" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668773" resolveInfo="SelektionsElementView" />
-        </node>
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670016" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670017" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670018" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670019" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="600" />
-      </node>
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670020" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
-      </node>
-    </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670021" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668816" resolveInfo="SelektionsListeView" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415670022" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="KonditionsTypenListeFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.TableForm" typeId="sgb.8089681376574938514" id="2075539057415670023" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="KonditionsTypenListeTF" />
-      <node role="actionLink" roleId="sgb.4559353072056236738" type="sgb.ActionLinkContainer" typeId="sgb.7968457660428854080" id="2075539057415670024" nodeInfo="ng">
-        <property name="title" nameId="sgb.7968457660428854083" value="Edit" />
-        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.Folder" typeId="sgb.1472214787652375098" id="2075539057415670025" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Konditionstyp" />
-          <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415670026" nodeInfo="ng">
-            <property name="hotkey" nameId="sgb.943115150038430512" value="ADD_107" />
-            <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415670027" nodeInfo="ng">
-              <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-              <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415667600" resolveInfo="Neuen Konditionstyp anlegen" />
-              <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="3379512053368454365" nodeInfo="ng">
-                <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.3379512053368454250" resolveInfo="Konditionsparameter" />
-                <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669467" resolveInfo="EditKonditionsTyp1FC" />
+        <node concept="1vx_$y" id="1NdMWqEHswJ" role="1vx_$z">
+          <property role="TrG5h" value="isLieferantenRabattGruppeEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHswK" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8MHs" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8MHt" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8MHu" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7_" resolve="isLieferantenRabattgruppeEditable" />
               </node>
-              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415670028" nodeInfo="nn" />
             </node>
           </node>
-          <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415670029" nodeInfo="ng">
-            <property name="hotkey" nameId="sgb.943115150038430512" value="ENTER_10" />
-            <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415670030" nodeInfo="ng">
-              <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2075539057415667111" resolveInfo="KonditionsTypenVerwaltung" />
-              <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2075539057415667216" resolveInfo="Konditionstyp bearbeiten" />
-              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415670031" nodeInfo="nn" />
-              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2075539057415670032" nodeInfo="nn">
-                <node role="operand" roleId="tpee.1197027771414" type="sgb.SelectedObject" typeId="sgb.116370668401456157" id="2075539057415670033" nodeInfo="ng">
-                  <link role="classConcept" roleId="sgb.116370668401685500" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+          <node concept="3lxVgU" id="4r_rNOh$oB_" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oBA" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="1NdMWqEHswO" role="1vx_$z">
+          <property role="TrG5h" value="isArtikelEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHswP" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8M_e" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8M_f" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8M_g" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7G" resolve="isArtikelEditable" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$oBO" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oBP" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="1NdMWqEHswT" role="1vx_$z">
+          <property role="TrG5h" value="isFaelligkeitEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHswU" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8Nsk" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8Nsl" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Nsm" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7n" resolve="isUmsatzEditable" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$oC3" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oC4" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="1NdMWqEHswY" role="1vx_$z">
+          <property role="TrG5h" value="isZeitKennungEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHswZ" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8NtE" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8NtF" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8NtG" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7N" resolve="isZeitKennungEditable" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$oCi" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oCj" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="1NdMWqEHsx3" role="1vx_$z">
+          <property role="TrG5h" value="isKonditionsZeileEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="1NdMWqEHsx4" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="3svtX3w8Nly" role="3lxVgV">
+              <node concept="2EM3W" id="3svtX3w8Nlz" role="2Oq$k0" />
+              <node concept="2S8uIT" id="3svtX3w8Nl$" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7U" resolve="isKonditionsZeileEditable" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$oCx" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$oCy" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1THgkH" id="1NdMWqEHsx8" role="1THgkZ">
+          <node concept="Xl_RD" id="1NdMWqEHsx9" role="1THgkI">
+            <property role="Xl_RC" value="450" />
+          </node>
+        </node>
+        <node concept="3uibUv" id="1NdMWqEHsxa" role="qi9ce">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHsxb" role="2lSlej">
+          <property role="Xl_RC" value="Sonstige Freigaben" />
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsxc" role="1THgkV">
+        <node concept="Xl_RD" id="1NdMWqEHsxd" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsxe" role="2lwzia">
+        <node concept="Xl_RD" id="1NdMWqEHsxf" role="1THgkI">
+          <property role="Xl_RC" value="-1" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHsxg" role="1THgkI">
+          <property role="Xl_RC" value="-1" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsxh" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHsxi" role="3i6kW5">
+        <property role="Xl_RC" value="Parameterdefinitionen / Freigabe / Selektionslisten" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="1NdMWqEHsxj" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTypVertragsText1DF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsxk" role="1vx_$z">
+        <property role="TrG5h" value="vertragsText" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsxl" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nz4" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nz5" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8Nz6" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5W" resolve="vertragsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsxp" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHsxq" role="3lxVgV">
+            <property role="3cmrfH" value="768" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsxr" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:2Y1bBTkqcvB" resolve="setNumOfLines" />
+          <node concept="3cmrfG" id="1NdMWqEHsxs" role="3lxVgV">
+            <property role="3cmrfH" value="10" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oCK" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oCL" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsxt" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsxu" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsxv" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHsxw" role="2lSlej">
+        <property role="Xl_RC" value="Vertragstext" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsxx" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsxy" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsxz" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsx$" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHsx_" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHsxA" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHsxB" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHsxC" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsxD">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditKalkulationsBasisFC" />
+    <node concept="1vxE2n" id="1NdMWqEHsxE" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKalkulationsBasisDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsxF" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="KalkulationsBasis" />
+        <node concept="3lxVgU" id="1NdMWqEHsxG" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MVK" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MVL" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MVM" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3f" resolve="kalkulationsBasis" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsxK" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsxL" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsxM" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsxN" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsxO" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsxP" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsxQ" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHsxR" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsxS">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditKonditionsWirkungFC" />
+    <node concept="1vxE2n" id="1NdMWqEHsxT" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsWirkungDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsxU" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="konditionsWirkung" />
+        <node concept="3lxVgU" id="1NdMWqEHsxX" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MRa" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MRb" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MRc" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3F" resolve="kondWirkung" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsxZ" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
+          <node concept="3clFbT" id="1NdMWqEHsy0" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsy1" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsy2" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsy3" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsy4" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsy5" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsy6" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsy7" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHsy8" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsy9">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditZyklusKTypFC" />
+    <node concept="1vxE2n" id="1NdMWqEHsya" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditZyklusKTypDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsyb" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="Zyklus" />
+        <node concept="3lxVgU" id="1NdMWqEHsyc" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NES" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NET" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NEU" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsyg" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsyh" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsyi" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsyj" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsyk" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsyl" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsym" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHsyn" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsyo">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditBerechnungsGrundlageEinheitKTypFC" />
+    <node concept="1vxE2n" id="1NdMWqEHsyp" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditBerechnungsGrundlageEinheitKTypDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsyq" role="1vx_$z">
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="TrG5h" value="berechGrundlageEh" />
+        <node concept="3lxVgU" id="1NdMWqEHsyr" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NFq" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NFr" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NFs" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3M" resolve="berechnungsGlEh" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsyv" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="1NdMWqEHsyw" role="3lxVgV">
+            <property role="Xl_RC" value="bezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsyx" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsyy" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsyz" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsy$" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsy_" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsyA" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsyB" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHsyC" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsyD">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditZeitkennungKTypFC" />
+    <node concept="1vxE2n" id="1NdMWqEHsyE" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditZeitkennungKTyp" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHsyF" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="ZeitkennungsTyp" />
+        <node concept="3lxVgU" id="1NdMWqEHsyG" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N5O" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N5P" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N5Q" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs47" resolve="zeitKennungsTyp" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsyK" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsyL" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsyM" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsyN" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsyO" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsyP" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsyQ" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHsyR" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsyS">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditZeilenEinheitKTypFC" />
+    <node concept="1vxE2n" id="1NdMWqEHsyT" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditZeilenEinheitKTypDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1THgkH" id="1NdMWqEHsyU" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsyV" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsyW" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsyX" role="1vx_$z">
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="TrG5h" value="zeilenEinheit" />
+        <node concept="3lxVgU" id="1NdMWqEHsyY" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MNs" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MNt" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MNu" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs40" resolve="zeilenEinheit" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsz2" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="1NdMWqEHsz3" role="3lxVgV">
+            <property role="Xl_RC" value="bezeichnung" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsz4" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHsz5" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHsz6" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHsz7" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHsz8" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHsz9">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="BglEinheitenListeFC" />
+    <node concept="2G$WZb" id="1NdMWqEHsza" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="BglEinheitenListeTF" />
+      <node concept="1J3Sl6" id="1NdMWqEHszb" role="1memAO">
+        <property role="1J3Sl5" value="Edit" />
+        <node concept="2Ux5dv" id="1NdMWqEHszd" role="1J3Sl2">
+          <property role="1xgIOb" value="ENTER_10" />
+          <node concept="2Ux5d2" id="1NdMWqEHsze" role="2UzG4t">
+            <ref role="2Ux5d1" to="8z9b:2_OvOA$NGtC" resolve="Bgl Einheitenverwaltung" />
+            <ref role="2Ux5d0" to="8z9b:2_OvOA$NGtH" resolve="Selektierte Bgl-Einheit bearbeiten" />
+            <node concept="10Nm6u" id="2_OvOA$S8$E" role="2Ux5cx" />
+            <node concept="2OqwBi" id="2_OvOA$S8$x" role="2Ux5cx">
+              <node concept="2xMDEs" id="1NdMWqEHszf" role="2Oq$k0">
+                <ref role="2xLxPX" to="8z9b:1NdMWqEHsfx" resolve="BglEinheitFromList" />
+              </node>
+              <node concept="2S8uIT" id="2_OvOA$S8$A" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHsfA" resolve="id" />
+              </node>
+            </node>
+            <node concept="xYMNj" id="1NdMWqEHszg" role="2sIhOb">
+              <ref role="xYMNi" to="8z9b:2_OvOA$NGtI" resolve="Bgl Einheit" />
+              <ref role="xYMNI" node="2_OvOA$NGvE" resolve="EditBglEinheitFC" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Ux5dv" id="1NdMWqEHszh" role="1J3Sl2">
+          <property role="1xgIOb" value="ADD_107" />
+          <node concept="2Ux5d2" id="1NdMWqEHszi" role="2UzG4t">
+            <ref role="2Ux5d1" to="8z9b:2_OvOA$NGtC" resolve="Bgl Einheitenverwaltung" />
+            <ref role="2Ux5d0" to="8z9b:2_OvOA$NGuj" resolve="Neue Bgl-Einheit anlegen" />
+            <node concept="10Nm6u" id="1NdMWqEHszj" role="2Ux5cx" />
+            <node concept="xYMNj" id="1NdMWqEHszk" role="2sIhOb">
+              <ref role="xYMNI" node="2_OvOA$NGvE" resolve="EditBglEinheitFC" />
+              <ref role="xYMNi" to="8z9b:2_OvOA$NGuk" resolve="Bgl-Einheit Edit" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszl" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NKw" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NKx" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NKy" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsfY" resolve="kurzBezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszn" role="2GDezF">
+        <property role="2GDez6" value="200" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8MUc" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8MUd" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8MUe" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsfI" resolve="bezeichnung" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszp" role="2GDezF">
+        <property role="2GDez6" value="200" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NKq" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NKr" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NKs" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsfQ" resolve="bezeichnungMz" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszr" role="2GDezF">
+        <property role="2GDez6" value="50" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Npe" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Npf" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Npg" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsg6" resolve="aktiv" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="1NdMWqEHszt" role="qi9ce">
+        <node concept="3uibUv" id="1NdMWqEHszu" role="_ZDj9">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHsfx" resolve="BglEinheitFromList" />
+        </node>
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHszv" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHszw" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHszx" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHszy" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="_YKpA" id="1NdMWqEHszz" role="qi9ce">
+      <node concept="3uibUv" id="1NdMWqEHsz$" role="_ZDj9">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHsfx" resolve="BglEinheitFromList" />
+      </node>
+    </node>
+    <node concept="Xl_RD" id="1NdMWqEHsz_" role="3i6kW5">
+      <property role="Xl_RC" value="Liste der Einheiten für die Berechnungsgrundlage" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHszA">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditParameterSelectionFC" />
+    <node concept="2G$WZb" id="1NdMWqEHszB" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsWirkungSelectionTF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHshg" resolve="SelektionsListeView" />
+      <ref role="2GBLiD" to="8z9b:1NdMWqEHskp" resolve="selElemente" />
+      <node concept="2Ux5dv" id="1NdMWqEHszC" role="1memAO">
+        <property role="1xgIOb" value="MULTIPLY_106" />
+        <node concept="2Ux5d2" id="1NdMWqEHszD" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEHslk" resolve="Selektion setzen (S)" />
+          <node concept="10Nm6u" id="1NdMWqEHszE" role="2Ux5cx" />
+          <node concept="2xK8Eh" id="1NdMWqEHszF" role="2Ux5cx">
+            <ref role="2xK8Eg" to="8z9b:1NdMWqEHsg_" resolve="SelektionsElementView" />
+          </node>
+          <node concept="2xMDEs" id="1NdMWqEHszG" role="2Ux5cx">
+            <ref role="2xLxPX" to="8z9b:1NdMWqEHshg" resolve="SelektionsListeView" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEHszH" role="1memAO">
+        <property role="1xgIOb" value="ADD_107" />
+        <node concept="2Ux5d2" id="1NdMWqEHszI" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEHskV" resolve="Selektion hinzufügen (+)" />
+          <node concept="10Nm6u" id="1NdMWqEHszJ" role="2Ux5cx" />
+          <node concept="2xK8Eh" id="1NdMWqEHszK" role="2Ux5cx">
+            <ref role="2xK8Eg" to="8z9b:1NdMWqEHsg_" resolve="SelektionsElementView" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="1NdMWqEHszL" role="1memAO">
+        <property role="1xgIOb" value="SUBTRACT_109" />
+        <node concept="2Ux5d2" id="1NdMWqEHszM" role="2UzG4t">
+          <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+          <ref role="2Ux5d0" to="8z9b:1NdMWqEHsky" resolve="Selektion entfernen (-)" />
+          <node concept="10Nm6u" id="1NdMWqEHszN" role="2Ux5cx" />
+          <node concept="2xK8Eh" id="1NdMWqEHszO" role="2Ux5cx">
+            <ref role="2xK8Eg" to="8z9b:1NdMWqEHsg_" resolve="SelektionsElementView" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszP" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NIc" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NId" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NIe" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsgH" resolve="bezDB" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszR" role="2GDezF">
+        <property role="2GDez6" value="150" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NgU" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NgV" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NgW" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsgO" resolve="bezKurz" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszT" role="2GDezF">
+        <property role="2GDez6" value="300" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Ny0" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Ny1" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Ny2" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsgV" resolve="bezLang" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHszV" role="2GDezF">
+        <property role="2GDez6" value="120" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Nhc" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Nhd" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Nhe" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:3svtX3w7rwD" resolve="isSelectedJN" />
+          </node>
+        </node>
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHszX" role="1mNjcj">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
+      <node concept="_YKpA" id="1NdMWqEHszY" role="qi9ce">
+        <node concept="3uibUv" id="1NdMWqEHszZ" role="_ZDj9">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHsg_" resolve="SelektionsElementView" />
+        </node>
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHs$0" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHs$1" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="1NdMWqEHs$2" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHs$3" role="1THgkI">
+        <property role="Xl_RC" value="600" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHs$4" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="3uibUv" id="1NdMWqEHs$5" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHshg" resolve="SelektionsListeView" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHs$6">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="KonditionsTypenListeFC" />
+    <node concept="2G$WZb" id="1NdMWqEHs$7" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="KonditionsTypenListeTF" />
+      <node concept="1J3Sl6" id="1NdMWqEHs$8" role="1memAO">
+        <property role="1J3Sl5" value="Edit" />
+        <node concept="2ftCAQ" id="1NdMWqEHs$9" role="1J3Sl2">
+          <property role="TrG5h" value="Konditionstyp" />
+          <node concept="2Ux5dv" id="1NdMWqEHs$a" role="2ftCB4">
+            <property role="1xgIOb" value="ADD_107" />
+            <node concept="2Ux5d2" id="1NdMWqEHs$b" role="2UzG4t">
+              <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+              <ref role="2Ux5d0" to="8z9b:1NdMWqEHrYg" resolve="Neuen Konditionstyp anlegen" />
+              <node concept="xYMNj" id="2VAs4UvbnNt" role="2sIhOb">
+                <ref role="xYMNi" to="8z9b:2VAs4UvbnLE" resolve="Konditionsparameter" />
+                <ref role="xYMNI" node="1NdMWqEHsrr" resolve="EditKonditionsTyp1FC" />
+              </node>
+              <node concept="10Nm6u" id="1NdMWqEHs$c" role="2Ux5cx" />
+            </node>
+          </node>
+          <node concept="2Ux5dv" id="1NdMWqEHs$d" role="2ftCB4">
+            <property role="1xgIOb" value="ENTER_10" />
+            <node concept="2Ux5d2" id="1NdMWqEHs$e" role="2UzG4t">
+              <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+              <ref role="2Ux5d0" to="8z9b:1NdMWqEHrSg" resolve="Konditionstyp bearbeiten" />
+              <node concept="10Nm6u" id="1NdMWqEHs$f" role="2Ux5cx" />
+              <node concept="2OqwBi" id="1NdMWqEHs$g" role="2Ux5cx">
+                <node concept="2xMDEs" id="1NdMWqEHs$h" role="2Oq$k0">
+                  <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
                 </node>
-                <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2075539057415670034" nodeInfo="nn">
-                  <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667882" />
+                <node concept="2S8uIT" id="1NdMWqEHs$i" role="2OqNvi">
+                  <ref role="2S8YL0" to="8z9b:1NdMWqEHs2E" resolve="id" />
                 </node>
               </node>
-              <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415670035" nodeInfo="ng">
-                <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2075539057415667236" resolveInfo="Konditionsparameter: Selektionsliste" />
-                <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669467" resolveInfo="EditKonditionsTyp1FC" />
+              <node concept="xYMNj" id="1NdMWqEHs$j" role="2sIhOb">
+                <ref role="xYMNi" to="8z9b:1NdMWqEHrS$" resolve="Konditionsparameter: Selektionsliste" />
+                <ref role="xYMNI" node="1NdMWqEHsrr" resolve="EditKonditionsTyp1FC" />
               </node>
-              <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="5108611660401078600" nodeInfo="ng">
-                <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.5108611660400068760" resolveInfo="Konditionsparameter: Einstellungen und Freigabe" />
-                <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="5108611660400088410" resolveInfo="EditKonditionsTyp2FC" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.Folder" typeId="sgb.1472214787652375098" id="2075539057415670036" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Bgl Einheiten" />
-          <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415670037" nodeInfo="ng">
-            <property name="hotkey" nameId="sgb.943115150038430512" value="F2_113" />
-            <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415670038" nodeInfo="ng">
-              <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2987152407127836520" resolveInfo="Bgl Einheitenverwaltung" />
-              <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2987152407127836537" resolveInfo="Bgl. Einheiten bearbeiten/anzeigen" />
-              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415670039" nodeInfo="nn" />
-              <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415670040" nodeInfo="ng">
-                <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2987152407127836541" resolveInfo="Bgl Einheitenliste" />
-                <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669961" resolveInfo="BglEinheitenListeFC" />
+              <node concept="xYMNj" id="4r_rNOhBZ58" role="2sIhOb">
+                <ref role="xYMNi" to="8z9b:4r_rNOh$8yo" resolve="Konditionsparameter: Einstellungen und Freigabe" />
+                <ref role="xYMNI" node="4r_rNOh$dlq" resolve="EditKonditionsTyp2FC" />
               </node>
             </node>
           </node>
         </node>
-        <node role="actionLink" roleId="sgb.7968457660428854084" type="sgb.Folder" typeId="sgb.1472214787652375098" id="2075539057415670041" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="Zeileneinheiten" />
-          <node role="element" roleId="sgb.1472214787652375112" type="sgb.CommandTrigger" typeId="sgb.4419932786254844460" id="2075539057415670042" nodeInfo="ng">
-            <property name="hotkey" nameId="sgb.943115150038430512" value="F3_114" />
-            <node role="runCommand" roleId="sgb.4419932786255200366" type="un0u.RunCommand" typeId="un0u.4419932786254844465" id="2075539057415670043" nodeInfo="ng">
-              <link role="process" roleId="un0u.4419932786254844466" targetNodeId="8z9b.2987152407127836645" resolveInfo="Zeileneinheitenverwaltung" />
-              <link role="command" roleId="un0u.4419932786254844467" targetNodeId="8z9b.2987152407127836619" resolveInfo="Zeileneinheiten bearbeiten/anzeigen" />
-              <node role="viewsForCommands" roleId="un0u.4296094616050456129" type="un0u.RealCommandView" typeId="un0u.1444282517685285791" id="2075539057415670044" nodeInfo="ng">
-                <link role="pageReference" roleId="un0u.1444282517685285790" targetNodeId="8z9b.2987152407127836620" resolveInfo="Zeileneinheiten" />
-                <link role="externalView" roleId="un0u.1444282517685285794" targetNodeId="2075539057415669438" resolveInfo="ZeilenEinheitenListeFC" />
+        <node concept="2ftCAQ" id="1NdMWqEHs$k" role="1J3Sl2">
+          <property role="TrG5h" value="Bgl Einheiten" />
+          <node concept="2Ux5dv" id="1NdMWqEHs$l" role="2ftCB4">
+            <property role="1xgIOb" value="F2_113" />
+            <node concept="2Ux5d2" id="1NdMWqEHs$m" role="2UzG4t">
+              <ref role="2Ux5d1" to="8z9b:2_OvOA$NGtC" resolve="Bgl Einheitenverwaltung" />
+              <ref role="2Ux5d0" to="8z9b:2_OvOA$NGtT" resolve="Bgl. Einheiten bearbeiten/anzeigen" />
+              <node concept="10Nm6u" id="1NdMWqEHs$n" role="2Ux5cx" />
+              <node concept="xYMNj" id="1NdMWqEHs$o" role="2sIhOb">
+                <ref role="xYMNi" to="8z9b:2_OvOA$NGtX" resolve="Bgl Einheitenliste" />
+                <ref role="xYMNI" node="1NdMWqEHsz9" resolve="BglEinheitenListeFC" />
               </node>
-              <node role="actualArgument" roleId="un0u.4419932786254844498" type="tpee.NullLiteral" typeId="tpee.1070534058343" id="2075539057415670045" nodeInfo="nn" />
             </node>
           </node>
         </node>
-        <node role="imageString" roleId="sgb.3985184476073673634" type="tpee.StaticFieldReference" typeId="tpee.1070533707846" id="2075539057415670046" nodeInfo="nn">
-          <link role="variableDeclaration" roleId="tpee.1068581517664" targetNodeId="mma5.5428517324472163684" resolveInfo="ICON_EDIT" />
-          <link role="classifier" roleId="tpee.1144433057691" targetNodeId="mma5.651453175762553938" resolveInfo="HafinaDefaults" />
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670047" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="0" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371224" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371225" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371226" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667890" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670049" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="250" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370264" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370265" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370266" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667904" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670051" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="120" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373578" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373579" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373580" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667912" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670053" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="80" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375150" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375151" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375152" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667926" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670055" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="85" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370324" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370325" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370326" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667919" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670057" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="50" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374638" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374639" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374640" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667933" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670059" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370706" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370707" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370708" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667940" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670061" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370872" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370873" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370874" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667947" />
-          </node>
-        </node>
-      </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670063" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371377" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361371374" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361371375" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371376" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667968" />
+        <node concept="2ftCAQ" id="1NdMWqEHs$p" role="1J3Sl2">
+          <property role="TrG5h" value="Zeileneinheiten" />
+          <node concept="2Ux5dv" id="1NdMWqEHs$q" role="2ftCB4">
+            <property role="1xgIOb" value="F3_114" />
+            <node concept="2Ux5d2" id="1NdMWqEHs$r" role="2UzG4t">
+              <ref role="2Ux5d1" to="8z9b:2_OvOA$NGv_" resolve="Zeileneinheitenverwaltung" />
+              <ref role="2Ux5d0" to="8z9b:2_OvOA$NGvb" resolve="Zeileneinheiten bearbeiten/anzeigen" />
+              <node concept="xYMNj" id="1NdMWqEHs$s" role="2sIhOb">
+                <ref role="xYMNi" to="8z9b:2_OvOA$NGvc" resolve="Zeileneinheiten" />
+                <ref role="xYMNI" node="1NdMWqEHsqY" resolve="ZeilenEinheitenListeFC" />
+              </node>
+              <node concept="10Nm6u" id="1NdMWqEHs$t" role="2Ux5cx" />
             </node>
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361371378" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668650" />
+        </node>
+        <node concept="10M0yZ" id="1NdMWqEHs$u" role="2jyZI8">
+          <ref role="3cqZAo" to="mma5:4HlXVUYdTP$" resolve="ICON_EDIT" />
+          <ref role="1PxDUh" to="mma5:$arjoT88Li" resolve="HafinaDefaults" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHs$v" role="2GDezF">
+        <property role="2GDez6" value="0" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8MLo" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8MLp" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8MLq" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs2M" resolve="reihung" />
           </node>
         </node>
       </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670066" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370984" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370985" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370986" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667961" />
+      <node concept="2GDez7" id="1NdMWqEHs$x" role="2GDezF">
+        <property role="2GDez6" value="250" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Myo" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Myp" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Myq" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs30" resolve="bezeichnung" />
           </node>
         </node>
       </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670068" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="150" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373875" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373872" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373873" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373874" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667954" />
+      <node concept="2GDez7" id="1NdMWqEHs$z" role="2GDezF">
+        <property role="2GDez6" value="120" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Nma" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Nmb" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Nmc" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs38" resolve="konditionsGruppe" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHs$_" role="2GDezF">
+        <property role="2GDez6" value="80" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NII" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NIJ" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NIK" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3m" resolve="bezugsBasis" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHs$B" role="2GDezF">
+        <property role="2GDez6" value="85" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8Mzk" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8Mzl" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8Mzm" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3f" resolve="kalkulationsBasis" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHs$D" role="2GDezF">
+        <property role="2GDez6" value="50" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NAI" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NAJ" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NAK" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3t" resolve="konditionsBedRf" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHs$F" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8MDi" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8MDj" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8MDk" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3$" resolve="konditionsSatz" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHs$H" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8MFS" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8MFT" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8MFU" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3F" resolve="kondWirkung" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="1NdMWqEHs$J" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8MNL" role="2GDD_P">
+          <node concept="2OqwBi" id="3svtX3w8MNI" role="2Oq$k0">
+            <node concept="2EM3W" id="3svtX3w8MNJ" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MNK" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs40" resolve="zeilenEinheit" />
             </node>
           </node>
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373876" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668718" />
+          <node concept="2S8uIT" id="3svtX3w8MNM" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHseE" resolve="bezeichnung" />
           </node>
         </node>
       </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670071" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374386" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374387" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374388" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667975" />
+      <node concept="2GDez7" id="1NdMWqEHs$M" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8MHC" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8MHD" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8MHE" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
           </node>
         </node>
       </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670073" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="40" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375446" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375447" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375448" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668085" />
+      <node concept="2GDez7" id="1NdMWqEHs$O" role="2GDezF">
+        <property role="2GDez6" value="150" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NqN" role="2GDD_P">
+          <node concept="2OqwBi" id="3svtX3w8NqK" role="2Oq$k0">
+            <node concept="2EM3W" id="3svtX3w8NqL" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NqM" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3M" resolve="berechnungsGlEh" />
+            </node>
+          </node>
+          <node concept="2S8uIT" id="3svtX3w8NqO" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHsfI" resolve="bezeichnung" />
           </node>
         </node>
       </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2075539057415670075" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="100" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370088" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370089" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370090" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668099" />
+      <node concept="2GDez7" id="1NdMWqEHs$R" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NyM" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NyN" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NyO" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs47" resolve="zeitKennungsTyp" />
           </node>
         </node>
       </node>
-      <node role="tableFormRow" roleId="sgb.8089681376575535794" type="sgb.TableFormRow" typeId="sgb.8089681376575535774" id="2938153221314822992" nodeInfo="ng">
-        <property name="width" nameId="sgb.8089681376575535775" value="90" />
-        <property name="label" nameId="sgb.8089681376575535776" value="-" />
-        <property name="numberFormat" nameId="sgb.8264937784150739374" value="-" />
-        <node role="xPropPath" roleId="sgb.8089681376575671084" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2938153221314823426" nodeInfo="nn">
-          <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="2938153221314823054" nodeInfo="ng" />
-          <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2938153221314823917" nodeInfo="nn">
-            <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668106" />
+      <node concept="2GDez7" id="1NdMWqEHs$T" role="2GDezF">
+        <property role="2GDez6" value="40" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8NNm" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8NNn" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8NNo" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs5P" resolve="steuerCode" />
           </node>
         </node>
       </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2075539057415670077" nodeInfo="in">
-        <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670078" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+      <node concept="2GDez7" id="1NdMWqEHs$V" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3svtX3w8MvC" role="2GDD_P">
+          <node concept="2EM3W" id="3svtX3w8MvD" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3svtX3w8MvE" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs63" resolve="profitCenter" />
+          </node>
+        </node>
+      </node>
+      <node concept="2GDez7" id="2z6qGAG8Wdg" role="2GDezF">
+        <property role="2GDez6" value="90" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="2z6qGAG8Wk2" role="2GDD_P">
+          <node concept="2EM3W" id="2z6qGAG8Wee" role="2Oq$k0" />
+          <node concept="2S8uIT" id="2z6qGAG8WrH" role="2OqNvi">
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs6a" resolve="status" />
+          </node>
+        </node>
+      </node>
+      <node concept="_YKpA" id="1NdMWqEHs$X" role="qi9ce">
+        <node concept="3uibUv" id="1NdMWqEHs$Y" role="_ZDj9">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
         </node>
       </node>
     </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670079" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670080" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="1NdMWqEHs$Z" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHs_0" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670081" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670082" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="1NdMWqEHs_1" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHs_2" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tp2q.ListType" typeId="tp2q.1151688443754" id="2075539057415670083" nodeInfo="in">
-      <node role="elementType" roleId="tp2q.1151688676805" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670084" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+    <node concept="_YKpA" id="1NdMWqEHs_3" role="qi9ce">
+      <node concept="3uibUv" id="1NdMWqEHs_4" role="_ZDj9">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
       </node>
     </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415670085" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="ForderungsSubTypFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415670086" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="ForderungsSubTypDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415670087" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="forderungsSubTyp" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415670090" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370060" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370061" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370062" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668288" />
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHs_5">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="ForderungsSubTypFC" />
+    <node concept="1vxE2n" id="1NdMWqEHs_6" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="ForderungsSubTypDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHs_7" role="1vx_$z">
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="TrG5h" value="forderungsSubTyp" />
+        <node concept="3lxVgU" id="1NdMWqEHs_a" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Mvc" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Mvd" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8Mve" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs90" resolve="forderungsSubTyp" />
             </node>
           </node>
         </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415670092" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670093" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="id,titel" />
+        <node concept="3lxVgU" id="1NdMWqEHs_c" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="1NdMWqEHs_d" role="3lxVgV">
+            <property role="Xl_RC" value="id,titel" />
           </node>
         </node>
       </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670096" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670097" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
+      <node concept="1THgkH" id="1NdMWqEHs_g" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHs_h" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
         </node>
       </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670098" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670099" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670100" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+      <node concept="3uibUv" id="1NdMWqEHs_i" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
       </node>
     </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670101" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670102" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="1NdMWqEHs_j" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHs_k" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670103" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2075539057415670104" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="ForderungsTypFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2075539057415670105" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="ForderungsTypDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2075539057415670106" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="forderungsTyp" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415670107" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361374330" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361374331" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361374332" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668281" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2075539057415670111" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670112" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="id,titel" />
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670115" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670116" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670117" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+    <node concept="1THgkH" id="1NdMWqEHs_l" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHs_m" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670118" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670119" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="3uibUv" id="1NdMWqEHs_n" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="1NdMWqEHs_o">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="ForderungsTypFC" />
+    <node concept="1vxE2n" id="1NdMWqEHs_p" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="ForderungsTypDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHs_q" role="1vx_$z">
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="TrG5h" value="forderungsTyp" />
+        <node concept="3lxVgU" id="1NdMWqEHs_r" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NxU" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NxV" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NxW" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs8T" resolve="forderungsTyp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHs_v" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="1NdMWqEHs_w" role="3lxVgV">
+            <property role="Xl_RC" value="id,titel" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHs_z" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHs_$" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHs__" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
       </node>
     </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2075539057415670120" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2075539057415670121" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="1NdMWqEHs_A" role="1THgkV">
+      <node concept="Xl_RD" id="1NdMWqEHs_B" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2075539057415670122" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2987152407127836650" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditBglEinheitFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2987152407127836651" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditBglEinheitDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415668705" resolveInfo="BglEinheitFromList" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836652" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="shortText" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836653" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372544" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372545" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372546" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668734" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836657" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="longText" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836658" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361375452" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361375453" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361375454" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668718" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836662" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="longTextMz" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836663" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361370924" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361370925" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361370926" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668726" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836667" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isActive" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836668" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372502" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372503" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372504" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668742" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2987152407127836674" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836675" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836676" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836677" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2987152407127836678" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668705" resolveInfo="BglEinheitFromList" />
+    <node concept="1THgkH" id="1NdMWqEHs_C" role="2lwzia">
+      <node concept="Xl_RD" id="1NdMWqEHs_D" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2987152407127836679" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836680" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="3uibUv" id="1NdMWqEHs_E" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="2_OvOA$NGvE">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditBglEinheitFC" />
+    <node concept="1vxE2n" id="2_OvOA$NGvF" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditBglEinheitDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHsfx" resolve="BglEinheitFromList" />
+      <node concept="1vx_$y" id="2_OvOA$NGvG" role="1vx_$z">
+        <property role="TrG5h" value="shortText" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGvH" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N60" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N61" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N62" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHsfY" resolve="kurzBezeichnung" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="2_OvOA$NGvL" role="1vx_$z">
+        <property role="TrG5h" value="longText" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGvM" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NNs" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NNt" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NNu" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHsfI" resolve="bezeichnung" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="2_OvOA$NGvQ" role="1vx_$z">
+        <property role="TrG5h" value="longTextMz" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGvR" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MGG" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MGH" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8MGI" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHsfQ" resolve="bezeichnungMz" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="2_OvOA$NGvV" role="1vx_$z">
+        <property role="TrG5h" value="isActive" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGvW" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N5m" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N5n" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N5o" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHsg6" resolve="aktiv" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="2_OvOA$NGw2" role="1THgkZ">
+        <node concept="Xl_RD" id="2_OvOA$NGw3" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="2_OvOA$NGw4" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="2_OvOA$NGw5" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2_OvOA$NGw6" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHsfx" resolve="BglEinheitFromList" />
       </node>
     </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2987152407127836681" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836682" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="2_OvOA$NGw7" role="1THgkV">
+      <node concept="Xl_RD" id="2_OvOA$NGw8" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2987152407127836683" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668705" resolveInfo="BglEinheitFromList" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="2987152407127836684" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditZeilenEinheitFC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="2987152407127836685" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditZeilenEinheitDF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836686" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="shortText" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836687" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372310" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372311" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372312" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668666" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836691" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="longText" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836692" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373440" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373441" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373442" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668650" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836696" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="longTextMz" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836697" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361373926" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361373927" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361373928" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668658" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2987152407127836701" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isActive" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2987152407127836702" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="3972025135361372362" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="3972025135361372363" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="3972025135361372364" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668674" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2987152407127836708" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836709" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836710" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836711" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2987152407127836712" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
+    <node concept="1THgkH" id="2_OvOA$NGw9" role="2lwzia">
+      <node concept="Xl_RD" id="2_OvOA$NGwa" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2987152407127836713" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836714" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="3uibUv" id="2_OvOA$NGwb" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHsfx" resolve="BglEinheitFromList" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="2_OvOA$NGwc">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditZeilenEinheitFC" />
+    <node concept="1vxE2n" id="2_OvOA$NGwd" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditZeilenEinheitDF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHset" resolve="ZeilenEinheitFromList" />
+      <node concept="1vx_$y" id="2_OvOA$NGwe" role="1vx_$z">
+        <property role="TrG5h" value="shortText" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGwf" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N2m" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N2n" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N2o" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHseU" resolve="kurzBezeichnung" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="2_OvOA$NGwj" role="1vx_$z">
+        <property role="TrG5h" value="longText" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGwk" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nk0" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nk1" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8Nk2" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHseE" resolve="bezeichnung" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="2_OvOA$NGwo" role="1vx_$z">
+        <property role="TrG5h" value="longTextMz" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGwp" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NrA" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NrB" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NrC" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHseM" resolve="bezeichnungMz" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="2_OvOA$NGwt" role="1vx_$z">
+        <property role="TrG5h" value="isActive" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="2_OvOA$NGwu" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N3a" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N3b" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N3c" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHsf2" resolve="aktiv" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="2_OvOA$NGw$" role="1THgkZ">
+        <node concept="Xl_RD" id="2_OvOA$NGw_" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="2_OvOA$NGwA" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="2_OvOA$NGwB" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="2_OvOA$NGwC" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHset" resolve="ZeilenEinheitFromList" />
       </node>
     </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="2987152407127836715" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="2987152407127836716" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+    <node concept="1THgkH" id="2_OvOA$NGwD" role="1THgkV">
+      <node concept="Xl_RD" id="2_OvOA$NGwE" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="2987152407127836717" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415668637" resolveInfo="ZeilenEinheitFromList" />
-    </node>
-  </root>
-  <root type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="5108611660400088410" nodeInfo="ng">
-    <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-    <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-    <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTyp2FC" />
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="5108611660400094257" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTyp2DF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094258" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="reihung" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="IntegerDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094259" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094260" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094261" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094262" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667890" resolveInfo="reihung" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094263" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="kondGruppe" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094264" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094265" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094266" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094267" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667912" resolveInfo="konditionsGruppe" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094268" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="gewaehrung" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094269" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094270" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094271" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094272" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668071" resolveInfo="gewaehrung" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094273" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="steuerKennZeichen" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094274" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094275" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094276" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094277" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668078" resolveInfo="steuerKennzeichen" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094278" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094279" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="steuerCode,steuerBez" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094280" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="forderungsTyp" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094281" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094282" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094283" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094284" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668281" resolveInfo="forderungsTyp" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094285" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094286" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="id,titel" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094287" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094288" nodeInfo="nn" />
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094289" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094290" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094291" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="forderungsSubTyp" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094292" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094293" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094294" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094295" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668288" resolveInfo="forderungsSubTyp" />
-            </node>
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094296" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094297" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="id,titel" />
-          </node>
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094298" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017419" resolveInfo="setOptional" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094299" nodeInfo="nn" />
-        </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094300" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094301" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580123138" value="false" />
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094302" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="profitCenter" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094303" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094304" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094305" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094306" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668099" resolveInfo="profitCenter" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="2938153221313041592" nodeInfo="ng">
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <property name="name" nameId="tpck.1169194664001" value="status" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="2938153221313042799" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="2938153221313046372" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="2938153221313042803" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="2938153221313046864" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668106" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400094307" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094308" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094309" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094310" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094311" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
-        </node>
-      </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5108611660400094312" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-      <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094313" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Grundeinstellung" />
+    <node concept="1THgkH" id="2_OvOA$NGwF" role="2lwzia">
+      <node concept="Xl_RD" id="2_OvOA$NGwG" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="5108611660400094314" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypParameterVal2DF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094315" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="bezeichnung" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094316" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094317" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094318" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094319" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667904" resolveInfo="bezeichnung" />
+    <node concept="3uibUv" id="2_OvOA$NGwH" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHset" resolve="ZeilenEinheitFromList" />
+    </node>
+  </node>
+  <node concept="2G$zOF" id="4r_rNOh$dlq">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="EditKonditionsTyp2FC" />
+    <node concept="1vxE2n" id="4r_rNOh$eKL" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTyp2DF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="4r_rNOh$eKM" role="1vx_$z">
+        <property role="TrG5h" value="reihung" />
+        <property role="3lxVgK" value="IntegerDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eKN" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eKO" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eKP" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eKQ" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs2M" resolve="reihung" />
             </node>
           </node>
         </node>
       </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094320" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isBezeichnungEditable" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094321" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094322" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094323" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094324" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668113" resolveInfo="isBezeichnungEditable" />
+      <node concept="1vx_$y" id="4r_rNOh$eKR" role="1vx_$z">
+        <property role="TrG5h" value="kondGruppe" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eKS" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eKT" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eKU" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eKV" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs38" resolve="konditionsGruppe" />
             </node>
           </node>
         </node>
       </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094325" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="konditionsSatz" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="DecimalDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094326" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094327" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094328" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094329" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667940" resolveInfo="konditionsSatz" />
+      <node concept="1vx_$y" id="4r_rNOh$eKW" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="gewaehrung" />
+        <node concept="3lxVgU" id="4r_rNOh$eKX" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eKY" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eKZ" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eL0" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5B" resolve="gewaehrung" />
             </node>
           </node>
         </node>
       </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094330" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isKonditionsSatzEditable" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094331" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094332" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094333" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094334" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668141" resolveInfo="isKonditionsSatzEditable" />
+      <node concept="1vx_$y" id="4r_rNOh$eL1" role="1vx_$z">
+        <property role="TrG5h" value="steuerKennZeichen" />
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eL2" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eL3" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eL4" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eL5" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5I" resolve="steuerKennzeichen" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$eL6" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="4r_rNOh$eL7" role="3lxVgV">
+            <property role="Xl_RC" value="steuerCode,steuerBez" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="4r_rNOh$eL8" role="1vx_$z">
+        <property role="TrG5h" value="forderungsTyp" />
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eL9" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eLa" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eLb" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eLc" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs8T" resolve="forderungsTyp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$eLd" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="4r_rNOh$eLe" role="3lxVgV">
+            <property role="Xl_RC" value="id,titel" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$eLf" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
+          <node concept="3clFbT" id="4r_rNOh$eLg" role="3lxVgV" />
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$eLh" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$eLi" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="4r_rNOh$eLj" role="1vx_$z">
+        <property role="TrG5h" value="forderungsSubTyp" />
+        <property role="3lxVgK" value="ReferenceDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eLk" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eLl" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eLm" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eLn" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs90" resolve="forderungsSubTyp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$eLo" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+          <node concept="Xl_RD" id="4r_rNOh$eLp" role="3lxVgV">
+            <property role="Xl_RC" value="id,titel" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$eLq" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
+          <node concept="3clFbT" id="4r_rNOh$eLr" role="3lxVgV" />
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$eLs" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$eLt" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="4r_rNOh$eLu" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="profitCenter" />
+        <node concept="3lxVgU" id="4r_rNOh$eLv" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eLw" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eLx" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eLy" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs63" resolve="profitCenter" />
             </node>
           </node>
         </node>
       </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094335" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="konditionsBedRf" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="IntegerDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094336" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094337" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094338" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094339" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667933" resolveInfo="konditionsBedRf" />
+      <node concept="1vx_$y" id="2z6qGAG29iS" role="1vx_$z">
+        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="TrG5h" value="status" />
+        <node concept="3lxVgU" id="2z6qGAG29_J" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="2z6qGAG2at$" role="3lxVgV">
+            <node concept="2EM3W" id="2z6qGAG29_N" role="2Oq$k0" />
+            <node concept="2S8uIT" id="2z6qGAG2a_g" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6a" resolve="status" />
             </node>
           </node>
         </node>
       </node>
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094340" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="isKonditionsBedRfEditable" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094341" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094342" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094343" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094344" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668134" resolveInfo="isKonditionsBedRfEditable" />
-            </node>
-          </node>
+      <node concept="1THgkH" id="4r_rNOh$eLz" role="1THgkZ">
+        <node concept="Xl_RD" id="4r_rNOh$eL$" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="4r_rNOh$eL_" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="4r_rNOh$eLA" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="4r_rNOh$eLB" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
         </node>
       </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400094345" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094346" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="450" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094347" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="150" />
-        </node>
+      <node concept="3uibUv" id="4r_rNOh$eLC" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
       </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5108611660400094348" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      </node>
-      <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094349" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Parameterdefinitionen Grundtypen / Freigabe" />
+      <node concept="Xl_RD" id="4r_rNOh$eLD" role="2lSlej">
+        <property role="Xl_RC" value="Grundeinstellung" />
       </node>
     </node>
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.FormContainer" typeId="sgb.8089681376574861170" id="5108611660400094350" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypParameterListen2FC" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="5108611660400094351" nodeInfo="ng">
-        <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-        <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-        <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypParameterListen2DF" />
-        <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094352" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="konditionsWirkung" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094353" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094354" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094355" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094356" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667947" resolveInfo="kondWirkung" />
-              </node>
+    <node concept="1vxE2n" id="4r_rNOh$eLE" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTypParameterVal2DF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="4r_rNOh$eLF" role="1vx_$z">
+        <property role="TrG5h" value="bezeichnung" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eLG" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eLH" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eLI" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eLJ" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs30" resolve="bezeichnung" />
             </node>
           </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094361" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isKonditionsWirkungEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094362" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094363" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094364" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094365" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668148" resolveInfo="isKonditionsWirkungEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094366" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selKonditionsWirkung" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094367" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094368" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094369" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094370" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360815483" resolveInfo="selectionListKondWirkungAsText" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094371" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094372" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094373" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094374" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="512" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094375" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="berechGrundlageEh" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094376" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094377" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094378" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094379" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667954" resolveInfo="berechnungsGlEh" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094380" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094381" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="bezeichnung" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094386" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isBerechGrundlageEhEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094387" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094388" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094389" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094390" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668176" resolveInfo="isBerechGrundlEhEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094391" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selBerechnungsGrundlageEH" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094392" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094393" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094394" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094395" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360915266" resolveInfo="selectionListBerechnungsGrundlageAsText" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094396" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094397" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="256" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094398" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094399" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094400" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="bezugsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094401" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094402" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094403" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094404" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667926" resolveInfo="bezugsBasis" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094409" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isBezugsBasisEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094410" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094411" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094412" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094413" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668127" resolveInfo="isBezugsBasisEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094414" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selBezugsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094415" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094416" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094417" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094418" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360857825" resolveInfo="selectionListBezugsBasisAsText" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094419" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094420" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094421" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094422" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="512" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094423" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="kalkulationsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094424" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094425" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094426" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094427" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667919" resolveInfo="kalkulationsBasis" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094432" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isKalkulationsBasisEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094433" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094434" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094435" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094436" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668120" resolveInfo="isKalkulationsBasisEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094437" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selKalkulationsBasis" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094438" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094439" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094440" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094441" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360879217" resolveInfo="selectionListKalkulationsBasisAsText" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094442" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094443" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094444" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094445" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="512" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094446" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="zeilenEinheit" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="ReferenceDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094447" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094448" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094449" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094450" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667968" resolveInfo="zeilenEinheit" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094451" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130286658" resolveInfo="setSuggestionFieldFormat" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094452" nodeInfo="nn">
-              <property name="value" nameId="tpee.1070475926801" value="bezeichnung" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094457" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZeilenEinheitEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094458" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094459" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094460" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094461" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668190" resolveInfo="isZeilenEinheitEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094462" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selZeilenEinheit" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094463" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094464" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094465" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094466" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360999443" resolveInfo="selectionListZeilenEinheitAsText" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094467" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094468" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094469" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094470" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="1024" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094471" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="zyklus" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094472" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094473" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094474" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094475" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667961" resolveInfo="zyklus" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094480" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZyklusEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094481" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094482" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094483" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094484" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668155" resolveInfo="isZyklusEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094485" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selZyklus" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094486" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094487" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094488" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094489" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135361013868" resolveInfo="selectionListZyklusAsText" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094490" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094491" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094492" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094493" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="256" />
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094494" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="zeitKennungsTyp" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094495" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094496" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094497" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094498" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415667975" resolveInfo="zeitKennungsTyp" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094503" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZeitKennungsTypEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094504" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094505" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094506" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094507" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668162" resolveInfo="isZeitKennungsTypEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094508" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="selZeitKennungsTyp" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094509" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094510" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094511" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094512" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.3972025135360913361" resolveInfo="selectionListZeitkennungAsText" />
-              </node>
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094513" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017416" resolveInfo="setEnabled" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.BooleanConstant" typeId="tpee.1068580123137" id="5108611660400094514" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580123138" value="false" />
-            </node>
-          </node>
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094515" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094516" nodeInfo="nn">
-              <property name="value" nameId="tpee.1068580320021" value="256" />
-            </node>
-          </node>
-        </node>
-        <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400094517" nodeInfo="ng">
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094518" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="450" />
-          </node>
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094519" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="150" />
-          </node>
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094520" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="1*" />
-          </node>
-        </node>
-        <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5108611660400094521" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
         </node>
       </node>
-      <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="5108611660400094522" nodeInfo="ng">
-        <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-        <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-        <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypSpezial2DF" />
-        <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094523" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isAkontoEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094524" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094525" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094526" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094527" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668169" resolveInfo="isVorgabeBglEditable" />
-              </node>
+      <node concept="1vx_$y" id="4r_rNOh$eLK" role="1vx_$z">
+        <property role="TrG5h" value="isBezeichnungEditable" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eLL" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eLM" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eLN" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eLO" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6h" resolve="isBezeichnungEditable" />
             </node>
           </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094528" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isLieferantenRabattGruppeEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094529" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094530" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094531" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094532" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668197" resolveInfo="isLieferantenRabattgruppeEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094533" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isArtikelEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094534" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094535" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094536" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094537" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668204" resolveInfo="isArtikelEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094538" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isFaelligkeitEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094539" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094540" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094541" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094542" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668183" resolveInfo="isUmsatzEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094543" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isZeitKennungEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094544" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094545" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094546" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094547" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668211" resolveInfo="isZeitKennungEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094548" nodeInfo="ng">
-          <property name="name" nameId="tpck.1169194664001" value="isKonditionsZeileEditable" />
-          <property name="delegateType" nameId="sgb.5005516259701333684" value="StatusDelegate" />
-          <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094549" nodeInfo="ng">
-            <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-            <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094550" nodeInfo="nn">
-              <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094551" nodeInfo="ng" />
-              <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094552" nodeInfo="nn">
-                <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668218" resolveInfo="isKonditionsZeileEditable" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400094553" nodeInfo="ng">
-          <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094554" nodeInfo="nn">
-            <property name="value" nameId="tpee.1070475926801" value="450" />
-          </node>
-        </node>
-        <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5108611660400094555" nodeInfo="in">
-          <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-        </node>
-        <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094556" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="Sonstige Freigaben" />
         </node>
       </node>
-      <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400094557" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094558" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
+      <node concept="1vx_$y" id="4r_rNOh$eLP" role="1vx_$z">
+        <property role="TrG5h" value="konditionsSatz" />
+        <property role="3lxVgK" value="DecimalDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eLQ" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eLR" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eLS" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eLT" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3$" resolve="konditionsSatz" />
+            </node>
+          </node>
         </node>
       </node>
-      <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400094559" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094560" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="-1" />
-        </node>
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094561" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="-1" />
+      <node concept="1vx_$y" id="4r_rNOh$eLU" role="1vx_$z">
+        <property role="TrG5h" value="isKonditionsSatzEditable" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eLV" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eLW" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eLX" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eLY" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6H" resolve="isKonditionsSatzEditable" />
+            </node>
+          </node>
         </node>
       </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5108611660400094562" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+      <node concept="1vx_$y" id="4r_rNOh$eLZ" role="1vx_$z">
+        <property role="TrG5h" value="konditionsBedRf" />
+        <property role="3lxVgK" value="IntegerDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eM0" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eM1" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eM2" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eM3" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3t" resolve="konditionsBedRf" />
+            </node>
+          </node>
+        </node>
       </node>
-      <node role="heading" roleId="sgb.940368958464562064" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094563" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Parameterdefinitionen / Freigabe / Selektionslisten" />
+      <node concept="1vx_$y" id="4r_rNOh$eM4" role="1vx_$z">
+        <property role="TrG5h" value="isKonditionsBedRfEditable" />
+        <property role="3lxVgK" value="StatusDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$eM5" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$eM6" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$eM7" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$eM8" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6A" resolve="isKonditionsBedRfEditable" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="4r_rNOh$eM9" role="1THgkZ">
+        <node concept="Xl_RD" id="4r_rNOh$eMa" role="1THgkI">
+          <property role="Xl_RC" value="450" />
+        </node>
+        <node concept="Xl_RD" id="4r_rNOh$eMb" role="1THgkI">
+          <property role="Xl_RC" value="150" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="4r_rNOh$eMc" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="Xl_RD" id="4r_rNOh$eMd" role="2lSlej">
+        <property role="Xl_RC" value="Parameterdefinitionen Grundtypen / Freigabe" />
       </node>
     </node>
-    <node role="baseForm" roleId="sgb.8089681376574861180" type="sgb.DelegateForm" typeId="sgb.7105808579467823062" id="5108611660400094564" nodeInfo="ng">
-      <property name="minWdith" nameId="sgb.4559353072057000008" value="1" />
-      <property name="debugIObjectView" nameId="sgb.1817733841498849496" value="false" />
-      <property name="name" nameId="tpck.1169194664001" value="EditKonditionsTypVertragsText2DF" />
-      <link role="selectedClass" roleId="sgb.4554792820669879843" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
-      <node role="delegate" roleId="sgb.7105808579467853410" type="sgb.InputDelegateDeclaration" typeId="sgb.7105808579467853411" id="5108611660400094565" nodeInfo="ng">
-        <property name="name" nameId="tpck.1169194664001" value="vertragsText" />
-        <property name="delegateType" nameId="sgb.5005516259701333684" value="StringDelegate" />
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094566" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.251398775130017410" resolveInfo="setProperty" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.DotExpression" typeId="tpee.1197027756228" id="5108611660400094567" nodeInfo="nn">
-            <node role="operand" roleId="tpee.1197027771414" type="sgb.BoundObject" typeId="sgb.5945580863363863223" id="5108611660400094568" nodeInfo="ng" />
-            <node role="operation" roleId="tpee.1197027833540" type="tpee.PropertyReference" typeId="tpee.1201385106094" id="5108611660400094569" nodeInfo="nn">
-              <link role="property" roleId="tpee.1201385237847" targetNodeId="8z9b.2075539057415668092" resolveInfo="vertragsText" />
+    <node concept="2G$zOF" id="4r_rNOh$eMe" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTypParameterListen2FC" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vxE2n" id="4r_rNOh$eMf" role="2G$zO_">
+        <property role="1mNjcY" value="1" />
+        <property role="1nxMek" value="false" />
+        <property role="TrG5h" value="EditKonditionsTypParameterListen2DF" />
+        <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+        <node concept="1vx_$y" id="4r_rNOh$eMg" role="1vx_$z">
+          <property role="TrG5h" value="konditionsWirkung" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eMh" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eMi" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eMj" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eMk" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3F" resolve="kondWirkung" />
+              </node>
             </node>
           </node>
         </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094570" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.5759798192633641709" resolveInfo="setMaxLength" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094571" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="768" />
+        <node concept="1vx_$y" id="4r_rNOh$eMp" role="1vx_$z">
+          <property role="TrG5h" value="isKonditionsWirkungEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eMq" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eMr" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eMs" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eMt" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6O" resolve="isKonditionsWirkungEditable" />
+              </node>
+            </node>
           </node>
         </node>
-        <node role="parameter2" roleId="sgb.5005516259701333683" type="sgb.InputDelegateParameter2" typeId="sgb.5005516259701333694" id="5108611660400094572" nodeInfo="ng">
-          <link role="methodDeclaration" roleId="sgb.5005516259701333696" targetNodeId="c9yi.3423068311895197671" resolveInfo="setNumOfLines" />
-          <node role="expression" roleId="sgb.5005516259701333695" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="5108611660400094573" nodeInfo="nn">
-            <property name="value" nameId="tpee.1068580320021" value="10" />
+        <node concept="1vx_$y" id="4r_rNOh$eMu" role="1vx_$z">
+          <property role="TrG5h" value="selKonditionsWirkung" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eMv" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eMw" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eMx" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eMy" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w6F5V" resolve="selectionListKondWirkungAsText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eMz" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$eM$" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eM_" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="4r_rNOh$eMA" role="3lxVgV">
+              <property role="3cmrfH" value="512" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eMB" role="1vx_$z">
+          <property role="TrG5h" value="berechGrundlageEh" />
+          <property role="3lxVgK" value="ReferenceDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eMC" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eMD" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eME" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eMF" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3M" resolve="berechnungsGlEh" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eMG" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+            <node concept="Xl_RD" id="4r_rNOh$eMH" role="3lxVgV">
+              <property role="Xl_RC" value="bezeichnung" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eMM" role="1vx_$z">
+          <property role="TrG5h" value="isBerechGrundlageEhEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eMN" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eMO" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eMP" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eMQ" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7g" resolve="isBerechGrundlEhEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eMR" role="1vx_$z">
+          <property role="TrG5h" value="selBerechnungsGrundlageEH" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eMS" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eMT" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eMU" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eMV" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w73t2" resolve="selectionListBerechnungsGrundlageAsText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eMW" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="4r_rNOh$eMX" role="3lxVgV">
+              <property role="3cmrfH" value="256" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eMY" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$eMZ" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eN0" role="1vx_$z">
+          <property role="TrG5h" value="bezugsBasis" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eN1" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eN2" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eN3" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eN4" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3m" resolve="bezugsBasis" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eN9" role="1vx_$z">
+          <property role="TrG5h" value="isBezugsBasisEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNa" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eNb" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eNc" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eNd" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6v" resolve="isBezugsBasisEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eNe" role="1vx_$z">
+          <property role="TrG5h" value="selBezugsBasis" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNf" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eNg" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eNh" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eNi" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w6Prx" resolve="selectionListBezugsBasisAsText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eNj" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$eNk" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eNl" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="4r_rNOh$eNm" role="3lxVgV">
+              <property role="3cmrfH" value="512" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eNn" role="1vx_$z">
+          <property role="TrG5h" value="kalkulationsBasis" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNo" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eNp" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eNq" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eNr" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3f" resolve="kalkulationsBasis" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eNw" role="1vx_$z">
+          <property role="TrG5h" value="isKalkulationsBasisEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNx" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eNy" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eNz" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eN$" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6o" resolve="isKalkulationsBasisEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eN_" role="1vx_$z">
+          <property role="TrG5h" value="selKalkulationsBasis" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNA" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eNB" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eNC" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eND" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w6UDL" resolve="selectionListKalkulationsBasisAsText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eNE" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$eNF" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eNG" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="4r_rNOh$eNH" role="3lxVgV">
+              <property role="3cmrfH" value="512" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eNI" role="1vx_$z">
+          <property role="TrG5h" value="zeilenEinheit" />
+          <property role="3lxVgK" value="ReferenceDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNJ" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eNK" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eNL" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eNM" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs40" resolve="zeilenEinheit" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eNN" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
+            <node concept="Xl_RD" id="4r_rNOh$eNO" role="3lxVgV">
+              <property role="Xl_RC" value="bezeichnung" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eNT" role="1vx_$z">
+          <property role="TrG5h" value="isZeilenEinheitEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNU" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eNV" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eNW" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eNX" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7u" resolve="isZeilenEinheitEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eNY" role="1vx_$z">
+          <property role="TrG5h" value="selZeilenEinheit" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eNZ" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eO0" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eO1" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eO2" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w7o0j" resolve="selectionListZeilenEinheitAsText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eO3" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$eO4" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eO5" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="4r_rNOh$eO6" role="3lxVgV">
+              <property role="3cmrfH" value="1024" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eO7" role="1vx_$z">
+          <property role="TrG5h" value="zyklus" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eO8" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eO9" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eOa" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eOb" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eOg" role="1vx_$z">
+          <property role="TrG5h" value="isZyklusEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eOh" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eOi" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eOj" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eOk" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6V" resolve="isZyklusEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eOl" role="1vx_$z">
+          <property role="TrG5h" value="selZyklus" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eOm" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eOn" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eOo" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eOp" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w7rxG" resolve="selectionListZyklusAsText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eOq" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$eOr" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eOs" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="4r_rNOh$eOt" role="3lxVgV">
+              <property role="3cmrfH" value="256" />
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eOu" role="1vx_$z">
+          <property role="TrG5h" value="zeitKennungsTyp" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eOv" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eOw" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eOx" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eOy" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs47" resolve="zeitKennungsTyp" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eOB" role="1vx_$z">
+          <property role="TrG5h" value="isZeitKennungsTypEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eOC" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eOD" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eOE" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eOF" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs72" resolve="isZeitKennungsTypEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eOG" role="1vx_$z">
+          <property role="TrG5h" value="selZeitKennungsTyp" />
+          <property role="3lxVgK" value="StringDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eOH" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eOI" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eOJ" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eOK" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:3svtX3w72Zh" resolve="selectionListZeitkennungAsText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eOL" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+            <node concept="3clFbT" id="4r_rNOh$eOM" role="3lxVgV">
+              <property role="3clFbU" value="false" />
+            </node>
+          </node>
+          <node concept="3lxVgU" id="4r_rNOh$eON" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+            <node concept="3cmrfG" id="4r_rNOh$eOO" role="3lxVgV">
+              <property role="3cmrfH" value="256" />
+            </node>
+          </node>
+        </node>
+        <node concept="1THgkH" id="4r_rNOh$eOP" role="1THgkZ">
+          <node concept="Xl_RD" id="4r_rNOh$eOQ" role="1THgkI">
+            <property role="Xl_RC" value="450" />
+          </node>
+          <node concept="Xl_RD" id="4r_rNOh$eOR" role="1THgkI">
+            <property role="Xl_RC" value="150" />
+          </node>
+          <node concept="Xl_RD" id="4r_rNOh$eOS" role="1THgkI">
+            <property role="Xl_RC" value="1*" />
+          </node>
+        </node>
+        <node concept="3uibUv" id="4r_rNOh$eOT" role="qi9ce">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+        </node>
+      </node>
+      <node concept="1vxE2n" id="4r_rNOh$eOU" role="2G$zO_">
+        <property role="1mNjcY" value="1" />
+        <property role="1nxMek" value="false" />
+        <property role="TrG5h" value="EditKonditionsTypSpezial2DF" />
+        <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+        <node concept="1vx_$y" id="4r_rNOh$eOV" role="1vx_$z">
+          <property role="TrG5h" value="isAkontoEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eOW" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eOX" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eOY" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eOZ" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs79" resolve="isVorgabeBglEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eP0" role="1vx_$z">
+          <property role="TrG5h" value="isLieferantenRabattGruppeEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eP1" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eP2" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eP3" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eP4" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7_" resolve="isLieferantenRabattgruppeEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$eP5" role="1vx_$z">
+          <property role="TrG5h" value="isArtikelEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$eP6" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$eP7" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$eP8" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$eP9" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7G" resolve="isArtikelEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$ePa" role="1vx_$z">
+          <property role="TrG5h" value="isFaelligkeitEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$ePb" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$ePc" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$ePd" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$ePe" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7n" resolve="isUmsatzEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$ePf" role="1vx_$z">
+          <property role="TrG5h" value="isZeitKennungEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$ePg" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$ePh" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$ePi" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$ePj" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7N" resolve="isZeitKennungEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1vx_$y" id="4r_rNOh$ePk" role="1vx_$z">
+          <property role="TrG5h" value="isKonditionsZeileEditable" />
+          <property role="3lxVgK" value="StatusDelegate" />
+          <node concept="3lxVgU" id="4r_rNOh$ePl" role="3lxVgR">
+            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+            <node concept="2OqwBi" id="4r_rNOh$ePm" role="3lxVgV">
+              <node concept="2EM3W" id="4r_rNOh$ePn" role="2Oq$k0" />
+              <node concept="2S8uIT" id="4r_rNOh$ePo" role="2OqNvi">
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7U" resolve="isKonditionsZeileEditable" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1THgkH" id="4r_rNOh$ePp" role="1THgkZ">
+          <node concept="Xl_RD" id="4r_rNOh$ePq" role="1THgkI">
+            <property role="Xl_RC" value="450" />
+          </node>
+        </node>
+        <node concept="3uibUv" id="4r_rNOh$ePr" role="qi9ce">
+          <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+        </node>
+        <node concept="Xl_RD" id="4r_rNOh$ePs" role="2lSlej">
+          <property role="Xl_RC" value="Sonstige Freigaben" />
+        </node>
+      </node>
+      <node concept="1THgkH" id="4r_rNOh$ePt" role="1THgkV">
+        <node concept="Xl_RD" id="4r_rNOh$ePu" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="1THgkH" id="4r_rNOh$ePv" role="2lwzia">
+        <node concept="Xl_RD" id="4r_rNOh$ePw" role="1THgkI">
+          <property role="Xl_RC" value="-1" />
+        </node>
+        <node concept="Xl_RD" id="4r_rNOh$ePx" role="1THgkI">
+          <property role="Xl_RC" value="-1" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="4r_rNOh$ePy" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="Xl_RD" id="4r_rNOh$ePz" role="3i6kW5">
+        <property role="Xl_RC" value="Parameterdefinitionen / Freigabe / Selektionslisten" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="4r_rNOh$eP$" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTypVertragsText2DF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="4r_rNOh$eP_" role="1vx_$z">
+        <property role="TrG5h" value="vertragsText" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="4r_rNOh$ePA" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="4r_rNOh$ePB" role="3lxVgV">
+            <node concept="2EM3W" id="4r_rNOh$ePC" role="2Oq$k0" />
+            <node concept="2S8uIT" id="4r_rNOh$ePD" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5W" resolve="vertragsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$ePE" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="4r_rNOh$ePF" role="3lxVgV">
+            <property role="3cmrfH" value="768" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$ePG" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:2Y1bBTkqcvB" resolve="setNumOfLines" />
+          <node concept="3cmrfG" id="4r_rNOh$ePH" role="3lxVgV">
+            <property role="3cmrfH" value="10" />
           </node>
         </node>
       </node>
-      <node role="colWeight" roleId="sgb.8264937784151109663" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400094574" nodeInfo="ng">
-        <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094575" nodeInfo="nn">
-          <property name="value" nameId="tpee.1070475926801" value="1*" />
+      <node concept="1THgkH" id="4r_rNOh$ePI" role="1THgkZ">
+        <node concept="Xl_RD" id="4r_rNOh$ePJ" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
         </node>
       </node>
-      <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5108611660400094576" nodeInfo="in">
-        <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+      <node concept="3uibUv" id="4r_rNOh$ePK" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
       </node>
-      <node role="lable" roleId="sgb.3792563709709170442" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400094577" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="Vertragstext" />
-      </node>
-    </node>
-    <node role="columnWeight" roleId="sgb.8264937784151109659" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400088914" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400092947" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="1*" />
+      <node concept="Xl_RD" id="4r_rNOh$ePL" role="2lSlej">
+        <property role="Xl_RC" value="Vertragstext" />
       </node>
     </node>
-    <node role="rowWeight" roleId="sgb.3792563709707276307" type="sgb.WeightLayoutParam" typeId="sgb.8264937784151109645" id="5108611660400088915" nodeInfo="ng">
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400092965" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
-      </node>
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400092966" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
-      </node>
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400092967" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
-      </node>
-      <node role="weightParam" roleId="sgb.8264937784151109646" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="5108611660400092968" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="-1" />
+    <node concept="1THgkH" id="4r_rNOh$dti" role="1THgkV">
+      <node concept="Xl_RD" id="4r_rNOh$esj" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
-    <node role="type" roleId="sgb.4554792820669238526" type="tpee.ClassifierType" typeId="tpee.1107535904670" id="5108611660400099818" nodeInfo="in">
-      <link role="classifier" roleId="tpee.1107535924139" targetNodeId="8z9b.2075539057415667618" resolveInfo="KonditionsTyp" />
+    <node concept="1THgkH" id="4r_rNOh$dtj" role="2lwzia">
+      <node concept="Xl_RD" id="4r_rNOh$es_" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="4r_rNOh$esA" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="4r_rNOh$esB" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="4r_rNOh$esC" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
     </node>
-  </root>
+    <node concept="3uibUv" id="4r_rNOh$g7E" role="qi9ce">
+      <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+    </node>
+  </node>
 </model>
 
