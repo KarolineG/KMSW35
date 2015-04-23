@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="at.hafina.KondMgmt" uuid="0154f11d-a7f0-4ecd-b507-776dfe8dc0de" compileInMPS="true">
   <models>
-    <modelRoot contentPath="C:/javaware35/KondMgmt2_0/solutions" type="default">
-      <sourceRoot location="KondMgmt" />
+    <modelRoot contentPath="${module}" type="default">
+      <sourceRoot path="${module}/at" />
     </modelRoot>
-    <modelRoot contentPath="C:/javaware35/KondMgmt2_0/jars" type="java_classes">
+    <modelRoot contentPath="C:/javaware35/eFWWS/jars" type="java_classes">
       <sourceRoot location="pdfbox-app-1.8.4.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="C:/javaware35/KondMgmt2_0/jars/pdfbox-app-1.8.4.jar" />
+    <stubModelEntry path="C:/javaware35/eFWWS/jars/pdfbox-app-1.8.4.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
