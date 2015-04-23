@@ -19,6 +19,7 @@
     <import index="1v76" ref="r:4df79bb7-19c1-4cef-b629-1e238f25be49(at.hafina.wws.Konditionsmanagement)" />
     <import index="8z9b" ref="r:90ef3146-e171-4eff-aee5-122e613b5ee8(at.hafina.wws.KonditionsTypenVerwaltung)" />
     <import index="zrij" ref="r:0b00ad78-5fe8-4eb1-9358-7ece907cff0c(at.hafina.wws.KonditionsmanagementMaFunktionen)" />
+    <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.solution.manmapRT)" implicit="true" />
   </imports>
   <registry>
     <language id="0f69ff68-7ed4-4ee4-8dc6-1619facda18d" name="org.modellwerkstatt.forms">
@@ -49,15 +50,8 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -130,6 +124,7 @@
         <property id="830334255848344171" name="logLevel" index="Ra3FK" />
         <property id="830334255848344170" name="packageName" index="Ra3FL" />
       </concept>
+      <concept id="4779674245164262437" name="org.modellwerkstatt.objectflow.structure.UserEnvironmentParameter" flags="ng" index="2Rjrh3" />
       <concept id="4419932786254844465" name="org.modellwerkstatt.objectflow.structure.RunCommand" flags="ng" index="2Ux5d2">
         <reference id="4419932786254844467" name="command" index="2Ux5d0" />
         <reference id="4419932786254844466" name="process" index="2Ux5d1" />
@@ -283,26 +278,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2O3g4kcDWYj" role="3cqZAp" />
-        <node concept="3cpWs8" id="3piImMyDu$j" role="3cqZAp">
-          <node concept="3cpWsn" id="3piImMyDu$k" role="3cpWs9">
-            <property role="TrG5h" value="envInfo" />
-            <node concept="3uibUv" id="3piImMyDu$l" role="1tU5fm">
-              <ref role="3uigEE" to="28jr:3tZ99yEJcyg" resolve="UserEnvironmentInformation" />
-            </node>
-            <node concept="10QFUN" id="3piImMyDu$n" role="33vP2m">
-              <node concept="3uibUv" id="3piImMyDu$o" role="10QFUM">
-                <ref role="3uigEE" to="28jr:3tZ99yEJcyg" resolve="UserEnvironmentInformation" />
-              </node>
-              <node concept="2YIFZM" id="3piImMyDu$s" role="10QFUP">
-                <ref role="37wK5l" to="28jr:5OLgD$Bv2b" resolve="findInstanceByName" />
-                <ref role="1Pybhc" to="28jr:I5W9GWEHym" resolve="OFXConsoleHelper" />
-                <node concept="Xl_RD" id="3piImMyDu$t" role="37wK5m">
-                  <property role="Xl_RC" value="userEnviormentInformation" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="1NncJyRH7lq" role="3cqZAp">
           <node concept="3cpWsn" id="1NncJyRH7lr" role="3cpWs9">
             <property role="TrG5h" value="currentUser" />
@@ -362,11 +337,9 @@
         <node concept="3clFbH" id="so$LrG6QxF" role="3cqZAp" />
         <node concept="3clFbF" id="3piImMyFJ47" role="3cqZAp">
           <node concept="2OqwBi" id="3piImMyFJ48" role="3clFbG">
-            <node concept="37vLTw" id="3svtX3w58fb" role="2Oq$k0">
-              <ref role="3cqZAo" node="3piImMyDu$k" resolve="envInfo" />
-            </node>
+            <node concept="2Rjrh3" id="6jb8GaC_Zc$" role="2Oq$k0" />
             <node concept="liA8E" id="3piImMyFJ4a" role="2OqNvi">
-              <ref role="37wK5l" to="28jr:3tZ99yEJcys" resolve="setUserId" />
+              <ref role="37wK5l" to="w7gk:2BF5kUGSRAy" resolve="setUserId" />
               <node concept="37vLTw" id="3svtX3w58Fz" role="37wK5m">
                 <ref role="3cqZAo" node="so$LrG3r7j" resolve="uid" />
               </node>
@@ -375,11 +348,9 @@
         </node>
         <node concept="3clFbF" id="3piImMyFJ4c" role="3cqZAp">
           <node concept="2OqwBi" id="3piImMyFJ4d" role="3clFbG">
-            <node concept="37vLTw" id="3svtX3w58FW" role="2Oq$k0">
-              <ref role="3cqZAo" node="3piImMyDu$k" resolve="envInfo" />
-            </node>
+            <node concept="2Rjrh3" id="6jb8GaC_ZjO" role="2Oq$k0" />
             <node concept="liA8E" id="3piImMyFJ4f" role="2OqNvi">
-              <ref role="37wK5l" to="28jr:mdLKeppdBr" resolve="setUserName" />
+              <ref role="37wK5l" to="w7gk:2BF5kUGT7He" resolve="setUserName" />
               <node concept="37vLTw" id="3svtX3w58vR" role="37wK5m">
                 <ref role="3cqZAo" node="3piImMyDu$w" resolve="adUser" />
               </node>
