@@ -26,9 +26,6 @@
     <import index="26n1" ref="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time(org.modellwerkstatt.manmap.solution/org.joda.time@java_stub)" />
     <import index="vt2g" ref="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time.format(org.modellwerkstatt.manmap.solution/org.joda.time.format@java_stub)" />
     <import index="2k0i" ref="r:c5d4da5d-b8fe-4540-a060-b6d7af258118(at.hafina.wws.Forderungsstellung)" />
-    <import index="o9h8" ref="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" />
-    <import index="8tpd" ref="r:a708151c-db77-44e8-9fa7-6f852fc8df10(at.hafina.wws.Rechnungspruefung)" />
-    <import index="6kvc" ref="r:a8b2f117-a785-4a9b-8e9e-842b1cb26c8f(at.hafina.wws.KonditionsmanagementBatch)" />
     <import index="c9yi" ref="r:775c0fa7-99cc-49ff-86b2-34796e752e4b(org.modellwerkstatt.forms.api)" />
   </imports>
   <registry>
@@ -341,7 +338,6 @@
         <child id="385689203887260176" name="executeFunction" index="2ifnLp" />
       </concept>
       <concept id="8399801448178544753" name="org.modellwerkstatt.objectflow.structure.BatchJob" flags="ig" index="3aV6qo">
-        <reference id="8399801448181160543" name="configuration" index="3ad4MQ" />
         <child id="8399801448180977969" name="onShutdown" index="3acovo" />
         <child id="8399801448180977968" name="onStartup" index="3acovp" />
         <child id="8399801448178545745" name="batchTask" index="3aV6aS" />
@@ -1006,7 +1002,6 @@
   </node>
   <node concept="3aV6qo" id="5CS3u2GStq7">
     <property role="TrG5h" value="KmswBatch" />
-    <ref role="3ad4MQ" node="3trU5lnKRxq" resolve="BasisConfigurationBatchTest" />
     <node concept="3Tm1VV" id="5CS3u2GStq8" role="1B3o_S" />
     <node concept="3aV6aD" id="5CS3u2GStq9" role="3aV6aS">
       <property role="3acouJ" value="1000" />

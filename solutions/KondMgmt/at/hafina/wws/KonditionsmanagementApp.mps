@@ -37,7 +37,6 @@
       <concept id="1472214787652645413" name="org.modellwerkstatt.forms.structure.AppStartupFunction" flags="ig" index="2fsEAD" />
       <concept id="1472214787652375087" name="org.modellwerkstatt.forms.structure.Application" flags="ig" index="2ftCAz">
         <property id="293796121013651477" name="versionInformation" index="3LuWSm" />
-        <reference id="2470353161578441261" name="configuration" index="2bVhWL" />
         <child id="1472214787652645424" name="appStartupFunction" index="2fsEAW" />
         <child id="1472214787652375128" name="startMenu" index="2ftCBk" />
         <child id="3354235353006401278" name="extrasMenu" index="rz4mQ" />
@@ -194,7 +193,6 @@
         <child id="3262649880240512230" name="description" index="2fsTSx" />
       </concept>
       <concept id="3262649880240512242" name="org.modellwerkstatt.objectflow.structure.TestCases" flags="ig" index="2fsTSP">
-        <reference id="3262649880241442785" name="configuration" index="2f14OA" />
         <child id="3262649880240512254" name="testMethod" index="2fsTST" />
       </concept>
       <concept id="3262649880241050695" name="org.modellwerkstatt.objectflow.structure.TestInfo" flags="ng" index="2fu_q0">
@@ -295,7 +293,6 @@
   <node concept="2ftCAz" id="3trU5lnKR$f">
     <property role="TrG5h" value="KonditionsmanagementUI" />
     <property role="3LuWSm" value="MPreis Konditionsmanagementsoftware V2.5.0" />
-    <ref role="2bVhWL" node="3trU5lnKRxn" resolve="BasisConfiguration" />
     <node concept="2Ux5dv" id="4HxyFP_OrqP" role="rz4mQ">
       <node concept="2Ux5d2" id="4HxyFP_OrqQ" role="2UzG4t">
         <ref role="2Ux5d1" to="1v76:1_N9OhPPeGF" resolve="Konditionsmanagement" />
@@ -722,7 +719,6 @@
   </node>
   <node concept="2fsTSP" id="6$j5cQ4_EvJ">
     <property role="TrG5h" value="testAppendString" />
-    <ref role="2f14OA" node="3trU5lnKRxq" resolve="BasisConfigurationTest" />
     <node concept="312cEg" id="6$j5cQ4_EvQ" role="jymVt">
       <property role="TrG5h" value="maxLen" />
       <node concept="3Tm6S6" id="6$j5cQ4_EvR" role="1B3o_S" />
@@ -1131,7 +1127,6 @@
   </node>
   <node concept="2fsTSP" id="40KqQ7WHqsU">
     <property role="TrG5h" value="fillKmMaVertrag" />
-    <ref role="2f14OA" node="3trU5lnKRxq" resolve="BasisConfigurationTest" />
     <node concept="312cEg" id="40KqQ7WHqtu" role="jymVt">
       <property role="TrG5h" value="sessionChkOut" />
       <node concept="3Tm6S6" id="40KqQ7WHqtv" role="1B3o_S" />
@@ -1489,7 +1484,6 @@
   </node>
   <node concept="2fsTSP" id="6E7UUnE5hmE">
     <property role="TrG5h" value="replaceSteigBonus" />
-    <ref role="2f14OA" node="3trU5lnKRxq" resolve="BasisConfigurationTest" />
     <node concept="312cEg" id="6E7UUnE5hn0" role="jymVt">
       <property role="TrG5h" value="sessionChkOut" />
       <node concept="3Tm6S6" id="6E7UUnE5hn1" role="1B3o_S" />
@@ -1917,7 +1911,6 @@
   </node>
   <node concept="2fsTSP" id="6dthkknVXze">
     <property role="TrG5h" value="TestLieferantenUmsatz" />
-    <ref role="2f14OA" node="3trU5lnKRxq" resolve="BasisConfigurationTest" />
     <node concept="312cEg" id="6dthkknVX_y" role="jymVt">
       <property role="TrG5h" value="session" />
       <node concept="3Tm6S6" id="6dthkknVX_z" role="1B3o_S" />

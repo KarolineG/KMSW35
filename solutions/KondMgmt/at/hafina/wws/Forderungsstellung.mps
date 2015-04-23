@@ -25,7 +25,6 @@
     <import index="ybr6" ref="f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.joda.time.base(org.modellwerkstatt.manmap.solution/org.joda.time.base@java_stub)" />
     <import index="h02c" ref="r:e6c2aa5b-bce2-4b87-a73e-cbb9ffed7df1(at.hafina.organisation.Filialenverwaltung)" />
     <import index="mr22" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.print(JDK/javax.print@java_stub)" />
-    <import index="nn6w" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#javax.print.attribute(JDK/javax.print.attribute@java_stub)" />
     <import index="7zqk" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt.print(JDK/java.awt.print@java_stub)" />
     <import index="22fg" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.net(JDK/java.net@java_stub)" />
     <import index="3kk" ref="r:3013b061-8947-4149-9f1e-447a42a0b746(at.hafina.wws.Wareneingang)" />

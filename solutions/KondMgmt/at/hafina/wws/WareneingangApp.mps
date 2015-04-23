@@ -14,7 +14,6 @@
     <import index="nq1x" ref="r:96727cd1-f9d8-4cf6-87cf-109a07175d18(at.hafina.wws.Lieferantenstamm)" />
     <import index="o9h8" ref="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" />
     <import index="8tpd" ref="r:a708151c-db77-44e8-9fa7-6f852fc8df10(at.hafina.wws.Rechnungspruefung)" />
-    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.solution.manmapRT)" implicit="true" />
   </imports>
   <registry>
@@ -25,7 +24,6 @@
       <concept id="1472214787652645413" name="org.modellwerkstatt.forms.structure.AppStartupFunction" flags="ig" index="2fsEAD" />
       <concept id="1472214787652375087" name="org.modellwerkstatt.forms.structure.Application" flags="ig" index="2ftCAz">
         <property id="293796121013651477" name="versionInformation" index="3LuWSm" />
-        <reference id="2470353161578441261" name="configuration" index="2bVhWL" />
         <child id="1472214787652645424" name="appStartupFunction" index="2fsEAW" />
         <child id="1472214787652375128" name="startMenu" index="2ftCBk" />
       </concept>
@@ -164,7 +162,6 @@
   <node concept="2ftCAz" id="7Y7$sS6pasQ">
     <property role="TrG5h" value="WareneingangApp" />
     <property role="3LuWSm" value="MPreis Wareneingang View V1.0" />
-    <ref role="2bVhWL" node="7Y7$sS6pasP" resolve="BasisConfigurationWE" />
     <node concept="2Ux5dv" id="71RqXfas5mm" role="2ftCBk">
       <node concept="2Ux5d2" id="71RqXfas5mn" role="2UzG4t">
         <ref role="2Ux5d1" to="3kk:7Y7$sS6pcjZ" resolve="WareneingangsbelegeAnzeigen" />

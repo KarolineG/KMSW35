@@ -14,10 +14,7 @@
     <import index="46c4" ref="r:b78e301f-f4ba-4f71-80cf-5a0e23685a74(at.hafina.wws.Artikelstamm)" />
     <import index="nq1x" ref="r:96727cd1-f9d8-4cf6-87cf-109a07175d18(at.hafina.wws.Lieferantenstamm)" />
     <import index="o9h8" ref="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" />
-    <import index="28jr" ref="r:db7f402b-6d90-4cd6-961e-da1426ed222e(org.modellwerkstatt.objectflow.ObjectFlowRT)" />
-    <import index="hqqe" ref="r:a21d359e-b425-4f5f-af67-8aa3c0a353f4(at.hafina.wws.LieferantenZuordnung)" />
     <import index="1v76" ref="r:4df79bb7-19c1-4cef-b629-1e238f25be49(at.hafina.wws.Konditionsmanagement)" />
-    <import index="8z9b" ref="r:90ef3146-e171-4eff-aee5-122e613b5ee8(at.hafina.wws.KonditionsTypenVerwaltung)" />
     <import index="zrij" ref="r:0b00ad78-5fe8-4eb1-9358-7ece907cff0c(at.hafina.wws.KonditionsmanagementMaFunktionen)" />
     <import index="w7gk" ref="r:22abd22f-3c78-4514-b7c6-da1d82c38fe2(org.modellwerkstatt.manmap.solution.manmapRT)" implicit="true" />
   </imports>
@@ -26,7 +23,6 @@
       <concept id="1472214787652645413" name="org.modellwerkstatt.forms.structure.AppStartupFunction" flags="ig" index="2fsEAD" />
       <concept id="1472214787652375087" name="org.modellwerkstatt.forms.structure.Application" flags="ig" index="2ftCAz">
         <property id="293796121013651477" name="versionInformation" index="3LuWSm" />
-        <reference id="2470353161578441261" name="configuration" index="2bVhWL" />
         <child id="1472214787652645424" name="appStartupFunction" index="2fsEAW" />
         <child id="1472214787652375128" name="startMenu" index="2ftCBk" />
       </concept>
@@ -160,7 +156,6 @@
   <node concept="2ftCAz" id="3trU5lnKR$Y">
     <property role="TrG5h" value="UmbauNeueroeffnungenApp" />
     <property role="3LuWSm" value="MPreis Filialenmanagement für Neueröffnungen V2.1" />
-    <ref role="2bVhWL" node="3trU5lnKR_6" resolve="BasisConfigurationUNT" />
     <node concept="2Ux5dv" id="2O3g4kc$VMh" role="2ftCBk">
       <node concept="2Ux5d2" id="2O3g4kc$VMi" role="2UzG4t">
         <ref role="2Ux5d0" to="h02c:3trU5lnKTKJ" resolve="Filialliste anzeigen" />

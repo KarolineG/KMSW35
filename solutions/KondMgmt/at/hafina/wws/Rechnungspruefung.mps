@@ -24,7 +24,6 @@
       <concept id="1472214787652645413" name="org.modellwerkstatt.forms.structure.AppStartupFunction" flags="ig" index="2fsEAD" />
       <concept id="1472214787652375087" name="org.modellwerkstatt.forms.structure.Application" flags="ig" index="2ftCAz">
         <property id="293796121013651477" name="versionInformation" index="3LuWSm" />
-        <reference id="2470353161578441261" name="configuration" index="2bVhWL" />
         <child id="1472214787652645424" name="appStartupFunction" index="2fsEAW" />
         <child id="1472214787652375128" name="startMenu" index="2ftCBk" />
       </concept>
@@ -1920,7 +1919,6 @@
   <node concept="2ftCAz" id="4HxyFP_OsTm">
     <property role="TrG5h" value="MartinSpecialReko" />
     <property role="3LuWSm" value="Reko OFX mit neuer Rechnungskürzung" />
-    <ref role="2bVhWL" node="4HxyFP_OsTk" resolve="Reko_Show_Config" />
     <node concept="2Ux5dv" id="4HxyFP_OJYb" role="2ftCBk">
       <property role="3AMjDJ" value="Liste Rekoakte" />
       <node concept="2Ux5d2" id="4HxyFP_OJYc" role="2UzG4t">
