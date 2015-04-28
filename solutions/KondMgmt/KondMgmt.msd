@@ -4,12 +4,12 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="at" />
     </modelRoot>
-    <modelRoot contentPath="/Users/danielstieger/javaware/KMSW35" type="java_classes">
-      <sourceRoot location="jars/pdfbox-app-1.8.4.jar" />
+    <modelRoot contentPath="C:/javaware35/KMSW35/jars" type="java_classes">
+      <sourceRoot location="pdfbox-app-1.8.4.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
-    <stubModelEntry path="/Users/danielstieger/javaware/KMSW35/jars/pdfbox-app-1.8.4.jar" />
+    <stubModelEntry path="C:/javaware35/KMSW35/jars/pdfbox-app-1.8.4.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>
@@ -17,6 +17,7 @@
     <dependency reexport="false">3ffa979d-a559-4372-8a77-69ebb3d02788(org.modellwerkstatt.forms.sandbox)</dependency>
     <dependency reexport="false">37fdf88a-1025-4d01-864a-0bf987f72e6f(org.modellwerkstatt.manmap.solution)</dependency>
     <dependency reexport="false">5a857198-951d-4874-b213-66fc66e0ee10(org.modellwerkstatt.sandbox)</dependency>
+    <dependency reexport="false">041c8db3-5765-452b-9018-6560b4ba50f6(at.hafina.basis)</dependency>
   </dependencies>
   <usedLanguages>
     <usedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</usedLanguage>
