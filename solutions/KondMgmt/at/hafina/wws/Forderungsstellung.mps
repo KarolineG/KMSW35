@@ -1160,7 +1160,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsKopf" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106353" resolveInfo="ForderungsKopf" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332682" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_kopf" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_kopf@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332684" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106392" />
@@ -1421,7 +1421,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsPosition" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106687" resolveInfo="ForderungsPosition" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332773" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_pos" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.ford_pos@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.ReferenceMapping" typeId="r5tz.8440420766105723374" id="3687014260077332775" nodeInfo="ng">
         <link role="property" roleId="r5tz.8440420766105723376" targetNodeId="2578114784133106693" />
@@ -1551,7 +1551,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsSubTyp" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106921" resolveInfo="ForderungsSubTyp" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332821" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen_subtyp" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen_subtyp@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332822" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106927" />
@@ -1638,7 +1638,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapForderungsTyp" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133107008" resolveInfo="ForderungsTyp" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332851" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_forderungen@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332852" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133107014" />
@@ -11530,7 +11530,7 @@
               </node>
               <node role="condition" roleId="tpee.1163668914799" type="tpee.GreaterThanExpression" typeId="tpee.1081506762703" id="6387131309318750618" nodeInfo="nn">
                 <node role="rightExpression" roleId="tpee.1081773367579" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6387131309318750619" nodeInfo="nn">
-                  <property name="value" nameId="tpee.1068580320021" value="40" />
+                  <property name="value" nameId="tpee.1068580320021" value="128" />
                 </node>
                 <node role="leftExpression" roleId="tpee.1081773367580" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6387131309318750620" nodeInfo="nn">
                   <node role="operand" roleId="tpee.1197027771414" type="tpee.DotExpression" typeId="tpee.1197027756228" id="6387131309318750621" nodeInfo="nn">
@@ -11561,7 +11561,7 @@
                     <property name="value" nameId="tpee.1068580320021" value="0" />
                   </node>
                   <node role="actualArgument" roleId="tpee.1068499141038" type="tpee.IntegerConstant" typeId="tpee.1068580320020" id="6387131309318750631" nodeInfo="nn">
-                    <property name="value" nameId="tpee.1068580320021" value="39" />
+                    <property name="value" nameId="tpee.1068580320021" value="127" />
                   </node>
                 </node>
               </node>
@@ -24704,7 +24704,7 @@
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="6387131309318754841" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="bruttoBetrag" />
       <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.RangeOption" typeId="un0u.3517052249651130105" id="1696588574758428229" nodeInfo="ng">
-        <property name="start" nameId="un0u.3517052249651130108" value="0.0d" />
+        <property name="start" nameId="un0u.3517052249651130108" value="-1000000.0d" />
         <property name="stop" nameId="un0u.3517052249651130109" value="100000000.0d" />
         <property name="scale" nameId="un0u.5903203825074373802" value="4" />
       </node>
@@ -24904,7 +24904,7 @@
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="6387131309318754852" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="nettoBetrag" />
       <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.RangeOption" typeId="un0u.3517052249651130105" id="1696588574758428919" nodeInfo="ng">
-        <property name="start" nameId="un0u.3517052249651130108" value="0.0d" />
+        <property name="start" nameId="un0u.3517052249651130108" value="-1000000.0d" />
         <property name="stop" nameId="un0u.3517052249651130109" value="100000000.0d" />
         <property name="scale" nameId="un0u.5903203825074373802" value="4" />
       </node>
@@ -24954,7 +24954,7 @@
         </node>
       </node>
       <node role="propertyOption" roleId="un0u.3674496190757459099" type="un0u.RangeOption" typeId="un0u.3517052249651130105" id="1696588574758425350" nodeInfo="ng">
-        <property name="start" nameId="un0u.3517052249651130108" value="0.0d" />
+        <property name="start" nameId="un0u.3517052249651130108" value="-1000000.0d" />
         <property name="stop" nameId="un0u.3517052249651130109" value="100000000.0d" />
         <property name="scale" nameId="un0u.5903203825074373802" value="4" />
       </node>
@@ -28263,6 +28263,7 @@
   </root>
   <root type="un0u.BusinessObject" typeId="un0u.1372017518093514468" id="3741581977243670828" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ForderungenListeZeileForPrint" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
     <node role="businessProperties" roleId="un0u.3207218222495905601" type="un0u.BusinessProperty" typeId="un0u.8396343267227475961" id="3741581977243677042" nodeInfo="ig">
       <property name="propertyName" nameId="tpee.1201371481316" value="id" />
       <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="3741581977243677043" nodeInfo="nn" />
@@ -29755,6 +29756,7 @@
   </root>
   <root type="un0u.ValueObject" typeId="un0u.8009046666042261418" id="8029334867492811234" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="KeyBelegNummer" />
+    <property name="virtualPackage" nameId="tpck.1193676396447" value="DATA" />
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8029334867492811236" nodeInfo="nn" />
     <node role="documentation2" roleId="un0u.5847590543402886013" type="un0u.OFXDocumentation" typeId="un0u.6525155817177697680" id="8029334867492811237" nodeInfo="ng">
       <node role="lines" roleId="un0u.6525155817177697693" type="un0u.OFXDocumentationLine" typeId="un0u.6525155817177697681" id="8029334867492811238" nodeInfo="ng">

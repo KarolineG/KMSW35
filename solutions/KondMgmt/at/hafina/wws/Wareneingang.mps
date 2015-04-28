@@ -4838,7 +4838,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegDetail" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153190" resolveInfo="WareneingangsBeleg" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332964" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729345379" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133153204" />
@@ -5210,7 +5210,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegPosDetail" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153331" resolveInfo="WareneingangsBelegPos" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077333003" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366263" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="9189473878729366265" resolveInfo="id" />
@@ -5795,7 +5795,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegSimple" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153190" resolveInfo="WareneingangsBeleg" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9189473878729366282" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_kopf@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366283" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133153204" resolveInfo="id" />
@@ -5915,7 +5915,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapWareneingangsBelegPosSimple" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133153331" resolveInfo="WareneingangsBelegPos" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="9189473878729366398" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.weblg_pos@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="9189473878729366399" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="9189473878729366265" resolveInfo="id" />

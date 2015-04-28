@@ -731,7 +731,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapArtikelstamm" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133105812" resolveInfo="Artikel" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332614" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.artikelstamm@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332615" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133105818" />
@@ -816,7 +816,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapLieferantenrabattgruppe" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106194" resolveInfo="Lieferantenrabattgruppe" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332640" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.sta_lief_rab_grp@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332641" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106200" />
@@ -870,7 +870,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapSteuerKennZeichen" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="2578114784133106238" resolveInfo="Steuerkennzeichen" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="3687014260077332657" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.STA_STEUER@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="3687014260077332658" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2578114784133106295" />
@@ -1039,7 +1039,7 @@
       <property name="name" nameId="tpck.1169194664001" value="MapDomaene" />
       <link role="classConcept" roleId="r5tz.871579071900233967" targetNodeId="4713724798241530169" resolveInfo="Domaene" />
       <node role="tableName" roleId="r5tz.871579071901472001" type="tpee.StringLiteral" typeId="tpee.1070475926800" id="4713724798241692828" nodeInfo="nn">
-        <property name="value" nameId="tpee.1070475926801" value="mpreis.DOMAENE" />
+        <property name="value" nameId="tpee.1070475926801" value="mpreis.DOMAENE@p_wws" />
       </node>
       <node role="mapping" roleId="r5tz.4557816287827057767" type="r5tz.FieldMapping" typeId="r5tz.871579071900209251" id="4713724798241695292" nodeInfo="ng">
         <link role="property" roleId="r5tz.871579071900248751" targetNodeId="2075539057415668642" />
