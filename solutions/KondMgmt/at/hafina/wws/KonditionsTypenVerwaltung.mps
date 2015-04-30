@@ -2826,6 +2826,18 @@
         <property role="1YKsg0" value="Tankstelle" />
         <property role="1YKsg1" value="Tankstelle" />
       </node>
+      <node concept="2XvgOc" id="WKO_C7l_Ll" role="2XvgO2">
+        <property role="TrG5h" value="Alpenmetzgerei" />
+        <property role="2XvgOS" value="AMV" />
+        <property role="1YKsg0" value="Alpenmetzgerei" />
+        <property role="1YKsg1" value="Alpenmetzgerei" />
+      </node>
+      <node concept="2XvgOc" id="WKO_C7lFqj" role="2XvgO2">
+        <property role="TrG5h" value="Baeckerei" />
+        <property role="2XvgOS" value="BTM" />
+        <property role="1YKsg0" value="Baeckerei" />
+        <property role="1YKsg1" value="Baeckerei" />
+      </node>
     </node>
     <node concept="3Tm1VV" id="1NdMWqEHs97" role="1B3o_S" />
     <node concept="3clFbW" id="1NdMWqEHs2A" role="jymVt">

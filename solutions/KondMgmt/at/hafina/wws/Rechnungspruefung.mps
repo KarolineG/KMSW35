@@ -283,9 +283,6 @@
       <concept id="4152417163566536218" name="org.modellwerkstatt.objectflow.structure.IViewForPage" flags="ng" index="3gfwXM">
         <reference id="1444282517685285790" name="pageReference" index="xYMNi" />
       </concept>
-      <concept id="836579671456120410" name="org.modellwerkstatt.objectflow.structure.EqualPropertyReference" flags="ng" index="1kU5Ut">
-        <reference id="836579671456120411" name="property" index="1kU5Us" />
-      </concept>
       <concept id="7192042020163999185" name="org.modellwerkstatt.objectflow.structure.Process" flags="ng" index="3ugp7d">
         <reference id="1881524139087681829" name="statusField" index="10I5Op" />
         <child id="1881524139086941830" name="states" index="10xgEU" />
@@ -332,9 +329,7 @@
         <property id="8537348545916385362" name="uri" index="1Xsv$n" />
         <child id="830334255848383637" name="logConfiguration" index="RaTge" />
       </concept>
-      <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5">
-        <child id="5225022991485184163" name="equalProperties" index="1YeyCp" />
-      </concept>
+      <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
       <concept id="774207833082734171" name="org.modellwerkstatt.manmap.structure.WhereQuery" flags="ng" index="jxyYR">
@@ -2226,18 +2221,6 @@
   <node concept="1YeyE5" id="ZnmXpVrjtb">
     <property role="TrG5h" value="RekoAktCriteria" />
     <node concept="3Tm1VV" id="ZnmXpVrjtc" role="1B3o_S" />
-    <node concept="1kU5Ut" id="ZnmXpVrju2" role="1YeyCp">
-      <ref role="1kU5Us" node="ZnmXpVrjti" resolve="lieferant" />
-    </node>
-    <node concept="1kU5Ut" id="ZnmXpVrju4" role="1YeyCp">
-      <ref role="1kU5Us" node="ZnmXpVrjtp" resolve="intRechnungsNummer" />
-    </node>
-    <node concept="1kU5Ut" id="ZnmXpVrju6" role="1YeyCp">
-      <ref role="1kU5Us" node="ZnmXpVrjtw" resolve="extRechnungsNummer" />
-    </node>
-    <node concept="1kU5Ut" id="ZnmXpVrju8" role="1YeyCp">
-      <ref role="1kU5Us" node="ZnmXpVrjtD" resolve="status" />
-    </node>
     <node concept="3clFbW" id="ZnmXpVrjtd" role="jymVt">
       <node concept="3cqZAl" id="ZnmXpVrjte" role="3clF45" />
       <node concept="3Tm1VV" id="ZnmXpVrjtf" role="1B3o_S" />

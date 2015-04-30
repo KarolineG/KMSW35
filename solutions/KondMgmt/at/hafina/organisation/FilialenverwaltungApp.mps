@@ -425,23 +425,23 @@
   </node>
   <node concept="2CG7Z0" id="3WBfdAXayEc">
     <property role="TrG5h" value="LolaTestConfig" />
-    <property role="2320hu" value="2015-04-28T15:13:29.321+02:00" />
+    <property role="2320hu" value="2015-04-30T13:55:21.828+02:00" />
     <node concept="2CJ4_Q" id="3WBfdAXayWo" role="2CGBMS">
-      <ref role="2CJ4_N" to="vab3:4LC0Y0L2pa6" resolve="MPREIS_Winter2014_FatClient_TestConfig" />
+      <ref role="2CJ4_N" to="vab3:5U6O6yyVRsu" resolve="MPREIS_2015_FatclientSUGAR" />
       <node concept="26L8Vk" id="3WBfdAXaz7_" role="2CPvpQ">
-        <ref role="26L8Vy" to="vab3:4LC0Y0L2pa$" resolve="jdbcUrl" />
+        <ref role="26L8Vy" to="vab3:5U6O6yyVRsW" resolve="jdbcUrl" />
         <node concept="Xl_RD" id="3WBfdAXaz7A" role="26L8Vw">
           <property role="Xl_RC" value="jdbc:oracle:thin:@//dbtest:1521/LOLA" />
         </node>
       </node>
       <node concept="26L8Vk" id="3WBfdAXaz79" role="2CPvpQ">
-        <ref role="26L8Vy" to="vab3:4LC0Y0L2paC" resolve="user" />
+        <ref role="26L8Vy" to="vab3:5U6O6yyVRt0" resolve="user" />
         <node concept="Xl_RD" id="3WBfdAXaz7a" role="26L8Vw">
           <property role="Xl_RC" value="kmsw" />
         </node>
       </node>
       <node concept="26L8Vk" id="3WBfdAXaz7g" role="2CPvpQ">
-        <ref role="26L8Vy" to="vab3:4LC0Y0L2paE" resolve="password" />
+        <ref role="26L8Vy" to="vab3:5U6O6yyVRt2" resolve="password" />
         <node concept="Xl_RD" id="3WBfdAXaz7h" role="26L8Vw">
           <property role="Xl_RC" value="lola" />
         </node>
@@ -450,466 +450,322 @@
     <node concept="2CPvp3" id="3WBfdAXayVv" role="2CGBMS" />
     <node concept="2CJoq6" id="3WBfdAXazpP" role="2CGBMS">
       <property role="TrG5h" value="AUTO_CALC" />
-      <node concept="2CJf3v" id="3WBfdAXazPE" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegDetail" />
-        <node concept="Xl_RD" id="3WBfdAXazPF" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegDetail" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPG" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegPosDetail" />
-        <node concept="Xl_RD" id="3WBfdAXazPH" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegPosDetail" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPI" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegSimple" />
-        <node concept="Xl_RD" id="3WBfdAXazPJ" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegSimple" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPK" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegPosSimple" />
-        <node concept="Xl_RD" id="3WBfdAXazPL" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Wareneingang.MapWareneingangsBelegPosSimple" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPM" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapVertrag" />
-        <node concept="Xl_RD" id="3WBfdAXazPN" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapVertrag" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPO" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapKonditionsZeile" />
-        <node concept="Xl_RD" id="3WBfdAXazPP" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapKonditionsZeile" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPQ" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapKondition" />
-        <node concept="Xl_RD" id="3WBfdAXazPR" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapKondition" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPS" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapUmsatzForKondition" />
-        <node concept="Xl_RD" id="3WBfdAXazPT" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapUmsatzForKondition" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPU" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapZeitkennung" />
-        <node concept="Xl_RD" id="3WBfdAXazPV" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapZeitkennung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPW" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzVertrag" />
-        <node concept="Xl_RD" id="3WBfdAXazPX" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzVertrag" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazPY" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatzKs" />
-        <node concept="Xl_RD" id="3WBfdAXazPZ" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatzKs" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQ0" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatz" />
-        <node concept="Xl_RD" id="3WBfdAXazQ1" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatz" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQ2" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchung" />
-        <node concept="Xl_RD" id="3WBfdAXazQ3" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQ4" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchungVergleich" />
-        <node concept="Xl_RD" id="3WBfdAXazQ5" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchungVergleich" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQ6" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapStandardKlauseln" />
-        <node concept="Xl_RD" id="3WBfdAXazQ7" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapStandardKlauseln" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQ8" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapMitarbeiterZuordVertrag" />
-        <node concept="Xl_RD" id="3WBfdAXazQ9" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapMitarbeiterZuordVertrag" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQa" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Lieferantenstamm.MapLieferantenstamm" />
-        <node concept="Xl_RD" id="3WBfdAXazQb" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Lieferantenstamm.MapLieferantenstamm" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQc" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Lieferantenstamm.MapVorgangsort" />
-        <node concept="Xl_RD" id="3WBfdAXazQd" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Lieferantenstamm.MapVorgangsort" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQe" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapArtikelstamm" />
-        <node concept="Xl_RD" id="3WBfdAXazQf" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapArtikelstamm" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQg" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapLieferantenrabattgruppe" />
-        <node concept="Xl_RD" id="3WBfdAXazQh" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapLieferantenrabattgruppe" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQi" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapSteuerKennZeichen" />
-        <node concept="Xl_RD" id="3WBfdAXazQj" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapSteuerKennZeichen" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQk" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapArtikelEkAbzuege" />
-        <node concept="Xl_RD" id="3WBfdAXazQl" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapArtikelEkAbzuege" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQm" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapDomaene" />
-        <node concept="Xl_RD" id="3WBfdAXazQn" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapDomaene" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQo" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapArtikelgebinde" />
-        <node concept="Xl_RD" id="3WBfdAXazQp" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapArtikelgebinde" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQq" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.organisation.Mitarbeiterstamm.MapMitarbeiter" />
-        <node concept="Xl_RD" id="3WBfdAXazQr" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.organisation.Mitarbeiterstamm.MapMitarbeiter" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQs" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.organisation.Mitarbeiterstamm.MapAppManager" />
-        <node concept="Xl_RD" id="3WBfdAXazQt" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.organisation.Mitarbeiterstamm.MapAppManager" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQu" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.LieferantenZuordnung.MapLieferantenZuordnung" />
-        <node concept="Xl_RD" id="3WBfdAXazQv" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.LieferantenZuordnung.MapLieferantenZuordnung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQw" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.KonditionsTypenVerwaltung.MapBglEinheitFromList" />
-        <node concept="Xl_RD" id="3WBfdAXazQx" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsTypenVerwaltung.MapBglEinheitFromList" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQy" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.KonditionsTypenVerwaltung.MapKonditionsTyp" />
-        <node concept="Xl_RD" id="3WBfdAXazQz" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsTypenVerwaltung.MapKonditionsTyp" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQ$" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.KonditionsTypenVerwaltung.MapZeilenEinheitFromList" />
-        <node concept="Xl_RD" id="3WBfdAXazQ_" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsTypenVerwaltung.MapZeilenEinheitFromList" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQA" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.KonditionsmanagementMaFunktionen.MapEkMitarbFunktionen" />
-        <node concept="Xl_RD" id="3WBfdAXazQB" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsmanagementMaFunktionen.MapEkMitarbFunktionen" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQC" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QNp" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.organisation.Filialenverwaltung.MapUmbauNeuTankstelle" />
-        <node concept="Xl_RD" id="3WBfdAXazQD" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNq" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.organisation.Filialenverwaltung.MapUmbauNeuTankstelle" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazQE" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Rechnungspruefung.MapBestellung" />
-        <node concept="Xl_RD" id="3WBfdAXazQF" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Rechnungspruefung.MapBestellung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQG" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Rechnungspruefung.MapRechnung" />
-        <node concept="Xl_RD" id="3WBfdAXazQH" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Rechnungspruefung.MapRechnung" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQI" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Rechnungspruefung.MapRekoAkt" />
-        <node concept="Xl_RD" id="3WBfdAXazQJ" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Rechnungspruefung.MapRekoAkt" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQK" role="2CJdiS">
-        <property role="TrG5h" value="at.hafina.wws.Rechnungspruefung.MapRekoLieferanten" />
-        <node concept="Xl_RD" id="3WBfdAXazQL" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Rechnungspruefung.MapRekoLieferanten" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazQM" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QNr" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapForderungsKopf" />
-        <node concept="Xl_RD" id="3WBfdAXazQN" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNs" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapForderungsKopf" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazQO" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QNt" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapForderungsPosition" />
-        <node concept="Xl_RD" id="3WBfdAXazQP" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNu" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapForderungsPosition" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazQQ" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QNv" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapForderungsSubTyp" />
-        <node concept="Xl_RD" id="3WBfdAXazQR" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNw" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapForderungsSubTyp" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazQS" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QNx" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapForderungsTyp" />
-        <node concept="Xl_RD" id="3WBfdAXazQT" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNy" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapForderungsTyp" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazQU" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QNz" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapForderungInterfaceKopf" />
-        <node concept="Xl_RD" id="3WBfdAXazQV" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QN$" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapForderungInterfaceKopf" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazQW" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QN_" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapForderungInterfacePos" />
-        <node concept="Xl_RD" id="3WBfdAXazQX" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNA" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapForderungInterfacePos" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazQY" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QNB" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapBuchungsAktLieferant" />
-        <node concept="Xl_RD" id="3WBfdAXazQZ" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNC" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapBuchungsAktLieferant" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazR0" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QND" role="2CJdiS">
         <property role="TrG5h" value="at.hafina.wws.Forderungsstellung.MapAnforderungKopfForPrint" />
-        <node concept="Xl_RD" id="3WBfdAXazR1" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QNE" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.MapAnforderungKopfForPrint" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazR2" role="2CJdiS">
-        <property role="TrG5h" value="__wareneingangsbelegeAnzeigen" />
-        <node concept="Xl_RD" id="3WBfdAXazR3" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Wareneingang.WareneingangsbelegeAnzeigen" />
+      <node concept="2CJf3v" id="7X8TN292QNF" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapArtikelstamm" />
+        <node concept="Xl_RD" id="7X8TN292QNG" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapArtikelstamm" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazR4" role="2CJdiS">
-        <property role="TrG5h" value="__wareneingangsBelegRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazR5" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Wareneingang.WareneingangsBelegRepo" />
+      <node concept="2CJf3v" id="7X8TN292QNH" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapLieferantenrabattgruppe" />
+        <node concept="Xl_RD" id="7X8TN292QNI" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapLieferantenrabattgruppe" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazR6" role="2CJdiS">
-        <property role="TrG5h" value="__konditionsmanagement" />
-        <node concept="Xl_RD" id="3WBfdAXazR7" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.Konditionsmanagement" />
+      <node concept="2CJf3v" id="7X8TN292QNJ" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapSteuerKennZeichen" />
+        <node concept="Xl_RD" id="7X8TN292QNK" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapSteuerKennZeichen" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazR8" role="2CJdiS">
-        <property role="TrG5h" value="__vertragRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazR9" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.VertragRepo" />
+      <node concept="2CJf3v" id="7X8TN292QNL" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapArtikelEkAbzuege" />
+        <node concept="Xl_RD" id="7X8TN292QNM" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapArtikelEkAbzuege" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRa" role="2CJdiS">
-        <property role="TrG5h" value="__anforderungsVerwaltung" />
-        <node concept="Xl_RD" id="3WBfdAXazRb" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.AnforderungsVerwaltung" />
+      <node concept="2CJf3v" id="7X8TN292QNN" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapDomaene" />
+        <node concept="Xl_RD" id="7X8TN292QNO" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapDomaene" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRc" role="2CJdiS">
-        <property role="TrG5h" value="__anforderungenRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRd" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.AnforderungenRepo" />
+      <node concept="2CJf3v" id="7X8TN292QNP" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Artikelstamm.MapArtikelgebinde" />
+        <node concept="Xl_RD" id="7X8TN292QNQ" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.MapArtikelgebinde" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRe" role="2CJdiS">
-        <property role="TrG5h" value="__konditionenRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRf" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.KonditionenRepo" />
+      <node concept="2CJf3v" id="7X8TN292QNR" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Lieferantenstamm.MapLieferantenstamm" />
+        <node concept="Xl_RD" id="7X8TN292QNS" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Lieferantenstamm.MapLieferantenstamm" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRg" role="2CJdiS">
-        <property role="TrG5h" value="__lieferantenUmsatzRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRh" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.LieferantenUmsatzRepo" />
+      <node concept="2CJf3v" id="7X8TN292QNT" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Lieferantenstamm.MapVorgangsort" />
+        <node concept="Xl_RD" id="7X8TN292QNU" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Lieferantenstamm.MapVorgangsort" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRi" role="2CJdiS">
-        <property role="TrG5h" value="__klauselRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRj" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.KlauselRepo" />
+      <node concept="2CJf3v" id="7X8TN292QNV" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.organisation.Mitarbeiterstamm.MapMitarbeiter" />
+        <node concept="Xl_RD" id="7X8TN292QNW" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.organisation.Mitarbeiterstamm.MapMitarbeiter" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRk" role="2CJdiS">
-        <property role="TrG5h" value="__kmswRoles" />
-        <node concept="Xl_RD" id="3WBfdAXazRl" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.KmswRoles" />
+      <node concept="2CJf3v" id="7X8TN292QNX" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.organisation.Mitarbeiterstamm.MapAppManager" />
+        <node concept="Xl_RD" id="7X8TN292QNY" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.organisation.Mitarbeiterstamm.MapAppManager" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRm" role="2CJdiS">
-        <property role="TrG5h" value="__dwService" />
-        <node concept="Xl_RD" id="3WBfdAXazRn" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.DwService" />
+      <node concept="2CJf3v" id="7X8TN292QNZ" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapVertrag" />
+        <node concept="Xl_RD" id="7X8TN292QO0" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapVertrag" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRo" role="2CJdiS">
-        <property role="TrG5h" value="__fopFileService" />
-        <node concept="Xl_RD" id="3WBfdAXazRp" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.FopFileService" />
+      <node concept="2CJf3v" id="7X8TN292QO1" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapKonditionsZeile" />
+        <node concept="Xl_RD" id="7X8TN292QO2" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapKonditionsZeile" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRq" role="2CJdiS">
-        <property role="TrG5h" value="__lieferantenstammRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRr" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Lieferantenstamm.LieferantenstammRepo" />
+      <node concept="2CJf3v" id="7X8TN292QO3" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapKondition" />
+        <node concept="Xl_RD" id="7X8TN292QO4" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapKondition" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRs" role="2CJdiS">
-        <property role="TrG5h" value="__artikelstammRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRt" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.ArtikelstammRepo" />
+      <node concept="2CJf3v" id="7X8TN292QO5" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapUmsatzForKondition" />
+        <node concept="Xl_RD" id="7X8TN292QO6" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapUmsatzForKondition" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRu" role="2CJdiS">
-        <property role="TrG5h" value="__artikelNettoAbzuege" />
-        <node concept="Xl_RD" id="3WBfdAXazRv" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.ArtikelNettoAbzuege" />
+      <node concept="2CJf3v" id="7X8TN292QO7" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapZeitkennung" />
+        <node concept="Xl_RD" id="7X8TN292QO8" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapZeitkennung" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRw" role="2CJdiS">
-        <property role="TrG5h" value="__mitarbeiterstammRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRx" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.organisation.Mitarbeiterstamm.MitarbeiterstammRepo" />
+      <node concept="2CJf3v" id="7X8TN292QO9" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzVertrag" />
+        <node concept="Xl_RD" id="7X8TN292QOa" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzVertrag" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRy" role="2CJdiS">
-        <property role="TrG5h" value="__zuordungsverwaltung" />
-        <node concept="Xl_RD" id="3WBfdAXazRz" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.LieferantenZuordnung.Zuordungsverwaltung" />
+      <node concept="2CJf3v" id="7X8TN292QOb" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatzKs" />
+        <node concept="Xl_RD" id="7X8TN292QOc" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatzKs" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazR$" role="2CJdiS">
-        <property role="TrG5h" value="__lieferantenZuordnungRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazR_" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.LieferantenZuordnung.LieferantenZuordnungRepo" />
+      <node concept="2CJf3v" id="7X8TN292QOd" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatz" />
+        <node concept="Xl_RD" id="7X8TN292QOe" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenJahresUmsatz" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRA" role="2CJdiS">
-        <property role="TrG5h" value="__konditionsTypenVerwaltung" />
-        <node concept="Xl_RD" id="3WBfdAXazRB" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsTypenVerwaltung.KonditionsTypenVerwaltung" />
+      <node concept="2CJf3v" id="7X8TN292QOf" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchung" />
+        <node concept="Xl_RD" id="7X8TN292QOg" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchung" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRC" role="2CJdiS">
-        <property role="TrG5h" value="__konditionsTypRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRD" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsTypenVerwaltung.KonditionsTypRepo" />
+      <node concept="2CJf3v" id="7X8TN292QOh" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchungVergleich" />
+        <node concept="Xl_RD" id="7X8TN292QOi" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapLieferantenUmsatzBuchungVergleich" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRE" role="2CJdiS">
-        <property role="TrG5h" value="__bgl_Einheitenverwaltung" />
-        <node concept="Xl_RD" id="3WBfdAXazRF" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsTypenVerwaltung.Bgl_Einheitenverwaltung" />
+      <node concept="2CJf3v" id="7X8TN292QOj" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapStandardKlauseln" />
+        <node concept="Xl_RD" id="7X8TN292QOk" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapStandardKlauseln" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRG" role="2CJdiS">
-        <property role="TrG5h" value="__zeileneinheitenverwaltung" />
-        <node concept="Xl_RD" id="3WBfdAXazRH" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsTypenVerwaltung.Zeileneinheitenverwaltung" />
+      <node concept="2CJf3v" id="7X8TN292QOl" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.Konditionsmanagement.MapMitarbeiterZuordVertrag" />
+        <node concept="Xl_RD" id="7X8TN292QOm" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.MapMitarbeiterZuordVertrag" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRI" role="2CJdiS">
-        <property role="TrG5h" value="__ekMitarbeiterFunktionenRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRJ" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsmanagementMaFunktionen.EkMitarbeiterFunktionenRepo" />
+      <node concept="2CJf3v" id="7X8TN292QOn" role="2CJdiS">
+        <property role="TrG5h" value="at.hafina.wws.KonditionsmanagementMaFunktionen.MapEkMitarbFunktionen" />
+        <node concept="Xl_RD" id="7X8TN292QOo" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.KonditionsmanagementMaFunktionen.MapEkMitarbFunktionen" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRK" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QOp" role="2CJdiS">
         <property role="TrG5h" value="__filialenverwaltung" />
-        <node concept="Xl_RD" id="3WBfdAXazRL" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QOq" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.organisation.Filialenverwaltung.Filialenverwaltung" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRM" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QOr" role="2CJdiS">
         <property role="TrG5h" value="__umbauNeueroeffnungRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRN" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QOs" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.organisation.Filialenverwaltung.UmbauNeueroeffnungRepo" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazRO" role="2CJdiS">
-        <property role="TrG5h" value="__batchKmsw" />
-        <node concept="Xl_RD" id="3WBfdAXazRP" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsmanagementBatch.BatchKmsw" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazRQ" role="2CJdiS">
-        <property role="TrG5h" value="__weBelegVerbuchungService" />
-        <node concept="Xl_RD" id="3WBfdAXazRR" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.KonditionsmanagementBatch.WeBelegVerbuchungService" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazRS" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungspruefungRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRT" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Rechnungspruefung.RechnungspruefungRepo" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazRU" role="2CJdiS">
-        <property role="TrG5h" value="__rechnungskontrolle" />
-        <node concept="Xl_RD" id="3WBfdAXazRV" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Rechnungspruefung.Rechnungskontrolle" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazRW" role="2CJdiS">
-        <property role="TrG5h" value="__rekoAkte" />
-        <node concept="Xl_RD" id="3WBfdAXazRX" role="2CJf0U">
-          <property role="Xl_RC" value="at.hafina.wws.Rechnungspruefung.RekoAkte" />
-        </node>
-      </node>
-      <node concept="2CJf3v" id="3WBfdAXazRY" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QOt" role="2CJdiS">
         <property role="TrG5h" value="__forderungRepo" />
-        <node concept="Xl_RD" id="3WBfdAXazRZ" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QOu" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.ForderungRepo" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazS0" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QOv" role="2CJdiS">
         <property role="TrG5h" value="__printForderungService" />
-        <node concept="Xl_RD" id="3WBfdAXazS1" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QOw" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.PrintForderungService" />
         </node>
       </node>
-      <node concept="2CJf3v" id="3WBfdAXazS2" role="2CJdiS">
+      <node concept="2CJf3v" id="7X8TN292QOx" role="2CJdiS">
         <property role="TrG5h" value="__desctopService" />
-        <node concept="Xl_RD" id="3WBfdAXazS3" role="2CJf0U">
+        <node concept="Xl_RD" id="7X8TN292QOy" role="2CJf0U">
           <property role="Xl_RC" value="at.hafina.wws.Forderungsstellung.DesctopService" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOz" role="2CJdiS">
+        <property role="TrG5h" value="__artikelstammRepo" />
+        <node concept="Xl_RD" id="7X8TN292QO$" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.ArtikelstammRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QO_" role="2CJdiS">
+        <property role="TrG5h" value="__artikelNettoAbzuege" />
+        <node concept="Xl_RD" id="7X8TN292QOA" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Artikelstamm.ArtikelNettoAbzuege" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOB" role="2CJdiS">
+        <property role="TrG5h" value="__lieferantenstammRepo" />
+        <node concept="Xl_RD" id="7X8TN292QOC" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Lieferantenstamm.LieferantenstammRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOD" role="2CJdiS">
+        <property role="TrG5h" value="__mitarbeiterstammRepo" />
+        <node concept="Xl_RD" id="7X8TN292QOE" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.organisation.Mitarbeiterstamm.MitarbeiterstammRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOF" role="2CJdiS">
+        <property role="TrG5h" value="__konditionsmanagement" />
+        <node concept="Xl_RD" id="7X8TN292QOG" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.Konditionsmanagement" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOH" role="2CJdiS">
+        <property role="TrG5h" value="__vertragRepo" />
+        <node concept="Xl_RD" id="7X8TN292QOI" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.VertragRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOJ" role="2CJdiS">
+        <property role="TrG5h" value="__anforderungsVerwaltung" />
+        <node concept="Xl_RD" id="7X8TN292QOK" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.AnforderungsVerwaltung" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOL" role="2CJdiS">
+        <property role="TrG5h" value="__anforderungenRepo" />
+        <node concept="Xl_RD" id="7X8TN292QOM" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.AnforderungenRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QON" role="2CJdiS">
+        <property role="TrG5h" value="__konditionenRepo" />
+        <node concept="Xl_RD" id="7X8TN292QOO" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.KonditionenRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOP" role="2CJdiS">
+        <property role="TrG5h" value="__lieferantenUmsatzRepo" />
+        <node concept="Xl_RD" id="7X8TN292QOQ" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.LieferantenUmsatzRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOR" role="2CJdiS">
+        <property role="TrG5h" value="__klauselRepo" />
+        <node concept="Xl_RD" id="7X8TN292QOS" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.KlauselRepo" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOT" role="2CJdiS">
+        <property role="TrG5h" value="__kmswRoles" />
+        <node concept="Xl_RD" id="7X8TN292QOU" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.KmswRoles" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOV" role="2CJdiS">
+        <property role="TrG5h" value="__dwService" />
+        <node concept="Xl_RD" id="7X8TN292QOW" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.DwService" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOX" role="2CJdiS">
+        <property role="TrG5h" value="__fopFileService" />
+        <node concept="Xl_RD" id="7X8TN292QOY" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.FopFileService" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QOZ" role="2CJdiS">
+        <property role="TrG5h" value="__konditionAktivierungService" />
+        <node concept="Xl_RD" id="7X8TN292QP0" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.Konditionsmanagement.KonditionAktivierungService" />
+        </node>
+      </node>
+      <node concept="2CJf3v" id="7X8TN292QP1" role="2CJdiS">
+        <property role="TrG5h" value="__ekMitarbeiterFunktionenRepo" />
+        <node concept="Xl_RD" id="7X8TN292QP2" role="2CJf0U">
+          <property role="Xl_RC" value="at.hafina.wws.KonditionsmanagementMaFunktionen.EkMitarbeiterFunktionenRepo" />
         </node>
       </node>
     </node>

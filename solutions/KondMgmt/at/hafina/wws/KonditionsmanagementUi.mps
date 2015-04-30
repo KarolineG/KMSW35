@@ -7742,6 +7742,9 @@
       <node concept="Xl_RD" id="4VnaMZmP0A3" role="1THgkI">
         <property role="Xl_RC" value="-1" />
       </node>
+      <node concept="Xl_RD" id="7X8TN28ExpP" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
     </node>
     <node concept="3uibUv" id="1xzNBu8QdEf" role="qi9ce">
       <ref role="3uigEE" to="1v76:7V$JGz7L7gI" resolve="SelectAnforderungViewCriteria" />
@@ -8130,9 +8133,6 @@
       </node>
     </node>
     <node concept="1THgkH" id="4E_PLYnYAtq" role="2lwzia">
-      <node concept="Xl_RD" id="4E_PLYnYAtu" role="1THgkI">
-        <property role="Xl_RC" value="-1" />
-      </node>
       <node concept="Xl_RD" id="4E_PLYnYAtv" role="1THgkI">
         <property role="Xl_RC" value="1*" />
       </node>
@@ -12411,9 +12411,6 @@
       </node>
       <node concept="Xl_RD" id="41HLAicEAvD" role="1THgkI">
         <property role="Xl_RC" value="-1" />
-      </node>
-      <node concept="Xl_RD" id="41HLAicQskS" role="1THgkI">
-        <property role="Xl_RC" value="1*" />
       </node>
       <node concept="Xl_RD" id="41HLAicQsl0" role="1THgkI">
         <property role="Xl_RC" value="1*" />

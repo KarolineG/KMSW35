@@ -82,6 +82,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -191,10 +192,6 @@
         <child id="982522369447120166" name="target" index="2zpXf5" />
         <child id="982522369447120165" name="operand" index="2zpXf6" />
       </concept>
-      <concept id="4388680175614537753" name="org.modellwerkstatt.manmap.structure.AlternativeTableName" flags="ng" index="CEw_7">
-        <property id="4388680175614543797" name="variant" index="CEBVF" />
-        <child id="4388680175614543803" name="tablename" index="CEBV_" />
-      </concept>
       <concept id="8172309840348950202" name="org.modellwerkstatt.manmap.structure.INeedsClassMapper" flags="ng" index="P14SU">
         <reference id="8172309840348950203" name="entityMapping" index="P14SV" />
       </concept>
@@ -207,7 +204,6 @@
       </concept>
       <concept id="871579071900209258" name="org.modellwerkstatt.manmap.structure.EntityMapping" flags="ng" index="12nEzA">
         <reference id="871579071900233967" name="classConcept" index="12nOxz" />
-        <child id="774207833082448730" name="tableOption" index="jyGaQ" />
         <child id="871579071901472001" name="tableName" index="12gAQd" />
       </concept>
       <concept id="871579071900209251" name="org.modellwerkstatt.manmap.structure.FieldMapping" flags="ng" index="12nEzJ">
@@ -692,7 +688,7 @@
       <property role="TrG5h" value="MapMitarbeiter" />
       <ref role="12nOxz" node="2f7jrMqs7Ca" resolve="Mitarbeiter" />
       <node concept="Xl_RD" id="3cETYXlHoxA" role="12gAQd">
-        <property role="Xl_RC" value="mpreis.mitarbeiter" />
+        <property role="Xl_RC" value="mpreis.mitarbeiter@p_wws" />
       </node>
       <node concept="12nEzJ" id="3cETYXlHoxB" role="3caO6$">
         <ref role="12nL8z" node="2f7jrMqs7Cg" resolve="id" />
@@ -799,17 +795,6 @@
           <property role="jyRC9" value="0" />
         </node>
       </node>
-      <node concept="CEw_7" id="7qPOVO8MhK5" role="jyGaQ">
-        <node concept="Xl_RD" id="7qPOVO8MhK6" role="CEBV_">
-          <property role="Xl_RC" value="mpreis.mitarbeiter" />
-        </node>
-      </node>
-      <node concept="CEw_7" id="7qPOVO8MhXo" role="jyGaQ">
-        <property role="CEBVF" value="BABY" />
-        <node concept="Xl_RD" id="7qPOVO8MhXq" role="CEBV_">
-          <property role="Xl_RC" value="mpreis.mitarbeiter@p_wws" />
-        </node>
-      </node>
     </node>
     <node concept="12nEzA" id="1NncJyRGTnw" role="12nEwW">
       <property role="TrG5h" value="MapAppManager" />
@@ -854,17 +839,6 @@
         <node concept="jyRCf" id="1NncJyRGTnM" role="jzqmW">
           <property role="jyRC8" value="100" />
           <property role="jyRC9" value="0" />
-        </node>
-      </node>
-      <node concept="CEw_7" id="7qPOVO8Ms8C" role="jyGaQ">
-        <node concept="Xl_RD" id="7qPOVO8Ms8D" role="CEBV_">
-          <property role="Xl_RC" value="mpreis.appmanager" />
-        </node>
-      </node>
-      <node concept="CEw_7" id="7qPOVO8Ms92" role="jyGaQ">
-        <property role="CEBVF" value="BABY" />
-        <node concept="Xl_RD" id="7qPOVO8Ms94" role="CEBV_">
-          <property role="Xl_RC" value="mpreis.appmanager" />
         </node>
       </node>
     </node>
@@ -949,6 +923,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2a5a$Pwbyfu" role="3cqZAp" />
         <node concept="3cpWs8" id="1NncJyRHgzY" role="3cqZAp">
           <node concept="3cpWsn" id="1NncJyRHgzZ" role="3cpWs9">
             <property role="TrG5h" value="mitarbeiter" />

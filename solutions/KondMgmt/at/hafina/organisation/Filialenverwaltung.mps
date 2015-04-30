@@ -251,9 +251,6 @@
         <child id="9127051365898173169" name="onStatementCase" index="1hGRoH" />
         <child id="9127051365898310193" name="defaultStatementList" index="1hHhVH" />
       </concept>
-      <concept id="836579671456120410" name="org.modellwerkstatt.objectflow.structure.EqualPropertyReference" flags="ng" index="1kU5Ut">
-        <reference id="836579671456120411" name="property" index="1kU5Us" />
-      </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
       </concept>
@@ -301,7 +298,6 @@
         <property id="5225022991485184158" name="documentation" index="1YeyC$" />
         <child id="3498431509526788839" name="status" index="kV5ob" />
         <child id="5847590543402886019" name="documentation2" index="1qkbct" />
-        <child id="5225022991485184163" name="equalProperties" index="1YeyCp" />
       </concept>
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
@@ -2984,9 +2980,6 @@
     <property role="TrG5h" value="FilialListeCriteria" />
     <property role="1YeyC$" value="View zur Anzeige aller eingewarteten Filialen und zur Ablage aller involvierten Konditionen" />
     <property role="3GE5qa" value="DATA" />
-    <node concept="1kU5Ut" id="2O3g4kc$VMm" role="1YeyCp">
-      <ref role="1kU5Us" node="2O3g4kc$VM_" resolve="forJahr" />
-    </node>
     <node concept="3Tm1VV" id="2O3g4kc$VN3" role="1B3o_S" />
     <node concept="20vkWO" id="2uZxRxf6Sfk" role="1qkbct">
       <node concept="20vkWP" id="2uZxRxf6Sfl" role="20vkWT">
@@ -5661,9 +5654,6 @@
     <property role="1YeyC$" value="Zur Anzeige der Forderungssummen zu den Filialen und allgemeinen Filialforderungen" />
     <property role="3GE5qa" value="DATA" />
     <node concept="3Tm1VV" id="32laZ7nCvyO" role="1B3o_S" />
-    <node concept="1kU5Ut" id="32laZ7nCvzv" role="1YeyCp">
-      <ref role="1kU5Us" node="32laZ7nCvyU" resolve="untEinheiten" />
-    </node>
     <node concept="20vkWO" id="2uZxRxf6Sfm" role="1qkbct">
       <node concept="20vkWP" id="2uZxRxf6Sfo" role="20vkWT">
         <property role="20vkWQ" value="View zur Anzeige aller Forderungssummen aus Neueröffnungsbeiträgen mit und ohne Filialbezug" />

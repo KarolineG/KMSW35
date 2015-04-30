@@ -264,9 +264,6 @@
         <child id="5770301300929026308" name="longDesc" index="2CNmdL" />
         <child id="5770301300929026304" name="shortDesc" index="2CNmdP" />
       </concept>
-      <concept id="836579671456120410" name="org.modellwerkstatt.objectflow.structure.EqualPropertyReference" flags="ng" index="1kU5Ut">
-        <reference id="836579671456120411" name="property" index="1kU5Us" />
-      </concept>
       <concept id="271985905034983108" name="org.modellwerkstatt.objectflow.structure.DezimalLiteral" flags="ng" index="1mgVXT">
         <property id="271985905034983109" name="value" index="1mgVXS" />
       </concept>
@@ -311,7 +308,6 @@
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5">
         <property id="5225022991485184158" name="documentation" index="1YeyC$" />
         <child id="5847590543402886019" name="documentation2" index="1qkbct" />
-        <child id="5225022991485184163" name="equalProperties" index="1YeyCp" />
       </concept>
     </language>
     <language id="5aaa957f-3447-4783-b1f7-b301fa3e0394" name="org.modellwerkstatt.manmap">
@@ -6474,9 +6470,6 @@
     <property role="1YeyC$" value="Auwahlkriterium für Anzeige Wareneingangsbelege" />
     <property role="3GE5qa" value="DATA" />
     <node concept="3Tm1VV" id="7Y7$sS6pcjj" role="1B3o_S" />
-    <node concept="1kU5Ut" id="7Y7$sS6pcjX" role="1YeyCp">
-      <ref role="1kU5Us" node="7Y7$sS6pcjp" resolve="lieferant" />
-    </node>
     <node concept="20vkWO" id="2uZxRxf8nZi" role="1qkbct">
       <node concept="20vkWP" id="2uZxRxf8nZo" role="20vkWT">
         <property role="20vkWQ" value="Auswahlkriterium für die Anzeige von We-Belegen" />
