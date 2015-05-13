@@ -365,13 +365,7 @@
       <ref role="qGGBj" to="46c4:6E7UUnEbyyy" resolve="ArtikelEkAbzuegeCriteria" />
       <node concept="1THgkH" id="h7sqh2talh" role="1THgkZ">
         <node concept="Xl_RD" id="h7sqh2talk" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="h7sqh2talr" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="h7sqh2taly" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
+          <property role="Xl_RC" value="500" />
         </node>
       </node>
       <node concept="3uibUv" id="h7sqh2talj" role="qi9ce">

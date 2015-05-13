@@ -2450,7 +2450,7 @@
           <property role="Xl_RC" value="TXT_STORNO" />
         </node>
         <node concept="jyRCf" id="R6VYO61fgf" role="jzqmW">
-          <property role="jyRC8" value="80" />
+          <property role="jyRC8" value="512" />
           <property role="jyRC9" value="0" />
         </node>
       </node>
@@ -21458,7 +21458,7 @@
       <property role="2RkwnN" value="stornoText" />
       <node concept="8tbpG" id="R6VYO61htX" role="0orDa">
         <property role="8tbpJ" value="0" />
-        <property role="8tbpI" value="80" />
+        <property role="8tbpI" value="512" />
       </node>
       <node concept="3Tm1VV" id="5yzDxnpI4Qv" role="1B3o_S" />
       <node concept="2RoN1w" id="5yzDxnpI4Qw" role="2RnVtd">

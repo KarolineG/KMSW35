@@ -51,6 +51,7 @@
         <property id="8089681376575535776" name="label" index="2GDezT" />
         <property id="8264937784150739374" name="numberFormat" index="1TGbMe" />
         <child id="8089681376575671084" name="xPropPath" index="2GDD_P" />
+        <child id="2332321876774232968" name="overwriteLabel" index="3Bnz7F" />
       </concept>
       <concept id="4419932786254844460" name="org.modellwerkstatt.forms.structure.CommandTrigger" flags="ng" index="2Ux5dv">
         <property id="943115150038430512" name="hotkey" index="1xgIOb" />
@@ -481,13 +482,13 @@
       </node>
       <node concept="1vx_$y" id="1NdMWqEHsrQ" role="1vx_$z">
         <property role="TrG5h" value="kondGruppe" />
-        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="1NdMWqEHsrR" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8MNy" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8MNz" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8MN$" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs38" resolve="konditionsGruppe" />
+            <node concept="2S8uIT" id="5GXTDaZCfio" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAb3p" resolve="strKonditionsGruppe" />
             </node>
           </node>
         </node>
@@ -499,14 +500,14 @@
         </node>
       </node>
       <node concept="1vx_$y" id="1NdMWqEHsrV" role="1vx_$z">
-        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <property role="TrG5h" value="gewaehrung" />
         <node concept="3lxVgU" id="1NdMWqEHsrW" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8Nt$" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8Nt_" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8NtA" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5B" resolve="gewaehrung" />
+            <node concept="2S8uIT" id="5GXTDaZCfsM" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAGQQ" resolve="strGewaehrung" />
             </node>
           </node>
         </node>
@@ -519,20 +520,14 @@
       </node>
       <node concept="1vx_$y" id="1NdMWqEHss0" role="1vx_$z">
         <property role="TrG5h" value="steuerKennZeichen" />
-        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="1NdMWqEHss1" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8MQs" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8MQt" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8MQu" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs5I" resolve="steuerKennzeichen" />
+            <node concept="2S8uIT" id="5GXTDaZCfFm" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAXlh" resolve="strSteuerKennzeichen" />
             </node>
-          </node>
-        </node>
-        <node concept="3lxVgU" id="1NdMWqEHss5" role="3lxVgR">
-          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
-          <node concept="Xl_RD" id="1NdMWqEHss6" role="3lxVgV">
-            <property role="Xl_RC" value="steuerCode,steuerBez" />
           </node>
         </node>
         <node concept="3lxVgU" id="4r_rNOh$ozN" role="3lxVgR">
@@ -544,20 +539,14 @@
       </node>
       <node concept="1vx_$y" id="1NdMWqEHss7" role="1vx_$z">
         <property role="TrG5h" value="forderungsTyp" />
-        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="1NdMWqEHss8" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8N5g" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8N5h" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8N5i" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs8T" resolve="forderungsTyp" />
+            <node concept="2S8uIT" id="5GXTDaZCuu9" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZCiL0" resolve="strForderungsTyp" />
             </node>
-          </node>
-        </node>
-        <node concept="3lxVgU" id="1NdMWqEHssc" role="3lxVgR">
-          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
-          <node concept="Xl_RD" id="1NdMWqEHssd" role="3lxVgV">
-            <property role="Xl_RC" value="id,titel" />
           </node>
         </node>
         <node concept="3lxVgU" id="bgRZFP9Fu" role="3lxVgR">
@@ -579,20 +568,14 @@
       </node>
       <node concept="1vx_$y" id="1NdMWqEHssi" role="1vx_$z">
         <property role="TrG5h" value="forderungsSubTyp" />
-        <property role="3lxVgK" value="ReferenceDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="1NdMWqEHssj" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8MO6" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8MO7" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8MO8" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs90" resolve="forderungsSubTyp" />
+            <node concept="2S8uIT" id="5GXTDaZCv1F" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZClnM" resolve="strForderungsSubTyp" />
             </node>
-          </node>
-        </node>
-        <node concept="3lxVgU" id="1NdMWqEHssn" role="3lxVgR">
-          <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
-          <node concept="Xl_RD" id="1NdMWqEHsso" role="3lxVgV">
-            <property role="Xl_RC" value="id,titel" />
           </node>
         </node>
         <node concept="3lxVgU" id="bgRZFP9FN" role="3lxVgR">
@@ -613,14 +596,14 @@
         </node>
       </node>
       <node concept="1vx_$y" id="1NdMWqEHsst" role="1vx_$z">
-        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <property role="TrG5h" value="profitCenter" />
         <node concept="3lxVgU" id="1NdMWqEHssu" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8N$A" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8N$B" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8N$C" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs63" resolve="profitCenter" />
+            <node concept="2S8uIT" id="5GXTDaZCvqC" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZB4Q4" resolve="strProfitCenter" />
             </node>
           </node>
         </node>
@@ -632,14 +615,14 @@
         </node>
       </node>
       <node concept="1vx_$y" id="2z6qGAG2a_A" role="1vx_$z">
-        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <property role="TrG5h" value="status" />
         <node concept="3lxVgU" id="2z6qGAG2a_B" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="2z6qGAG2a_C" role="3lxVgV">
             <node concept="2EM3W" id="2z6qGAG2a_D" role="2Oq$k0" />
-            <node concept="2S8uIT" id="2z6qGAG2a_E" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6a" resolve="status" />
+            <node concept="2S8uIT" id="5GXTDaZCCJj" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZCwf6" resolve="strStatus" />
             </node>
           </node>
         </node>
@@ -697,13 +680,13 @@
       </node>
       <node concept="1vx_$y" id="1NdMWqEHssL" role="1vx_$z">
         <property role="TrG5h" value="isBezeichnungEditable" />
-        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="1NdMWqEHssM" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8NH0" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8NH1" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8NH2" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6h" resolve="isBezeichnungEditable" />
+            <node concept="2S8uIT" id="5GXTDaZCCPu" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBdUE" resolve="strIsBezeichnungEditable" />
             </node>
           </node>
         </node>
@@ -735,13 +718,13 @@
       </node>
       <node concept="1vx_$y" id="1NdMWqEHssV" role="1vx_$z">
         <property role="TrG5h" value="isKonditionsSatzEditable" />
-        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="1NdMWqEHssW" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8M_W" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8M_X" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8M_Y" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6H" resolve="isKonditionsSatzEditable" />
+            <node concept="2S8uIT" id="5GXTDaZCCVm" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBwO8" resolve="strIsKonditionsSatzEditable" />
             </node>
           </node>
         </node>
@@ -773,13 +756,13 @@
       </node>
       <node concept="1vx_$y" id="1NdMWqEHst5" role="1vx_$z">
         <property role="TrG5h" value="isKonditionsBedRfEditable" />
-        <property role="3lxVgK" value="StatusDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="1NdMWqEHst6" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8MLi" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8MLj" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8MLk" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs6A" resolve="isKonditionsBedRfEditable" />
+            <node concept="2S8uIT" id="5GXTDaZCD1d" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBuqs" resolve="strIsKonditionsBedRfEditable" />
             </node>
           </node>
         </node>
@@ -792,10 +775,10 @@
       </node>
       <node concept="1THgkH" id="1NdMWqEHsta" role="1THgkZ">
         <node concept="Xl_RD" id="1NdMWqEHstb" role="1THgkI">
-          <property role="Xl_RC" value="450" />
+          <property role="Xl_RC" value="550" />
         </node>
         <node concept="Xl_RD" id="1NdMWqEHstc" role="1THgkI">
-          <property role="Xl_RC" value="150" />
+          <property role="Xl_RC" value="200" />
         </node>
       </node>
       <node concept="3uibUv" id="1NdMWqEHstd" role="qi9ce">
@@ -805,675 +788,647 @@
         <property role="Xl_RC" value="Parameterdefinitionen Grundtypen / Freigabe" />
       </node>
     </node>
-    <node concept="2G$zOF" id="1NdMWqEHstf" role="2G$zO_">
+    <node concept="1vxE2n" id="1NdMWqEHstg" role="2G$zO_">
       <property role="1mNjcY" value="1" />
       <property role="1nxMek" value="false" />
-      <property role="TrG5h" value="EditKonditionsTypParameterListen1FC" />
+      <property role="TrG5h" value="EditKonditionsTypParameterListen1DF" />
       <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
-      <node concept="1vxE2n" id="1NdMWqEHstg" role="2G$zO_">
-        <property role="1mNjcY" value="1" />
-        <property role="1nxMek" value="false" />
-        <property role="TrG5h" value="EditKonditionsTypParameterListen1DF" />
-        <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
-        <node concept="1vx_$y" id="1NdMWqEHsth" role="1vx_$z">
-          <property role="TrG5h" value="konditionsWirkung" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsti" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NH6" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NH7" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NH8" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3F" resolve="kondWirkung" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHstm" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHstn" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="3P5uN5zrHWi" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
-            <node concept="Xl_RD" id="3svtX3w8OTt" role="3lxVgV">
-              <property role="Xl_RC" value="Konditionswirkung (F5)" />
+      <node concept="1vx_$y" id="1NdMWqEHsth" role="1vx_$z">
+        <property role="TrG5h" value="konditionsWirkung" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsti" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NH6" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NH7" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCD75" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAqrC" resolve="strKondWirkung" />
             </node>
           </node>
         </node>
-        <node concept="1vx_$y" id="1NdMWqEHsto" role="1vx_$z">
-          <property role="TrG5h" value="isKonditionsWirkungEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHstp" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NCa" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NCb" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NCc" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6O" resolve="isKonditionsWirkungEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$o_H" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$o_I" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
+        <node concept="3lxVgU" id="1NdMWqEHstm" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHstn" role="3lxVgV">
+            <property role="3clFbU" value="false" />
           </node>
         </node>
-        <node concept="1vx_$y" id="1NdMWqEHstt" role="1vx_$z">
-          <property role="TrG5h" value="selKonditionsWirkung" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHstu" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8Nki" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8Nkj" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Nkk" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w6F5V" resolve="selectionListKondWirkungAsText" />
-              </node>
-            </node>
+        <node concept="3lxVgU" id="3P5uN5zrHWi" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8OTt" role="3lxVgV">
+            <property role="Xl_RC" value="Konditionswirkung (F5)" />
           </node>
-          <node concept="3lxVgU" id="1NdMWqEHsty" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHstz" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHst$" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="1NdMWqEHst_" role="3lxVgV">
-              <property role="3cmrfH" value="512" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHstA" role="1vx_$z">
-          <property role="TrG5h" value="berechGrundlageEh" />
-          <property role="3lxVgK" value="ReferenceDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHstB" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8My8" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8My9" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Mya" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3M" resolve="berechnungsGlEh" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHstF" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
-            <node concept="Xl_RD" id="1NdMWqEHstG" role="3lxVgV">
-              <property role="Xl_RC" value="bezeichnung" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHstH" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHstI" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="3P5uN5zrHW4" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
-            <node concept="Xl_RD" id="3svtX3w8OUP" role="3lxVgV">
-              <property role="Xl_RC" value="Berechnungsgrundlage Eh (F6)" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHstJ" role="1vx_$z">
-          <property role="TrG5h" value="isBerechGrundlageEhEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHstK" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NBA" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NBB" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NBC" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7g" resolve="isBerechGrundlEhEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$o_W" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$o_X" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHstO" role="1vx_$z">
-          <property role="TrG5h" value="selBerechnungsGrundlageEH" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHstP" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NgO" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NgP" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NgQ" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w73t2" resolve="selectionListBerechnungsGrundlageAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHstT" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="1NdMWqEHstU" role="3lxVgV">
-              <property role="3cmrfH" value="256" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHstV" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHstW" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHstX" role="1vx_$z">
-          <property role="TrG5h" value="bezugsBasis" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHstY" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8ME0" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8ME1" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8ME2" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3m" resolve="bezugsBasis" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsu4" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsu5" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="3P5uN5zrHVS" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
-            <node concept="Xl_RD" id="3svtX3w8OGp" role="3lxVgV">
-              <property role="Xl_RC" value="Bezugsbasis (F7)" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsu6" role="1vx_$z">
-          <property role="TrG5h" value="isBezugsBasisEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsu7" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8Nvk" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8Nvl" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Nvm" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6v" resolve="isBezugsBasisEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oAb" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oAc" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsub" role="1vx_$z">
-          <property role="TrG5h" value="selBezugsBasis" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsuc" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8N76" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8N77" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8N78" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w6Prx" resolve="selectionListBezugsBasisAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsug" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsuh" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsui" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="1NdMWqEHsuj" role="3lxVgV">
-              <property role="3cmrfH" value="512" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsuk" role="1vx_$z">
-          <property role="TrG5h" value="kalkulationsBasis" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsul" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8MYu" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8MYv" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8MYw" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3f" resolve="kalkulationsBasis" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsup" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsuq" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="3P5uN5zrHVG" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
-            <node concept="Xl_RD" id="3svtX3w8Orb" role="3lxVgV">
-              <property role="Xl_RC" value="Kalkulationsbasis (F8)" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsur" role="1vx_$z">
-          <property role="TrG5h" value="isKalkulationsBasisEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsus" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NmI" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NmJ" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NmK" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6o" resolve="isKalkulationsBasisEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oAq" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oAr" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsuw" role="1vx_$z">
-          <property role="TrG5h" value="selKalkulationsBasis" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsux" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NAa" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NAb" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NAc" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w6UDL" resolve="selectionListKalkulationsBasisAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsu_" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsuA" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsuB" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="1NdMWqEHsuC" role="3lxVgV">
-              <property role="3cmrfH" value="512" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsuD" role="1vx_$z">
-          <property role="TrG5h" value="zeilenEinheit" />
-          <property role="3lxVgK" value="ReferenceDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsuE" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8MGS" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8MGT" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8MGU" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs40" resolve="zeilenEinheit" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsuI" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEwAYD2" resolve="setSuggestionFieldFormat" />
-            <node concept="Xl_RD" id="1NdMWqEHsuJ" role="3lxVgV">
-              <property role="Xl_RC" value="bezeichnung" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsuK" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsuL" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="3P5uN5zrHVu" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
-            <node concept="Xl_RD" id="3svtX3w8Obd" role="3lxVgV">
-              <property role="Xl_RC" value="Zeileneinheit (F9)" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsuM" role="1vx_$z">
-          <property role="TrG5h" value="isZeilenEinheitEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsuN" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8N2a" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8N2b" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8N2c" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7u" resolve="isZeilenEinheitEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oAD" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oAE" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsuR" role="1vx_$z">
-          <property role="TrG5h" value="selZeilenEinheit" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsuS" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8Ntu" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8Ntv" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Ntw" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w7o0j" resolve="selectionListZeilenEinheitAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsuW" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsuX" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsuY" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="1NdMWqEHsuZ" role="3lxVgV">
-              <property role="3cmrfH" value="1024" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsv0" role="1vx_$z">
-          <property role="TrG5h" value="zyklus" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsv1" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8MR4" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8MR5" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8MR6" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsv5" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsv6" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="3P5uN5zrHIZ" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
-            <node concept="Xl_RD" id="3svtX3w8OT_" role="3lxVgV">
-              <property role="Xl_RC" value="Zyklus Akontozahlungen (F10)" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsv7" role="1vx_$z">
-          <property role="TrG5h" value="isZyklusEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsv8" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8N$S" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8N$T" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8N$U" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs6V" resolve="isZyklusEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oAS" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oAT" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsvc" role="1vx_$z">
-          <property role="TrG5h" value="selZyklus" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsvd" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NP2" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NP3" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NP4" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w7rxG" resolve="selectionListZyklusAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsvh" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsvi" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsvj" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="1NdMWqEHsvk" role="3lxVgV">
-              <property role="3cmrfH" value="256" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsvl" role="1vx_$z">
-          <property role="TrG5h" value="zeitKennungsTyp" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsvm" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8Nja" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8Njb" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Njc" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs47" resolve="zeitKennungsTyp" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsvq" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsvr" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="3P5uN5zrHW$" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
-            <node concept="Xl_RD" id="3svtX3w8O_l" role="3lxVgV">
-              <property role="Xl_RC" value="Zeitkennungstyp (F11)" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsvs" role="1vx_$z">
-          <property role="TrG5h" value="isZeitKennungsTypEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsvt" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NOy" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NOz" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NO$" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs72" resolve="isZeitKennungsTypEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oB7" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oB8" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsvx" role="1vx_$z">
-          <property role="TrG5h" value="selZeitKennungsTyp" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsvy" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NJc" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NJd" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NJe" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w72Zh" resolve="selectionListZeitkennungAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsvA" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="1NdMWqEHsvB" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="1NdMWqEHsvC" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="1NdMWqEHsvD" role="3lxVgV">
-              <property role="3cmrfH" value="256" />
-            </node>
-          </node>
-        </node>
-        <node concept="1THgkH" id="1NdMWqEHsvE" role="1THgkZ">
-          <node concept="Xl_RD" id="1NdMWqEHsvF" role="1THgkI">
-            <property role="Xl_RC" value="450" />
-          </node>
-          <node concept="Xl_RD" id="1NdMWqEHsvG" role="1THgkI">
-            <property role="Xl_RC" value="150" />
-          </node>
-          <node concept="Xl_RD" id="1NdMWqEHsvH" role="1THgkI">
-            <property role="Xl_RC" value="1*" />
-          </node>
-        </node>
-        <node concept="3uibUv" id="1NdMWqEHsvI" role="qi9ce">
-          <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
         </node>
       </node>
-      <node concept="1vxE2n" id="1NdMWqEHswD" role="2G$zO_">
-        <property role="1mNjcY" value="1" />
-        <property role="1nxMek" value="false" />
-        <property role="TrG5h" value="EditKonditionsTypSpezial1DF" />
-        <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
-        <node concept="1vx_$y" id="1NdMWqEHswE" role="1vx_$z">
-          <property role="TrG5h" value="isAkontoEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHswF" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8Nms" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8Nmt" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Nmu" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs79" resolve="isVorgabeBglEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oBm" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oBn" role="3lxVgV">
-              <property role="3clFbU" value="false" />
+      <node concept="1vx_$y" id="1NdMWqEHsto" role="1vx_$z">
+        <property role="TrG5h" value="isKonditionsWirkungEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHstp" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NCa" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NCb" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDdj" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBzco" resolve="strIsKonditionsWirkungEditable" />
             </node>
           </node>
         </node>
-        <node concept="1vx_$y" id="1NdMWqEHswJ" role="1vx_$z">
-          <property role="TrG5h" value="isLieferantenRabattGruppeEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHswK" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8MHs" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8MHt" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8MHu" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7_" resolve="isLieferantenRabattgruppeEditable" />
-              </node>
-            </node>
+        <node concept="3lxVgU" id="4r_rNOh$o_H" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o_I" role="3lxVgV">
+            <property role="3clFbU" value="false" />
           </node>
-          <node concept="3lxVgU" id="4r_rNOh$oB_" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oBA" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHswO" role="1vx_$z">
-          <property role="TrG5h" value="isArtikelEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHswP" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8M_e" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8M_f" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8M_g" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7G" resolve="isArtikelEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oBO" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oBP" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHswT" role="1vx_$z">
-          <property role="TrG5h" value="isFaelligkeitEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHswU" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8Nsk" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8Nsl" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Nsm" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7n" resolve="isUmsatzEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oC3" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oC4" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHswY" role="1vx_$z">
-          <property role="TrG5h" value="isZeitKennungEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHswZ" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8NtE" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8NtF" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8NtG" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7N" resolve="isZeitKennungEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oCi" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oCj" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="1NdMWqEHsx3" role="1vx_$z">
-          <property role="TrG5h" value="isKonditionsZeileEditable" />
-          <property role="3lxVgK" value="StatusDelegate" />
-          <node concept="3lxVgU" id="1NdMWqEHsx4" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="3svtX3w8Nly" role="3lxVgV">
-              <node concept="2EM3W" id="3svtX3w8Nlz" role="2Oq$k0" />
-              <node concept="2S8uIT" id="3svtX3w8Nl$" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs7U" resolve="isKonditionsZeileEditable" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$oCx" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$oCy" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
-        <node concept="1THgkH" id="1NdMWqEHsx8" role="1THgkZ">
-          <node concept="Xl_RD" id="1NdMWqEHsx9" role="1THgkI">
-            <property role="Xl_RC" value="450" />
-          </node>
-        </node>
-        <node concept="3uibUv" id="1NdMWqEHsxa" role="qi9ce">
-          <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
-        </node>
-        <node concept="Xl_RD" id="1NdMWqEHsxb" role="2lSlej">
-          <property role="Xl_RC" value="Sonstige Freigaben" />
         </node>
       </node>
-      <node concept="1THgkH" id="1NdMWqEHsxc" role="1THgkV">
-        <node concept="Xl_RD" id="1NdMWqEHsxd" role="1THgkI">
+      <node concept="1vx_$y" id="1NdMWqEHstt" role="1vx_$z">
+        <property role="TrG5h" value="selKonditionsWirkung" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHstu" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nki" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nkj" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8Nkk" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:3svtX3w6F5V" resolve="selectionListKondWirkungAsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsty" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHstz" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHst$" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHst_" role="3lxVgV">
+            <property role="3cmrfH" value="512" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHstA" role="1vx_$z">
+        <property role="TrG5h" value="berechGrundlageEh" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHstB" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8My8" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8My9" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDjd" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAtU9" resolve="strBerechnungsGlEh" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHstH" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHstI" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="3P5uN5zrHW4" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8OUP" role="3lxVgV">
+            <property role="Xl_RC" value="Berechnungsgrundlage Eh (F6)" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHstJ" role="1vx_$z">
+        <property role="TrG5h" value="isBerechGrundlageEhEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHstK" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NBA" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NBB" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDqt" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBGIi" resolve="strIsBerechGrundlEhEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$o_W" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$o_X" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHstO" role="1vx_$z">
+        <property role="TrG5h" value="selBerechnungsGrundlageEH" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHstP" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NgO" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NgP" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NgQ" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:3svtX3w73t2" resolve="selectionListBerechnungsGrundlageAsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHstT" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHstU" role="3lxVgV">
+            <property role="3cmrfH" value="256" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHstV" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHstW" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHstX" role="1vx_$z">
+        <property role="TrG5h" value="bezugsBasis" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHstY" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8ME0" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8ME1" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDwl" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAnof" resolve="strBezugsBasis" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsu4" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsu5" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="3P5uN5zrHVS" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8OGp" role="3lxVgV">
+            <property role="Xl_RC" value="Bezugsbasis (F7)" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsu6" role="1vx_$z">
+        <property role="TrG5h" value="isBezugsBasisEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsu7" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nvk" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nvl" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDAz" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBnkl" resolve="strIsBezugsBasisEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oAb" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oAc" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsub" role="1vx_$z">
+        <property role="TrG5h" value="selBezugsBasis" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsuc" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N76" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N77" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8N78" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:3svtX3w6Prx" resolve="selectionListBezugsBasisAsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsug" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsuh" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsui" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHsuj" role="3lxVgV">
+            <property role="3cmrfH" value="512" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsuk" role="1vx_$z">
+        <property role="TrG5h" value="kalkulationsBasis" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsul" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MYu" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MYv" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDGz" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAgR8" resolve="strKalkulationsBasis" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsup" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsuq" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="3P5uN5zrHVG" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8Orb" role="3lxVgV">
+            <property role="Xl_RC" value="Kalkulationsbasis (F8)" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsur" role="1vx_$z">
+        <property role="TrG5h" value="isKalkulationsBasisEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsus" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NmI" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NmJ" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDMM" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBkWE" resolve="strIsKalkulationsBasisEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oAq" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oAr" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsuw" role="1vx_$z">
+        <property role="TrG5h" value="selKalkulationsBasis" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsux" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NAa" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NAb" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NAc" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:3svtX3w6UDL" resolve="selectionListKalkulationsBasisAsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsu_" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsuA" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsuB" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHsuC" role="3lxVgV">
+            <property role="3cmrfH" value="512" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsuD" role="1vx_$z">
+        <property role="TrG5h" value="zeilenEinheit" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsuE" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MGS" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MGT" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDSG" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZA$Nl" resolve="strZeilenEinheit" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsuK" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsuL" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="3P5uN5zrHVu" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8Obd" role="3lxVgV">
+            <property role="Xl_RC" value="Zeileneinheit (F9)" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsuM" role="1vx_$z">
+        <property role="TrG5h" value="isZeilenEinheitEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsuN" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N2a" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N2b" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCDZQ" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBLrL" resolve="strIsZeilenEinheitEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oAD" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oAE" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsuR" role="1vx_$z">
+        <property role="TrG5h" value="selZeilenEinheit" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsuS" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Ntu" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Ntv" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8Ntw" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:3svtX3w7o0j" resolve="selectionListZeilenEinheitAsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsuW" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsuX" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsuY" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHsuZ" role="3lxVgV">
+            <property role="3cmrfH" value="1024" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsv0" role="1vx_$z">
+        <property role="TrG5h" value="zyklus" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsv1" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MR4" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MR5" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCE5H" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZAwYd" resolve="strAbrechnungsZyklus" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsv5" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsv6" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="3P5uN5zrHIZ" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8OT_" role="3lxVgV">
+            <property role="Xl_RC" value="Zyklus Akontozahlungen (F10)" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsv7" role="1vx_$z">
+        <property role="TrG5h" value="isZyklusEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsv8" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8N$S" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8N$T" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCEbV" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZB__g" resolve="strIsZyklusEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oAS" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oAT" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsvc" role="1vx_$z">
+        <property role="TrG5h" value="selZyklus" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsvd" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NP2" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NP3" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NP4" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:3svtX3w7rxG" resolve="selectionListZyklusAsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsvh" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsvi" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsvj" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHsvk" role="3lxVgV">
+            <property role="3cmrfH" value="256" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsvl" role="1vx_$z">
+        <property role="TrG5h" value="zeitKennungsTyp" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsvm" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nja" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Njb" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCEm7" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZB7Wc" resolve="strZeitKennungsTyp" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsvq" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsvr" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="3P5uN5zrHW$" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="3svtX3w8O_l" role="3lxVgV">
+            <property role="Xl_RC" value="Zeitkennungstyp (F11)" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsvs" role="1vx_$z">
+        <property role="TrG5h" value="isZeitKennungsTypEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsvt" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NOy" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NOz" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCEsl" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBBZw" resolve="strIsZeitKennungsTypEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oB7" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oB8" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsvx" role="1vx_$z">
+        <property role="TrG5h" value="selZeitKennungsTyp" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsvy" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NJc" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NJd" role="2Oq$k0" />
+            <node concept="2S8uIT" id="3svtX3w8NJe" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:3svtX3w72Zh" resolve="selectionListZeitkennungAsText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsvA" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="1NdMWqEHsvB" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+        <node concept="3lxVgU" id="1NdMWqEHsvC" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
+          <node concept="3cmrfG" id="1NdMWqEHsvD" role="3lxVgV">
+            <property role="3cmrfH" value="256" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsvE" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsvF" role="1THgkI">
+          <property role="Xl_RC" value="550" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHsvG" role="1THgkI">
+          <property role="Xl_RC" value="250" />
+        </node>
+        <node concept="Xl_RD" id="1NdMWqEHsvH" role="1THgkI">
           <property role="Xl_RC" value="1*" />
         </node>
       </node>
-      <node concept="1THgkH" id="1NdMWqEHsxe" role="2lwzia">
-        <node concept="Xl_RD" id="1NdMWqEHsxf" role="1THgkI">
-          <property role="Xl_RC" value="-1" />
-        </node>
-        <node concept="Xl_RD" id="1NdMWqEHsxg" role="1THgkI">
-          <property role="Xl_RC" value="-1" />
-        </node>
-      </node>
-      <node concept="3uibUv" id="1NdMWqEHsxh" role="qi9ce">
+      <node concept="3uibUv" id="1NdMWqEHsvI" role="qi9ce">
         <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
       </node>
-      <node concept="Xl_RD" id="1NdMWqEHsxi" role="3i6kW5">
+      <node concept="Xl_RD" id="5GXTDaZ_tpe" role="2lSlej">
         <property role="Xl_RC" value="Parameterdefinitionen / Freigabe / Selektionslisten" />
+      </node>
+    </node>
+    <node concept="1vxE2n" id="1NdMWqEHswD" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="EditKonditionsTypSpezial1DF" />
+      <ref role="qGGBj" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      <node concept="1vx_$y" id="1NdMWqEHswE" role="1vx_$z">
+        <property role="TrG5h" value="isAkontoEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHswF" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nms" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nmt" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCEyc" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBEmE" resolve="strIsVorgabeBglEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oBm" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oBn" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHswJ" role="1vx_$z">
+        <property role="TrG5h" value="isLieferantenRabattGruppeEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHswK" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8MHs" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8MHt" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCEC3" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBNPJ" resolve="strIsLieferantenRabattgruppeEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oB_" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oBA" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHswO" role="1vx_$z">
+        <property role="TrG5h" value="isArtikelEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHswP" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8M_e" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8M_f" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCEHU" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBQaw" resolve="strIsArtikelEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oBO" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oBP" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHswT" role="1vx_$z">
+        <property role="TrG5h" value="isFaelligkeitEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHswU" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nsk" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nsl" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCENL" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBJ7c" resolve="strIsUmsatzEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oC3" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oC4" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHswY" role="1vx_$z">
+        <property role="TrG5h" value="isZeitKennungEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHswZ" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8NtE" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8NtF" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCETC" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBSAi" resolve="strIsZeitKennungEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oCi" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oCj" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1vx_$y" id="1NdMWqEHsx3" role="1vx_$z">
+        <property role="TrG5h" value="isKonditionsZeileEditable" />
+        <property role="3lxVgK" value="StringDelegate" />
+        <node concept="3lxVgU" id="1NdMWqEHsx4" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
+          <node concept="2OqwBi" id="3svtX3w8Nly" role="3lxVgV">
+            <node concept="2EM3W" id="3svtX3w8Nlz" role="2Oq$k0" />
+            <node concept="2S8uIT" id="5GXTDaZCEZu" role="2OqNvi">
+              <ref role="2S8YL0" to="8z9b:5GXTDaZBV1M" resolve="strIsKonditionsZeileEditable" />
+            </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="4r_rNOh$oCx" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
+          <node concept="3clFbT" id="4r_rNOh$oCy" role="3lxVgV">
+            <property role="3clFbU" value="false" />
+          </node>
+        </node>
+      </node>
+      <node concept="1THgkH" id="1NdMWqEHsx8" role="1THgkZ">
+        <node concept="Xl_RD" id="1NdMWqEHsx9" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="5GXTDaZ3fM9" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+        <node concept="Xl_RD" id="5GXTDaZ3fMl" role="1THgkI">
+          <property role="Xl_RC" value="1*" />
+        </node>
+      </node>
+      <node concept="3uibUv" id="1NdMWqEHsxa" role="qi9ce">
+        <ref role="3uigEE" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+      </node>
+      <node concept="Xl_RD" id="1NdMWqEHsxb" role="2lSlej">
+        <property role="Xl_RC" value="Sonstige Freigaben" />
       </node>
     </node>
     <node concept="1vxE2n" id="1NdMWqEHsxj" role="2G$zO_">
@@ -1536,7 +1491,10 @@
       <node concept="Xl_RD" id="1NdMWqEHsx_" role="1THgkI">
         <property role="Xl_RC" value="-1" />
       </node>
-      <node concept="Xl_RD" id="1NdMWqEHsxA" role="1THgkI">
+      <node concept="Xl_RD" id="5GXTDaZ_0ui" role="1THgkI">
+        <property role="Xl_RC" value="-1" />
+      </node>
+      <node concept="Xl_RD" id="5GXTDaZ_0uC" role="1THgkI">
         <property role="Xl_RC" value="-1" />
       </node>
       <node concept="Xl_RD" id="1NdMWqEHsxB" role="1THgkI">
@@ -1660,7 +1618,7 @@
           <node concept="2OqwBi" id="3svtX3w8NES" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8NET" role="2Oq$k0" />
             <node concept="2S8uIT" id="3svtX3w8NEU" role="2OqNvi">
-              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
+              <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="abrechnungsZyklus" />
             </node>
           </node>
         </node>
@@ -2075,18 +2033,6 @@
         <property role="1J3Sl5" value="Edit" />
         <node concept="2ftCAQ" id="1NdMWqEHs$9" role="1J3Sl2">
           <property role="TrG5h" value="Konditionstyp" />
-          <node concept="2Ux5dv" id="1NdMWqEHs$a" role="2ftCB4">
-            <property role="1xgIOb" value="ADD_107" />
-            <node concept="2Ux5d2" id="1NdMWqEHs$b" role="2UzG4t">
-              <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
-              <ref role="2Ux5d0" to="8z9b:1NdMWqEHrYg" resolve="Neuen Konditionstyp anlegen" />
-              <node concept="xYMNj" id="2VAs4UvbnNt" role="2sIhOb">
-                <ref role="xYMNi" to="8z9b:2VAs4UvbnLE" resolve="Konditionsparameter" />
-                <ref role="xYMNI" node="1NdMWqEHsrr" resolve="EditKonditionsTyp1FC" />
-              </node>
-              <node concept="10Nm6u" id="1NdMWqEHs$c" role="2Ux5cx" />
-            </node>
-          </node>
           <node concept="2Ux5dv" id="1NdMWqEHs$d" role="2ftCB4">
             <property role="1xgIOb" value="ENTER_10" />
             <node concept="2Ux5d2" id="1NdMWqEHs$e" role="2UzG4t">
@@ -2108,6 +2054,45 @@
               <node concept="xYMNj" id="4r_rNOhBZ58" role="2sIhOb">
                 <ref role="xYMNi" to="8z9b:4r_rNOh$8yo" resolve="Konditionsparameter: Einstellungen und Freigabe" />
                 <ref role="xYMNI" node="4r_rNOh$dlq" resolve="EditKonditionsTyp2FC" />
+              </node>
+            </node>
+          </node>
+          <node concept="2Ux5dv" id="1NdMWqEHs$a" role="2ftCB4">
+            <property role="1xgIOb" value="ADD_107" />
+            <node concept="2Ux5d2" id="1NdMWqEHs$b" role="2UzG4t">
+              <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+              <ref role="2Ux5d0" to="8z9b:1NdMWqEHrYg" resolve="Neuen Konditionstyp anlegen" />
+              <node concept="xYMNj" id="2VAs4UvbnNt" role="2sIhOb">
+                <ref role="xYMNi" to="8z9b:2VAs4UvbnLE" resolve="Konditionsparameter" />
+                <ref role="xYMNI" node="1NdMWqEHsrr" resolve="EditKonditionsTyp1FC" />
+              </node>
+              <node concept="xYMNj" id="5GXTDaZ$57e" role="2sIhOb">
+                <ref role="xYMNI" node="4r_rNOh$dlq" resolve="EditKonditionsTyp2FC" />
+                <ref role="xYMNi" to="8z9b:5GXTDaZbvI_" resolve="Konditionsparameter: Einstellungen und Freigabe" />
+              </node>
+              <node concept="10Nm6u" id="5GXTDaZbazl" role="2Ux5cx" />
+            </node>
+          </node>
+          <node concept="2Ux5dv" id="5GXTDb0aG0A" role="2ftCB4">
+            <node concept="2Ux5d2" id="5GXTDb0aG0C" role="2UzG4t">
+              <ref role="2Ux5d1" to="8z9b:1NdMWqEHrQB" resolve="KonditionsTypenVerwaltung" />
+              <ref role="2Ux5d0" to="8z9b:5GXTDb076Fx" resolve="Konditionstyp ableiten" />
+              <node concept="10Nm6u" id="5GXTDb0aG1l" role="2Ux5cx" />
+              <node concept="2OqwBi" id="5GXTDb0aG2A" role="2Ux5cx">
+                <node concept="2xMDEs" id="5GXTDb0aG1H" role="2Oq$k0">
+                  <ref role="2xLxPX" to="8z9b:1NdMWqEHrYy" resolve="KonditionsTyp" />
+                </node>
+                <node concept="2S8uIT" id="5GXTDb0aG7i" role="2OqNvi">
+                  <ref role="2S8YL0" to="8z9b:1NdMWqEHs2E" resolve="id" />
+                </node>
+              </node>
+              <node concept="xYMNj" id="5GXTDb0aG7M" role="2sIhOb">
+                <ref role="xYMNI" node="1NdMWqEHsrr" resolve="EditKonditionsTyp1FC" />
+                <ref role="xYMNi" to="8z9b:5GXTDb0aD4z" resolve="Konditionsparameter: Selektionsliste" />
+              </node>
+              <node concept="xYMNj" id="5GXTDb0aGa7" role="2sIhOb">
+                <ref role="xYMNI" node="4r_rNOh$dlq" resolve="EditKonditionsTyp2FC" />
+                <ref role="xYMNi" to="8z9b:5GXTDb0aD5Y" resolve="Konditionsparameter: Einstellungen und Freigabe" />
               </node>
             </node>
           </node>
@@ -2159,7 +2144,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$x" role="2GDezF">
-        <property role="2GDez6" value="250" />
+        <property role="2GDez6" value="350" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8Myo" role="2GDD_P">
@@ -2170,7 +2155,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$z" role="2GDezF">
-        <property role="2GDez6" value="120" />
+        <property role="2GDez6" value="140" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8Nma" role="2GDD_P">
@@ -2181,7 +2166,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$_" role="2GDezF">
-        <property role="2GDez6" value="80" />
+        <property role="2GDez6" value="120" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8NII" role="2GDD_P">
@@ -2192,7 +2177,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$B" role="2GDezF">
-        <property role="2GDez6" value="85" />
+        <property role="2GDez6" value="120" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8Mzk" role="2GDD_P">
@@ -2214,7 +2199,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$F" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="120" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8MDi" role="2GDD_P">
@@ -2225,7 +2210,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$H" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="120" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8MFS" role="2GDD_P">
@@ -2236,7 +2221,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$J" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="110" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8MNL" role="2GDD_P">
@@ -2250,20 +2235,23 @@
             <ref role="2S8YL0" to="8z9b:1NdMWqEHseE" resolve="bezeichnung" />
           </node>
         </node>
+        <node concept="Xl_RD" id="5GXTDb0ABpu" role="3Bnz7F">
+          <property role="Xl_RC" value="Zeileneinheit" />
+        </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$M" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="110" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8MHC" role="2GDD_P">
           <node concept="2EM3W" id="3svtX3w8MHD" role="2Oq$k0" />
           <node concept="2S8uIT" id="3svtX3w8MHE" role="2OqNvi">
-            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
+            <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="abrechnungsZyklus" />
           </node>
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$O" role="2GDezF">
-        <property role="2GDez6" value="150" />
+        <property role="2GDez6" value="200" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8NqN" role="2GDD_P">
@@ -2277,9 +2265,12 @@
             <ref role="2S8YL0" to="8z9b:1NdMWqEHsfI" resolve="bezeichnung" />
           </node>
         </node>
+        <node concept="Xl_RD" id="5GXTDb0ABqt" role="3Bnz7F">
+          <property role="Xl_RC" value="Berechnungsgrundlage" />
+        </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$R" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="130" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8NyM" role="2GDD_P">
@@ -2290,7 +2281,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$T" role="2GDezF">
-        <property role="2GDez6" value="40" />
+        <property role="2GDez6" value="80" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8NNm" role="2GDD_P">
@@ -2301,7 +2292,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="1NdMWqEHs$V" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="110" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8MvC" role="2GDD_P">
@@ -2312,7 +2303,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="2z6qGAG8Wdg" role="2GDezF">
-        <property role="2GDez6" value="90" />
+        <property role="2GDez6" value="100" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="2z6qGAG8Wk2" role="2GDD_P">
@@ -2883,10 +2874,10 @@
       </node>
       <node concept="1THgkH" id="4r_rNOh$eM9" role="1THgkZ">
         <node concept="Xl_RD" id="4r_rNOh$eMa" role="1THgkI">
-          <property role="Xl_RC" value="450" />
+          <property role="Xl_RC" value="550" />
         </node>
         <node concept="Xl_RD" id="4r_rNOh$eMb" role="1THgkI">
-          <property role="Xl_RC" value="150" />
+          <property role="Xl_RC" value="200" />
         </node>
       </node>
       <node concept="3uibUv" id="4r_rNOh$eMc" role="qi9ce">
@@ -2932,31 +2923,6 @@
             </node>
           </node>
         </node>
-        <node concept="1vx_$y" id="4r_rNOh$eMu" role="1vx_$z">
-          <property role="TrG5h" value="selKonditionsWirkung" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="4r_rNOh$eMv" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="4r_rNOh$eMw" role="3lxVgV">
-              <node concept="2EM3W" id="4r_rNOh$eMx" role="2Oq$k0" />
-              <node concept="2S8uIT" id="4r_rNOh$eMy" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w6F5V" resolve="selectionListKondWirkungAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eMz" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$eM$" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eM_" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="4r_rNOh$eMA" role="3lxVgV">
-              <property role="3cmrfH" value="512" />
-            </node>
-          </node>
-        </node>
         <node concept="1vx_$y" id="4r_rNOh$eMB" role="1vx_$z">
           <property role="TrG5h" value="berechGrundlageEh" />
           <property role="3lxVgK" value="ReferenceDelegate" />
@@ -2989,31 +2955,6 @@
             </node>
           </node>
         </node>
-        <node concept="1vx_$y" id="4r_rNOh$eMR" role="1vx_$z">
-          <property role="TrG5h" value="selBerechnungsGrundlageEH" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="4r_rNOh$eMS" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="4r_rNOh$eMT" role="3lxVgV">
-              <node concept="2EM3W" id="4r_rNOh$eMU" role="2Oq$k0" />
-              <node concept="2S8uIT" id="4r_rNOh$eMV" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w73t2" resolve="selectionListBerechnungsGrundlageAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eMW" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="4r_rNOh$eMX" role="3lxVgV">
-              <property role="3cmrfH" value="256" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eMY" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$eMZ" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-        </node>
         <node concept="1vx_$y" id="4r_rNOh$eN0" role="1vx_$z">
           <property role="TrG5h" value="bezugsBasis" />
           <property role="3lxVgK" value="StatusDelegate" />
@@ -3040,31 +2981,6 @@
             </node>
           </node>
         </node>
-        <node concept="1vx_$y" id="4r_rNOh$eNe" role="1vx_$z">
-          <property role="TrG5h" value="selBezugsBasis" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="4r_rNOh$eNf" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="4r_rNOh$eNg" role="3lxVgV">
-              <node concept="2EM3W" id="4r_rNOh$eNh" role="2Oq$k0" />
-              <node concept="2S8uIT" id="4r_rNOh$eNi" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w6Prx" resolve="selectionListBezugsBasisAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eNj" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$eNk" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eNl" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="4r_rNOh$eNm" role="3lxVgV">
-              <property role="3cmrfH" value="512" />
-            </node>
-          </node>
-        </node>
         <node concept="1vx_$y" id="4r_rNOh$eNn" role="1vx_$z">
           <property role="TrG5h" value="kalkulationsBasis" />
           <property role="3lxVgK" value="StatusDelegate" />
@@ -3088,31 +3004,6 @@
               <node concept="2S8uIT" id="4r_rNOh$eN$" role="2OqNvi">
                 <ref role="2S8YL0" to="8z9b:1NdMWqEHs6o" resolve="isKalkulationsBasisEditable" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="4r_rNOh$eN_" role="1vx_$z">
-          <property role="TrG5h" value="selKalkulationsBasis" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="4r_rNOh$eNA" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="4r_rNOh$eNB" role="3lxVgV">
-              <node concept="2EM3W" id="4r_rNOh$eNC" role="2Oq$k0" />
-              <node concept="2S8uIT" id="4r_rNOh$eND" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w6UDL" resolve="selectionListKalkulationsBasisAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eNE" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$eNF" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eNG" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="4r_rNOh$eNH" role="3lxVgV">
-              <property role="3cmrfH" value="512" />
             </node>
           </node>
         </node>
@@ -3148,31 +3039,6 @@
             </node>
           </node>
         </node>
-        <node concept="1vx_$y" id="4r_rNOh$eNY" role="1vx_$z">
-          <property role="TrG5h" value="selZeilenEinheit" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="4r_rNOh$eNZ" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="4r_rNOh$eO0" role="3lxVgV">
-              <node concept="2EM3W" id="4r_rNOh$eO1" role="2Oq$k0" />
-              <node concept="2S8uIT" id="4r_rNOh$eO2" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w7o0j" resolve="selectionListZeilenEinheitAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eO3" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$eO4" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eO5" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="4r_rNOh$eO6" role="3lxVgV">
-              <property role="3cmrfH" value="1024" />
-            </node>
-          </node>
-        </node>
         <node concept="1vx_$y" id="4r_rNOh$eO7" role="1vx_$z">
           <property role="TrG5h" value="zyklus" />
           <property role="3lxVgK" value="StatusDelegate" />
@@ -3181,7 +3047,7 @@
             <node concept="2OqwBi" id="4r_rNOh$eO9" role="3lxVgV">
               <node concept="2EM3W" id="4r_rNOh$eOa" role="2Oq$k0" />
               <node concept="2S8uIT" id="4r_rNOh$eOb" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="zyklus" />
+                <ref role="2S8YL0" to="8z9b:1NdMWqEHs3T" resolve="abrechnungsZyklus" />
               </node>
             </node>
           </node>
@@ -3196,31 +3062,6 @@
               <node concept="2S8uIT" id="4r_rNOh$eOk" role="2OqNvi">
                 <ref role="2S8YL0" to="8z9b:1NdMWqEHs6V" resolve="isZyklusEditable" />
               </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1vx_$y" id="4r_rNOh$eOl" role="1vx_$z">
-          <property role="TrG5h" value="selZyklus" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="4r_rNOh$eOm" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="4r_rNOh$eOn" role="3lxVgV">
-              <node concept="2EM3W" id="4r_rNOh$eOo" role="2Oq$k0" />
-              <node concept="2S8uIT" id="4r_rNOh$eOp" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w7rxG" resolve="selectionListZyklusAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eOq" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$eOr" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eOs" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="4r_rNOh$eOt" role="3lxVgV">
-              <property role="3cmrfH" value="256" />
             </node>
           </node>
         </node>
@@ -3250,40 +3091,12 @@
             </node>
           </node>
         </node>
-        <node concept="1vx_$y" id="4r_rNOh$eOG" role="1vx_$z">
-          <property role="TrG5h" value="selZeitKennungsTyp" />
-          <property role="3lxVgK" value="StringDelegate" />
-          <node concept="3lxVgU" id="4r_rNOh$eOH" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
-            <node concept="2OqwBi" id="4r_rNOh$eOI" role="3lxVgV">
-              <node concept="2EM3W" id="4r_rNOh$eOJ" role="2Oq$k0" />
-              <node concept="2S8uIT" id="4r_rNOh$eOK" role="2OqNvi">
-                <ref role="2S8YL0" to="8z9b:3svtX3w72Zh" resolve="selectionListZeitkennungAsText" />
-              </node>
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eOL" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:dX9tEw_WU8" resolve="setEnabled" />
-            <node concept="3clFbT" id="4r_rNOh$eOM" role="3lxVgV">
-              <property role="3clFbU" value="false" />
-            </node>
-          </node>
-          <node concept="3lxVgU" id="4r_rNOh$eON" role="3lxVgR">
-            <ref role="3lxVh4" to="c9yi:4ZIUv21RnFH" resolve="setMaxLength" />
-            <node concept="3cmrfG" id="4r_rNOh$eOO" role="3lxVgV">
-              <property role="3cmrfH" value="256" />
-            </node>
-          </node>
-        </node>
         <node concept="1THgkH" id="4r_rNOh$eOP" role="1THgkZ">
           <node concept="Xl_RD" id="4r_rNOh$eOQ" role="1THgkI">
-            <property role="Xl_RC" value="450" />
+            <property role="Xl_RC" value="550" />
           </node>
           <node concept="Xl_RD" id="4r_rNOh$eOR" role="1THgkI">
-            <property role="Xl_RC" value="150" />
-          </node>
-          <node concept="Xl_RD" id="4r_rNOh$eOS" role="1THgkI">
-            <property role="Xl_RC" value="1*" />
+            <property role="Xl_RC" value="200" />
           </node>
         </node>
         <node concept="3uibUv" id="4r_rNOh$eOT" role="qi9ce">
@@ -3375,7 +3188,13 @@
         </node>
         <node concept="1THgkH" id="4r_rNOh$ePp" role="1THgkZ">
           <node concept="Xl_RD" id="4r_rNOh$ePq" role="1THgkI">
-            <property role="Xl_RC" value="450" />
+            <property role="Xl_RC" value="1*" />
+          </node>
+          <node concept="Xl_RD" id="5GXTDaZ3IoH" role="1THgkI">
+            <property role="Xl_RC" value="1*" />
+          </node>
+          <node concept="Xl_RD" id="5GXTDaZ3Ipb" role="1THgkI">
+            <property role="Xl_RC" value="1*" />
           </node>
         </node>
         <node concept="3uibUv" id="4r_rNOh$ePr" role="qi9ce">

@@ -3706,7 +3706,10 @@
         </node>
         <node concept="3clFbF" id="6E7UUnEbtei" role="3cqZAp">
           <node concept="37vLTI" id="6E7UUnEbtey" role="3clFbG">
-            <node concept="10Nm6u" id="6E7UUnEbte_" role="37vLTx" />
+            <node concept="2XvMaL" id="5GXTDaYAkMZ" role="37vLTx">
+              <ref role="2XvMaQ" node="6E7UUnEbtd0" resolve="AbzugTyp" />
+              <ref role="1Vchh_" node="6E7UUnEbtd3" resolve="AbzugAllgemein" />
+            </node>
             <node concept="338YkY" id="6E7UUnEbtej" role="37vLTJ">
               <ref role="338YkT" node="6E7UUnEbtcS" resolve="abzugTyp" />
             </node>
@@ -4422,23 +4425,78 @@
                 <ref role="2XvMaQ" node="6E7UUnEbtd0" resolve="AbzugTyp" />
               </node>
             </node>
+            <node concept="9aQIb" id="5GXTDaZ28wf" role="9aQIa">
+              <node concept="3clFbS" id="5GXTDaZ28wg" role="9aQI4">
+                <node concept="3clFbF" id="5GXTDaZ28IP" role="3cqZAp">
+                  <node concept="37vLTI" id="5GXTDaZ28IQ" role="3clFbG">
+                    <node concept="2OqwBi" id="5GXTDaZ28IR" role="37vLTJ">
+                      <node concept="3urNR4" id="5GXTDaZ28IS" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1qgiyIQ5I_z" resolve="artikelAbzugNeu" />
+                      </node>
+                      <node concept="2S8uIT" id="5GXTDaZ28IT" role="2OqNvi">
+                        <ref role="2S8YL0" node="6E7UUnEbtdg" resolve="wirkung" />
+                      </node>
+                    </node>
+                    <node concept="2XvMaL" id="5GXTDaZ28IU" role="37vLTx">
+                      <ref role="2XvMaQ" node="6E7UUnEbtdm" resolve="AbzugWirkung" />
+                      <ref role="1Vchh_" node="6E7UUnEbtdo" resolve="Prozent" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
-          <node concept="3clFbF" id="h7sqh2wTNM" role="3cqZAp">
-            <node concept="37vLTI" id="h7sqh2wTOo" role="3clFbG">
-              <node concept="2OqwBi" id="B6ZQlePM7t" role="37vLTx">
-                <node concept="3urNQE" id="B6ZQlePM7e" role="2Oq$k0">
+          <node concept="3clFbJ" id="5GXTDaYBt2H" role="3cqZAp">
+            <node concept="3clFbS" id="5GXTDaYBt2J" role="3clFbx">
+              <node concept="3clFbF" id="5GXTDaYBtQh" role="3cqZAp">
+                <node concept="37vLTI" id="5GXTDaYBtQi" role="3clFbG">
+                  <node concept="2XvMaL" id="5GXTDaYCxbM" role="37vLTx">
+                    <ref role="2XvMaQ" node="6E7UUnEbtd0" resolve="AbzugTyp" />
+                    <ref role="1Vchh_" node="6E7UUnEbtd3" resolve="AbzugAllgemein" />
+                  </node>
+                  <node concept="2OqwBi" id="5GXTDaYBtQm" role="37vLTJ">
+                    <node concept="3urNR4" id="5GXTDaYBtQn" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1qgiyIQ5I_z" resolve="artikelAbzugNeu" />
+                    </node>
+                    <node concept="2S8uIT" id="5GXTDaYBtQo" role="2OqNvi">
+                      <ref role="2S8YL0" node="6E7UUnEbtcS" resolve="abzugTyp" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="5GXTDaYBtqg" role="3clFbw">
+              <node concept="10Nm6u" id="5GXTDaYBtC3" role="3uHU7w" />
+              <node concept="2OqwBi" id="5GXTDaYBtfA" role="3uHU7B">
+                <node concept="3urNQE" id="5GXTDaYBtce" role="2Oq$k0">
                   <ref role="3cqZAo" node="6E7UUnEbyvY" resolve="criteria" />
                 </node>
-                <node concept="2S8uIT" id="B6ZQlePM7y" role="2OqNvi">
+                <node concept="2S8uIT" id="5GXTDaYBtn3" role="2OqNvi">
                   <ref role="2S8YL0" node="6E7UUnEbyyY" resolve="typ" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="h7sqh2wTO2" role="37vLTJ">
-                <node concept="3urNR4" id="1qgiyIQ5KJx" role="2Oq$k0">
-                  <ref role="3cqZAo" node="1qgiyIQ5I_z" resolve="artikelAbzugNeu" />
-                </node>
-                <node concept="2S8uIT" id="h7sqh2wTO8" role="2OqNvi">
-                  <ref role="2S8YL0" node="6E7UUnEbtcS" resolve="abzugTyp" />
+            </node>
+            <node concept="9aQIb" id="5GXTDaYBujU" role="9aQIa">
+              <node concept="3clFbS" id="5GXTDaYBujV" role="9aQI4">
+                <node concept="3clFbF" id="h7sqh2wTNM" role="3cqZAp">
+                  <node concept="37vLTI" id="h7sqh2wTOo" role="3clFbG">
+                    <node concept="2OqwBi" id="B6ZQlePM7t" role="37vLTx">
+                      <node concept="3urNQE" id="B6ZQlePM7e" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6E7UUnEbyvY" resolve="criteria" />
+                      </node>
+                      <node concept="2S8uIT" id="B6ZQlePM7y" role="2OqNvi">
+                        <ref role="2S8YL0" node="6E7UUnEbyyY" resolve="typ" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="h7sqh2wTO2" role="37vLTJ">
+                      <node concept="3urNR4" id="1qgiyIQ5KJx" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1qgiyIQ5I_z" resolve="artikelAbzugNeu" />
+                      </node>
+                      <node concept="2S8uIT" id="h7sqh2wTO8" role="2OqNvi">
+                        <ref role="2S8YL0" node="6E7UUnEbtcS" resolve="abzugTyp" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -4717,6 +4775,9 @@
         <ref role="10x$tN" node="6E7UUnEeA71" resolve="Abzugsposition löschen" />
         <ref role="10x$tI" node="6E7UUnEbyvp" />
       </node>
+      <node concept="10xUwW" id="h7sqh2ydxB" role="10x$tn">
+        <ref role="10x$tN" node="6E7UUnEbyK7" resolve="Abzugsposition bearbeiten" />
+      </node>
       <node concept="10xUwW" id="B6ZQleGQBb" role="10x$tn">
         <ref role="10x$tN" node="6E7UUnEeA70" resolve="Abzugsposition sperren" />
         <ref role="10x$tI" node="6E7UUnEbyvo" />
@@ -4747,9 +4808,6 @@
     </node>
     <node concept="10xUwW" id="h7sqh2wTMh" role="10HVpa">
       <ref role="10x$tN" node="6E7UUnEbwy6" resolve="Neue Abzugsposition erfassen" />
-    </node>
-    <node concept="10xUwW" id="h7sqh2ydxB" role="10HVpa">
-      <ref role="10x$tN" node="6E7UUnEbyK7" resolve="Abzugsposition bearbeiten" />
     </node>
     <node concept="10xUwW" id="B6ZQleGQBf" role="10HVpa">
       <ref role="10x$tN" node="6E7UUnEeA72" resolve="Mehrfach Abzugspositionen erfassen" />

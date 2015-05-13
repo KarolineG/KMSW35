@@ -56,7 +56,6 @@
         <property id="943115150038430512" name="hotkey" index="1xgIOb" />
         <child id="4419932786255200366" name="runCommand" index="2UzG4t" />
       </concept>
-      <concept id="940368958464182890" name="org.modellwerkstatt.forms.structure.OnLoadDelegateForm" flags="ig" index="3i0LrZ" />
       <concept id="5005516259701333694" name="org.modellwerkstatt.forms.structure.InputDelegateParameter2" flags="ng" index="3lxVgU">
         <reference id="5005516259701333696" name="methodDeclaration" index="3lxVh4" />
         <child id="5005516259701333695" name="expression" index="3lxVgV" />
@@ -69,12 +68,8 @@
       </concept>
       <concept id="7105808579467823062" name="org.modellwerkstatt.forms.structure.DelegateForm" flags="ng" index="1vxE2n">
         <child id="3792563709709170442" name="lable" index="2lSlej" />
-        <child id="940368958464182898" name="onLoad" index="3i0LrB" />
         <child id="7105808579467853410" name="delegate" index="1vx_$z" />
         <child id="8264937784151109663" name="colWeight" index="1THgkZ" />
-      </concept>
-      <concept id="7105808579468277458" name="org.modellwerkstatt.forms.structure.LocalInputDelegateReference" flags="ng" index="1vJt6j">
-        <reference id="7105808579468277459" name="container" index="1vJt6i" />
       </concept>
       <concept id="8264937784151109645" name="org.modellwerkstatt.forms.structure.WeightLayoutParam" flags="ng" index="1THgkH">
         <child id="8264937784151109646" name="weightParam" index="1THgkI" />
@@ -82,16 +77,12 @@
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
-      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
       <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
         <reference id="1201385237847" name="property" index="2S8YL0" />
-      </concept>
-      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
-        <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
@@ -275,32 +266,9 @@
         <node concept="Xl_RD" id="4tp9sHrmo_g" role="1THgkI">
           <property role="Xl_RC" value="500" />
         </node>
-        <node concept="Xl_RD" id="4trE4KVx4mM" role="1THgkI">
-          <property role="Xl_RC" value="300" />
-        </node>
-        <node concept="Xl_RD" id="4trE4KVx4mT" role="1THgkI">
-          <property role="Xl_RC" value="300" />
-        </node>
-        <node concept="Xl_RD" id="4trE4KVxa3x" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
       </node>
       <node concept="3uibUv" id="71RqXfas5m9" role="qi9ce">
         <ref role="3uigEE" to="3kk:7Y7$sS6pcji" resolve="WareneingangsBelegCriteria" />
-      </node>
-      <node concept="3i0LrZ" id="4tp9sHrmo_i" role="3i0LrB">
-        <node concept="3clFbS" id="4tp9sHrmo_j" role="2VODD2">
-          <node concept="3clFbF" id="4tp9sHrmo_k" role="3cqZAp">
-            <node concept="2OqwBi" id="4tp9sHrmo_l" role="3clFbG">
-              <node concept="1vJt6j" id="4tp9sHrmo_m" role="2Oq$k0">
-                <ref role="1vJt6i" node="4tp9sHrmo$D" resolve="refFirma" />
-              </node>
-              <node concept="liA8E" id="4tp9sHrmo_n" role="2OqNvi">
-                <ref role="37wK5l" to="c9yi:4o3conyKuLM" resolve="requestFocus" />
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="Xl_RD" id="4tp9sHrmo_o" role="2lSlej">
         <property role="Xl_RC" value="Geben Sie die Suchkriterien für die anzuzeigenden Wareneingangsbelege an" />
@@ -1397,7 +1365,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="2w$LxIugeYC" role="2GDezF">
-        <property role="2GDez6" value="300" />
+        <property role="2GDez6" value="350" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8NNX" role="2GDD_P">
@@ -1413,7 +1381,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="71RqXfas5iz" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="120" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8Nb$" role="2GDD_P">
@@ -1424,7 +1392,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="71RqXfas5iA" role="2GDezF">
-        <property role="2GDez6" value="100" />
+        <property role="2GDez6" value="120" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8N1Y" role="2GDD_P">
@@ -1435,7 +1403,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="71RqXfas5iD" role="2GDezF">
-        <property role="2GDez6" value="50" />
+        <property role="2GDez6" value="80" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8Nxg" role="2GDD_P">
@@ -1446,7 +1414,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="2w$LxIugeYK" role="2GDezF">
-        <property role="2GDez6" value="200" />
+        <property role="2GDez6" value="250" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3svtX3w8N3X" role="2GDD_P">
@@ -1470,7 +1438,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="3P5uN5wNZsF" role="2GDezF">
-        <property role="2GDez6" value="200" />
+        <property role="2GDez6" value="250" />
         <property role="2GDezT" value="-" />
         <property role="1TGbMe" value="-" />
         <node concept="2OqwBi" id="3P5uN5wO27F" role="2GDD_P">
@@ -1508,7 +1476,7 @@
         </node>
       </node>
       <node concept="2GDez7" id="2w$LxIugeYG" role="2GDezF">
-        <property role="2GDez6" value="200" />
+        <property role="2GDez6" value="250" />
         <property role="1TGbMe" value="-" />
         <property role="2GDezT" value="-" />
         <node concept="2OqwBi" id="3svtX3w8ND_" role="2GDD_P">
@@ -1625,6 +1593,12 @@
             <node concept="2S8uIT" id="3svtX3w8N7I" role="2OqNvi">
               <ref role="2S8YL0" to="3kk:7Y7$sS6phFT" resolve="id" />
             </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="5GXTDaYn8DB" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
+          <node concept="Xl_RD" id="5GXTDaYn8Fy" role="3lxVgV">
+            <property role="Xl_RC" value="Ref. Pos" />
           </node>
         </node>
         <node concept="3lxVgU" id="21405D2GqQ4" role="3lxVgR">
@@ -1847,9 +1821,6 @@
         <node concept="Xl_RD" id="21405D2GqPu" role="1THgkI">
           <property role="Xl_RC" value="1*" />
         </node>
-        <node concept="Xl_RD" id="21405D2GqPv" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
       </node>
       <node concept="3uibUv" id="21405D2GqPr" role="qi9ce">
         <ref role="3uigEE" to="3kk:2f7jrMqs88N" resolve="WareneingangsBelegPos" />
@@ -1988,9 +1959,6 @@
           <property role="Xl_RC" value="1*" />
         </node>
         <node concept="Xl_RD" id="2WF9mxZEKsW" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="2WF9mxZEKsX" role="1THgkI">
           <property role="Xl_RC" value="1*" />
         </node>
       </node>
@@ -2355,12 +2323,6 @@
         <node concept="Xl_RD" id="2WF9mxZEKt8" role="1THgkI">
           <property role="Xl_RC" value="1*" />
         </node>
-        <node concept="Xl_RD" id="2WF9mxZEKt9" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="2WF9mxZESwT" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
       </node>
       <node concept="3uibUv" id="2WF9mxZEKt5" role="qi9ce">
         <ref role="3uigEE" to="3kk:2f7jrMqs88N" resolve="WareneingangsBelegPos" />
@@ -2493,15 +2455,6 @@
           <property role="Xl_RC" value="1*" />
         </node>
         <node concept="Xl_RD" id="2WF9mxZEKti" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="2WF9mxZEKtj" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="2WF9mxZEOvc" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="2WF9mxZEOvd" role="1THgkI">
           <property role="Xl_RC" value="1*" />
         </node>
       </node>

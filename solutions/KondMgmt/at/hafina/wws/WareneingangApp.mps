@@ -202,38 +202,6 @@
     <node concept="3Tm1VV" id="7Y7$sS6pasR" role="1B3o_S" />
     <node concept="2fsEAD" id="7Y7$sS6pasW" role="2fsEAW">
       <node concept="3clFbS" id="7Y7$sS6pasX" role="2VODD2">
-        <node concept="3cpWs8" id="7TlG5ndNFJ2" role="3cqZAp">
-          <node concept="3cpWsn" id="7TlG5ndNFJ3" role="3cpWs9">
-            <property role="TrG5h" value="repo3" />
-            <node concept="3uibUv" id="7TlG5ndNFJ4" role="1tU5fm">
-              <ref role="3uigEE" to="46c4:jfW375Ezqq" resolve="ArtikelstammRepo" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7TlG5ndO3gY" role="3cqZAp">
-          <node concept="3cpWsn" id="7TlG5ndO3gZ" role="3cpWs9">
-            <property role="TrG5h" value="repo4" />
-            <node concept="3uibUv" id="7TlG5ndO3h0" role="1tU5fm">
-              <ref role="3uigEE" to="nq1x:7TlG5ndNFJl" resolve="LieferantenstammRepo" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="7TlG5ndO7ah" role="3cqZAp">
-          <node concept="3cpWsn" id="7TlG5ndO7ai" role="3cpWs9">
-            <property role="TrG5h" value="repo5" />
-            <node concept="3uibUv" id="7TlG5ndO7aj" role="1tU5fm">
-              <ref role="3uigEE" to="o9h8:7TlG5ndO4LQ" resolve="MitarbeiterstammRepo" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="1DXbJhxerCG" role="3cqZAp">
-          <node concept="3cpWsn" id="1DXbJhxerCH" role="3cpWs9">
-            <property role="TrG5h" value="repo6" />
-            <node concept="3uibUv" id="1DXbJhxerCI" role="1tU5fm">
-              <ref role="3uigEE" to="8tpd:71RqXfarZLk" resolve="RechnungspruefungRepo" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbH" id="7Y7$sS6pcjh" role="3cqZAp" />
         <node concept="3cpWs8" id="1NncJyRH7lq" role="3cqZAp">
           <node concept="3cpWsn" id="1NncJyRH7lr" role="3cpWs9">
