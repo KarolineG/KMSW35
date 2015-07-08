@@ -298,6 +298,7 @@
         <reference id="1993450443311478185" name="process" index="3lhHOO" />
         <child id="6525155817177697707" name="documentation" index="20vkWf" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
+        <child id="7912134052599565332" name="reverts" index="19Ho0k" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
         <child id="7763613441682561369" name="finalSelection" index="3vkzKj" />
@@ -1686,6 +1687,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="10EhbA" id="7fqCE7t26v8" role="19Ho0k">
+      <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
     </node>
   </node>
   <node concept="3ugp7m" id="1NdMWqEHrYg">
@@ -7988,6 +7992,27 @@
                   </node>
                 </node>
               </node>
+              <node concept="3eNFk2" id="3R3OVcYRyjr" role="3eNLev">
+                <node concept="3clFbS" id="3R3OVcYRyjt" role="3eOfB_">
+                  <node concept="3cpWs6" id="3R3OVcYRyBz" role="3cqZAp">
+                    <node concept="Xl_RD" id="3R3OVcYRyB$" role="3cqZAk">
+                      <property role="Xl_RC" value="Fakturenkonditionen Markant" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="3R3OVcYRyvd" role="3eO9$A">
+                  <node concept="2XvMaL" id="3R3OVcYRyve" role="3uHU7w">
+                    <ref role="2XvMaQ" node="1NdMWqEHs4H" resolve="Konditionsgruppe" />
+                    <ref role="1Vchh_" node="3Cb79HlzFko" resolve="Fakturakondition Markant" />
+                  </node>
+                  <node concept="2OqwBi" id="3R3OVcYRyvf" role="3uHU7B">
+                    <node concept="Xjq3P" id="3R3OVcYRyvg" role="2Oq$k0" />
+                    <node concept="2S8uIT" id="3R3OVcYRyvh" role="2OqNvi">
+                      <ref role="2S8YL0" node="1NdMWqEHs38" resolve="konditionsGruppe" />
+                    </node>
+                  </node>
+                </node>
+              </node>
               <node concept="3eNFk2" id="1NdMWqEHsd8" role="3eNLev">
                 <node concept="3clFbS" id="1NdMWqEHsd9" role="3eOfB_">
                   <node concept="3cpWs6" id="1NdMWqEHsda" role="3cqZAp">
@@ -10609,6 +10634,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="10EhbA" id="7fqCE7t2bV1" role="19Ho0k">
+      <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
     </node>
   </node>
   <node concept="12nvSr" id="1NdMWqEHtON">
@@ -13436,6 +13464,9 @@
         </node>
       </node>
     </node>
+    <node concept="10EhbA" id="7fqCE7t2e1p" role="19Ho0k">
+      <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
+    </node>
   </node>
   <node concept="3ugp7m" id="1NdMWqEKsH0">
     <property role="TrG5h" value="Kalkulationsbasis bearbeiten" />
@@ -13727,6 +13758,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="10EhbA" id="7fqCE7t2g1e" role="19Ho0k">
+      <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
     </node>
   </node>
   <node concept="3ugp7m" id="1NdMWqEKsIk">
@@ -14020,6 +14054,9 @@
         </node>
       </node>
     </node>
+    <node concept="10EhbA" id="7fqCE7t2mOV" role="19Ho0k">
+      <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
+    </node>
   </node>
   <node concept="3ugp7m" id="1NdMWqEKsJH">
     <property role="TrG5h" value="Zyklus bearbeiten" />
@@ -14311,6 +14348,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="10EhbA" id="7fqCE7t2kP3" role="19Ho0k">
+      <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
     </node>
   </node>
   <node concept="3ugp7m" id="1NdMWqEKsL4">
@@ -14882,6 +14922,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="10EhbA" id="7fqCE7t2ik$" role="19Ho0k">
+      <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
     </node>
   </node>
   <node concept="3ugp7d" id="2_OvOA$NGtC">

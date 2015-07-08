@@ -226,10 +226,6 @@
         <child id="478945708906994221" name="elements" index="2CJdiS" />
       </concept>
       <concept id="478945708912703702" name="org.modellwerkstatt.objectflow.structure.OFXConfigEmpty" flags="ng" index="2CPvp3" />
-      <concept id="830334255848344169" name="org.modellwerkstatt.objectflow.structure.LogConfiguration" flags="ng" index="Ra3FM">
-        <property id="830334255848344171" name="logLevel" index="Ra3FK" />
-        <property id="830334255848344170" name="packageName" index="Ra3FL" />
-      </concept>
       <concept id="4419932786254844465" name="org.modellwerkstatt.objectflow.structure.RunCommand" flags="ng" index="2Ux5d2">
         <reference id="4419932786254844467" name="command" index="2Ux5d0" />
         <reference id="4419932786254844466" name="process" index="2Ux5d1" />
@@ -318,16 +314,6 @@
         <property id="569389511234497415" name="hour" index="1$4sGT" />
         <property id="569389511234497412" name="year" index="1$4sGU" />
         <property id="569389511234497413" name="month" index="1$4sGV" />
-      </concept>
-      <concept id="8537348545916279017" name="org.modellwerkstatt.objectflow.structure.Configuration" flags="ng" index="1XsPAG">
-        <property id="5528342994742670972" name="javafx" index="22BQzl" />
-        <property id="3517052249650441955" name="maxPoolSize" index="Wa3E0" />
-        <property id="8603748575145006884" name="jmxuri" index="3xb32q" />
-        <property id="8537348545916385361" name="password" index="1Xsv$k" />
-        <property id="8537348545916385360" name="username" index="1Xsv$l" />
-        <property id="8537348545916385363" name="driver" index="1Xsv$m" />
-        <property id="8537348545916385362" name="uri" index="1Xsv$n" />
-        <child id="830334255848383637" name="logConfiguration" index="RaTge" />
       </concept>
       <concept id="5225022991485184063" name="org.modellwerkstatt.objectflow.structure.ViewObject" flags="ig" index="1YeyE5" />
     </language>
@@ -1916,20 +1902,6 @@
           </node>
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="1XsPAG" id="4HxyFP_OsTk">
-    <property role="1Xsv$m" value="oracle.jdbc.driver.OracleDriver" />
-    <property role="1Xsv$n" value="jdbc:oracle:thin:@//wws:1521/WWS" />
-    <property role="3xb32q" value=" " />
-    <property role="Wa3E0" value="1" />
-    <property role="TrG5h" value="Reko_Show_Config" />
-    <property role="1Xsv$l" value="REKO" />
-    <property role="1Xsv$k" value="reko" />
-    <property role="22BQzl" value="true" />
-    <node concept="Ra3FM" id="4HxyFP_OsTl" role="RaTge">
-      <property role="Ra3FL" value="at.hafina" />
-      <property role="Ra3FK" value="DEBUG" />
     </node>
   </node>
   <node concept="2ftCAz" id="4HxyFP_OsTm">

@@ -6236,6 +6236,12 @@
           <property role="jyRC9" value="0" />
         </node>
       </node>
+      <node concept="12nEzJ" id="4dFAWDnY85b" role="3caO6$">
+        <ref role="12nL8z" node="7Y7$sS6pckf" resolve="refWeBeleg" />
+        <node concept="Xl_RD" id="4dFAWDnY85d" role="12k7lF">
+          <property role="Xl_RC" value="REF_WEBLG" />
+        </node>
+      </node>
       <node concept="12nEzJ" id="7Y7$sS6phGu" role="3caO6$">
         <ref role="12nL8z" node="2f7jrMqs86Z" resolve="codBeleg" />
         <node concept="Xl_RD" id="7Y7$sS6phGv" role="12k7lF">
@@ -6302,6 +6308,16 @@
         <node concept="jyRCf" id="1DXbJhxg8x3" role="jzqmW">
           <property role="jyRC8" value="13" />
           <property role="jyRC9" value="4" />
+        </node>
+      </node>
+      <node concept="12nEzJ" id="4dFAWDnYa2K" role="3caO6$">
+        <ref role="12nL8z" node="7Y7$sS6pcml" resolve="btrSumUst" />
+        <node concept="jyRCf" id="4dFAWDnYekB" role="jzqmW">
+          <property role="jyRC8" value="13" />
+          <property role="jyRC9" value="4" />
+        </node>
+        <node concept="Xl_RD" id="4dFAWDnYa2M" role="12k7lF">
+          <property role="Xl_RC" value="BTR_SUM_UST" />
         </node>
       </node>
       <node concept="12nEzJ" id="1DXbJhxgyoi" role="3caO6$">
@@ -7735,6 +7751,52 @@
       <node concept="37vLTG" id="7Y7$sS6rmS2" role="3clF46">
         <property role="TrG5h" value="idBeleg" />
         <node concept="10Oyi0" id="7Y7$sS6rmS3" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="wbJLE" id="4dFAWDnXMNC" role="jymVt">
+      <property role="TrG5h" value="findRefWareneingangsbelegeToId" />
+      <node concept="37vLTG" id="4dFAWDnY0Nw" role="3clF46">
+        <property role="TrG5h" value="idBeleg" />
+        <node concept="10Oyi0" id="4dFAWDnY0O5" role="1tU5fm" />
+      </node>
+      <node concept="_YKpA" id="4dFAWDnXYQL" role="3clF45">
+        <node concept="3uibUv" id="4dFAWDnXYRm" role="_ZDj9">
+          <ref role="3uigEE" node="2f7jrMqs86A" resolve="WareneingangsBeleg" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4dFAWDnXMNE" role="1B3o_S" />
+      <node concept="3clFbS" id="4dFAWDnXMNF" role="3clF47">
+        <node concept="3cpWs8" id="4dFAWDnY3EZ" role="3cqZAp">
+          <node concept="3cpWsn" id="4dFAWDnY3F2" role="3cpWs9">
+            <property role="TrG5h" value="weRefBelege" />
+            <node concept="_YKpA" id="4dFAWDnY3EX" role="1tU5fm">
+              <node concept="3uibUv" id="4dFAWDnY3Fn" role="_ZDj9">
+                <ref role="3uigEE" node="2f7jrMqs86A" resolve="WareneingangsBeleg" />
+              </node>
+            </node>
+            <node concept="jybIQ" id="4dFAWDnY5WV" role="33vP2m">
+              <property role="1v8G3g" value="false" />
+              <property role="HScZ5" value="true" />
+              <ref role="P14SV" node="7Y7$sS6phG9" resolve="MapWareneingangsBelegSimple" />
+              <node concept="jxyYR" id="4dFAWDnY6Vd" role="jxX7b">
+                <node concept="3clFbC" id="4dFAWDnYjEK" role="jxyYK">
+                  <node concept="37vLTw" id="4dFAWDnYlMo" role="3uHU7w">
+                    <ref role="3cqZAo" node="4dFAWDnY0Nw" resolve="idBeleg" />
+                  </node>
+                  <node concept="3_7ulE" id="4dFAWDnY6WN" role="3uHU7B">
+                    <ref role="3_688M" node="4dFAWDnY5WV" />
+                    <ref role="2OG787" node="4dFAWDnY85b" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4dFAWDnYoJL" role="3cqZAp">
+          <node concept="37vLTw" id="4dFAWDnYoJJ" role="3clFbG">
+            <ref role="3cqZAo" node="4dFAWDnY3F2" resolve="weRefBelege" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="wbJLE" id="7Y7$sS6phN4" role="jymVt">

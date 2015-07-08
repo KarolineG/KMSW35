@@ -270,6 +270,7 @@
         <child id="6525155817177860576" name="enabledWhen" index="20uWH4" />
         <child id="6525155817177697707" name="documentation" index="20vkWf" />
         <child id="1881524139085993257" name="okConclusionStatements" index="10_T4l" />
+        <child id="7912134052599565332" name="reverts" index="19Ho0k" />
         <child id="7192042020164064743" name="pages" index="3ug97V" />
         <child id="7192042020164579739" name="commandInit" index="3umfm7" />
         <child id="7763613441682561369" name="finalSelection" index="3vkzKj" />
@@ -1533,6 +1534,7 @@
         </node>
       </node>
       <node concept="CEw_7" id="5RgvYnEqbiN" role="jyGaQ">
+        <property role="CEBVF" value="BABY" />
         <node concept="Xl_RD" id="5RgvYnEqbiY" role="CEBV_">
           <property role="Xl_RC" value="mpreis.ARTIKEL_GEBINDE@p_wws" />
         </node>
@@ -5658,6 +5660,9 @@
         </node>
       </node>
     </node>
+    <node concept="10EhbA" id="7fqCE7t1X89" role="19Ho0k">
+      <ref role="10EhbB" node="6E7UUnEbwy8" resolve="artikelAbzug" />
+    </node>
   </node>
   <node concept="3ugp7m" id="6E7UUnEeA70">
     <property role="TrG5h" value="Abzugsposition sperren" />
@@ -6828,6 +6833,7 @@
   </node>
   <node concept="34Athd" id="45EwVF89pjB">
     <property role="TrG5h" value="Artikelgebinde" />
+    <property role="3GE5qa" value="DATA" />
     <node concept="1bOX9e" id="45EwVF89pSI" role="TxmiU">
       <property role="2RkwnN" value="artikelId" />
       <node concept="3Tm1VV" id="45EwVF89pSK" role="1B3o_S" />
