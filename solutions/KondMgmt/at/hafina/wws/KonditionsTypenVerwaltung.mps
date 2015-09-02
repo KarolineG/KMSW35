@@ -2743,6 +2743,18 @@
         <property role="1YKsg0" value="ARA Rechnung" />
         <property role="1YKsg1" value="ARA Rechnung" />
       </node>
+      <node concept="2XvgOc" id="3aFeNpOPM2e" role="2XvgO2">
+        <property role="TrG5h" value="MarkantHSI" />
+        <property role="2XvgOS" value="MAHSI" />
+        <property role="1YKsg0" value="Markant HSI RELI" />
+        <property role="1YKsg1" value="Markant HSI Reli" />
+      </node>
+      <node concept="2XvgOc" id="3aFeNpOPNE8" role="2XvgO2">
+        <property role="TrG5h" value="MarkantRabatt" />
+        <property role="2XvgOS" value="MAZAR" />
+        <property role="1YKsg0" value="Markant RELI Zahlungsrabatt" />
+        <property role="1YKsg1" value="Markant RELI Zahlungsrabatt" />
+      </node>
     </node>
     <node concept="2XvgOf" id="1NdMWqEHs5v" role="2XvChp">
       <property role="TrG5h" value="TypStatus" />
@@ -13415,6 +13427,22 @@
         <property role="3GM7Xb" value="SAVE" />
         <node concept="20qIzx" id="1NdMWqEKsGD" role="10ot2L">
           <node concept="3clFbS" id="1NdMWqEKsGE" role="2VODD2">
+            <node concept="10Adit" id="2Dh4deHlc0z" role="3cqZAp">
+              <node concept="Xl_RD" id="2Dh4deHlc0O" role="10Adiu">
+                <property role="Xl_RC" value="Bitte Bezugsbasis wählen!" />
+              </node>
+              <node concept="3clFbC" id="2Dh4deHlcp7" role="10Adiv">
+                <node concept="10Nm6u" id="2Dh4deHlcsH" role="3uHU7w" />
+                <node concept="2OqwBi" id="2Dh4deHlc7n" role="3uHU7B">
+                  <node concept="10EhbA" id="2Dh4deHlc2q" role="2Oq$k0">
+                    <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
+                  </node>
+                  <node concept="2S8uIT" id="2Dh4deHlcfS" role="2OqNvi">
+                    <ref role="2S8YL0" node="1NdMWqEHs3m" resolve="bezugsBasis" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="10Adxj" id="1NdMWqEKsGF" role="3cqZAp" />
           </node>
         </node>
@@ -13710,6 +13738,22 @@
         <property role="3GM7Xb" value="SAVE" />
         <node concept="20qIzx" id="1NdMWqEKsHY" role="10ot2L">
           <node concept="3clFbS" id="1NdMWqEKsHZ" role="2VODD2">
+            <node concept="10Adit" id="2Dh4deHqZqu" role="3cqZAp">
+              <node concept="Xl_RD" id="2Dh4deHqZqv" role="10Adiu">
+                <property role="Xl_RC" value="Bitte Kalkulationsbasis wählen!" />
+              </node>
+              <node concept="3clFbC" id="2Dh4deHqZqw" role="10Adiv">
+                <node concept="10Nm6u" id="2Dh4deHqZqx" role="3uHU7w" />
+                <node concept="2OqwBi" id="2Dh4deHqZqy" role="3uHU7B">
+                  <node concept="10EhbA" id="2Dh4deHqZqz" role="2Oq$k0">
+                    <ref role="10EhbB" node="1NdMWqEHrQS" resolve="konditionsTyp" />
+                  </node>
+                  <node concept="2S8uIT" id="2Dh4deHqZvF" role="2OqNvi">
+                    <ref role="2S8YL0" node="1NdMWqEHs3f" resolve="kalkulationsBasis" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="10Adxj" id="1NdMWqEKsI0" role="3cqZAp" />
           </node>
         </node>

@@ -154,6 +154,12 @@
             </node>
           </node>
         </node>
+        <node concept="3lxVgU" id="2Dh4deHlcwI" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
+          <node concept="3clFbT" id="2Dh4deHlcNy" role="3lxVgV">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
       </node>
       <node concept="1THgkH" id="1NdMWqEHsqQ" role="1THgkZ">
         <node concept="Xl_RD" id="1NdMWqEHsqR" role="1THgkI">
@@ -1524,6 +1530,12 @@
             <node concept="2S8uIT" id="3svtX3w8MVM" role="2OqNvi">
               <ref role="2S8YL0" to="8z9b:1NdMWqEHs3f" resolve="kalkulationsBasis" />
             </node>
+          </node>
+        </node>
+        <node concept="3lxVgU" id="2Dh4deHqYYU" role="3lxVgR">
+          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
+          <node concept="3clFbT" id="2Dh4deHqYZX" role="3lxVgV">
+            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>

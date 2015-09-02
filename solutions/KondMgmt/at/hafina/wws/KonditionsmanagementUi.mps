@@ -24,6 +24,7 @@
   <registry>
     <language id="0f69ff68-7ed4-4ee4-8dc6-1619facda18d" name="org.modellwerkstatt.forms">
       <concept id="5945580863363863223" name="org.modellwerkstatt.forms.structure.BoundObject" flags="ng" index="2EM3W" />
+      <concept id="1569134824193222478" name="org.modellwerkstatt.forms.structure.IActionLink" flags="ng" index="dvsy1" />
       <concept id="1472214787652375098" name="org.modellwerkstatt.forms.structure.Folder" flags="ng" index="2ftCAQ">
         <child id="1472214787652375112" name="element" index="2ftCB4" />
       </concept>
@@ -663,8 +664,8 @@
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8MLu" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8MLv" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8MLw" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:2f7jrMqs3vK" resolve="faelligkeit" />
+            <node concept="2S8uIT" id="7Jf7Z0464pk" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5Ixt1sAHpr_" resolve="dateFaelligkeit" />
             </node>
           </node>
         </node>
@@ -1655,13 +1656,13 @@
       <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
       <node concept="1vx_$y" id="3F8CoLplxTn" role="1vx_$z">
         <property role="TrG5h" value="skonto" />
-        <property role="3lxVgK" value="DecimalDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="BkQlHbuSXg" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8MCO" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8MCP" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8MCQ" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:2f7jrMqs0En" resolve="przSkonto" />
+            <node concept="2S8uIT" id="5MC1sDtJIPN" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtc5ns" resolve="przSkontoTxt" />
             </node>
           </node>
         </node>
@@ -1680,13 +1681,13 @@
       </node>
       <node concept="1vx_$y" id="3Cb79HkPzoY" role="1vx_$z">
         <property role="TrG5h" value="skontoMarkant" />
-        <property role="3lxVgK" value="DecimalDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="3Cb79HkPzoZ" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3Cb79HkPzp0" role="3lxVgV">
             <node concept="2EM3W" id="3Cb79HkPzp1" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3Cb79HkPzp2" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:3Cb79Hk79zy" resolve="przMarkantSkonto" />
+            <node concept="2S8uIT" id="5MC1sDrFuCn" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDrEu5N" resolve="przMarkantAndHsiSkonto" />
             </node>
           </node>
         </node>
@@ -1699,19 +1700,19 @@
         <node concept="3lxVgU" id="91Q_0JkOSu" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
           <node concept="Xl_RD" id="91Q_0JkOSv" role="3lxVgV">
-            <property role="Xl_RC" value="Skonto Mk." />
+            <property role="Xl_RC" value="Skonto Mk./+HSI" />
           </node>
         </node>
       </node>
       <node concept="1vx_$y" id="91Q_0JcfI3" role="1vx_$z">
         <property role="TrG5h" value="skontoEffektiv" />
-        <property role="3lxVgK" value="DecimalDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="91Q_0JcfI4" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0JcfI5" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0JcfI6" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0JcfI7" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:17ok7k$2DDg" resolve="przSkontoEffektiv" />
+            <node concept="2S8uIT" id="5MC1sDtJJ7J" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtbVr9" resolve="przSkontoEffektivTxt" />
             </node>
           </node>
         </node>
@@ -1730,13 +1731,13 @@
       </node>
       <node concept="1vx_$y" id="3F8CoLplxT_" role="1vx_$z">
         <property role="TrG5h" value="zahlungsziel" />
-        <property role="3lxVgK" value="IntegerDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="BkQlHbuSXs" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8Nbo" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8Nbp" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3svtX3w8Nbq" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:2f7jrMqs0E_" resolve="anzZnTage" />
+            <node concept="2S8uIT" id="5MC1sDtJJCq" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtczKP" resolve="anzZnTageTxt" />
             </node>
           </node>
         </node>
@@ -1754,14 +1755,14 @@
         </node>
       </node>
       <node concept="1vx_$y" id="3Cb79HkP$6b" role="1vx_$z">
-        <property role="3lxVgK" value="IntegerDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <property role="TrG5h" value="zahlungszielMarkant" />
         <node concept="3lxVgU" id="3Cb79HkP$6c" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3Cb79HkP$6d" role="3lxVgV">
             <node concept="2EM3W" id="3Cb79HkP$6e" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3Cb79HkP$6f" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:3Cb79Hk7ydI" resolve="anzZnTageMarkant" />
+            <node concept="2S8uIT" id="5MC1sDrFv04" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDrEJAy" resolve="anzZnTageMarkantAndHsi" />
             </node>
           </node>
         </node>
@@ -1774,19 +1775,19 @@
         <node concept="3lxVgU" id="91Q_0JkPbH" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
           <node concept="Xl_RD" id="91Q_0JkPbI" role="3lxVgV">
-            <property role="Xl_RC" value="Zz. Mk." />
+            <property role="Xl_RC" value="Zz. Mk./+HSI" />
           </node>
         </node>
       </node>
       <node concept="1vx_$y" id="91Q_0Jcg3E" role="1vx_$z">
-        <property role="3lxVgK" value="IntegerDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <property role="TrG5h" value="zahlungszielEffektiv" />
         <node concept="3lxVgU" id="91Q_0Jcg3F" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0Jcg3G" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0Jcg3H" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0Jcg3I" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:17ok7k$Kv4m" resolve="anzZnTageEffektiv" />
+            <node concept="2S8uIT" id="5MC1sDtJJUv" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtcJvJ" resolve="anzZnTageEffektivTxt" />
             </node>
           </node>
         </node>
@@ -2146,7 +2147,7 @@
       <ref role="2GBLiD" to="1v76:78jaa9_RJVm" resolve="umsaetzeV6J" />
       <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
       <node concept="1J3Sl6" id="3F8CoLplxV6" role="1memAO">
-        <property role="1J3Sl5" value="Edit" />
+        <property role="1J3Sl5" value=" " />
         <node concept="2Ux5dv" id="5tFXYH_eOak" role="1J3Sl2">
           <property role="1xgIOb" value="ENTER_10" />
           <node concept="2Ux5d2" id="5tFXYH_eOal" role="2UzG4t">
@@ -2249,7 +2250,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="3F8CoLplxVs" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="19OFFlw8q8E" role="1J3Sl2">
                 <property role="1xgIOb" value="ADD_107" />
                 <node concept="2Ux5d2" id="19OFFlw8q8F" role="2UzG4t">
@@ -2548,7 +2549,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs3xq" resolve="konditionsZeilen" />
             <node concept="1J3Sl6" id="3F8CoLplxW2" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="5tFXYH_eSgX" role="1J3Sl2">
                 <property role="1xgIOb" value="ADD_107" />
                 <node concept="2Ux5d2" id="5tFXYH_eSgY" role="2UzG4t">
@@ -2714,7 +2715,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="3F8CoLplxWt" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="7Nde$MVDzS5" role="1J3Sl2">
                 <property role="1xgIOb" value="ENTER_10" />
                 <node concept="2Ux5d2" id="7Nde$MVDzS6" role="2UzG4t">
@@ -2957,7 +2958,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="3F8CoLplxX1" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="5tFXYH_eTNG" role="1J3Sl2">
                 <property role="1xgIOb" value="ENTER_10" />
                 <node concept="2Ux5d2" id="5tFXYH_eTNH" role="2UzG4t">
@@ -3171,7 +3172,7 @@
             <ref role="2GBLiD" to="1v76:2f7jrMqs3xE" resolve="zeitKennungen" />
             <ref role="qGGBj" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
             <node concept="1J3Sl6" id="3F8CoLplxXt" role="1memAO">
-              <property role="1J3Sl5" value="Edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="5tFXYH_eSbC" role="1J3Sl2">
                 <property role="1xgIOb" value="ADD_107" />
                 <node concept="2Ux5d2" id="5tFXYH_eSbD" role="2UzG4t">
@@ -3325,7 +3326,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="3F8CoLplxXS" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="7Nde$MVDzSB" role="1J3Sl2">
                 <property role="1xgIOb" value="ENTER_10" />
                 <node concept="2Ux5d2" id="7Nde$MVDzSC" role="2UzG4t">
@@ -3402,7 +3403,7 @@
           <property role="TrG5h" value="FreiTextFC" />
           <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
           <node concept="1J3Sl6" id="3F8CoLplxY9" role="dvBuy">
-            <property role="1J3Sl5" value="Edit" />
+            <property role="1J3Sl5" value=" " />
             <node concept="2Ux5dv" id="5tFXYH_eP3g" role="1J3Sl2">
               <property role="1xgIOb" value="ENTER_10" />
               <node concept="2Ux5d2" id="5tFXYH_eP3h" role="2UzG4t">
@@ -3607,7 +3608,7 @@
       <ref role="3uigEE" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
     </node>
     <node concept="1J3Sl6" id="5tFXYH_eNRG" role="dvBuy">
-      <property role="1J3Sl5" value="Aktionen" />
+      <property role="1J3Sl5" value=" " />
       <node concept="2Ux5dv" id="5tFXYH_eNUD" role="1J3Sl2">
         <node concept="2Ux5d2" id="5tFXYH_eNUE" role="2UzG4t">
           <ref role="2Ux5d0" to="1v76:5tFXYH_eNUc" resolve="Vertragskopf bearbeiten" />
@@ -3713,6 +3714,19 @@
           <node concept="xYMNj" id="3Cb79HkA9XA" role="2sIhOb">
             <ref role="xYMNi" to="1v76:3Cb79HknmbP" resolve="Zahlungskonditionen Markant" />
             <ref role="xYMNI" node="3Cb79Hknmg6" resolve="EditZahlungsKondMarkantFC" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="63ku3bMCwmM" role="1J3Sl2">
+        <node concept="2Ux5d2" id="63ku3bMCwmO" role="2UzG4t">
+          <ref role="2Ux5d1" to="1v76:1_N9OhPPeGF" resolve="Konditionsmanagement" />
+          <ref role="2Ux5d0" to="1v76:63ku3bMBN2Q" resolve="Markant Konditionenvergleich" />
+          <node concept="2xMDEs" id="63ku3bMCwnj" role="2Ux5cx">
+            <ref role="2xLxPX" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
+          </node>
+          <node concept="xYMNj" id="3fEEVOMd10d" role="2sIhOb">
+            <ref role="xYMNI" node="3fEEVOMcWlt" resolve="KonditionenVergleichUI" />
+            <ref role="xYMNi" to="1v76:3fEEVOMcXWq" resolve="Konditionenvergleich Vorher/Nachher" />
           </node>
         </node>
       </node>
@@ -9272,7 +9286,7 @@
     <property role="1nxMek" value="false" />
     <property role="TrG5h" value="JvbDetailFC" />
     <node concept="1J3Sl6" id="7sgL5xNGVKc" role="dvBuy">
-      <property role="1J3Sl5" value="Aktionen" />
+      <property role="1J3Sl5" value=" " />
       <node concept="2Ux5dv" id="7sgL5xNGVKl" role="1J3Sl2">
         <node concept="2Ux5d2" id="7sgL5xNGVKm" role="2UzG4t">
           <ref role="2Ux5d0" to="1v76:5tFXYH_eNV7" resolve="Ansprechpartner editieren" />
@@ -9323,6 +9337,19 @@
           <node concept="10Nm6u" id="5hIKrYNfY1V" role="2Ux5cx" />
           <node concept="2xMDEs" id="5hIKrYNfY1P" role="2Ux5cx">
             <ref role="2xLxPX" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Ux5dv" id="63ku3bMCtJh" role="1J3Sl2">
+        <node concept="2Ux5d2" id="63ku3bMCtJj" role="2UzG4t">
+          <ref role="2Ux5d1" to="1v76:1_N9OhPPeGF" resolve="Konditionsmanagement" />
+          <ref role="2Ux5d0" to="1v76:63ku3bMBN2Q" resolve="Markant Konditionenvergleich" />
+          <node concept="2xMDEs" id="63ku3bMCtKi" role="2Ux5cx">
+            <ref role="2xLxPX" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
+          </node>
+          <node concept="xYMNj" id="3fEEVOMd6$M" role="2sIhOb">
+            <ref role="xYMNi" to="1v76:3fEEVOMcXWq" resolve="Konditionenvergleich Vorher/Nachher" />
+            <ref role="xYMNI" node="3fEEVOMcWlt" resolve="KonditionenVergleichUI" />
           </node>
         </node>
       </node>
@@ -9652,13 +9679,13 @@
       <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
       <node concept="1vx_$y" id="91Q_0MVY0_" role="1vx_$z">
         <property role="TrG5h" value="skonto" />
-        <property role="3lxVgK" value="DecimalDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="91Q_0MVY0A" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0MVY0B" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0MVY0C" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0MVY0D" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:2f7jrMqs0En" resolve="przSkonto" />
+            <node concept="2S8uIT" id="5MC1sDtSdiR" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtc5ns" resolve="przSkontoTxt" />
             </node>
           </node>
         </node>
@@ -9677,13 +9704,13 @@
       </node>
       <node concept="1vx_$y" id="91Q_0MVY0I" role="1vx_$z">
         <property role="TrG5h" value="skontoMarkant" />
-        <property role="3lxVgK" value="DecimalDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="91Q_0MVY0J" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0MVY0K" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0MVY0L" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0MVY0M" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:3Cb79Hk79zy" resolve="przMarkantSkonto" />
+            <node concept="2S8uIT" id="5MC1sDrF$G$" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDrEu5N" resolve="przMarkantAndHsiSkonto" />
             </node>
           </node>
         </node>
@@ -9696,19 +9723,19 @@
         <node concept="3lxVgU" id="91Q_0MVY0P" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
           <node concept="Xl_RD" id="91Q_0MVY0Q" role="3lxVgV">
-            <property role="Xl_RC" value="Skonto Mk." />
+            <property role="Xl_RC" value="Skonto Mk./+HSI" />
           </node>
         </node>
       </node>
       <node concept="1vx_$y" id="91Q_0MVY0R" role="1vx_$z">
         <property role="TrG5h" value="skontoEffektiv" />
-        <property role="3lxVgK" value="DecimalDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="91Q_0MVY0S" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0MVY0T" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0MVY0U" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0MVY0V" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:17ok7k$2DDg" resolve="przSkontoEffektiv" />
+            <node concept="2S8uIT" id="5MC1sDtSd$N" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtbVr9" resolve="przSkontoEffektivTxt" />
             </node>
           </node>
         </node>
@@ -9727,13 +9754,13 @@
       </node>
       <node concept="1vx_$y" id="91Q_0MVY10" role="1vx_$z">
         <property role="TrG5h" value="zahlungsziel" />
-        <property role="3lxVgK" value="IntegerDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <node concept="3lxVgU" id="91Q_0MVY11" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0MVY12" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0MVY13" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0MVY14" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:2f7jrMqs0E_" resolve="anzZnTage" />
+            <node concept="2S8uIT" id="5MC1sDtSdZT" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtczKP" resolve="anzZnTageTxt" />
             </node>
           </node>
         </node>
@@ -9751,14 +9778,14 @@
         </node>
       </node>
       <node concept="1vx_$y" id="91Q_0MVY19" role="1vx_$z">
-        <property role="3lxVgK" value="IntegerDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <property role="TrG5h" value="zahlungszielMarkant" />
         <node concept="3lxVgU" id="91Q_0MVY1a" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0MVY1b" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0MVY1c" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0MVY1d" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:3Cb79Hk7ydI" resolve="anzZnTageMarkant" />
+            <node concept="2S8uIT" id="5MC1sDrF_4h" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDrEJAy" resolve="anzZnTageMarkantAndHsi" />
             </node>
           </node>
         </node>
@@ -9771,19 +9798,19 @@
         <node concept="3lxVgU" id="91Q_0MVY1g" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU5" resolve="setLabel" />
           <node concept="Xl_RD" id="91Q_0MVY1h" role="3lxVgV">
-            <property role="Xl_RC" value="Zz. Mk." />
+            <property role="Xl_RC" value="Zz. Mk./+HSI" />
           </node>
         </node>
       </node>
       <node concept="1vx_$y" id="91Q_0MVY1i" role="1vx_$z">
-        <property role="3lxVgK" value="IntegerDelegate" />
+        <property role="3lxVgK" value="StringDelegate" />
         <property role="TrG5h" value="zahlungszielEffektiv" />
         <node concept="3lxVgU" id="91Q_0MVY1j" role="3lxVgR">
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="91Q_0MVY1k" role="3lxVgV">
             <node concept="2EM3W" id="91Q_0MVY1l" role="2Oq$k0" />
-            <node concept="2S8uIT" id="91Q_0MVY1m" role="2OqNvi">
-              <ref role="2S8YL0" to="1v76:17ok7k$Kv4m" resolve="anzZnTageEffektiv" />
+            <node concept="2S8uIT" id="5MC1sDtSehQ" role="2OqNvi">
+              <ref role="2S8YL0" to="1v76:5MC1sDtcJvJ" resolve="anzZnTageEffektivTxt" />
             </node>
           </node>
         </node>
@@ -10155,7 +10182,7 @@
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G1" resolve="stammKonditionen" />
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <node concept="1J3Sl6" id="41HLAicEA$d" role="1memAO">
-              <property role="1J3Sl5" value="Aktionen" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="6jBrTnxRlL" role="1J3Sl2">
                 <property role="1xgIOb" value="F2_113" />
                 <node concept="2Ux5d2" id="6jBrTnxRlN" role="2UzG4t">
@@ -10717,7 +10744,7 @@
               <property role="Xl_RC" value="Umsatzliste" />
             </node>
             <node concept="1J3Sl6" id="2lKPY_OJl3q" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="2lKPY_OJl3u" role="1J3Sl2">
                 <property role="1xgIOb" value="ADD_107" />
                 <node concept="2Ux5d2" id="2lKPY_OJl3w" role="2UzG4t">
@@ -10835,7 +10862,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:78jaa9_RJVm" resolve="umsaetzeV6J" />
             <node concept="1J3Sl6" id="19OFFlwxWyY" role="1memAO">
-              <property role="1J3Sl5" value="Edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2ftCAQ" id="1eyeU54nqAg" role="1J3Sl2">
                 <property role="TrG5h" value="Selektion bearbeiten" />
                 <node concept="2Ux5dv" id="2ertXyj2g4H" role="2ftCB4">
@@ -11236,7 +11263,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="t9nFHhikWB" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="t9nFHhikWC" role="1J3Sl2">
                 <property role="1xgIOb" value="ADD_107" />
                 <node concept="2Ux5d2" id="t9nFHhikWD" role="2UzG4t">
@@ -11476,7 +11503,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs3xq" resolve="konditionsZeilen" />
             <node concept="1J3Sl6" id="624cJvMWKrQ" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="4mZtcIupPWV" role="1J3Sl2">
                 <property role="1xgIOb" value="ENTER_10" />
                 <node concept="2Ux5d2" id="4mZtcIupPWW" role="2UzG4t">
@@ -11645,7 +11672,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="t9nFHhikYN" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="t9nFHhikYO" role="1J3Sl2">
                 <property role="1xgIOb" value="ENTER_10" />
                 <node concept="2Ux5d2" id="t9nFHhikYP" role="2UzG4t">
@@ -11888,7 +11915,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="t9nFHhikYZ" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="t9nFHhikZ0" role="1J3Sl2">
                 <property role="1xgIOb" value="ENTER_10" />
                 <node concept="2Ux5d2" id="t9nFHhikZ1" role="2UzG4t">
@@ -12102,7 +12129,7 @@
             <ref role="2GBLiD" to="1v76:2f7jrMqs3xE" resolve="zeitKennungen" />
             <ref role="qGGBj" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
             <node concept="1J3Sl6" id="t9nFHhpk9A" role="1memAO">
-              <property role="1J3Sl5" value="Edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="t9nFHhpk9B" role="1J3Sl2">
                 <property role="1xgIOb" value="ADD_107" />
                 <node concept="2Ux5d2" id="t9nFHhpk9C" role="2UzG4t">
@@ -12256,7 +12283,7 @@
             <ref role="qGGBj" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             <ref role="2GBLiD" to="1v76:2f7jrMqs0G9" resolve="stammKonditionenForList" />
             <node concept="1J3Sl6" id="t9nFHhikZB" role="1memAO">
-              <property role="1J3Sl5" value="edit" />
+              <property role="1J3Sl5" value=" " />
               <node concept="2Ux5dv" id="t9nFHhikZC" role="1J3Sl2">
                 <property role="1xgIOb" value="ENTER_10" />
                 <node concept="2Ux5d2" id="t9nFHhikZD" role="2UzG4t">
@@ -16762,6 +16789,150 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2G$zOF" id="3fEEVOMcWlt">
+    <property role="1mNjcY" value="1" />
+    <property role="1nxMek" value="false" />
+    <property role="TrG5h" value="KonditionenVergleichUI" />
+    <node concept="2G$WZb" id="3fEEVOMcWwU" role="2G$zO_">
+      <property role="1mNjcY" value="1" />
+      <property role="1nxMek" value="false" />
+      <property role="TrG5h" value="KonditionenVergleichTF" />
+      <ref role="2GBLiD" to="1v76:63ku3bLtQJH" resolve="kondVergleich" />
+      <ref role="qGGBj" to="1v76:63ku3bLtwlQ" resolve="MarkantVergleich" />
+      <node concept="_YKpA" id="3fEEVOMcWy9" role="qi9ce">
+        <node concept="3uibUv" id="3fEEVOMcWyv" role="_ZDj9">
+          <ref role="3uigEE" to="1v76:2f7jrMqs00b" resolve="KonditionenVergleichDTO" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="3fEEVOMcWwW" role="2GDezF">
+        <property role="2GDez6" value="200" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3fEEVOMcWze" role="2GDD_P">
+          <node concept="2EM3W" id="3fEEVOMcWyS" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3fEEVOMcWBM" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:2f7jrMqs08B" resolve="kondGruppe" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="3fEEVOP5BUT" role="3Bnz7F">
+          <property role="Xl_RC" value="Konditionengruppe" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="3fEEVOMcWCj" role="2GDezF">
+        <property role="2GDez6" value="350" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3fEEVOMcWDl" role="2GDD_P">
+          <node concept="2EM3W" id="3fEEVOMcWCZ" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3fEEVOMcWHT" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:2f7jrMqs08W" resolve="kondBezeichnung" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="3fEEVOPe82E" role="3Bnz7F">
+          <property role="Xl_RC" value="Konditionsbezeichnung" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="3fEEVOMcWIi" role="2GDezF">
+        <property role="2GDez6" value="300" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3fEEVOMcWJG" role="2GDD_P">
+          <node concept="2EM3W" id="3fEEVOMcWJm" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3fEEVOMcWOg" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:2f7jrMqs09a" resolve="kondSatzAndWirkungPast" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="3fEEVOPe83j" role="3Bnz7F">
+          <property role="Xl_RC" value="Konditionssatz/-wirkung vorher" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="3fEEVOMcWOD" role="2GDezF">
+        <property role="2GDez6" value="300" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3fEEVOMcWQr" role="2GDD_P">
+          <node concept="2EM3W" id="3fEEVOMcWQ5" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3fEEVOMcWZe" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:2f7jrMqs093" resolve="kondSatzAndWirkungNow" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="3fEEVOPe84c" role="3Bnz7F">
+          <property role="Xl_RC" value="Konditionssatz/-wirkung nachher" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="3fEEVOQ7ekG" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="3fEEVOQ7emU" role="2GDD_P">
+          <node concept="2EM3W" id="3fEEVOQ7em$" role="2Oq$k0" />
+          <node concept="2S8uIT" id="3fEEVOQ7eru" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:3fEEVOPmCGx" resolve="vergleichSatz" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="3fEEVOQ7eMx" role="3Bnz7F">
+          <property role="Xl_RC" value="Vergleich" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="7Jf7YZULIGl" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="7Jf7YZULJFV" role="2GDD_P">
+          <node concept="2EM3W" id="7Jf7YZULJF_" role="2Oq$k0" />
+          <node concept="2S8uIT" id="7Jf7YZULJOI" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:7Jf7YZUKZxM" resolve="isBonusbasisWirksam" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="7Jf7YZULJTJ" role="3Bnz7F">
+          <property role="Xl_RC" value="Bonuswirksam?" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="6t0XduUde2E" role="2GDezF">
+        <property role="2GDez6" value="100" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="6t0XduUdeDl" role="2GDD_P">
+          <node concept="2EM3W" id="6t0XduUdeCZ" role="2Oq$k0" />
+          <node concept="2S8uIT" id="6t0XduUdeHT" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:3fEEVOPmDIV" resolve="vergleichBonusBasis" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="6t0XduUdeVp" role="3Bnz7F">
+          <property role="Xl_RC" value="Bonusbasis" />
+        </node>
+      </node>
+      <node concept="2GDez7" id="6t0XduUdfhC" role="2GDezF">
+        <property role="2GDez6" value="400" />
+        <property role="2GDezT" value="-" />
+        <property role="1TGbMe" value="-" />
+        <node concept="2OqwBi" id="6t0XduUdfS8" role="2GDD_P">
+          <node concept="2EM3W" id="6t0XduUdfRM" role="2Oq$k0" />
+          <node concept="2S8uIT" id="6t0XduUdg0V" role="2OqNvi">
+            <ref role="2S8YL0" to="1v76:3fEEVOPmELn" resolve="kommentar" />
+          </node>
+        </node>
+        <node concept="Xl_RD" id="6t0XduUdg1G" role="3Bnz7F">
+          <property role="Xl_RC" value="Bemerkung" />
+        </node>
+      </node>
+    </node>
+    <node concept="dvsy1" id="3fEEVOMcWwG" role="dvBuy" />
+    <node concept="dvsy1" id="3fEEVOMcWwJ" role="dvBuy" />
+    <node concept="3uibUv" id="3fEEVOMcWvK" role="qi9ce">
+      <ref role="3uigEE" to="1v76:63ku3bLtwlQ" resolve="MarkantVergleich" />
+    </node>
+    <node concept="1THgkH" id="3fEEVOMcWlv" role="2lwzia">
+      <node concept="Xl_RD" id="3fEEVOMcWwx" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
+      </node>
+    </node>
+    <node concept="1THgkH" id="3fEEVOMcWlw" role="1THgkV">
+      <node concept="Xl_RD" id="3fEEVOMcWwm" role="1THgkI">
+        <property role="Xl_RC" value="1*" />
       </node>
     </node>
   </node>

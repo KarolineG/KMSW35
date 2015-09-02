@@ -166,7 +166,7 @@
   <node concept="2ftCAz" id="3trU5lnKR$Y">
     <property role="TrG5h" value="UmbauNeueroeffnungenApp" />
     <property role="3LuWSm" value="- MPreis Filialenmanagement für Neueröffnungen V3.1.0" />
-    <ref role="2bVhWL" node="3WBfdAXayEc" resolve="LolaTestConfig_UNT" />
+    <ref role="2bVhWL" node="4dFAWDqUXIB" resolve="UntConfig" />
     <node concept="2Ux5dv" id="2O3g4kc$VMh" role="2ftCBk">
       <node concept="2Ux5d2" id="2O3g4kc$VMi" role="2UzG4t">
         <ref role="2Ux5d0" to="h02c:3trU5lnKTKJ" resolve="Filialliste anzeigen" />

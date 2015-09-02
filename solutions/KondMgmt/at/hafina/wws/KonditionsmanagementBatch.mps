@@ -29,6 +29,7 @@
     <import index="c9yi" ref="r:775c0fa7-99cc-49ff-86b2-34796e752e4b(org.modellwerkstatt.forms.api)" />
     <import index="vab3" ref="r:725de480-4df4-4e47-9f08-a7b1f0db4599(at.hafina.basis.configurations)" />
     <import index="oi9j" ref="37fdf88a-1025-4d01-864a-0bf987f72e6f/f:java_stub#37fdf88a-1025-4d01-864a-0bf987f72e6f#org.springframework.beans.factory.annotation(org.modellwerkstatt.manmap.solution/org.springframework.beans.factory.annotation@java_stub)" />
+    <import index="o9h8" ref="r:5fe8b9c6-b0be-4403-8d36-4e1f009a1226(at.hafina.organisation.Mitarbeiterstamm)" />
   </imports>
   <registry>
     <language id="0f69ff68-7ed4-4ee4-8dc6-1619facda18d" name="org.modellwerkstatt.forms">
@@ -350,6 +351,7 @@
       <concept id="1881524139087047680" name="org.modellwerkstatt.objectflow.structure.OnTriggerTransition" flags="ng" index="10xUwW" />
       <concept id="1881524139085549729" name="org.modellwerkstatt.objectflow.structure.FlagCommand" flags="ng" index="10Adit">
         <child id="1881524139085549730" name="msgExpression" index="10Adiu" />
+        <child id="1881524139085549731" name="conditionExpression" index="10Adiv" />
       </concept>
       <concept id="1881524139085552749" name="org.modellwerkstatt.objectflow.structure.CancelCommand" flags="ng" index="10Adxh" />
       <concept id="1881524139085552751" name="org.modellwerkstatt.objectflow.structure.DoneCommand" flags="ng" index="10Adxj" />
@@ -624,14 +626,14 @@
       <ref role="10x$tN" node="2iWFmP54xtf" resolve="Start Batch Forderungsstellung" />
     </node>
     <node concept="10xUwW" id="7A84_N63ExF" role="10HVpa">
-      <ref role="10x$tN" node="6Nj4RqD$AKU" resolve="Batchprozess Umsatzberechnung starten" />
+      <ref role="10x$tN" node="6Nj4RqD$AKU" resolve="Start Batchprozess Umsatzberechnung" />
     </node>
     <node concept="10xUwW" id="6vXjblg__7b" role="10HVpa">
       <ref role="10x$tN" node="6vXjblg_6wN" resolve="Start Batch Jahresumsatzberechnung" />
     </node>
   </node>
   <node concept="3ugp7m" id="6Nj4RqD$AKU">
-    <property role="TrG5h" value="Batchprozess Umsatzberechnung starten" />
+    <property role="TrG5h" value="Start Batchprozess Umsatzberechnung" />
     <property role="1xmH21" value="SEARCH_VIEW" />
     <property role="19I623" value="GRAPH_OWNER_CMD" />
     <ref role="3lhHOO" node="6Nj4RqD$zis" resolve="BatchKmsw" />
@@ -683,9 +685,36 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="3U7hKDPyJqA" role="33vP2m">
-                  <node concept="1odsa" id="5_aTzcHRuza" role="2Oq$k0">
-                    <ref role="1ods_" to="1v76:jfW375ELdL" resolve="VertragRepo" />
-                    <ref role="37wK5l" to="1v76:6Nj4RqD$ATP" resolve="findAllAktivVertraege" />
+                  <node concept="2OqwBi" id="3$0yDrJpXfx" role="2Oq$k0">
+                    <node concept="1odsa" id="5_aTzcHRuza" role="2Oq$k0">
+                      <ref role="1ods_" to="1v76:jfW375ELdL" resolve="VertragRepo" />
+                      <ref role="37wK5l" to="1v76:6Nj4RqD$ATP" resolve="findAllAktivVertraege" />
+                    </node>
+                    <node concept="3zZkjj" id="3$0yDrJpXGB" role="2OqNvi">
+                      <node concept="1bVj0M" id="3$0yDrJpXGD" role="23t8la">
+                        <node concept="3clFbS" id="3$0yDrJpXGE" role="1bW5cS">
+                          <node concept="3clFbF" id="3$0yDrJpYcY" role="3cqZAp">
+                            <node concept="3clFbC" id="3$0yDrJpZaH" role="3clFbG">
+                              <node concept="3cmrfG" id="3$0yDrJpZn3" role="3uHU7w">
+                                <property role="3cmrfH" value="203300" />
+                              </node>
+                              <node concept="2OqwBi" id="3$0yDrJpYor" role="3uHU7B">
+                                <node concept="37vLTw" id="3$0yDrJpYcX" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="3$0yDrJpXGF" resolve="it" />
+                                </node>
+                                <node concept="2S8uIT" id="3$0yDrJpYKq" role="2OqNvi">
+                                  <ref role="2S8YL0" to="1v76:2f7jrMqs0DE" resolve="id" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Rh6nW" id="3$0yDrJpXGF" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="3$0yDrJpXGG" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                   <node concept="ANE8D" id="3U7hKDPyJIT" role="2OqNvi" />
                 </node>
@@ -941,6 +970,27 @@
             </node>
             <node concept="3urNR4" id="5jutDWaRMUM" role="37vLTJ">
               <ref role="3cqZAo" node="1kgIW6ehbt9" resolve="stammKonditionen" />
+            </node>
+          </node>
+        </node>
+        <node concept="10Adit" id="3aFeNpWS7Sy" role="3cqZAp">
+          <node concept="Xl_RD" id="3aFeNpWS7Sz" role="10Adiu">
+            <property role="Xl_RC" value="Sie haben LEIDER nicht die erforderlichen Rechte :(" />
+          </node>
+          <node concept="3fqX7Q" id="3aFeNpWS7S$" role="10Adiv">
+            <node concept="1eOMI4" id="3aFeNpWS7S_" role="3fr31v">
+              <node concept="2OqwBi" id="3aFeNpWS7SB" role="1eOMHV">
+                <node concept="1odsa" id="3aFeNpWS7SC" role="2Oq$k0">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGTov" resolve="findCurrentUser" />
+                  <ref role="1ods_" to="o9h8:7TlG5ndO4LQ" resolve="MitarbeiterstammRepo" />
+                </node>
+                <node concept="liA8E" id="3aFeNpWS7SD" role="2OqNvi">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGT$Y" resolve="isUserAdmin" />
+                  <node concept="Xl_RD" id="3aFeNpWS7SE" role="37wK5m">
+                    <property role="Xl_RC" value="KONDMGMT" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -3411,6 +3461,27 @@
             </node>
           </node>
         </node>
+        <node concept="10Adit" id="1NdMWqEHrX0" role="3cqZAp">
+          <node concept="Xl_RD" id="1NdMWqEHrX1" role="10Adiu">
+            <property role="Xl_RC" value="Sie haben LEIDER nicht die erforderlichen Rechte :(" />
+          </node>
+          <node concept="3fqX7Q" id="1NdMWqEHrX2" role="10Adiv">
+            <node concept="1eOMI4" id="34mqaTEUgZf" role="3fr31v">
+              <node concept="2OqwBi" id="34mqaTEUgZh" role="1eOMHV">
+                <node concept="1odsa" id="34mqaTEUgZi" role="2Oq$k0">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGTov" resolve="findCurrentUser" />
+                  <ref role="1ods_" to="o9h8:7TlG5ndO4LQ" resolve="MitarbeiterstammRepo" />
+                </node>
+                <node concept="liA8E" id="34mqaTEUgZj" role="2OqNvi">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGT$Y" resolve="isUserAdmin" />
+                  <node concept="Xl_RD" id="34mqaTEUgZk" role="37wK5m">
+                    <property role="Xl_RC" value="KONDMGMT" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -3515,31 +3586,9 @@
                   <node concept="10Oyi0" id="2iWFmP54wSs" role="_ZDj9" />
                 </node>
                 <node concept="2OqwBi" id="3U7hKDP$CZS" role="33vP2m">
-                  <node concept="2OqwBi" id="6fqFDnZ26nu" role="2Oq$k0">
-                    <node concept="1odsa" id="5CS3u2GSy9R" role="2Oq$k0">
-                      <ref role="37wK5l" to="1v76:6Nj4RqD$JZv" resolve="findAllRunningVertraege" />
-                      <ref role="1ods_" to="1v76:jfW375ELdL" resolve="VertragRepo" />
-                    </node>
-                    <node concept="3zZkjj" id="6fqFDnZ26Nz" role="2OqNvi">
-                      <node concept="1bVj0M" id="6fqFDnZ26N_" role="23t8la">
-                        <node concept="3clFbS" id="6fqFDnZ26NA" role="1bW5cS">
-                          <node concept="3clFbF" id="6fqFDnZ27ch" role="3cqZAp">
-                            <node concept="3clFbC" id="6fqFDnZ296y" role="3clFbG">
-                              <node concept="37vLTw" id="6fqFDnZ28cb" role="3uHU7B">
-                                <ref role="3cqZAo" node="6fqFDnZ26NB" resolve="it" />
-                              </node>
-                              <node concept="3cmrfG" id="6fqFDnZ2awE" role="3uHU7w">
-                                <property role="3cmrfH" value="206860" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Rh6nW" id="6fqFDnZ26NB" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="6fqFDnZ26NC" role="1tU5fm" />
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="1odsa" id="5CS3u2GSy9R" role="2Oq$k0">
+                    <ref role="37wK5l" to="1v76:6Nj4RqD$JZv" resolve="findAllRunningVertraege" />
+                    <ref role="1ods_" to="1v76:jfW375ELdL" resolve="VertragRepo" />
                   </node>
                   <node concept="ANE8D" id="3U7hKDP$DiQ" role="2OqNvi" />
                 </node>
@@ -3634,6 +3683,31 @@
         </node>
         <node concept="3urNR4" id="2iWFmP54xuq" role="3uHU7w">
           <ref role="3cqZAo" node="2iWFmP54xun" resolve="isSuccess" />
+        </node>
+      </node>
+    </node>
+    <node concept="20qIzx" id="3aFeNpWS7v1" role="3umfm7">
+      <node concept="3clFbS" id="3aFeNpWS7v2" role="2VODD2">
+        <node concept="10Adit" id="3aFeNpWS7z1" role="3cqZAp">
+          <node concept="Xl_RD" id="3aFeNpWS7z2" role="10Adiu">
+            <property role="Xl_RC" value="Sie haben LEIDER nicht die erforderlichen Rechte :(" />
+          </node>
+          <node concept="3fqX7Q" id="3aFeNpWS7z3" role="10Adiv">
+            <node concept="1eOMI4" id="3aFeNpWS7z4" role="3fr31v">
+              <node concept="2OqwBi" id="3aFeNpWS7z6" role="1eOMHV">
+                <node concept="1odsa" id="3aFeNpWS7z7" role="2Oq$k0">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGTov" resolve="findCurrentUser" />
+                  <ref role="1ods_" to="o9h8:7TlG5ndO4LQ" resolve="MitarbeiterstammRepo" />
+                </node>
+                <node concept="liA8E" id="3aFeNpWS7z8" role="2OqNvi">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGT$Y" resolve="isUserAdmin" />
+                  <node concept="Xl_RD" id="3aFeNpWS7z9" role="37wK5m">
+                    <property role="Xl_RC" value="KONDMGMT" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -11834,6 +11908,31 @@
         </node>
         <node concept="3urNR4" id="6vXjblgGYoA" role="3uHU7w">
           <ref role="3cqZAo" node="6vXjblg_6V_" resolve="numEinheiten" />
+        </node>
+      </node>
+    </node>
+    <node concept="20qIzx" id="3aFeNpWS84S" role="3umfm7">
+      <node concept="3clFbS" id="3aFeNpWS84T" role="2VODD2">
+        <node concept="10Adit" id="3aFeNpWS89V" role="3cqZAp">
+          <node concept="Xl_RD" id="3aFeNpWS89W" role="10Adiu">
+            <property role="Xl_RC" value="Sie haben LEIDER nicht die erforderlichen Rechte :(" />
+          </node>
+          <node concept="3fqX7Q" id="3aFeNpWS89X" role="10Adiv">
+            <node concept="1eOMI4" id="3aFeNpWS89Y" role="3fr31v">
+              <node concept="2OqwBi" id="3aFeNpWS8a0" role="1eOMHV">
+                <node concept="1odsa" id="3aFeNpWS8a1" role="2Oq$k0">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGTov" resolve="findCurrentUser" />
+                  <ref role="1ods_" to="o9h8:7TlG5ndO4LQ" resolve="MitarbeiterstammRepo" />
+                </node>
+                <node concept="liA8E" id="3aFeNpWS8a2" role="2OqNvi">
+                  <ref role="37wK5l" to="o9h8:1NncJyRGT$Y" resolve="isUserAdmin" />
+                  <node concept="Xl_RD" id="3aFeNpWS8a3" role="37wK5m">
+                    <property role="Xl_RC" value="KONDMGMT" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

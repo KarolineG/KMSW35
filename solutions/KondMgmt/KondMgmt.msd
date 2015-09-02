@@ -6,10 +6,12 @@
     </modelRoot>
     <modelRoot contentPath="C:/javaware35/KMSW35/jars" type="java_classes">
       <sourceRoot location="pdfbox-app-1.8.4.jar" />
+      <sourceRoot location="jxl-2.6.jar" />
     </modelRoot>
   </models>
   <stubModelEntries>
     <stubModelEntry path="C:/javaware35/KMSW35/jars/pdfbox-app-1.8.4.jar" />
+    <stubModelEntry path="C:/javaware35/KMSW35/jars/jxl-2.6.jar" />
   </stubModelEntries>
   <sourcePath />
   <dependencies>

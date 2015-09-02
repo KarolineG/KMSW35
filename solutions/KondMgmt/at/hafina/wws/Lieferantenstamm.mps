@@ -410,10 +410,10 @@
       </node>
       <node concept="17QB3L" id="2f7jrMqs7AB" role="2RkE6I" />
       <node concept="Xl_RD" id="3svtX3w8O3F" role="2CNmdP">
-        <property role="Xl_RC" value="Lieferant" />
+        <property role="Xl_RC" value="Name" />
       </node>
       <node concept="Xl_RD" id="3svtX3w8OTR" role="2CNmdL">
-        <property role="Xl_RC" value="Firma" />
+        <property role="Xl_RC" value="Name" />
       </node>
     </node>
     <node concept="1bOX9e" id="3X8vfUcKm1E" role="TxmiU">
