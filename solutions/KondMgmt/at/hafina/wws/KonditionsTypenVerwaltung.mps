@@ -509,6 +509,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRm" role="1K0AWC">
+        <property role="Xl_RC" value="Edit" />
+      </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEHrPR" role="3ulXEG">
       <property role="TrG5h" value="forderungsSubTypen" />
@@ -564,6 +567,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRC" role="1K0AWC">
+        <property role="Xl_RC" value="Edit" />
       </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEHrQc" role="3ulXEG">
@@ -1348,6 +1354,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQa" role="1K0AWC">
+        <property role="Xl_RC" value="Typenliste" />
+      </node>
     </node>
     <node concept="20vkWO" id="1NdMWqEHrWW" role="20vkWf">
       <node concept="20vkWP" id="1NdMWqEHrWX" role="20vkWT">
@@ -1635,6 +1644,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQq" role="1K0AWC">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
     </node>
     <node concept="3ugp7q" id="1NdMWqEHrXV" role="3ug97V">
       <property role="TrG5h" value="Defaulteinstellung" />
@@ -1657,6 +1669,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQO" role="1K0AWC">
+        <property role="Xl_RC" value="Defaulteinstellung" />
       </node>
     </node>
     <node concept="20vkWO" id="1NdMWqEHrY4" role="20vkWf">
@@ -10322,6 +10337,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQw" role="1K0AWC">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
     </node>
     <node concept="3ugp7q" id="1NdMWqEHsm$" role="3ug97V">
       <property role="TrG5h" value="Defaulteinstellung" />
@@ -10371,6 +10389,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRu" role="1K0AWC">
+        <property role="Xl_RC" value="Defaulteinstellung" />
       </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEHsnT" role="3ulXEG">
@@ -13417,6 +13438,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQE" role="1K0AWC">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
     </node>
     <node concept="3ugp7q" id="1NdMWqEKsGB" role="3ug97V">
       <property role="TrG5h" value="Defaulteinstellung" />
@@ -13455,6 +13479,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQ$" role="1K0AWC">
+        <property role="Xl_RC" value="Defaulteinstellung" />
       </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEKsFC" role="3ulXEG">
@@ -13728,6 +13755,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJR4" role="1K0AWC">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
     </node>
     <node concept="3ugp7q" id="1NdMWqEKsHW" role="3ug97V">
       <property role="TrG5h" value="Defaulteinstellung" />
@@ -13766,6 +13796,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQS" role="1K0AWC">
+        <property role="Xl_RC" value="Defaulteinstellung" />
       </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEKsH1" role="3ulXEG">
@@ -14039,6 +14072,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfhRoDO" role="1K0AWC">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
     </node>
     <node concept="3ugp7q" id="1NdMWqEKsJk" role="3ug97V">
       <property role="TrG5h" value="Defaulteinstellung" />
@@ -14061,6 +14097,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQI" role="1K0AWC">
+        <property role="Xl_RC" value="Defaulteinstellung" />
       </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEKsIl" role="3ulXEG">
@@ -14334,6 +14373,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQy" role="1K0AWC">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
     </node>
     <node concept="3ugp7q" id="1NdMWqEKsKF" role="3ug97V">
       <property role="TrG5h" value="Defaulteinstellung" />
@@ -14356,6 +14398,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQM" role="1K0AWC">
+        <property role="Xl_RC" value="Defaulteinstellung" />
       </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEKsJI" role="3ulXEG">
@@ -14646,6 +14691,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQC" role="1K0AWC">
+        <property role="Xl_RC" value="Selektionsliste" />
+      </node>
     </node>
     <node concept="3ugp7q" id="1NdMWqEKsQR" role="3ug97V">
       <property role="TrG5h" value="Defaulteinstellung" />
@@ -14695,6 +14743,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRE" role="1K0AWC">
+        <property role="Xl_RC" value="Defaulteinstellung" />
       </node>
     </node>
     <node concept="3ulXEM" id="1NdMWqEKsL6" role="3ulXEG">
@@ -15044,6 +15095,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRg" role="1K0AWC">
+        <property role="Xl_RC" value="Bgl Einheit" />
+      </node>
     </node>
     <node concept="20vkWO" id="2_OvOA$NGtR" role="20vkWf">
       <node concept="20vkWP" id="2_OvOA$NGtS" role="20vkWT">
@@ -15114,6 +15168,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRi" role="1K0AWC">
+        <property role="Xl_RC" value="Bgl Einheitenliste" />
       </node>
     </node>
     <node concept="20vkWO" id="2_OvOA$NGu6" role="20vkWf">
@@ -15214,6 +15271,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRa" role="1K0AWC">
+        <property role="Xl_RC" value="Bgl-Einheit Edit" />
+      </node>
     </node>
     <node concept="20vkWO" id="2_OvOA$NGut" role="20vkWf">
       <node concept="20vkWP" id="2_OvOA$NGuu" role="20vkWT">
@@ -15303,6 +15363,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQu" role="1K0AWC">
+        <property role="Xl_RC" value="Zeileneinheit Edit" />
+      </node>
     </node>
     <node concept="20vkWO" id="2_OvOA$NGuN" role="20vkWf">
       <node concept="20vkWP" id="2_OvOA$NGuO" role="20vkWT">
@@ -15388,6 +15451,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRe" role="1K0AWC">
+        <property role="Xl_RC" value="Zeileneinheit" />
+      </node>
     </node>
     <node concept="20vkWO" id="2_OvOA$NGv9" role="20vkWf">
       <node concept="20vkWP" id="2_OvOA$NGva" role="20vkWT">
@@ -15450,6 +15516,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRA" role="1K0AWC">
+        <property role="Xl_RC" value="Zeileneinheiten" />
       </node>
     </node>
     <node concept="3ulXEM" id="2_OvOA$NGvl" role="3ulXEG">

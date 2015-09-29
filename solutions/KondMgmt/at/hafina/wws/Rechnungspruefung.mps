@@ -296,6 +296,7 @@
         <reference id="4152417163565704942" name="boundClass" index="3gcvY6" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
         <child id="1881524139084590808" name="pageInit" index="10qiF$" />
+        <child id="8413087471126127955" name="dynamicPageTitle" index="1K0AWC" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640431" name="org.modellwerkstatt.objectflow.structure.ContainerParameter" flags="ng" index="3ulXEN" />
@@ -1653,6 +1654,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQo" role="1K0AWC">
+        <property role="Xl_RC" value="Suchen" />
+      </node>
     </node>
     <node concept="3ugp7q" id="4HxyFP_OsQ9" role="3ug97V">
       <property role="TrG5h" value="ListView" />
@@ -1777,6 +1781,9 @@
           </node>
           <node concept="3clFbH" id="4HxyFP_OsSG" role="3cqZAp" />
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQU" role="1K0AWC">
+        <property role="Xl_RC" value="ListView" />
       </node>
     </node>
     <node concept="3ulXEN" id="4HxyFP_OsSH" role="3ulXEL">

@@ -1465,6 +1465,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQk" role="1K0AWC">
+        <property role="Xl_RC" value="Neueröffnung editieren" />
+      </node>
     </node>
     <node concept="20qIzx" id="3trU5lnKTK5" role="3umfm7">
       <node concept="3clFbS" id="3trU5lnKTK6" role="2VODD2">
@@ -1639,6 +1642,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRc" role="1K0AWC">
+        <property role="Xl_RC" value="filiale bearbeiten" />
       </node>
     </node>
     <node concept="10M0yZ" id="5TLCBJESqc8" role="2DETGV">
@@ -1948,6 +1954,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQi" role="1K0AWC">
+        <property role="Xl_RC" value="Suchen" />
       </node>
     </node>
     <node concept="3ugp7q" id="2O3g4kcyMQT" role="3ug97V">
@@ -3387,6 +3396,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRq" role="1K0AWC">
+        <property role="Xl_RC" value="Totalumbau editieren" />
+      </node>
     </node>
     <node concept="20qIzx" id="28dSB7wvq78" role="3umfm7">
       <node concept="3clFbS" id="28dSB7wvq79" role="2VODD2">
@@ -3684,6 +3696,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRw" role="1K0AWC">
+        <property role="Xl_RC" value="Suchen" />
       </node>
     </node>
     <node concept="3ugp7q" id="6Ujf30EmulY" role="3ug97V">
@@ -5407,6 +5422,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQ8" role="1K0AWC">
+        <property role="Xl_RC" value="Show Forderungssummen" />
       </node>
     </node>
     <node concept="20vkWO" id="2uZxRxf6Ice" role="20vkWf">

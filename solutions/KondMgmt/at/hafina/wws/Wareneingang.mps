@@ -290,6 +290,7 @@
         <child id="1879461712355203936" name="scopeConceptFunc" index="JX2Go" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
         <child id="1881524139084590808" name="pageInit" index="10qiF$" />
+        <child id="8413087471126127955" name="dynamicPageTitle" index="1K0AWC" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640431" name="org.modellwerkstatt.objectflow.structure.ContainerParameter" flags="ng" index="3ulXEN" />
@@ -6874,6 +6875,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJR8" role="1K0AWC">
+        <property role="Xl_RC" value="Suchen" />
+      </node>
     </node>
     <node concept="3ugp7q" id="7Y7$sS6phLb" role="3ug97V">
       <property role="TrG5h" value="Wareneingangsbeleg Liste" />
@@ -7013,6 +7017,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQm" role="1K0AWC">
+        <property role="Xl_RC" value="Wareneingangsbeleg Liste" />
       </node>
     </node>
     <node concept="3ulXEM" id="7Y7$sS6phKY" role="3ulXEG">
@@ -9482,6 +9489,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQg" role="1K0AWC">
+        <property role="Xl_RC" value="Detailansicht" />
+      </node>
     </node>
     <node concept="20vkWO" id="1DXbJhxmexh" role="20vkWf">
       <node concept="20vkWP" id="1DXbJhxmexi" role="20vkWT">
@@ -9592,6 +9602,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRy" role="1K0AWC">
+        <property role="Xl_RC" value="Detailansicht Belegposition" />
       </node>
     </node>
     <node concept="3ulXEN" id="71RqXfarX2$" role="3ulXEL">

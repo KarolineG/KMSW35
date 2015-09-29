@@ -349,7 +349,7 @@
         <ref role="2Ux5d1" to="1v76:1_N9OhPPeGF" resolve="Konditionsmanagement" />
         <ref role="2Ux5d0" to="1v76:6Nj4RqD$PiJ" resolve="Lieferantenumsätze anzeigen" />
         <node concept="xYMNj" id="4HxyFP_OrqU" role="2sIhOb">
-          <ref role="xYMNi" to="1v76:6Nj4RqD$Pjs" resolve="Auswahl" />
+          <ref role="xYMNi" to="1v76:6Nj4RqD$Pjs" resolve="Auswahl Lieferant und Zeitraum" />
           <ref role="xYMNI" to="znt7:3trU5lnKgRk" resolve="SearchCriteriaUmsatzListeFC" />
         </node>
         <node concept="xYMNj" id="4HxyFP_OrqW" role="2sIhOb">
@@ -377,7 +377,7 @@
         <node concept="10Nm6u" id="2WF9mxZGvSm" role="2Ux5cx" />
         <node concept="xYMNj" id="71RqXfas5mp" role="2sIhOb">
           <ref role="xYMNI" to="qm2g:4tp9sHrmo$$" resolve="SearchCriteriaWeBelegsListeFC" />
-          <ref role="xYMNi" to="1v76:7Y7$sS6phL1" resolve="Suchen" />
+          <ref role="xYMNi" to="1v76:7Y7$sS6phL1" resolve="Eingabe der Suchkriterien" />
         </node>
         <node concept="xYMNj" id="71RqXfas5mr" role="2sIhOb">
           <ref role="xYMNI" to="qm2g:4tp9sHrmo_u" resolve="WeBelegListeFC" />
@@ -583,11 +583,11 @@
         <ref role="2Ux5d0" to="1v76:7V$JGz7L0Rm" resolve="Forderungsliste anzeigen" />
         <node concept="10Nm6u" id="1xzNBu8QdIO" role="2Ux5cx" />
         <node concept="xYMNj" id="1xzNBu8Qcrr" role="2sIhOb">
-          <ref role="xYMNi" to="1v76:7V$JGz7L98n" resolve="Suchen" />
+          <ref role="xYMNi" to="1v76:7V$JGz7L98n" resolve="Eingabe der Suchkriterien" />
           <ref role="xYMNI" to="znt7:1xzNBu8Qcrs" resolve="SearchCriteriaForderungsListeFC" />
         </node>
         <node concept="xYMNj" id="1xzNBu8QdIM" role="2sIhOb">
-          <ref role="xYMNi" to="1v76:7V$JGz7L98s" resolve="Anforderungsliste" />
+          <ref role="xYMNi" to="1v76:7V$JGz7L98s" resolve="Forderungsliste" />
           <ref role="xYMNI" to="znt7:4E_PLYnYAtn" resolve="AnforderungenListeFC" />
         </node>
       </node>
@@ -4475,52 +4475,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3tbRFGGZjS_" role="3cqZAp">
-          <node concept="2OqwBi" id="3tbRFGGZlcc" role="3clFbG">
-            <node concept="10M0yZ" id="3tbRFGGZjS$" role="2Oq$k0">
-              <ref role="1PxDUh" to="e2lb:~System" resolve="System" />
-              <ref role="3cqZAo" to="e2lb:~System.out" resolve="out" />
-            </node>
-            <node concept="liA8E" id="3tbRFGGZln0" role="2OqNvi">
-              <ref role="37wK5l" to="fxg7:~PrintStream.println(java.lang.String):void" resolve="println" />
-              <node concept="3cpWs3" id="3tbRFGGZlEq" role="37wK5m">
-                <node concept="2OqwBi" id="3tbRFGGZlSO" role="3uHU7w">
-                  <node concept="37vLTw" id="3tbRFGGZlFY" role="2Oq$k0">
-                    <ref role="3cqZAo" node="50vcg3XvJUB" resolve="vertraege" />
-                  </node>
-                  <node concept="3zZkjj" id="3tbRFGGZmcJ" role="2OqNvi">
-                    <node concept="1bVj0M" id="3tbRFGGZmcL" role="23t8la">
-                      <node concept="3clFbS" id="3tbRFGGZmcM" role="1bW5cS">
-                        <node concept="3clFbF" id="3tbRFGGZmhV" role="3cqZAp">
-                          <node concept="3clFbC" id="3tbRFGGZmSN" role="3clFbG">
-                            <node concept="3cmrfG" id="3tbRFGGZnPC" role="3uHU7w">
-                              <property role="3cmrfH" value="207146" />
-                            </node>
-                            <node concept="2OqwBi" id="3tbRFGGZmn4" role="3uHU7B">
-                              <node concept="37vLTw" id="3tbRFGGZmhU" role="2Oq$k0">
-                                <ref role="3cqZAo" node="3tbRFGGZmcN" resolve="it" />
-                              </node>
-                              <node concept="2S8uIT" id="3tbRFGGZm$T" role="2OqNvi">
-                                <ref role="2S8YL0" to="1v76:2f7jrMqs0DE" resolve="id" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="Rh6nW" id="3tbRFGGZmcN" role="1bW2Oz">
-                        <property role="TrG5h" value="it" />
-                        <node concept="2jxLKc" id="3tbRFGGZmcO" role="1tU5fm" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3tbRFGGZlnB" role="3uHU7B">
-                  <property role="Xl_RC" value="Vertrag 207146 " />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="50vcg3XvPuK" role="3cqZAp">
           <node concept="2OqwBi" id="50vcg3XvQ6X" role="3clFbG">
             <node concept="37vLTw" id="50vcg3XvPuI" role="2Oq$k0">
@@ -5803,7 +5757,7 @@
         <node concept="1gVbGN" id="3tbRFGH04qc" role="3cqZAp">
           <node concept="3clFbC" id="3tbRFGH06V6" role="1gVkn0">
             <node concept="3cmrfG" id="3tbRFGH08ps" role="3uHU7w">
-              <property role="3cmrfH" value="50" />
+              <property role="3cmrfH" value="3" />
             </node>
             <node concept="37vLTw" id="3tbRFGH05Jz" role="3uHU7B">
               <ref role="3cqZAo" node="3tbRFGGZY0l" resolve="numVertraege" />
@@ -5814,7 +5768,7 @@
               <ref role="3cqZAo" node="3tbRFGGZY0l" resolve="numVertraege" />
             </node>
             <node concept="Xl_RD" id="3tbRFGH08pS" role="3uHU7B">
-              <property role="Xl_RC" value="Anzahl der ausgestellten Forderungen ist nicht 50 sondern " />
+              <property role="Xl_RC" value="Anzahl der ausgestellten Forderungen ist nicht 3 sondern " />
             </node>
           </node>
         </node>

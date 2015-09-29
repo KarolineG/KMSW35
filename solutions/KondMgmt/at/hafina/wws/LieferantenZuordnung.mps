@@ -222,6 +222,7 @@
         <child id="1879461712355203936" name="scopeConceptFunc" index="JX2Go" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
         <child id="1881524139084590808" name="pageInit" index="10qiF$" />
+        <child id="8413087471126127955" name="dynamicPageTitle" index="1K0AWC" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640431" name="org.modellwerkstatt.objectflow.structure.ContainerParameter" flags="ng" index="3ulXEN" />
@@ -537,6 +538,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQ6" role="1K0AWC">
+        <property role="Xl_RC" value="Zuordnung erstellen" />
+      </node>
     </node>
     <node concept="20vkWO" id="rcI65JRSgC" role="20vkWf">
       <node concept="20vkWP" id="rcI65JRSgD" role="20vkWT">
@@ -799,6 +803,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQY" role="1K0AWC">
+        <property role="Xl_RC" value="Zuordnung bearbeiten" />
+      </node>
     </node>
     <node concept="20vkWO" id="rcI65JRSil" role="20vkWf">
       <node concept="20vkWP" id="rcI65JRSim" role="20vkWT">
@@ -962,6 +969,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRo" role="1K0AWC">
+        <property role="Xl_RC" value="Zuordnungen anzeigen" />
       </node>
     </node>
     <node concept="20vkWO" id="rcI65JRSiL" role="20vkWf">
@@ -4122,6 +4132,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJR0" role="1K0AWC">
+        <property role="Xl_RC" value="Zuordnung bearbeiten" />
+      </node>
     </node>
     <node concept="20qIzx" id="rcI65JYtAa" role="3umfm7">
       <node concept="3clFbS" id="rcI65JYtAb" role="2VODD2">
@@ -4508,6 +4521,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQK" role="1K0AWC">
+        <property role="Xl_RC" value="Zuordnung bearbeiten" />
       </node>
     </node>
     <node concept="3ulXEM" id="53zimgtTEPz" role="3ulXEG">

@@ -422,9 +422,6 @@
         <ref role="3uigEE" to="46c4:2f7jrMqrWCi" resolve="Lieferantenrabattgruppe" />
       </node>
     </node>
-    <node concept="Xl_RD" id="3F8CoLplxHd" role="3i6kW5">
-      <property role="Xl_RC" value="Auswahl Vertragssortiment" />
-    </node>
   </node>
   <node concept="2G$zOF" id="3F8CoLplxHe">
     <property role="1mNjcY" value="1" />
@@ -577,9 +574,6 @@
           <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
         </node>
       </node>
-      <node concept="Xl_RD" id="3F8CoLplxHJ" role="1mNjcj">
-        <property role="Xl_RC" value="Konditionstyp(en) Auswahlliste" />
-      </node>
     </node>
     <node concept="1THgkH" id="3F8CoLplxHK" role="1THgkV">
       <node concept="Xl_RD" id="3F8CoLplxHL" role="1THgkI">
@@ -664,7 +658,7 @@
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="3svtX3w8MLu" role="3lxVgV">
             <node concept="2EM3W" id="3svtX3w8MLv" role="2Oq$k0" />
-            <node concept="2S8uIT" id="7Jf7Z0464pk" role="2OqNvi">
+            <node concept="2S8uIT" id="67fFakSj7HX" role="2OqNvi">
               <ref role="2S8YL0" to="1v76:5Ixt1sAHpr_" resolve="dateFaelligkeit" />
             </node>
           </node>
@@ -938,9 +932,6 @@
     <node concept="3uibUv" id="3F8CoLplxOd" role="qi9ce">
       <ref role="3uigEE" to="2k0i:5yzDxnpI42g" resolve="AnforderungKopf" />
     </node>
-    <node concept="Xl_RD" id="3F8CoLplxOe" role="3i6kW5">
-      <property role="Xl_RC" value="Eingabe der Kopfdaten" />
-    </node>
   </node>
   <node concept="2G$zOF" id="3F8CoLplxOf">
     <property role="1mNjcY" value="1" />
@@ -1107,9 +1098,6 @@
     </node>
     <node concept="3uibUv" id="3F8CoLplxQ5" role="qi9ce">
       <ref role="3uigEE" to="2k0i:5yzDxnpI4X7" resolve="AnforderungPos" />
-    </node>
-    <node concept="Xl_RD" id="3F8CoLplxQ6" role="3i6kW5">
-      <property role="Xl_RC" value="Eingabe der Forderungspositionen" />
     </node>
   </node>
   <node concept="2G$zOF" id="3F8CoLplxQ7">
@@ -2541,6 +2529,9 @@
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
             </node>
+            <node concept="Xl_RD" id="cg3sjyd$7L" role="1mNjcj">
+              <property role="Xl_RC" value="Grunddaten für die Berechnung der Konditionen" />
+            </node>
           </node>
           <node concept="2G$WZb" id="3F8CoLplxW1" role="2G$zO_">
             <property role="1mNjcY" value="1" />
@@ -2738,7 +2729,7 @@
                   <ref role="2Ux5d1" to="1v76:1_N9OhPPeGF" resolve="Konditionsmanagement" />
                   <ref role="2Ux5d0" to="1v76:555aRp10wHs" resolve="Auswahl VLI" />
                   <node concept="xYMNj" id="555aRp10M1B" role="2sIhOb">
-                    <ref role="xYMNi" to="1v76:1NdMWqEHrXg" resolve="Selektionsliste" />
+                    <ref role="xYMNi" to="1v76:1NdMWqEHrXg" resolve="Selektionsliste VLI" />
                     <ref role="xYMNI" to="tv9b:1NdMWqEHszA" resolve="EditParameterSelectionFC" />
                   </node>
                   <node concept="xYMNj" id="555aRp11Ohe" role="2sIhOb">
@@ -2764,7 +2755,7 @@
                     <ref role="2xLxPX" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
                   </node>
                   <node concept="xYMNj" id="555aRp2A4iX" role="2sIhOb">
-                    <ref role="xYMNi" to="1v76:555aRp2A20z" resolve="Selektionsliste" />
+                    <ref role="xYMNi" to="1v76:555aRp2A20z" resolve="Selektionsliste Region" />
                     <ref role="xYMNI" to="tv9b:1NdMWqEHszA" resolve="EditParameterSelectionFC" />
                   </node>
                 </node>
@@ -2924,6 +2915,9 @@
               <node concept="3uibUv" id="3F8CoLplxWR" role="_ZDj9">
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
+            </node>
+            <node concept="Xl_RD" id="cg3sjyd$oO" role="1mNjcj">
+              <property role="Xl_RC" value="Daten für die interne Zuordnung der Konditionen" />
             </node>
           </node>
           <node concept="1THgkH" id="3F8CoLplxWS" role="1THgkV">
@@ -3164,6 +3158,9 @@
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
             </node>
+            <node concept="Xl_RD" id="cg3sjydAhI" role="1mNjcj">
+              <property role="Xl_RC" value="Daten für die Fakturierung der Konditionen" />
+            </node>
           </node>
           <node concept="2G$WZb" id="3F8CoLplxXs" role="2G$zO_">
             <property role="1mNjcY" value="1" />
@@ -3377,6 +3374,9 @@
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
             </node>
+            <node concept="Xl_RD" id="cg3sjydAt9" role="1mNjcj">
+              <property role="Xl_RC" value="Vorschau und Bearbeitung der Vertragstexte der Konditionen" />
+            </node>
           </node>
           <node concept="1THgkH" id="3F8CoLplxY1" role="1THgkV">
             <node concept="Xl_RD" id="3F8CoLplxY2" role="1THgkI">
@@ -3431,9 +3431,6 @@
             </node>
             <node concept="3uibUv" id="3F8CoLplxYe" role="qi9ce">
               <ref role="3uigEE" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
-            </node>
-            <node concept="Xl_RD" id="3F8CoLplxYf" role="2lSlej">
-              <property role="Xl_RC" value="Zusätzliche Vereinbarungen und AGB" />
             </node>
             <node concept="1vx_$y" id="3F8CoLplxYg" role="1vx_$z">
               <property role="TrG5h" value="strAnmerkung" />
@@ -3575,6 +3572,9 @@
           </node>
           <node concept="3uibUv" id="3F8CoLplxZ8" role="qi9ce">
             <ref role="3uigEE" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
+          </node>
+          <node concept="Xl_RD" id="3F8CoLplxYf" role="3i6kW5">
+            <property role="Xl_RC" value="Zusätzliche Vereinbarungen und Anmerkungen" />
           </node>
         </node>
       </node>
@@ -3887,9 +3887,6 @@
     </node>
     <node concept="3uibUv" id="3F8CoLply1e" role="qi9ce">
       <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
-    </node>
-    <node concept="Xl_RD" id="3F8CoLply1f" role="3i6kW5">
-      <property role="Xl_RC" value="Bearbeitung Kondition" />
     </node>
   </node>
   <node concept="2G$zOF" id="3F8CoLply1g">
@@ -4679,9 +4676,6 @@
     </node>
     <node concept="3uibUv" id="3F8CoLplyjt" role="qi9ce">
       <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
-    </node>
-    <node concept="Xl_RD" id="3F8CoLplyju" role="3i6kW5">
-      <property role="Xl_RC" value="Vertragstext zur Kondition" />
     </node>
   </node>
   <node concept="2G$zOF" id="3F8CoLplyjv">
@@ -5667,9 +5661,6 @@
         <node concept="3uibUv" id="3sbiluHrkkd" role="_ZDj9">
           <ref role="3uigEE" to="1v76:3sbiluHrc9b" resolve="JahresUmsatzLieferantView" />
         </node>
-      </node>
-      <node concept="Xl_RD" id="3trU5lnKgOY" role="1mNjcj">
-        <property role="Xl_RC" value="Jahresumsätze - Wareneingang" />
       </node>
     </node>
     <node concept="2GCkZf" id="3trU5lnKgOZ" role="2G$zO_">
@@ -8623,7 +8614,7 @@
           <property role="1xgIOb" value="ENTER_10" />
           <node concept="2Ux5d2" id="41HLAicEAAw" role="2UzG4t">
             <ref role="2Ux5d1" to="1v76:1_N9OhPPeGF" resolve="Konditionsmanagement" />
-            <ref role="2Ux5d0" to="1v76:41HLAicEAAp" resolve="Detailansicht Jahresvereinbarung" />
+            <ref role="2Ux5d0" to="1v76:41HLAicEAAp" resolve="Detailansicht JVB" />
             <node concept="xYMNj" id="41HLAicEABK" role="2sIhOb">
               <ref role="xYMNi" to="1v76:41HLAicEAAV" resolve="Datailansicht" />
               <ref role="xYMNI" node="41HLAicEAvv" resolve="JvbDetailFC" />
@@ -11495,6 +11486,9 @@
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
             </node>
+            <node concept="Xl_RD" id="cg3sjydJlz" role="1mNjcj">
+              <property role="Xl_RC" value="Grunddaten für die Berechnung der Konditionen" />
+            </node>
           </node>
           <node concept="2G$WZb" id="3Cy3zFd19GT" role="2G$zO_">
             <property role="1mNjcY" value="1" />
@@ -11696,7 +11690,7 @@
                   <ref role="2Ux5d0" to="1v76:555aRp10wHs" resolve="Auswahl VLI" />
                   <node concept="xYMNj" id="555aRp2_tI1" role="2sIhOb">
                     <ref role="xYMNI" to="tv9b:1NdMWqEHszA" resolve="EditParameterSelectionFC" />
-                    <ref role="xYMNi" to="1v76:1NdMWqEHrXg" resolve="Selektionsliste" />
+                    <ref role="xYMNi" to="1v76:1NdMWqEHrXg" resolve="Selektionsliste VLI" />
                   </node>
                   <node concept="xYMNj" id="555aRp2_tI2" role="2sIhOb">
                     <ref role="xYMNi" to="1v76:1NdMWqEHrXV" resolve="Profitcenter" />
@@ -11722,7 +11716,7 @@
                   </node>
                   <node concept="xYMNj" id="555aRp2A4jn" role="2sIhOb">
                     <ref role="xYMNI" to="tv9b:1NdMWqEHszA" resolve="EditParameterSelectionFC" />
-                    <ref role="xYMNi" to="1v76:555aRp2A20z" resolve="Selektionsliste" />
+                    <ref role="xYMNi" to="1v76:555aRp2A20z" resolve="Selektionsliste Region" />
                   </node>
                 </node>
               </node>
@@ -11881,6 +11875,9 @@
               <node concept="3uibUv" id="3Cy3zFd19I0" role="_ZDj9">
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
+            </node>
+            <node concept="Xl_RD" id="cg3sjydIB_" role="1mNjcj">
+              <property role="Xl_RC" value="Daten für die interne Zuordnung der Konditionen" />
             </node>
           </node>
           <node concept="1THgkH" id="3Cy3zFd19I1" role="1THgkV">
@@ -12121,6 +12118,9 @@
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
             </node>
+            <node concept="Xl_RD" id="cg3sjydHTk" role="1mNjcj">
+              <property role="Xl_RC" value="Daten für die Fakturierung der Konditionen" />
+            </node>
           </node>
           <node concept="2G$WZb" id="3Cy3zFd19II" role="2G$zO_">
             <property role="1mNjcY" value="1" />
@@ -12334,6 +12334,9 @@
                 <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
               </node>
             </node>
+            <node concept="Xl_RD" id="cg3sjydHco" role="1mNjcj">
+              <property role="Xl_RC" value="Vertragstexte der Konditionen" />
+            </node>
           </node>
           <node concept="1THgkH" id="3Cy3zFd19J$" role="1THgkV">
             <node concept="Xl_RD" id="3Cy3zFd19J_" role="1THgkI">
@@ -12373,7 +12376,7 @@
               <ref role="3uigEE" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
             </node>
             <node concept="Xl_RD" id="3Cy3zFd19JQ" role="2lSlej">
-              <property role="Xl_RC" value="Zusätzliche Vereinbarungen und AGB" />
+              <property role="Xl_RC" value="Zusätzliche Vereinbarungen und Anmerkungen" />
             </node>
             <node concept="1vx_$y" id="3Cy3zFd19JR" role="1vx_$z">
               <property role="TrG5h" value="strAnmerkung" />
@@ -12882,8 +12885,8 @@
           <ref role="3uigEE" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
         </node>
       </node>
-      <node concept="Xl_RD" id="7N8jAsmHqTt" role="1mNjcj">
-        <property role="Xl_RC" value="Weitere Verträge für den selben Lieferanten" />
+      <node concept="Xl_RD" id="7N8jAsmBGTC" role="1mNjcj">
+        <property role="Xl_RC" value="Warnung: Ein oder mehrere Teilsortimente wurden bereits in anderen Verträgen verwendet!" />
       </node>
     </node>
     <node concept="1THgkH" id="7N8jAsmBGTw" role="1THgkV">
@@ -12900,9 +12903,6 @@
       <node concept="3uibUv" id="7N8jAsmBGT_" role="_ZDj9">
         <ref role="3uigEE" to="1v76:2f7jrMqs0d8" resolve="Vertrag" />
       </node>
-    </node>
-    <node concept="Xl_RD" id="7N8jAsmBGTC" role="3i6kW5">
-      <property role="Xl_RC" value="Warnung: Ein oder mehrere Teilsortimente wurden bereits in anderen Verträgen verwendet!" />
     </node>
   </node>
   <node concept="2G$zOF" id="40KqQ7WiDIt">
@@ -13156,7 +13156,7 @@
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="2BfZCs5zKd2" role="3lxVgV">
             <node concept="2EM3W" id="2BfZCs5zKd3" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3FU99yn7Ghh" role="2OqNvi">
+            <node concept="2S8uIT" id="67fFakSj8jy" role="2OqNvi">
               <ref role="2S8YL0" to="1v76:5Ixt1sAHpr_" resolve="dateFaelligkeit" />
             </node>
           </node>
@@ -13283,9 +13283,6 @@
     <node concept="3uibUv" id="2BfZCs5zK3f" role="qi9ce">
       <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
     </node>
-    <node concept="Xl_RD" id="2BfZCs5zK3t" role="3i6kW5">
-      <property role="Xl_RC" value="Eingabe Konditionsdaten" />
-    </node>
   </node>
   <node concept="2G$zOF" id="2BfZCs6aBag">
     <property role="1mNjcY" value="1" />
@@ -13382,15 +13379,9 @@
           <ref role="3lxVh4" to="c9yi:dX9tEw_WU2" resolve="setProperty" />
           <node concept="2OqwBi" id="2BfZCs6aBef" role="3lxVgV">
             <node concept="2EM3W" id="2BfZCs6aBeg" role="2Oq$k0" />
-            <node concept="2S8uIT" id="3FU99yn7D3h" role="2OqNvi">
+            <node concept="2S8uIT" id="67fFakSj7YV" role="2OqNvi">
               <ref role="2S8YL0" to="1v76:5Ixt1sAHpr_" resolve="dateFaelligkeit" />
             </node>
-          </node>
-        </node>
-        <node concept="3lxVgU" id="2BfZCs6aBei" role="3lxVgR">
-          <ref role="3lxVh4" to="c9yi:dX9tEw_WUb" resolve="setOptional" />
-          <node concept="3clFbT" id="2BfZCs6aBej" role="3lxVgV">
-            <property role="3clFbU" value="true" />
           </node>
         </node>
       </node>
@@ -13515,9 +13506,6 @@
     <node concept="3uibUv" id="2BfZCs6aBal" role="qi9ce">
       <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
     </node>
-    <node concept="Xl_RD" id="2BfZCs6aBaw" role="3i6kW5">
-      <property role="Xl_RC" value="Eingabe Konditionsdaten" />
-    </node>
   </node>
   <node concept="2G$zOF" id="2lKPY_MT0q0">
     <property role="1mNjcY" value="1" />
@@ -13574,9 +13562,6 @@
         <node concept="3uibUv" id="2lKPY_MT0th" role="_ZDj9">
           <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
         </node>
-      </node>
-      <node concept="Xl_RD" id="2lKPY_MT0ti" role="1mNjcj">
-        <property role="Xl_RC" value="Konditionstyp(en) Auswahlliste" />
       </node>
     </node>
     <node concept="1THgkH" id="2lKPY_MT0q2" role="1THgkV">
@@ -14116,8 +14101,8 @@
           <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
         </node>
       </node>
-      <node concept="Xl_RD" id="6CRiB5k$wm3" role="1mNjcj">
-        <property role="Xl_RC" value="Liste der Konditionen mit Status \&quot;Angelegt\&quot;" />
+      <node concept="Xl_RD" id="6CRiB5k$wmd" role="1mNjcj">
+        <property role="Xl_RC" value="Warnung: Ein oder mehrere Konditionen befinden sich noch im Status \&quot;Angelegt\&quot;!" />
       </node>
     </node>
     <node concept="1THgkH" id="6CRiB5k$win" role="1THgkV">
@@ -14134,9 +14119,6 @@
       <node concept="3uibUv" id="6CRiB5k$wj0" role="_ZDj9">
         <ref role="3uigEE" to="1v76:2f7jrMqs2Jw" resolve="Kondition" />
       </node>
-    </node>
-    <node concept="Xl_RD" id="6CRiB5k$wmd" role="3i6kW5">
-      <property role="Xl_RC" value="Warnung: Ein oder mehrere Konditionen befinden sich noch im Status \&quot;Angelegt\&quot;!" />
     </node>
   </node>
   <node concept="2G$zOF" id="5F8LM7etHx_">
@@ -14349,9 +14331,6 @@
         <node concept="3uibUv" id="kmGpicC9T1" role="_ZDj9">
           <ref role="3uigEE" to="2k0i:kmGpicBUQf" resolve="GutschrView" />
         </node>
-      </node>
-      <node concept="Xl_RD" id="1kw7RULl2eM" role="1mNjcj">
-        <property role="Xl_RC" value="Auswahlliste in Frage kommender Belege" />
       </node>
     </node>
     <node concept="1THgkH" id="1kw7RULl2dU" role="1THgkV">

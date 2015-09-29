@@ -34,7 +34,6 @@
         <property id="6827528231168019613" name="selectFirst" index="3YucLt" />
         <child id="8089681376575535794" name="tableFormRow" index="2GDezF" />
         <child id="4559353072056236738" name="actionLink" index="1memAO" />
-        <child id="4559353072057000037" name="heading" index="1mNjcj" />
       </concept>
       <concept id="8089681376574696124" name="org.modellwerkstatt.forms.structure.IBoundConcept" flags="ng" index="2G_Vz_">
         <reference id="4554792820669879843" name="selectedClass" index="qGGBj" />
@@ -430,9 +429,6 @@
         <node concept="3uibUv" id="rcI65JRSpy" role="_ZDj9">
           <ref role="3uigEE" to="hqqe:rcI65JRSj4" resolve="LieferantenZuordnung" />
         </node>
-      </node>
-      <node concept="Xl_RD" id="rcI65JRSpz" role="1mNjcj">
-        <property role="Xl_RC" value="Zuordnungstabelle Lieferanten" />
       </node>
     </node>
     <node concept="1THgkH" id="rcI65JRSp$" role="1THgkV">

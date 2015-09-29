@@ -39,7 +39,6 @@
       <concept id="8089681376574938514" name="org.modellwerkstatt.forms.structure.TableForm" flags="ng" index="2G$WZb">
         <child id="8089681376575535794" name="tableFormRow" index="2GDezF" />
         <child id="4559353072056236738" name="actionLink" index="1memAO" />
-        <child id="4559353072057000037" name="heading" index="1mNjcj" />
       </concept>
       <concept id="8089681376574696124" name="org.modellwerkstatt.forms.structure.IBoundConcept" flags="ng" index="2G_Vz_">
         <reference id="4554792820669879843" name="selectedClass" index="qGGBj" />
@@ -291,9 +290,6 @@
       <node concept="3uibUv" id="1NdMWqEHsrp" role="_ZDj9">
         <ref role="3uigEE" to="8z9b:1NdMWqEHset" resolve="ZeilenEinheitFromList" />
       </node>
-    </node>
-    <node concept="Xl_RD" id="1NdMWqEHsrq" role="3i6kW5">
-      <property role="Xl_RC" value="Liste der Einheiten für die Konditionszeilen" />
     </node>
   </node>
   <node concept="2G$zOF" id="1NdMWqEHsrr">
@@ -1913,9 +1909,6 @@
         <ref role="3uigEE" to="8z9b:1NdMWqEHsfx" resolve="BglEinheitFromList" />
       </node>
     </node>
-    <node concept="Xl_RD" id="1NdMWqEHsz_" role="3i6kW5">
-      <property role="Xl_RC" value="Liste der Einheiten für die Berechnungsgrundlage" />
-    </node>
   </node>
   <node concept="2G$zOF" id="1NdMWqEHszA">
     <property role="1mNjcY" value="1" />
@@ -2006,9 +1999,6 @@
             <ref role="2S8YL0" to="8z9b:3svtX3w7rwD" resolve="isSelectedJN" />
           </node>
         </node>
-      </node>
-      <node concept="Xl_RD" id="1NdMWqEHszX" role="1mNjcj">
-        <property role="Xl_RC" value="Selektionsliste" />
       </node>
       <node concept="_YKpA" id="1NdMWqEHszY" role="qi9ce">
         <node concept="3uibUv" id="1NdMWqEHszZ" role="_ZDj9">

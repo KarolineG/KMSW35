@@ -30,7 +30,6 @@
       <concept id="8089681376574861170" name="org.modellwerkstatt.forms.structure.FormContainer" flags="ng" index="2G$zOF">
         <child id="3792563709707276307" name="rowWeight" index="2lwzia" />
         <child id="8089681376574861180" name="baseForm" index="2G$zO_" />
-        <child id="940368958464562064" name="heading" index="3i6kW5" />
         <child id="8264937784151109659" name="columnWeight" index="1THgkV" />
       </concept>
       <concept id="8089681376574861172" name="org.modellwerkstatt.forms.structure.IBaseForm" flags="ng" index="2G$zOH">
@@ -41,7 +40,6 @@
         <child id="8089681376575535794" name="tableFormRow" index="2GDezF" />
         <child id="8584027565661509824" name="advancedSelection" index="QiGXn" />
         <child id="4559353072056236738" name="actionLink" index="1memAO" />
-        <child id="4559353072057000037" name="heading" index="1mNjcj" />
       </concept>
       <concept id="8089681376574696124" name="org.modellwerkstatt.forms.structure.IBoundConcept" flags="ng" index="2G_Vz_">
         <reference id="4554792820669879843" name="selectedClass" index="qGGBj" />
@@ -292,9 +290,6 @@
     <node concept="3uibUv" id="3trU5lnKRtd" role="qi9ce">
       <ref role="3uigEE" to="h02c:3trU5lnKRmI" resolve="UmbauNeueroeffnung" />
     </node>
-    <node concept="Xl_RD" id="3trU5lnKRte" role="3i6kW5">
-      <property role="Xl_RC" value="Eingabe Umbau/Neubau/Tankstelle" />
-    </node>
   </node>
   <node concept="2G$zOF" id="3trU5lnKRtf">
     <property role="1mNjcY" value="1" />
@@ -523,9 +518,6 @@
             <ref role="2S8YL0" to="h02c:3svtX3w6F_y" resolve="isGeloescht" />
           </node>
         </node>
-      </node>
-      <node concept="Xl_RD" id="3trU5lnKRtz" role="1mNjcj">
-        <property role="Xl_RC" value="Neueröffnungen/Totalumbauten" />
       </node>
       <node concept="_YKpA" id="2O3g4kcCTau" role="qi9ce">
         <node concept="3uibUv" id="6Ujf30El5Li" role="_ZDj9">
@@ -880,9 +872,6 @@
     </node>
     <node concept="3uibUv" id="WpXYZTp0Qw" role="qi9ce">
       <ref role="3uigEE" to="h02c:3trU5lnKRmI" resolve="UmbauNeueroeffnung" />
-    </node>
-    <node concept="Xl_RD" id="6Ujf30EszFy" role="3i6kW5">
-      <property role="Xl_RC" value="Filialdaten" />
     </node>
   </node>
   <node concept="2G$zOF" id="1DKNVZaPGCJ">

@@ -22,7 +22,6 @@
       <concept id="8089681376574861170" name="org.modellwerkstatt.forms.structure.FormContainer" flags="ng" index="2G$zOF">
         <child id="3792563709707276307" name="rowWeight" index="2lwzia" />
         <child id="8089681376574861180" name="baseForm" index="2G$zO_" />
-        <child id="940368958464562064" name="heading" index="3i6kW5" />
         <child id="8264937784151109659" name="columnWeight" index="1THgkV" />
       </concept>
       <concept id="8089681376574861172" name="org.modellwerkstatt.forms.structure.IBaseForm" flags="ng" index="2G$zOH">
@@ -32,7 +31,6 @@
       <concept id="8089681376574938514" name="org.modellwerkstatt.forms.structure.TableForm" flags="ng" index="2G$WZb">
         <child id="8089681376575535794" name="tableFormRow" index="2GDezF" />
         <child id="4559353072056236738" name="actionLink" index="1memAO" />
-        <child id="4559353072057000037" name="heading" index="1mNjcj" />
       </concept>
       <concept id="8089681376574696124" name="org.modellwerkstatt.forms.structure.IBoundConcept" flags="ng" index="2G_Vz_">
         <reference id="4554792820669879843" name="selectedClass" index="qGGBj" />
@@ -332,9 +330,6 @@
         <node concept="3uibUv" id="h7sqh2t2nX" role="_ZDj9">
           <ref role="3uigEE" to="46c4:6E7UUnEbtcp" resolve="ArtikelEkAbzug" />
         </node>
-      </node>
-      <node concept="Xl_RD" id="h7sqh2t2nY" role="1mNjcj">
-        <property role="Xl_RC" value="Liste der Abzugspositionen" />
       </node>
     </node>
     <node concept="1THgkH" id="h7sqh2sH8J" role="1THgkV">
@@ -730,9 +725,6 @@
       <node concept="3uibUv" id="B6ZQleJZPZ" role="_ZDj9">
         <ref role="3uigEE" to="46c4:2f7jrMqrWyk" resolve="Artikel" />
       </node>
-    </node>
-    <node concept="Xl_RD" id="B6ZQleJZQ2" role="3i6kW5">
-      <property role="Xl_RC" value="Mehrfachauswahl Artikel" />
     </node>
   </node>
   <node concept="2G$zOF" id="B6ZQleOuui">

@@ -409,6 +409,7 @@
         <reference id="4152417163565704942" name="boundClass" index="3gcvY6" />
         <child id="1881524139084590837" name="conclusion" index="10qiF9" />
         <child id="1881524139084590808" name="pageInit" index="10qiF$" />
+        <child id="8413087471126127955" name="dynamicPageTitle" index="1K0AWC" />
       </concept>
       <concept id="7192042020164640430" name="org.modellwerkstatt.objectflow.structure.ContainerVariable" flags="ng" index="3ulXEM" />
       <concept id="7192042020164640431" name="org.modellwerkstatt.objectflow.structure.ContainerParameter" flags="ng" index="3ulXEN" />
@@ -685,36 +686,9 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="3U7hKDPyJqA" role="33vP2m">
-                  <node concept="2OqwBi" id="3$0yDrJpXfx" role="2Oq$k0">
-                    <node concept="1odsa" id="5_aTzcHRuza" role="2Oq$k0">
-                      <ref role="1ods_" to="1v76:jfW375ELdL" resolve="VertragRepo" />
-                      <ref role="37wK5l" to="1v76:6Nj4RqD$ATP" resolve="findAllAktivVertraege" />
-                    </node>
-                    <node concept="3zZkjj" id="3$0yDrJpXGB" role="2OqNvi">
-                      <node concept="1bVj0M" id="3$0yDrJpXGD" role="23t8la">
-                        <node concept="3clFbS" id="3$0yDrJpXGE" role="1bW5cS">
-                          <node concept="3clFbF" id="3$0yDrJpYcY" role="3cqZAp">
-                            <node concept="3clFbC" id="3$0yDrJpZaH" role="3clFbG">
-                              <node concept="3cmrfG" id="3$0yDrJpZn3" role="3uHU7w">
-                                <property role="3cmrfH" value="203300" />
-                              </node>
-                              <node concept="2OqwBi" id="3$0yDrJpYor" role="3uHU7B">
-                                <node concept="37vLTw" id="3$0yDrJpYcX" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="3$0yDrJpXGF" resolve="it" />
-                                </node>
-                                <node concept="2S8uIT" id="3$0yDrJpYKq" role="2OqNvi">
-                                  <ref role="2S8YL0" to="1v76:2f7jrMqs0DE" resolve="id" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="Rh6nW" id="3$0yDrJpXGF" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="3$0yDrJpXGG" role="1tU5fm" />
-                        </node>
-                      </node>
-                    </node>
+                  <node concept="1odsa" id="5_aTzcHRuza" role="2Oq$k0">
+                    <ref role="1ods_" to="1v76:jfW375ELdL" resolve="VertragRepo" />
+                    <ref role="37wK5l" to="1v76:6Nj4RqD$ATP" resolve="findAllAktivVertraege" />
                   </node>
                   <node concept="ANE8D" id="3U7hKDPyJIT" role="2OqNvi" />
                 </node>
@@ -869,11 +843,13 @@
                     <node concept="37vLTw" id="7Z7QkdSsWl7" role="37wK5m">
                       <ref role="3cqZAo" node="1kgIW6ekh$8" resolve="ks1" />
                     </node>
-                    <node concept="1$4sJh" id="7Z7QkdSsVRa" role="37wK5m">
-                      <property role="1$4sGW" value="0" />
-                      <property role="1$4sGZ" value="0" />
-                      <property role="1$4sGY" value="0" />
-                      <property role="1$4sGX" value="true" />
+                    <node concept="2OqwBi" id="5cfAPsLxZVW" role="37wK5m">
+                      <node concept="3urNR4" id="5cfAPsLxZye" role="2Oq$k0">
+                        <ref role="3cqZAo" node="1kgIW6e9QBa" resolve="date" />
+                      </node>
+                      <node concept="2S8uIT" id="5cfAPsLy0d3" role="2OqNvi">
+                        <ref role="2S8YL0" node="5CS3u2GSylS" resolve="datum" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -927,6 +903,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQA" role="1K0AWC">
+        <property role="Xl_RC" value="Datumseingabe" />
       </node>
     </node>
     <node concept="3ulXEM" id="5ozEs1LYU_4" role="3ulXEG">
@@ -3306,6 +3285,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJR6" role="1K0AWC">
+        <property role="Xl_RC" value="Datumseingabe" />
+      </node>
     </node>
     <node concept="3ulXEM" id="Lu5uOCDS3U" role="3ulXEG">
       <property role="TrG5h" value="numEinheiten" />
@@ -3666,6 +3648,9 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="Xl_RD" id="6RLVHfgEJQs" role="1K0AWC">
+        <property role="Xl_RC" value="Datumseingabe" />
       </node>
     </node>
     <node concept="20vkWO" id="2iWFmP54xti" role="20vkWf">
@@ -6156,7 +6141,7 @@
                     </node>
                     <node concept="3SKdUt" id="5CS3u2GSxW7" role="3cqZAp">
                       <node concept="3SKdUq" id="5CS3u2GSxW8" role="3SKWNk">
-                        <property role="3SKdUp" value="Wenn ein Fällligkeitsdatum vorliegt, dann verbuche nur Positionen bis zum vorigen Monat" />
+                        <property role="3SKdUp" value="Wenn ein Forderungsdatum vorliegt, dann verbuche nur Positionen bis zu diesem" />
                       </node>
                     </node>
                     <node concept="3clFbJ" id="5CS3u2GSxW9" role="3cqZAp">
@@ -6178,36 +6163,12 @@
                             </node>
                             <node concept="liA8E" id="5CS3u2GSxWi" role="2OqNvi">
                               <ref role="37wK5l" to="ybr6:~AbstractPartial.isAfter(org.joda.time.ReadablePartial):boolean" resolve="isAfter" />
-                              <node concept="2OqwBi" id="5CS3u2GSxWj" role="37wK5m">
-                                <node concept="2OqwBi" id="5CS3u2GSxWk" role="2Oq$k0">
-                                  <node concept="2OqwBi" id="5CS3u2GSxWl" role="2Oq$k0">
-                                    <node concept="2OqwBi" id="5CS3u2GSxWm" role="2Oq$k0">
-                                      <node concept="2GrUjf" id="5CS3u2GSxWn" role="2Oq$k0">
-                                        <ref role="2Gs0qQ" node="5CS3u2GSxSV" resolve="stammKondition" />
-                                      </node>
-                                      <node concept="2S8uIT" id="5CS3u2GSxWo" role="2OqNvi">
-                                        <ref role="2S8YL0" to="1v76:2f7jrMqs3vK" resolve="faelligkeit" />
-                                      </node>
-                                    </node>
-                                    <node concept="liA8E" id="5CS3u2GSxWp" role="2OqNvi">
-                                      <ref role="37wK5l" to="26n1:~LocalDate.plusDays(int):org.joda.time.LocalDate" resolve="plusDays" />
-                                      <node concept="3cmrfG" id="5CS3u2GSxWq" role="37wK5m">
-                                        <property role="3cmrfH" value="1" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                  <node concept="liA8E" id="5CS3u2GSxWr" role="2OqNvi">
-                                    <ref role="37wK5l" to="26n1:~LocalDate.withDayOfMonth(int):org.joda.time.LocalDate" resolve="withDayOfMonth" />
-                                    <node concept="3cmrfG" id="5CS3u2GSxWs" role="37wK5m">
-                                      <property role="3cmrfH" value="1" />
-                                    </node>
-                                  </node>
+                              <node concept="2OqwBi" id="5CS3u2GSxWm" role="37wK5m">
+                                <node concept="2GrUjf" id="5CS3u2GSxWn" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="5CS3u2GSxSV" resolve="stammKondition" />
                                 </node>
-                                <node concept="liA8E" id="5CS3u2GSxWt" role="2OqNvi">
-                                  <ref role="37wK5l" to="26n1:~LocalDate.minusDays(int):org.joda.time.LocalDate" resolve="minusDays" />
-                                  <node concept="3cmrfG" id="5CS3u2GSxWu" role="37wK5m">
-                                    <property role="3cmrfH" value="1" />
-                                  </node>
+                                <node concept="2S8uIT" id="67fFakExLs5" role="2OqNvi">
+                                  <ref role="2S8YL0" to="1v76:1QpUNhFxl$N" resolve="dateForderung" />
                                 </node>
                               </node>
                             </node>
@@ -6223,8 +6184,8 @@
                           <node concept="2GrUjf" id="5CS3u2GSxW$" role="2Oq$k0">
                             <ref role="2Gs0qQ" node="5CS3u2GSxSV" resolve="stammKondition" />
                           </node>
-                          <node concept="2S8uIT" id="5CS3u2GSxW_" role="2OqNvi">
-                            <ref role="2S8YL0" to="1v76:2f7jrMqs3vK" resolve="faelligkeit" />
+                          <node concept="2S8uIT" id="67fFakEyhPx" role="2OqNvi">
+                            <ref role="2S8YL0" to="1v76:1QpUNhFxl$N" resolve="dateForderung" />
                           </node>
                         </node>
                       </node>
@@ -7264,14 +7225,33 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="5CS3u2GSy3h" role="3cqZAp">
-                          <node concept="2OqwBi" id="5CS3u2GSy3i" role="3clFbG">
-                            <node concept="2GrUjf" id="5CS3u2GSy3j" role="2Oq$k0">
+                        <node concept="3clFbF" id="67fFakPqANV" role="3cqZAp">
+                          <node concept="37vLTI" id="67fFakPqANW" role="3clFbG">
+                            <node concept="2GrUjf" id="67fFakPrd_m" role="37vLTx">
                               <ref role="2Gs0qQ" node="5CS3u2GSxSV" resolve="stammKondition" />
                             </node>
-                            <node concept="liA8E" id="5CS3u2GSy3k" role="2OqNvi">
-                              <ref role="37wK5l" to="1v76:2f7jrMqs2LK" resolve="addUmsatzKondition" />
-                              <node concept="37vLTw" id="3svtX3w58fh" role="37wK5m">
+                            <node concept="2OqwBi" id="67fFakPqANY" role="37vLTJ">
+                              <node concept="37vLTw" id="67fFakPr8mp" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5CS3u2GSy1g" resolve="umsatzForKondition" />
+                              </node>
+                              <node concept="2S8uIT" id="67fFakPqAO0" role="2OqNvi">
+                                <ref role="2S8YL0" to="1v76:2f7jrMqs4UA" resolve="kondition" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="67fFakPqcSn" role="3cqZAp">
+                          <node concept="2OqwBi" id="67fFakPqmuL" role="3clFbG">
+                            <node concept="2OqwBi" id="67fFakPqfUn" role="2Oq$k0">
+                              <node concept="2GrUjf" id="67fFakPr36m" role="2Oq$k0">
+                                <ref role="2Gs0qQ" node="5CS3u2GSxSV" resolve="stammKondition" />
+                              </node>
+                              <node concept="2S8uIT" id="67fFakPqjeW" role="2OqNvi">
+                                <ref role="2S8YL0" to="1v76:2f7jrMqs3xi" resolve="umsaetzeForKondition" />
+                              </node>
+                            </node>
+                            <node concept="TSZUe" id="67fFakPqq5$" role="2OqNvi">
+                              <node concept="37vLTw" id="67fFakPrhOH" role="25WWJ7">
                                 <ref role="3cqZAo" node="5CS3u2GSy1g" resolve="umsatzForKondition" />
                               </node>
                             </node>
@@ -11882,6 +11862,9 @@
           </node>
         </node>
       </node>
+      <node concept="Xl_RD" id="6RLVHfgEJRs" role="1K0AWC">
+        <property role="Xl_RC" value="Datumseingabe" />
+      </node>
     </node>
     <node concept="3ulXEM" id="6vXjblg_6V_" role="3ulXEG">
       <property role="TrG5h" value="numEinheiten" />
@@ -12227,8 +12210,8 @@
                                           <node concept="37vLTw" id="7Z7QkdSlzn4" role="2Oq$k0">
                                             <ref role="3cqZAo" node="7Z7QkdSlznf" resolve="it" />
                                           </node>
-                                          <node concept="2S8uIT" id="7Z7QkdSlzn5" role="2OqNvi">
-                                            <ref role="2S8YL0" to="1v76:2f7jrMqs3vK" resolve="faelligkeit" />
+                                          <node concept="2S8uIT" id="67fFakEx_Cm" role="2OqNvi">
+                                            <ref role="2S8YL0" to="1v76:5Ixt1sAHpr_" resolve="dateFaelligkeit" />
                                           </node>
                                         </node>
                                       </node>
@@ -12237,8 +12220,8 @@
                                           <node concept="37vLTw" id="7Z7QkdSlzn8" role="2Oq$k0">
                                             <ref role="3cqZAo" node="7Z7QkdSlznf" resolve="it" />
                                           </node>
-                                          <node concept="2S8uIT" id="7Z7QkdSlzn9" role="2OqNvi">
-                                            <ref role="2S8YL0" to="1v76:2f7jrMqs3vK" resolve="faelligkeit" />
+                                          <node concept="2S8uIT" id="67fFakExAYm" role="2OqNvi">
+                                            <ref role="2S8YL0" to="1v76:5Ixt1sAHpr_" resolve="dateFaelligkeit" />
                                           </node>
                                         </node>
                                         <node concept="liA8E" id="7Z7QkdSlzna" role="2OqNvi">
@@ -13082,7 +13065,7 @@
                           </node>
                           <node concept="3cpWs3" id="7Z7QkdSlB1s" role="3uHU7B">
                             <node concept="Xl_RD" id="7Z7QkdSlB1t" role="3uHU7B">
-                              <property role="Xl_RC" value="select vgo.nam_vorgangsort,fk.* from km_ford_kopf_neu fk,mpreis.sta_vorgangsort vgo where fk.ref_kondition in (" />
+                              <property role="Xl_RC" value="select vgo.nam_vorgangsort,fk.* from km_ford_kopf fk,mpreis.sta_vorgangsort vgo where fk.ref_kondition in (" />
                             </node>
                             <node concept="2OqwBi" id="7Z7QkdSlB1u" role="3uHU7w">
                               <node concept="2OqwBi" id="7Z7QkdSlB1v" role="2Oq$k0">
@@ -13194,7 +13177,7 @@
                                     <node concept="3clFbS" id="3PTKOPnMg9L" role="3clF47">
                                       <node concept="3clFbF" id="3PTKOPnMgkE" role="3cqZAp">
                                         <node concept="Xl_RD" id="3PTKOPnMgkD" role="3clFbG">
-                                          <property role="Xl_RC" value="Checkin der Anforderungen." />
+                                          <property role="Xl_RC" value="Checkin der Forderungen." />
                                         </node>
                                       </node>
                                     </node>
