@@ -12359,9 +12359,69 @@
                 <ref role="2S8YL0" node="91Q_0QRohQ" resolve="isMarkant" />
               </node>
             </node>
-            <node concept="2XvMaL" id="91Q_0QSo5o" role="37vLTx">
-              <ref role="1Vchh_" to="8z9b:1NdMWqEHs5_" resolve="Nein" />
-              <ref role="2XvMaQ" to="8z9b:1NdMWqEHs5z" resolve="JaNeinStatus" />
+            <node concept="1eOMI4" id="6MtWgb1LG10" role="37vLTx">
+              <node concept="3K4zz7" id="6MtWgb1LMVF" role="1eOMHV">
+                <node concept="3y3z36" id="6MtWgb1LG11" role="3K4Cdx">
+                  <node concept="2OqwBi" id="6MtWgb1LG13" role="3uHU7B">
+                    <node concept="2OqwBi" id="6MtWgb1LG14" role="2Oq$k0">
+                      <node concept="37vLTw" id="6MtWgb1LG15" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5yzDxnpI47O" resolve="kondition" />
+                      </node>
+                      <node concept="2S8uIT" id="6MtWgb1LG16" role="2OqNvi">
+                        <ref role="2S8YL0" to="1v76:2f7jrMqs3ul" resolve="jahresVereinbarung" />
+                      </node>
+                    </node>
+                    <node concept="2S8uIT" id="6MtWgb1LG17" role="2OqNvi">
+                      <ref role="2S8YL0" to="1v76:3Cb79Hk7SeH" resolve="dateMarkantUmstellung" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="6MtWgb1LG12" role="3uHU7w" />
+                </node>
+                <node concept="1eOMI4" id="6MtWgb1MPwW" role="3K4E3e">
+                  <node concept="3K4zz7" id="6MtWgb1MWNq" role="1eOMHV">
+                    <node concept="2XvMaL" id="6MtWgb1N3Hn" role="3K4E3e">
+                      <ref role="2XvMaQ" to="8z9b:1NdMWqEHs5z" resolve="JaNeinStatus" />
+                      <ref role="1Vchh_" to="8z9b:1NdMWqEHs5$" resolve="Ja" />
+                    </node>
+                    <node concept="2XvMaL" id="6MtWgb1NvpF" role="3K4GZi">
+                      <ref role="2XvMaQ" to="8z9b:1NdMWqEHs5z" resolve="JaNeinStatus" />
+                      <ref role="1Vchh_" to="8z9b:1NdMWqEHs5_" resolve="Nein" />
+                    </node>
+                    <node concept="3eOVzh" id="6MtWgb1MPwX" role="3K4Cdx">
+                      <node concept="2OqwBi" id="6MtWgb1MPwY" role="3uHU7w">
+                        <node concept="37vLTw" id="6MtWgb1MPwZ" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5yzDxnpI47O" resolve="kondition" />
+                        </node>
+                        <node concept="2S8uIT" id="6MtWgb1MPx0" role="2OqNvi">
+                          <ref role="2S8YL0" to="1v76:7V$JGz7KRYD" resolve="jahr" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="6MtWgb1MPx1" role="3uHU7B">
+                        <node concept="2OqwBi" id="6MtWgb1MPx2" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6MtWgb1MPx3" role="2Oq$k0">
+                            <node concept="37vLTw" id="6MtWgb1MPx4" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5yzDxnpI47O" resolve="kondition" />
+                            </node>
+                            <node concept="2S8uIT" id="6MtWgb1MPx5" role="2OqNvi">
+                              <ref role="2S8YL0" to="1v76:2f7jrMqs3ul" resolve="jahresVereinbarung" />
+                            </node>
+                          </node>
+                          <node concept="2S8uIT" id="6MtWgb1MPx6" role="2OqNvi">
+                            <ref role="2S8YL0" to="1v76:3Cb79Hk7SeH" resolve="dateMarkantUmstellung" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6MtWgb1MPx7" role="2OqNvi">
+                          <ref role="37wK5l" to="26n1:~LocalDate.getYear():int" resolve="getYear" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2XvMaL" id="6MtWgb1NHax" role="3K4GZi">
+                  <ref role="1Vchh_" to="8z9b:1NdMWqEHs5_" resolve="Nein" />
+                  <ref role="2XvMaQ" to="8z9b:1NdMWqEHs5z" resolve="JaNeinStatus" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -12998,9 +13058,11 @@
                 <ref role="2S8YL0" node="91Q_0QRohQ" resolve="isMarkant" />
               </node>
             </node>
-            <node concept="2XvMaL" id="91Q_0QSaqt" role="37vLTx">
-              <ref role="2XvMaQ" to="8z9b:1NdMWqEHs5z" resolve="JaNeinStatus" />
-              <ref role="1Vchh_" to="8z9b:1NdMWqEHs5_" resolve="Nein" />
+            <node concept="2OqwBi" id="6MtWgb1O1MX" role="37vLTx">
+              <node concept="Xjq3P" id="6MtWgb1NUWb" role="2Oq$k0" />
+              <node concept="2S8uIT" id="6MtWgb1O8JH" role="2OqNvi">
+                <ref role="2S8YL0" node="91Q_0QRohQ" resolve="isMarkant" />
+              </node>
             </node>
           </node>
         </node>
@@ -23758,7 +23820,7 @@
                 <node concept="3clFbC" id="7N55DKt1x0b" role="3uHU7B">
                   <node concept="2OqwBi" id="7N55DKt1wL$" role="3uHU7B">
                     <node concept="Xjq3P" id="7N55DKt1wKE" role="2Oq$k0" />
-                    <node concept="2S8uIT" id="7N55DKt1wUP" role="2OqNvi">
+                    <node concept="2S8uIT" id="mOJMWbdOQu" role="2OqNvi">
                       <ref role="2S8YL0" node="91Q_0QRohQ" resolve="isMarkant" />
                     </node>
                   </node>

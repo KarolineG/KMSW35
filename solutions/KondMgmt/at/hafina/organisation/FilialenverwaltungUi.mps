@@ -1016,13 +1016,7 @@
       </node>
       <node concept="1THgkH" id="1DKNVZaPGCS" role="1THgkZ">
         <node concept="Xl_RD" id="1DKNVZaPGCV" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="1DKNVZaPGCW" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
-        </node>
-        <node concept="Xl_RD" id="1DKNVZaPGCX" role="1THgkI">
-          <property role="Xl_RC" value="1*" />
+          <property role="Xl_RC" value="300" />
         </node>
       </node>
       <node concept="3uibUv" id="1DKNVZaPGCU" role="qi9ce">

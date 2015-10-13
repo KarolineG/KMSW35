@@ -165,7 +165,7 @@
   </registry>
   <node concept="2ftCAz" id="3trU5lnKR$Y">
     <property role="TrG5h" value="UmbauNeueroeffnungenApp" />
-    <property role="3LuWSm" value="- MPreis Filialenmanagement für Neueröffnungen V3.1.0" />
+    <property role="3LuWSm" value="- MPreis Filialenmanagement für Neueröffnungen V3.0.0" />
     <ref role="2bVhWL" node="4dFAWDqUXIB" resolve="UntConfig" />
     <node concept="2Ux5dv" id="2O3g4kc$VMh" role="2ftCBk">
       <node concept="2Ux5d2" id="2O3g4kc$VMi" role="2UzG4t">

@@ -5232,7 +5232,7 @@
             <ref role="2Ux5d0" to="1v76:4vlgPrAe2WU" resolve="Forderungsposition editieren" />
             <node concept="xYMNj" id="4vlgPrAe4FH" role="2sIhOb">
               <ref role="xYMNI" node="3F8CoLplxOf" resolve="EditForderungInterfacePosFC" />
-              <ref role="xYMNi" to="1v76:4vlgPrAe2Xz" resolve="Anforderungsposition Editor" />
+              <ref role="xYMNi" to="1v76:4vlgPrAe2Xz" resolve="Forderungsposition Editor" />
             </node>
             <node concept="2xMDEs" id="4vlgPrAe4FC" role="2Ux5cx">
               <ref role="2xLxPX" to="2k0i:5yzDxnpI42g" resolve="AnforderungKopf" />
@@ -8688,7 +8688,7 @@
             </node>
             <node concept="xYMNj" id="41HLAicEAuZ" role="2sIhOb">
               <ref role="xYMNI" node="3F8CoLplxSi" resolve="EditJahresvereinbarungFC" />
-              <ref role="xYMNi" to="1v76:5tFXYH_eFLB" resolve="Vertragseingabe" />
+              <ref role="xYMNi" to="1v76:5tFXYH_eFLB" resolve="Eingabe des Folgevertrags" />
             </node>
             <node concept="xYMNj" id="7N8jAsmBGU1" role="2sIhOb">
               <ref role="xYMNi" to="1v76:7N8jAsmBGwp" resolve="Teilsortiment" />
@@ -9180,7 +9180,7 @@
               <ref role="xYMNI" node="3F8CoLplyo3" resolve="NewJahresvereinbarungFC" />
             </node>
             <node concept="xYMNj" id="41HLAicEAvk" role="2sIhOb">
-              <ref role="xYMNi" to="1v76:5tFXYH_eFLB" resolve="Vertragseingabe" />
+              <ref role="xYMNi" to="1v76:5tFXYH_eFLB" resolve="Eingabe des Folgevertrags" />
               <ref role="xYMNI" node="3F8CoLplxSi" resolve="EditJahresvereinbarungFC" />
             </node>
             <node concept="xYMNj" id="7N8jAsmBGTZ" role="2sIhOb">
@@ -10501,8 +10501,8 @@
               <property role="1TGbMe" value="-" />
               <node concept="2OqwBi" id="3svtX3w8NCA" role="2GDD_P">
                 <node concept="2EM3W" id="3svtX3w8NCB" role="2Oq$k0" />
-                <node concept="2S8uIT" id="3svtX3w8NCC" role="2OqNvi">
-                  <ref role="2S8YL0" to="1v76:2f7jrMqs3wq" resolve="status" />
+                <node concept="2S8uIT" id="1imEJzc$JmU" role="2OqNvi">
+                  <ref role="2S8YL0" to="1v76:1imEJzbOY9Z" resolve="statusWithStorno" />
                 </node>
               </node>
             </node>

@@ -342,7 +342,7 @@
   </registry>
   <node concept="2ftCAz" id="3trU5lnKR$f">
     <property role="TrG5h" value="KMSW" />
-    <property role="3LuWSm" value="- MPreis Konditionsmanagementsoftware V3.3.0" />
+    <property role="3LuWSm" value="- MPreis Konditionsmanagementsoftware V3.3.1" />
     <ref role="2bVhWL" node="4dFAWDoDl0W" resolve="KmswConfig" />
     <node concept="2Ux5dv" id="4HxyFP_OrqP" role="rz4mQ">
       <node concept="2Ux5d2" id="4HxyFP_OrqQ" role="2UzG4t">
