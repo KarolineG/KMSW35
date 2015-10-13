@@ -2,8 +2,9 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
-      <modulePath path="$PROJECT_DIR$/languages/PinkyScripts/PinkyScripts.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/KondMgmt/KondMgmt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/at.hafina.stamm/at.hafina.stamm.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/at.hafina.zentrale/at.hafina.zentrale.msd" folder="" />
     </projectModules>
   </component>
 </project>
